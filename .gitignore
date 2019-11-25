@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/DWH Integration Services Project HTW 2019/.vs/DWH Integration Services Project HTW 2019/v16/.suo
+/DWH Integration Services Project HTW 2019/.vs/DWH Integration Services Project HTW 2019/v16
+/.vs/VSWorkspaceState.json
+/.vs/slnx.sqlite
+/.vs/etl-process-htw-2019/v16/.suo
+/.vs/etl-process-htw-2019/v16
+/.vs
