@@ -12,11 +12,25 @@
   DTS:ObjectName="Package"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{C5411165-FBFA-4C08-A008-E2509792A580}">
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{BCAD7E28-0151-4309-9B10-3C4D5FD4DE99}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_HAM]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{f9391b1d-75f1-4527-817f-8b1c95d18242}"
+      DTS:ObjectName="sqlserverdrei.f4.htw-berlin.de,1125.Data_HAM">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Initial Catalog=Data_HAM;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package-{74CC8B04-9FCE-419A-8722-94C31F022901}sqlserverdrei.f4.htw-berlin.de,1125.s0573527;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"></DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.s0573527]"
       DTS:CreationName="OLEDB"
@@ -24,11 +38,7 @@
       DTS:ObjectName="sqlserverdrei.f4.htw-berlin.de,1125.s0573527">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package-{74CC8B04-9FCE-419A-8722-94C31F022901}sqlserverdrei.f4.htw-berlin.de,1125.s0573527;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"></DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package-{74CC8B04-9FCE-419A-8722-94C31F022901}sqlserverdrei.f4.htw-berlin.de,1125.s0573527;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -38,11 +48,7 @@
       DTS:ObjectName="sqlserverdrei.f4.htw-berlin.de,1125.u573527">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Provider=MSOLEDBSQL.1;Persist Security Info=True;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"></DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Provider=MSOLEDBSQL.1;Persist Security Info=True;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -441,11 +447,11 @@
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\HAM Kunde"
+              refId="Package\Data Flow Task\HAM_Kunde"
               componentClassID="Microsoft.OLEDBSource"
               contactInfo="OLE DB-Quelle;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;7"
               description="OLE DB-Quelle"
-              name="HAM Kunde"
+              name="HAM_Kunde"
               usesDispositions="true"
               version="7">
               <properties>
@@ -456,7 +462,7 @@
                 <property
                   dataType="System.String"
                   description="Gibt den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts an."
-                  name="OpenRowset">[dbo].[ProduktDim]</property>
+                  name="OpenRowset">[dbo].[Kunde]</property>
                 <property
                   dataType="System.String"
                   description="Gibt die Variable an, die den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts enthält."
@@ -490,154 +496,1242 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\HAM Kunde.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.s0573527]"
-                  connectionManagerRefId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.s0573527]"
+                  refId="Package\Data Flow Task\HAM_Kunde.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_HAM]"
+                  connectionManagerRefId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_HAM]"
                   description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
                   name="OleDbConnection" />
               </connections>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\HAM Kunde.Outputs[Ausgabe der OLE DB-Quelle]"
+                  refId="Package\Data Flow Task\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle]"
                   name="Ausgabe der OLE DB-Quelle">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\HAM Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[ProduktDimId]"
+                      refId="Package\Data Flow Task\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Kunden_Id]"
                       dataType="i4"
                       errorOrTruncationOperation="Konvertierung"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\HAM Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[ProduktDimId]"
-                      lineageId="Package\Data Flow Task\HAM Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[ProduktDimId]"
-                      name="ProduktDimId"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Kunden_Id]"
+                      lineageId="Package\Data Flow Task\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Kunden_Id]"
+                      name="Kunden_Id"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\HAM Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Name]"
+                      refId="Package\Data Flow Task\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Werk_Id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Werk_Id]"
+                      lineageId="Package\Data Flow Task\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Werk_Id]"
+                      name="Werk_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Name]"
                       dataType="wstr"
                       errorOrTruncationOperation="Konvertierung"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\HAM Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Name]"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Name]"
                       length="50"
-                      lineageId="Package\Data Flow Task\HAM Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Name]"
+                      lineageId="Package\Data Flow Task\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Name]"
                       name="Name"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\HAM Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Breschreibung]"
+                      refId="Package\Data Flow Task\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Anschrift]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Anschrift]"
+                      lineageId="Package\Data Flow Task\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Anschrift]"
+                      name="Anschrift"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Plz]"
                       dataType="wstr"
                       errorOrTruncationOperation="Konvertierung"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\HAM Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Breschreibung]"
-                      length="255"
-                      lineageId="Package\Data Flow Task\HAM Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Breschreibung]"
-                      name="Breschreibung"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Plz]"
+                      length="10"
+                      lineageId="Package\Data Flow Task\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Plz]"
+                      name="Plz"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\HAM Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Preis]"
-                      dataType="cy"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\HAM Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Preis]"
-                      lineageId="Package\Data Flow Task\HAM Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Preis]"
-                      name="Preis"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\HAM Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Kategorie]"
+                      refId="Package\Data Flow Task\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Ort]"
                       dataType="wstr"
                       errorOrTruncationOperation="Konvertierung"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\HAM Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Kategorie]"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Ort]"
                       length="50"
-                      lineageId="Package\Data Flow Task\HAM Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Kategorie]"
-                      name="Kategorie"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\HAM Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Produkt_Id]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\HAM Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Produkt_Id]"
-                      lineageId="Package\Data Flow Task\HAM Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Produkt_Id]"
-                      name="Produkt_Id"
+                      lineageId="Package\Data Flow Task\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Ort]"
+                      name="Ort"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\HAM Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[ProduktDimId]"
+                      refId="Package\Data Flow Task\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Kunden_Id]"
                       dataType="i4"
-                      name="ProduktDimId" />
+                      name="Kunden_Id" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\HAM Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Name]"
+                      refId="Package\Data Flow Task\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Werk_Id]"
+                      dataType="i4"
+                      name="Werk_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Name]"
                       dataType="wstr"
                       length="50"
                       name="Name" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\HAM Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Breschreibung]"
+                      refId="Package\Data Flow Task\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Anschrift]"
+                      codePage="1252"
+                      dataType="text"
+                      name="Anschrift" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Plz]"
                       dataType="wstr"
-                      length="255"
-                      name="Breschreibung" />
+                      length="10"
+                      name="Plz" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\HAM Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Preis]"
-                      dataType="cy"
-                      name="Preis" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\HAM Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Kategorie]"
+                      refId="Package\Data Flow Task\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Ort]"
                       dataType="wstr"
                       length="50"
-                      name="Kategorie" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\HAM Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Produkt_Id]"
-                      dataType="i4"
-                      name="Produkt_Id" />
+                      name="Ort" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Data Flow Task\HAM Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle]"
+                  refId="Package\Data Flow Task\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle]"
                   isErrorOut="true"
                   name="Fehlerausgabe der OLE DB-Quelle">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\HAM Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ProduktDimId]"
+                      refId="Package\Data Flow Task\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Kunden_Id]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\HAM Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ProduktDimId]"
-                      name="ProduktDimId" />
+                      lineageId="Package\Data Flow Task\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Kunden_Id]"
+                      name="Kunden_Id" />
                     <outputColumn
-                      refId="Package\Data Flow Task\HAM Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Name]"
+                      refId="Package\Data Flow Task\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Werk_Id]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Werk_Id]"
+                      name="Werk_Id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Name]"
                       dataType="wstr"
                       length="50"
-                      lineageId="Package\Data Flow Task\HAM Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Name]"
+                      lineageId="Package\Data Flow Task\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Name]"
                       name="Name" />
                     <outputColumn
-                      refId="Package\Data Flow Task\HAM Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Breschreibung]"
+                      refId="Package\Data Flow Task\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Anschrift]"
+                      codePage="1252"
+                      dataType="text"
+                      lineageId="Package\Data Flow Task\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Anschrift]"
+                      name="Anschrift" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Plz]"
                       dataType="wstr"
-                      length="255"
-                      lineageId="Package\Data Flow Task\HAM Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Breschreibung]"
-                      name="Breschreibung" />
+                      length="10"
+                      lineageId="Package\Data Flow Task\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Plz]"
+                      name="Plz" />
                     <outputColumn
-                      refId="Package\Data Flow Task\HAM Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Preis]"
-                      dataType="cy"
-                      lineageId="Package\Data Flow Task\HAM Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Preis]"
-                      name="Preis" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\HAM Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Kategorie]"
+                      refId="Package\Data Flow Task\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Ort]"
                       dataType="wstr"
                       length="50"
-                      lineageId="Package\Data Flow Task\HAM Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Kategorie]"
-                      name="Kategorie" />
+                      lineageId="Package\Data Flow Task\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Ort]"
+                      name="Ort" />
                     <outputColumn
-                      refId="Package\Data Flow Task\HAM Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Produkt_Id]"
+                      refId="Package\Data Flow Task\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\HAM Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Produkt_Id]"
-                      name="Produkt_Id" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\HAM Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\HAM Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
+                      lineageId="Package\Data Flow Task\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\HAM Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
+                      refId="Package\Data Flow Task\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\HAM Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
+                      lineageId="Package\Data Flow Task\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\HAM_Lieferauftrag"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB-Quelle;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;7"
+              description="OLE DB-Quelle"
+              name="HAM_Lieferauftrag"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts an."
+                  name="OpenRowset">[dbo].[Lieferauftrag]</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt die Variable an, die den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts enthält."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Der auszuführende SQL-Befehl."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="Die Variable, die den auszuführenden SQL-Befehl enthält."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Erzwingt die Verwendung des DefaultCodePage-Eigenschaftswerts beim Beschreiben von Zeichendaten."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt den zum Zugreifen auf die Datenbank verwendeten Modus an."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="Die Zuordnungen zwischen den Parametern im SQL-Befehl und den Variablen."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\HAM_Lieferauftrag.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_HAM]"
+                  connectionManagerRefId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_HAM]"
+                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle]"
+                  name="Ausgabe der OLE DB-Quelle">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lieferauftrag_Id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Lieferauftrag_Id]"
+                      lineageId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lieferauftrag_Id]"
+                      name="Lieferauftrag_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle].Columns[KundenId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[KundenId]"
+                      lineageId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle].Columns[KundenId]"
+                      name="KundenId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle].Columns[Tm_Id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Tm_Id]"
+                      lineageId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle].Columns[Tm_Id]"
+                      name="Tm_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle].Columns[Bestelldatum]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Bestelldatum]"
+                      lineageId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle].Columns[Bestelldatum]"
+                      name="Bestelldatum"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lieferdatum]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Lieferdatum]"
+                      lineageId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lieferdatum]"
+                      name="Lieferdatum"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lat]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Lat]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lat]"
+                      name="Lat"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lon]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Lon]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lon]"
+                      name="Lon"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lieferkosten]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Lieferkosten]"
+                      lineageId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lieferkosten]"
+                      name="Lieferkosten"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Lieferauftrag_Id]"
+                      dataType="i4"
+                      name="Lieferauftrag_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[KundenId]"
+                      dataType="i4"
+                      name="KundenId" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Tm_Id]"
+                      dataType="i4"
+                      name="Tm_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Bestelldatum]"
+                      dataType="dbTimeStamp"
+                      name="Bestelldatum" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Lieferdatum]"
+                      dataType="dbTimeStamp"
+                      name="Lieferdatum" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Lat]"
+                      dataType="wstr"
+                      length="50"
+                      name="Lat" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Lon]"
+                      dataType="wstr"
+                      length="50"
+                      name="Lon" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Lieferkosten]"
+                      dataType="cy"
+                      name="Lieferkosten" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Fehlerausgabe der OLE DB-Quelle]"
+                  isErrorOut="true"
+                  name="Fehlerausgabe der OLE DB-Quelle">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lieferauftrag_Id]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lieferauftrag_Id]"
+                      name="Lieferauftrag_Id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[KundenId]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[KundenId]"
+                      name="KundenId" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Tm_Id]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Tm_Id]"
+                      name="Tm_Id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Bestelldatum]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Bestelldatum]"
+                      name="Bestelldatum" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lieferdatum]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lieferdatum]"
+                      name="Lieferdatum" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lat]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lat]"
+                      name="Lat" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lon]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lon]"
+                      name="Lon" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lieferkosten]"
+                      dataType="cy"
+                      lineageId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lieferkosten]"
+                      name="Lieferkosten" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\HAM_Lieferauftrag.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\HAM_Produkt"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB-Quelle;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;7"
+              description="OLE DB-Quelle"
+              name="HAM_Produkt"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts an."
+                  name="OpenRowset">[dbo].[Produkt]</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt die Variable an, die den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts enthält."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Der auszuführende SQL-Befehl."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="Die Variable, die den auszuführenden SQL-Befehl enthält."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Erzwingt die Verwendung des DefaultCodePage-Eigenschaftswerts beim Beschreiben von Zeichendaten."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt den zum Zugreifen auf die Datenbank verwendeten Modus an."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="Die Zuordnungen zwischen den Parametern im SQL-Befehl und den Variablen."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\HAM_Produkt.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_HAM]"
+                  connectionManagerRefId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_HAM]"
+                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle]"
+                  name="Ausgabe der OLE DB-Quelle">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].Columns[Produkt_Id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Produkt_Id]"
+                      lineageId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].Columns[Produkt_Id]"
+                      name="Produkt_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].Columns[Produktkategorie_Id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Produktkategorie_Id]"
+                      lineageId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].Columns[Produktkategorie_Id]"
+                      name="Produktkategorie_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].Columns[Werk_Id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Werk_Id]"
+                      lineageId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].Columns[Werk_Id]"
+                      name="Werk_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].Columns[Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Name]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].Columns[Name]"
+                      name="Name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].Columns[Beschreibung]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Beschreibung]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].Columns[Beschreibung]"
+                      name="Beschreibung"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lieferauftrag_Id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Lieferauftrag_Id]"
+                      lineageId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lieferauftrag_Id]"
+                      name="Lieferauftrag_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].Columns[Volumen]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Volumen]"
+                      lineageId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].Columns[Volumen]"
+                      name="Volumen"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].Columns[Gewicht]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Gewicht]"
+                      lineageId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].Columns[Gewicht]"
+                      name="Gewicht"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].Columns[Preis]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Preis]"
+                      lineageId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].Columns[Preis]"
+                      name="Preis"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].Columns[Anzahl_Packstuecke]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Anzahl_Packstuecke]"
+                      lineageId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].Columns[Anzahl_Packstuecke]"
+                      name="Anzahl_Packstuecke"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Produkt_Id]"
+                      dataType="i4"
+                      name="Produkt_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Produktkategorie_Id]"
+                      dataType="i4"
+                      name="Produktkategorie_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Werk_Id]"
+                      dataType="i4"
+                      name="Werk_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Name]"
+                      dataType="wstr"
+                      length="50"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Beschreibung]"
+                      dataType="wstr"
+                      length="255"
+                      name="Beschreibung" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Lieferauftrag_Id]"
+                      dataType="i4"
+                      name="Lieferauftrag_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Volumen]"
+                      dataType="r4"
+                      name="Volumen" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Gewicht]"
+                      dataType="r4"
+                      name="Gewicht" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Preis]"
+                      dataType="cy"
+                      name="Preis" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Produkt.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Anzahl_Packstuecke]"
+                      dataType="i4"
+                      name="Anzahl_Packstuecke" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\HAM_Produkt.Outputs[Fehlerausgabe der OLE DB-Quelle]"
+                  isErrorOut="true"
+                  name="Fehlerausgabe der OLE DB-Quelle">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Produkt.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Produkt_Id]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\HAM_Produkt.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Produkt_Id]"
+                      name="Produkt_Id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Produkt.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Produktkategorie_Id]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\HAM_Produkt.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Produktkategorie_Id]"
+                      name="Produktkategorie_Id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Produkt.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Werk_Id]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\HAM_Produkt.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Werk_Id]"
+                      name="Werk_Id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Produkt.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Name]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HAM_Produkt.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Name]"
+                      name="Name" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Produkt.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Beschreibung]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\HAM_Produkt.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Beschreibung]"
+                      name="Beschreibung" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Produkt.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lieferauftrag_Id]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\HAM_Produkt.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lieferauftrag_Id]"
+                      name="Lieferauftrag_Id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Produkt.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Volumen]"
+                      dataType="r4"
+                      lineageId="Package\Data Flow Task\HAM_Produkt.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Volumen]"
+                      name="Volumen" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Produkt.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Gewicht]"
+                      dataType="r4"
+                      lineageId="Package\Data Flow Task\HAM_Produkt.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Gewicht]"
+                      name="Gewicht" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Produkt.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Preis]"
+                      dataType="cy"
+                      lineageId="Package\Data Flow Task\HAM_Produkt.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Preis]"
+                      name="Preis" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Produkt.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Anzahl_Packstuecke]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\HAM_Produkt.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Anzahl_Packstuecke]"
+                      name="Anzahl_Packstuecke" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Produkt.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\HAM_Produkt.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Produkt.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\HAM_Produkt.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\HAM_Produktkategorie"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB-Quelle;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;7"
+              description="OLE DB-Quelle"
+              name="HAM_Produktkategorie"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts an."
+                  name="OpenRowset">[dbo].[Produktkategorie]</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt die Variable an, die den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts enthält."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Der auszuführende SQL-Befehl."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="Die Variable, die den auszuführenden SQL-Befehl enthält."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Erzwingt die Verwendung des DefaultCodePage-Eigenschaftswerts beim Beschreiben von Zeichendaten."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt den zum Zugreifen auf die Datenbank verwendeten Modus an."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="Die Zuordnungen zwischen den Parametern im SQL-Befehl und den Variablen."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\HAM_Produktkategorie.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_HAM]"
+                  connectionManagerRefId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_HAM]"
+                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\HAM_Produktkategorie.Outputs[Ausgabe der OLE DB-Quelle]"
+                  name="Ausgabe der OLE DB-Quelle">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Produktkategorie.Outputs[Ausgabe der OLE DB-Quelle].Columns[Produktkat_Id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Produktkategorie.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Produktkat_Id]"
+                      lineageId="Package\Data Flow Task\HAM_Produktkategorie.Outputs[Ausgabe der OLE DB-Quelle].Columns[Produktkat_Id]"
+                      name="Produktkat_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Produktkategorie.Outputs[Ausgabe der OLE DB-Quelle].Columns[Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Produktkategorie.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Name]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HAM_Produktkategorie.Outputs[Ausgabe der OLE DB-Quelle].Columns[Name]"
+                      name="Name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Produktkategorie.Outputs[Ausgabe der OLE DB-Quelle].Columns[Aenderungsdatum]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Produktkategorie.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Aenderungsdatum]"
+                      lineageId="Package\Data Flow Task\HAM_Produktkategorie.Outputs[Ausgabe der OLE DB-Quelle].Columns[Aenderungsdatum]"
+                      name="Aenderungsdatum"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Produktkategorie.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Produktkat_Id]"
+                      dataType="i4"
+                      name="Produktkat_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Produktkategorie.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Name]"
+                      dataType="wstr"
+                      length="50"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Produktkategorie.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Aenderungsdatum]"
+                      dataType="dbTimeStamp"
+                      name="Aenderungsdatum" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\HAM_Produktkategorie.Outputs[Fehlerausgabe der OLE DB-Quelle]"
+                  isErrorOut="true"
+                  name="Fehlerausgabe der OLE DB-Quelle">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Produktkategorie.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Produktkat_Id]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\HAM_Produktkategorie.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Produktkat_Id]"
+                      name="Produktkat_Id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Produktkategorie.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Name]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HAM_Produktkategorie.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Name]"
+                      name="Name" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Produktkategorie.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Aenderungsdatum]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Data Flow Task\HAM_Produktkategorie.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Aenderungsdatum]"
+                      name="Aenderungsdatum" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Produktkategorie.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\HAM_Produktkategorie.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Produktkategorie.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\HAM_Produktkategorie.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\HAM_Transportmittel"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB-Quelle;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;7"
+              description="OLE DB-Quelle"
+              name="HAM_Transportmittel"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts an."
+                  name="OpenRowset">[dbo].[Transportmittel]</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt die Variable an, die den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts enthält."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Der auszuführende SQL-Befehl."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="Die Variable, die den auszuführenden SQL-Befehl enthält."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Erzwingt die Verwendung des DefaultCodePage-Eigenschaftswerts beim Beschreiben von Zeichendaten."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt den zum Zugreifen auf die Datenbank verwendeten Modus an."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="Die Zuordnungen zwischen den Parametern im SQL-Befehl und den Variablen."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\HAM_Transportmittel.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_HAM]"
+                  connectionManagerRefId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_HAM]"
+                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle]"
+                  name="Ausgabe der OLE DB-Quelle">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].Columns[Tm_Id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Tm_Id]"
+                      lineageId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].Columns[Tm_Id]"
+                      name="Tm_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].Columns[Marke]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Marke]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].Columns[Marke]"
+                      name="Marke"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].Columns[Typ]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Typ]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].Columns[Typ]"
+                      name="Typ"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].Columns[Ladevolumen]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Ladevolumen]"
+                      lineageId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].Columns[Ladevolumen]"
+                      name="Ladevolumen"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].Columns[Anz_Fahrer]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Anz_Fahrer]"
+                      lineageId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].Columns[Anz_Fahrer]"
+                      name="Anz_Fahrer"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].Columns[Fuehrerschein_Klasse]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Fuehrerschein_Klasse]"
+                      length="1"
+                      lineageId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].Columns[Fuehrerschein_Klasse]"
+                      name="Fuehrerschein_Klasse"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].Columns[Anzahl_Bestand]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Anzahl_Bestand]"
+                      lineageId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].Columns[Anzahl_Bestand]"
+                      name="Anzahl_Bestand"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].Columns[Maximal_Gewicht]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Maximal_Gewicht]"
+                      lineageId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].Columns[Maximal_Gewicht]"
+                      name="Maximal_Gewicht"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].Columns[Kosten]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Kosten]"
+                      lineageId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].Columns[Kosten]"
+                      name="Kosten"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Tm_Id]"
+                      dataType="i4"
+                      name="Tm_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Marke]"
+                      dataType="wstr"
+                      length="50"
+                      name="Marke" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Typ]"
+                      dataType="wstr"
+                      length="50"
+                      name="Typ" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Ladevolumen]"
+                      dataType="r4"
+                      name="Ladevolumen" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Anz_Fahrer]"
+                      dataType="i4"
+                      name="Anz_Fahrer" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Fuehrerschein_Klasse]"
+                      dataType="wstr"
+                      length="1"
+                      name="Fuehrerschein_Klasse" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Anzahl_Bestand]"
+                      dataType="i4"
+                      name="Anzahl_Bestand" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Maximal_Gewicht]"
+                      dataType="r4"
+                      name="Maximal_Gewicht" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Kosten]"
+                      dataType="r4"
+                      name="Kosten" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle]"
+                  isErrorOut="true"
+                  name="Fehlerausgabe der OLE DB-Quelle">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Tm_Id]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Tm_Id]"
+                      name="Tm_Id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Marke]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Marke]"
+                      name="Marke" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Typ]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Typ]"
+                      name="Typ" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Ladevolumen]"
+                      dataType="r4"
+                      lineageId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Ladevolumen]"
+                      name="Ladevolumen" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Anz_Fahrer]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Anz_Fahrer]"
+                      name="Anz_Fahrer" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Fuehrerschein_Klasse]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Fuehrerschein_Klasse]"
+                      name="Fuehrerschein_Klasse" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Anzahl_Bestand]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Anzahl_Bestand]"
+                      name="Anzahl_Bestand" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Maximal_Gewicht]"
+                      dataType="r4"
+                      lineageId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Maximal_Gewicht]"
+                      name="Maximal_Gewicht" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Kosten]"
+                      dataType="r4"
+                      lineageId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Kosten]"
+                      name="Kosten" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\HAM_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\HAM_Werk"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB-Quelle;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;7"
+              description="OLE DB-Quelle"
+              name="HAM_Werk"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts an."
+                  name="OpenRowset">[dbo].[Werk]</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt die Variable an, die den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts enthält."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Der auszuführende SQL-Befehl."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="Die Variable, die den auszuführenden SQL-Befehl enthält."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Erzwingt die Verwendung des DefaultCodePage-Eigenschaftswerts beim Beschreiben von Zeichendaten."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt den zum Zugreifen auf die Datenbank verwendeten Modus an."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="Die Zuordnungen zwischen den Parametern im SQL-Befehl und den Variablen."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\HAM_Werk.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_HAM]"
+                  connectionManagerRefId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_HAM]"
+                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle]"
+                  name="Ausgabe der OLE DB-Quelle">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle].Columns[Werk_Id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Werk_Id]"
+                      lineageId="Package\Data Flow Task\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle].Columns[Werk_Id]"
+                      name="Werk_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle].Columns[Anschrift]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Anschrift]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle].Columns[Anschrift]"
+                      name="Anschrift"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle].Columns[Plz]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Plz]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle].Columns[Plz]"
+                      name="Plz"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle].Columns[Ort]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Ort]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle].Columns[Ort]"
+                      name="Ort"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Werk_Id]"
+                      dataType="i4"
+                      name="Werk_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Anschrift]"
+                      dataType="wstr"
+                      length="50"
+                      name="Anschrift" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Plz]"
+                      dataType="wstr"
+                      length="50"
+                      name="Plz" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Ort]"
+                      dataType="wstr"
+                      length="50"
+                      name="Ort" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\HAM_Werk.Outputs[Fehlerausgabe der OLE DB-Quelle]"
+                  isErrorOut="true"
+                  name="Fehlerausgabe der OLE DB-Quelle">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Werk.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Werk_Id]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\HAM_Werk.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Werk_Id]"
+                      name="Werk_Id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Werk.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Anschrift]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HAM_Werk.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Anschrift]"
+                      name="Anschrift" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Werk.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Plz]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HAM_Werk.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Plz]"
+                      name="Plz" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Werk.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Ort]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HAM_Werk.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Ort]"
+                      name="Ort" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Werk.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\HAM_Werk.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HAM_Werk.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\HAM_Werk.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -941,89 +2035,6 @@
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\OLE DB-Quelle"
-              componentClassID="Microsoft.OLEDBSource"
-              contactInfo="OLE DB-Quelle;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;7"
-              description="OLE DB-Quelle"
-              name="OLE DB-Quelle"
-              usesDispositions="true"
-              version="7">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Gibt den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts an."
-                  name="OpenRowset"></property>
-                <property
-                  dataType="System.String"
-                  description="Gibt die Variable an, die den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts enthält."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="Der auszuführende SQL-Befehl."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
-                <property
-                  dataType="System.String"
-                  description="Die Variable, die den auszuführenden SQL-Befehl enthält."
-                  name="SqlCommandVariable"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Erzwingt die Verwendung des DefaultCodePage-Eigenschaftswerts beim Beschreiben von Zeichendaten."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Gibt den zum Zugreifen auf die Datenbank verwendeten Modus an."
-                  name="AccessMode"
-                  typeConverter="AccessMode">0</property>
-                <property
-                  dataType="System.String"
-                  description="Die Zuordnungen zwischen den Parametern im SQL-Befehl und den Variablen."
-                  name="ParameterMapping"></property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Data Flow Task\OLE DB-Quelle.Connections[OleDbConnection]"
-                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
-                  name="OleDbConnection" />
-              </connections>
-              <outputs>
-                <output
-                  refId="Package\Data Flow Task\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle]"
-                  name="Ausgabe der OLE DB-Quelle">
-                  <externalMetadataColumns
-                    isUsed="True" />
-                </output>
-                <output
-                  refId="Package\Data Flow Task\OLE DB-Quelle.Outputs[Fehlerausgabe der OLE DB-Quelle]"
-                  isErrorOut="true"
-                  name="Fehlerausgabe der OLE DB-Quelle">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Data Flow Task\OLE DB-Quelle.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB-Quelle.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\OLE DB-Quelle.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB-Quelle.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
               refId="Package\Data Flow Task\TransportmittelDim"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB-Ziel;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;4"
@@ -1194,70 +2205,60 @@
     design-time-name="Package\Data Flow Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
-        <NodeLayout
-          Size="135.5,42"
-          Id="Package\Data Flow Task\HAM Kunde"
-          TopLeft="76,47.9166669949061" />
-        <NodeLayout
-          Size="136,42"
-          Id="Package\Data Flow Task\AdresseDim"
-          TopLeft="938,116.458332754879" />
-        <NodeLayout
-          Size="155.5,42"
-          Id="Package\Data Flow Task\BeschwerdeDim"
-          TopLeft="929,186.874999071782" />
-        <NodeLayout
-          Size="128.5,42"
-          Id="Package\Data Flow Task\DatumDim"
-          TopLeft="951,250.791665420971" />
-        <NodeLayout
-          Size="128,42"
-          Id="Package\Data Flow Task\KundeDim"
-          TopLeft="959,316.874998426065" />
-        <NodeLayout
-          Size="155,42"
-          Id="Package\Data Flow Task\LieferungFakten"
-          TopLeft="932,373.208331479587" />
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
           Size="168,42"
           Id="Package\Data Flow Task\TransportmittelDim"
           TopLeft="925,434.958331172872" />
         <NodeLayout
-          Size="151.5,42"
-          Id="Package\Data Flow Task\OLE DB-Quelle"
-          TopLeft="122,131.624999346212" />
+          Size="128.5,42"
+          Id="Package\Data Flow Task\DatumDim"
+          TopLeft="951,250.791665420971" />
+        <NodeLayout
+          Size="155.5,42"
+          Id="Package\Data Flow Task\BeschwerdeDim"
+          TopLeft="929,186.874999071782" />
+        <NodeLayout
+          Size="155,42"
+          Id="Package\Data Flow Task\LieferungFakten"
+          TopLeft="932,373.208331479587" />
+        <NodeLayout
+          Size="136,42"
+          Id="Package\Data Flow Task\AdresseDim"
+          TopLeft="938,116.458332754879" />
+        <NodeLayout
+          Size="128,42"
+          Id="Package\Data Flow Task\KundeDim"
+          TopLeft="959,316.874998426065" />
+        <NodeLayout
+          Size="138.5,42"
+          Id="Package\Data Flow Task\HAM_Kunde"
+          TopLeft="8.5,8.66666662361885" />
+        <NodeLayout
+          Size="167,42"
+          Id="Package\Data Flow Task\HAM_Lieferauftrag"
+          TopLeft="9.5,65.2083330938799" />
+        <NodeLayout
+          Size="144.5,42"
+          Id="Package\Data Flow Task\HAM_Produkt"
+          TopLeft="11,117.749999499569" />
+        <NodeLayout
+          Size="187.5,42"
+          Id="Package\Data Flow Task\HAM_Produktkategorie"
+          TopLeft="12,166.833332504663" />
+        <NodeLayout
+          Size="178.5,42"
+          Id="Package\Data Flow Task\HAM_Transportmittel"
+          TopLeft="13.5,218.833332246376" />
+        <NodeLayout
+          Size="132.5,42"
+          Id="Package\Data Flow Task\HAM_Werk"
+          TopLeft="16,271.916665316042" />
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\HAM Kunde">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\AdresseDim">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\BeschwerdeDim">
+    design-time-name="Package\Data Flow Task\TransportmittelDim">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1283,7 +2284,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\KundeDim">
+    design-time-name="Package\Data Flow Task\BeschwerdeDim">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1309,7 +2310,98 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\TransportmittelDim">
+    design-time-name="Package\Data Flow Task\AdresseDim">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\KundeDim">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\HAM_Kunde">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\HAM_Lieferauftrag">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\HAM_Produkt">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\HAM_Produktkategorie">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\HAM_Transportmittel">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\HAM_Werk">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
