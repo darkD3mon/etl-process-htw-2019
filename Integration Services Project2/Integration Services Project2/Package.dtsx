@@ -12,8 +12,8 @@
   DTS:ObjectName="Package"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="6"
-  DTS:VersionGUID="{34719E08-E259-4CC7-BD3C-4478FB515011}">
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{394B22CD-81EA-421C-B0F9-60B6837E8AAD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -66,7 +66,11 @@
       DTS:ObjectName="sqlserverdrei.f4.htw-berlin.de,1125.s0573527">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package-{74CC8B04-9FCE-419A-8722-94C31F022901}sqlserverdrei.f4.htw-berlin.de,1125.s0573527;" />
+          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package-{74CC8B04-9FCE-419A-8722-94C31F022901}sqlserverdrei.f4.htw-berlin.de,1125.s0573527;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"></DTS:Password>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -76,7 +80,11 @@
       DTS:ObjectName="sqlserverdrei.f4.htw-berlin.de,1125.u573527">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Provider=MSOLEDBSQL.1;Persist Security Info=True;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Provider=MSOLEDBSQL.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{E7ABF833-EABB-45A5-B315-3795CDA593E0}sqlserverdrei.f4.htw-berlin.de,1125.u573527;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"></DTS:Password>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -1335,549 +1343,6 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\ETL KundeDim"
-      DTS:CreationName="Microsoft.Pipeline"
-      DTS:Description="Datenflusstask"
-      DTS:DTSID="{69390F36-2703-4F49-AAB7-9AC56C607670}"
-      DTS:ExecutableType="Microsoft.Pipeline"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="ETL KundeDim"
-      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <pipeline
-          version="1">
-          <components>
-            <component
-              refId="Package\ETL KundeDim\FRA_Kunde"
-              componentClassID="Microsoft.OLEDBSource"
-              contactInfo="OLE DB-Quelle;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;7"
-              description="OLE DB-Quelle"
-              name="FRA_Kunde"
-              usesDispositions="true"
-              version="7">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Gibt den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts an."
-                  name="OpenRowset">[dbo].[Kunde]</property>
-                <property
-                  dataType="System.String"
-                  description="Gibt die Variable an, die den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts enthält."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="Der auszuführende SQL-Befehl."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
-                <property
-                  dataType="System.String"
-                  description="Die Variable, die den auszuführenden SQL-Befehl enthält."
-                  name="SqlCommandVariable"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Erzwingt die Verwendung des DefaultCodePage-Eigenschaftswerts beim Beschreiben von Zeichendaten."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Gibt den zum Zugreifen auf die Datenbank verwendeten Modus an."
-                  name="AccessMode"
-                  typeConverter="AccessMode">0</property>
-                <property
-                  dataType="System.String"
-                  description="Die Zuordnungen zwischen den Parametern im SQL-Befehl und den Variablen."
-                  name="ParameterMapping"></property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\ETL KundeDim\FRA_Kunde.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_FRA]"
-                  connectionManagerRefId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_FRA]"
-                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
-                  name="OleDbConnection" />
-              </connections>
-              <outputs>
-                <output
-                  refId="Package\ETL KundeDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle]"
-                  name="Ausgabe der OLE DB-Quelle">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\ETL KundeDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[KundId]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL KundeDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[KundId]"
-                      lineageId="Package\ETL KundeDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[KundId]"
-                      name="KundId"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ETL KundeDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Name]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL KundeDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Name]"
-                      length="50"
-                      lineageId="Package\ETL KundeDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Name]"
-                      name="Name"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ETL KundeDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Firma]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL KundeDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Firma]"
-                      length="50"
-                      lineageId="Package\ETL KundeDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Firma]"
-                      name="Firma"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ETL KundeDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Vorname]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL KundeDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Vorname]"
-                      length="50"
-                      lineageId="Package\ETL KundeDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Vorname]"
-                      name="Vorname"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ETL KundeDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Email]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL KundeDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Email]"
-                      length="50"
-                      lineageId="Package\ETL KundeDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Email]"
-                      name="Email"
-                      truncationRowDisposition="FailComponent" />
-                  </outputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\ETL KundeDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[KundId]"
-                      dataType="i4"
-                      name="KundId" />
-                    <externalMetadataColumn
-                      refId="Package\ETL KundeDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Name]"
-                      dataType="wstr"
-                      length="50"
-                      name="Name" />
-                    <externalMetadataColumn
-                      refId="Package\ETL KundeDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Firma]"
-                      dataType="wstr"
-                      length="50"
-                      name="Firma" />
-                    <externalMetadataColumn
-                      refId="Package\ETL KundeDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Vorname]"
-                      dataType="wstr"
-                      length="50"
-                      name="Vorname" />
-                    <externalMetadataColumn
-                      refId="Package\ETL KundeDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Email]"
-                      dataType="wstr"
-                      length="50"
-                      name="Email" />
-                  </externalMetadataColumns>
-                </output>
-                <output
-                  refId="Package\ETL KundeDim\FRA_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle]"
-                  isErrorOut="true"
-                  name="Fehlerausgabe der OLE DB-Quelle">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\ETL KundeDim\FRA_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[KundId]"
-                      dataType="i4"
-                      lineageId="Package\ETL KundeDim\FRA_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[KundId]"
-                      name="KundId" />
-                    <outputColumn
-                      refId="Package\ETL KundeDim\FRA_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Name]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\ETL KundeDim\FRA_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Name]"
-                      name="Name" />
-                    <outputColumn
-                      refId="Package\ETL KundeDim\FRA_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Firma]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\ETL KundeDim\FRA_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Firma]"
-                      name="Firma" />
-                    <outputColumn
-                      refId="Package\ETL KundeDim\FRA_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Vorname]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\ETL KundeDim\FRA_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Vorname]"
-                      name="Vorname" />
-                    <outputColumn
-                      refId="Package\ETL KundeDim\FRA_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Email]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\ETL KundeDim\FRA_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Email]"
-                      name="Email" />
-                    <outputColumn
-                      refId="Package\ETL KundeDim\FRA_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\ETL KundeDim\FRA_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\ETL KundeDim\FRA_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\ETL KundeDim\FRA_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\ETL KundeDim\HAM_Kunde"
-              componentClassID="Microsoft.OLEDBSource"
-              contactInfo="OLE DB-Quelle;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;7"
-              description="OLE DB-Quelle"
-              name="HAM_Kunde"
-              usesDispositions="true"
-              version="7">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Gibt den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts an."
-                  name="OpenRowset">[dbo].[Kunde]</property>
-                <property
-                  dataType="System.String"
-                  description="Gibt die Variable an, die den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts enthält."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="Der auszuführende SQL-Befehl."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
-                <property
-                  dataType="System.String"
-                  description="Die Variable, die den auszuführenden SQL-Befehl enthält."
-                  name="SqlCommandVariable"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Erzwingt die Verwendung des DefaultCodePage-Eigenschaftswerts beim Beschreiben von Zeichendaten."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Gibt den zum Zugreifen auf die Datenbank verwendeten Modus an."
-                  name="AccessMode"
-                  typeConverter="AccessMode">0</property>
-                <property
-                  dataType="System.String"
-                  description="Die Zuordnungen zwischen den Parametern im SQL-Befehl und den Variablen."
-                  name="ParameterMapping"></property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\ETL KundeDim\HAM_Kunde.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_HAM]"
-                  connectionManagerRefId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_HAM]"
-                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
-                  name="OleDbConnection" />
-              </connections>
-              <outputs>
-                <output
-                  refId="Package\ETL KundeDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle]"
-                  name="Ausgabe der OLE DB-Quelle">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\ETL KundeDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Kunden_Id]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL KundeDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Kunden_Id]"
-                      lineageId="Package\ETL KundeDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Kunden_Id]"
-                      name="Kunden_Id"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ETL KundeDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Werk_Id]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL KundeDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Werk_Id]"
-                      lineageId="Package\ETL KundeDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Werk_Id]"
-                      name="Werk_Id"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ETL KundeDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Name]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL KundeDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Name]"
-                      length="50"
-                      lineageId="Package\ETL KundeDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Name]"
-                      name="Name"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ETL KundeDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Anschrift]"
-                      codePage="1252"
-                      dataType="text"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL KundeDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Anschrift]"
-                      lineageId="Package\ETL KundeDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Anschrift]"
-                      name="Anschrift"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ETL KundeDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Plz]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL KundeDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Plz]"
-                      length="10"
-                      lineageId="Package\ETL KundeDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Plz]"
-                      name="Plz"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ETL KundeDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Ort]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL KundeDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Ort]"
-                      length="50"
-                      lineageId="Package\ETL KundeDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Ort]"
-                      name="Ort"
-                      truncationRowDisposition="FailComponent" />
-                  </outputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\ETL KundeDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Kunden_Id]"
-                      dataType="i4"
-                      name="Kunden_Id" />
-                    <externalMetadataColumn
-                      refId="Package\ETL KundeDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Werk_Id]"
-                      dataType="i4"
-                      name="Werk_Id" />
-                    <externalMetadataColumn
-                      refId="Package\ETL KundeDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Name]"
-                      dataType="wstr"
-                      length="50"
-                      name="Name" />
-                    <externalMetadataColumn
-                      refId="Package\ETL KundeDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Anschrift]"
-                      codePage="1252"
-                      dataType="text"
-                      name="Anschrift" />
-                    <externalMetadataColumn
-                      refId="Package\ETL KundeDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Plz]"
-                      dataType="wstr"
-                      length="10"
-                      name="Plz" />
-                    <externalMetadataColumn
-                      refId="Package\ETL KundeDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Ort]"
-                      dataType="wstr"
-                      length="50"
-                      name="Ort" />
-                  </externalMetadataColumns>
-                </output>
-                <output
-                  refId="Package\ETL KundeDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle]"
-                  isErrorOut="true"
-                  name="Fehlerausgabe der OLE DB-Quelle">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\ETL KundeDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Kunden_Id]"
-                      dataType="i4"
-                      lineageId="Package\ETL KundeDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Kunden_Id]"
-                      name="Kunden_Id" />
-                    <outputColumn
-                      refId="Package\ETL KundeDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Werk_Id]"
-                      dataType="i4"
-                      lineageId="Package\ETL KundeDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Werk_Id]"
-                      name="Werk_Id" />
-                    <outputColumn
-                      refId="Package\ETL KundeDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Name]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\ETL KundeDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Name]"
-                      name="Name" />
-                    <outputColumn
-                      refId="Package\ETL KundeDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Anschrift]"
-                      codePage="1252"
-                      dataType="text"
-                      lineageId="Package\ETL KundeDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Anschrift]"
-                      name="Anschrift" />
-                    <outputColumn
-                      refId="Package\ETL KundeDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Plz]"
-                      dataType="wstr"
-                      length="10"
-                      lineageId="Package\ETL KundeDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Plz]"
-                      name="Plz" />
-                    <outputColumn
-                      refId="Package\ETL KundeDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Ort]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\ETL KundeDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Ort]"
-                      name="Ort" />
-                    <outputColumn
-                      refId="Package\ETL KundeDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\ETL KundeDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\ETL KundeDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\ETL KundeDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\ETL KundeDim\KundeDim"
-              componentClassID="Microsoft.OLEDBDestination"
-              contactInfo="OLE DB-Ziel;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;4"
-              description="OLE DB-Ziel"
-              name="KundeDim"
-              usesDispositions="true"
-              version="4">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Gibt den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts an."
-                  name="OpenRowset">[dbo].[KundeDim]</property>
-                <property
-                  dataType="System.String"
-                  description="Gibt die Variable an, die den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts enthält."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="Der auszuführende SQL-Befehl."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Erzwingt die Verwendung des DefaultCodePage-Eigenschaftswerts beim Beschreiben von Zeichendaten."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Gibt den zum Zugreifen auf die Datenbank verwendeten Modus an."
-                  name="AccessMode"
-                  typeConverter="AccessMode">3</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Zeigt an, ob die für Identitätsspalten übergebenen Werte zum Ziel kopiert werden. Bei &quot;False&quot; werden die Werte für Identitätsspalten am Ziel automatisch generiert. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
-                  name="FastLoadKeepIdentity">false</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Zeigt an, ob für Spalten, die NULL enthalten, NULL am Ziel eingefügt wird. Bei &quot;False&quot; werden für Spalten, die NULL enthalten, am Ziel die Standardwerte eingefügt. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
-                  name="FastLoadKeepNulls">false</property>
-                <property
-                  dataType="System.String"
-                  description="Gibt die für die Option &quot;Schnelles Laden&quot; zu verwendenden Optionen an. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
-                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
-                <property
-                  dataType="System.Int32"
-                  description="Gibt an, wann beim Einfügen von Daten Commits ausgegeben werden. Der Wert &quot;0&quot; gibt an, dass ein Commit am Ende des Einfügens von Daten ausgegeben wird. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
-                  name="FastLoadMaxInsertCommitSize">2147483647</property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\ETL KundeDim\KundeDim.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527]"
-                  connectionManagerRefId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527]"
-                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
-                  name="OleDbConnection" />
-              </connections>
-              <inputs>
-                <input
-                  refId="Package\ETL KundeDim\KundeDim.Inputs[Eingabe des OLE DB-Ziels]"
-                  errorOrTruncationOperation="Einfügen"
-                  errorRowDisposition="FailComponent"
-                  hasSideEffects="true"
-                  name="Eingabe des OLE DB-Ziels">
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\ETL KundeDim\KundeDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[FRAKundeId]"
-                      dataType="i4"
-                      name="FRAKundeId" />
-                    <externalMetadataColumn
-                      refId="Package\ETL KundeDim\KundeDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[HAMKundeId]"
-                      dataType="i4"
-                      name="HAMKundeId" />
-                    <externalMetadataColumn
-                      refId="Package\ETL KundeDim\KundeDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Vorname]"
-                      dataType="wstr"
-                      length="25"
-                      name="Vorname" />
-                    <externalMetadataColumn
-                      refId="Package\ETL KundeDim\KundeDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Nachname]"
-                      dataType="wstr"
-                      length="25"
-                      name="Nachname" />
-                    <externalMetadataColumn
-                      refId="Package\ETL KundeDim\KundeDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Start]"
-                      dataType="dbDate"
-                      name="Start" />
-                    <externalMetadataColumn
-                      refId="Package\ETL KundeDim\KundeDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Ende]"
-                      dataType="dbDate"
-                      name="Ende" />
-                  </externalMetadataColumns>
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\ETL KundeDim\KundeDim.Outputs[Fehlerausgabe des OLE DB-Ziels]"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Fehlerausgabe des OLE DB-Ziels"
-                  synchronousInputId="Package\ETL KundeDim\KundeDim.Inputs[Eingabe des OLE DB-Ziels]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\ETL KundeDim\KundeDim.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\ETL KundeDim\KundeDim.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\ETL KundeDim\KundeDim.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\ETL KundeDim\KundeDim.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-          </components>
-        </pipeline>
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
       DTS:refId="Package\ETL LieferungFakten"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Datenflusstask"
@@ -2763,18 +2228,10 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Einschränkung 2]"
       DTS:CreationName=""
-      DTS:DTSID="{A08D5DCF-720C-424E-9E17-DD89A3039CD6}"
+      DTS:DTSID="{7B181E0C-364D-4B61-A1C4-7607B0762D5F}"
       DTS:From="Package\ETL DatumDim"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Einschränkung 2"
-      DTS:To="Package\ETL KundeDim" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Einschränkung 3]"
-      DTS:CreationName=""
-      DTS:DTSID="{101C7902-8BDD-4A39-9706-0583204ED0C4}"
-      DTS:From="Package\ETL KundeDim"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Einschränkung 3"
       DTS:To="Package\ETL TransportmittelDim" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Einschränkung 4]"
@@ -2804,43 +2261,39 @@
         <NodeLayout
           Size="177.5,42"
           Id="Package\ETL BeschwerdeDim"
-          TopLeft="192.083333333333,77.6388885032524" />
+          TopLeft="192.916666666666,81.2499995964269" />
         <NodeLayout
           Size="150.5,42"
           Id="Package\ETL DatumDim"
           TopLeft="26.6666666666667,154.374999233211" />
         <NodeLayout
-          Size="150,42"
-          Id="Package\ETL KundeDim"
-          TopLeft="192.916666666667,204.027776764361" />
-        <NodeLayout
           Size="177,42"
           Id="Package\ETL LieferungFakten"
-          TopLeft="196.25,344.861109398167" />
+          TopLeft="16.5277777777778,287.384257831806" />
         <NodeLayout
           Size="190,42"
           Id="Package\ETL TransportmittelDim"
-          TopLeft="11.6666666666667,276.597221042892" />
+          TopLeft="183.888888888889,208.88888804587" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Einschränkung]"
           TopLeft="184.75,42.5763887817178">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="96.0833333333333,35.0624997215346"
+              EndConnector="96.9166666666663,38.6736108147091"
               Start="0,0"
-              End="96.0833333333333,27.5624997215346">
+              End="96.9166666666663,31.1736108147091">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="92.0833333333333,0" />
+                    End="92.9166666666663,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="92.0833333333333,0"
-                    Point2="96.0833333333333,0"
-                    Point3="96.0833333333333,4" />
+                    Point1="92.9166666666663,0"
+                    Point2="96.9166666666663,0"
+                    Point3="96.9166666666663,4" />
                   <mssgle:LineSegment
-                    End="96.0833333333333,27.5624997215346" />
+                    End="96.9166666666663,31.1736108147091" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2851,30 +2304,64 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Einschränkung 1]"
-          TopLeft="280.833333333333,119.638888503252">
+          TopLeft="281.666666666666,123.249999596427">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-178.916666666667,34.7361107299587"
+              EndConnector="-179.75,31.1249996367841"
               Start="0,0"
-              End="-178.916666666667,27.2361107299587">
+              End="-179.75,23.6249996367841">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,13.3680553649794" />
+                    End="0,11.562499818392" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,13.3680553649794"
-                    Point2="0,17.3680553649794"
-                    Point3="-4,17.3680553649794" />
+                    Point1="0,11.562499818392"
+                    Point2="0,15.562499818392"
+                    Point3="-4,15.562499818392" />
                   <mssgle:LineSegment
-                    End="-174.916666666667,17.3680553649794" />
+                    End="-175.75,15.562499818392" />
                   <mssgle:CubicBezierSegment
-                    Point1="-174.916666666667,17.3680553649794"
-                    Point2="-178.916666666667,17.3680553649794"
-                    Point3="-178.916666666667,21.3680553649794" />
+                    Point1="-175.75,15.562499818392"
+                    Point2="-179.75,15.562499818392"
+                    Point3="-179.75,19.562499818392" />
                   <mssgle:LineSegment
-                    End="-178.916666666667,27.2361107299587" />
+                    End="-179.75,23.6249996367841" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Einschränkung 4]"
+          TopLeft="278.888888888889,250.88888804587">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-173.861111111111,36.4953697859362"
+              Start="0,0"
+              End="-173.861111111111,28.9953697859362">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.2476848929681" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.2476848929681"
+                    Point2="0,18.2476848929681"
+                    Point3="-4,18.2476848929681" />
+                  <mssgle:LineSegment
+                    End="-169.861111111111,18.2476848929681" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-169.861111111111,18.2476848929681"
+                    Point2="-173.861111111111,18.2476848929681"
+                    Point3="-173.861111111111,22.2476848929681" />
+                  <mssgle:LineSegment
+                    End="-173.861111111111,28.9953697859362" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2889,88 +2376,20 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="90.7500000000001,28.6527775311498"
+              EndConnector="101.722222222222,33.5138888126586"
               Start="0,0"
-              End="90.7500000000001,21.1527775311498">
+              End="101.722222222222,26.0138888126586">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="86.7500000000001,0" />
+                    End="97.7222222222222,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="86.7500000000001,0"
-                    Point2="90.7500000000001,0"
-                    Point3="90.7500000000001,4" />
+                    Point1="97.7222222222222,0"
+                    Point2="101.722222222222,0"
+                    Point3="101.722222222222,4" />
                   <mssgle:LineSegment
-                    End="90.7500000000001,21.1527775311498" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Einschränkung 3]"
-          TopLeft="267.916666666667,246.027776764361">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-161.25,30.569444278531"
-              Start="0,0"
-              End="-161.25,23.069444278531">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,11.2847221392655" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,11.2847221392655"
-                    Point2="0,15.2847221392655"
-                    Point3="-4,15.2847221392655" />
-                  <mssgle:LineSegment
-                    End="-157.25,15.2847221392655" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-157.25,15.2847221392655"
-                    Point2="-161.25,15.2847221392655"
-                    Point3="-161.25,19.2847221392655" />
-                  <mssgle:LineSegment
-                    End="-161.25,23.069444278531" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Einschränkung 4]"
-          TopLeft="106.666666666667,318.597221042892">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="178.083333333333,26.2638883552756"
-              Start="0,0"
-              End="178.083333333333,18.7638883552756">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,9.13194417763782" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,9.13194417763782"
-                    Point2="0,13.1319441776378"
-                    Point3="4,13.1319441776378" />
-                  <mssgle:LineSegment
-                    End="174.083333333333,13.1319441776378" />
-                  <mssgle:CubicBezierSegment
-                    Point1="174.083333333333,13.1319441776378"
-                    Point2="178.083333333333,13.1319441776378"
-                    Point3="178.083333333333,17.1319441776378" />
-                  <mssgle:LineSegment
-                    End="178.083333333333,18.7638883552756" />
+                    End="101.722222222222,26.0138888126586" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2988,14 +2407,6 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="175,42"
-          Id="Package\ETL AdresseDim\AdresseDim"
-          TopLeft="167.5,191.208332383592" />
-        <NodeLayout
-          Size="138.5,42"
-          Id="Package\ETL AdresseDim\HAM_Kunde"
-          TopLeft="35.5,9.7499999515712" />
-        <NodeLayout
           Size="136,42"
           Id="Package\ETL AdresseDim\FRA_Kunde"
           TopLeft="366,12.6666666881906" />
@@ -3003,35 +2414,17 @@
           Size="132.5,42"
           Id="Package\ETL AdresseDim\HAM_Werk"
           TopLeft="200.5,10.8333332795236" />
+        <NodeLayout
+          Size="175,42"
+          Id="Package\ETL AdresseDim\AdresseDim"
+          TopLeft="167.5,191.208332383592" />
+        <NodeLayout
+          Size="138.5,42"
+          Id="Package\ETL AdresseDim\HAM_Kunde"
+          TopLeft="35.5,9.7499999515712" />
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\ETL AdresseDim\AdresseDim">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\ETL AdresseDim\HAM_Kunde">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\ETL AdresseDim\FRA_Kunde">
     <Properties>
@@ -3047,6 +2440,32 @@
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\ETL AdresseDim\HAM_Werk">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL AdresseDim\AdresseDim">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL AdresseDim\HAM_Kunde">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -3074,6 +2493,19 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL BeschwerdeDim\BER_Beschwerde">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\ETL DatumDim">
     <LayoutInfo>
@@ -3083,26 +2515,6 @@
           Size="128.5,42"
           Id="Package\ETL DatumDim\DatumDim"
           TopLeft="17.5,18" />
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
-    design-time-name="Package\ETL KundeDim">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
-        <NodeLayout
-          Size="128,42"
-          Id="Package\ETL KundeDim\KundeDim"
-          TopLeft="109.5,272.5" />
-        <NodeLayout
-          Size="138.5,42"
-          Id="Package\ETL KundeDim\HAM_Kunde"
-          TopLeft="28.5,24" />
-        <NodeLayout
-          Size="136,42"
-          Id="Package\ETL KundeDim\FRA_Kunde"
-          TopLeft="189.5,25.5" />
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -3139,33 +2551,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\ETL BeschwerdeDim\BER_Beschwerde">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\ETL KundeDim\HAM_Kunde">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\ETL KundeDim\FRA_Kunde">
+    design-time-name="Package\ETL TransportmittelDim\HAM_Transportmittel">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -3179,19 +2565,6 @@
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\ETL TransportmittelDim\FRA_Transportmittel">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\ETL TransportmittelDim\HAM_Transportmittel">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
