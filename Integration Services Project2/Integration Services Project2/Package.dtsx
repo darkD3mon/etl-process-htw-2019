@@ -12,11 +12,25 @@
   DTS:ObjectName="Package"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="9"
-  DTS:VersionGUID="{95D9129D-D3A3-4934-9AD8-AAA43ED77E08}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{3B37C232-A000-4D15-AEA8-DAE39C156F6D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125]"
+      DTS:CreationName="ADO.NET:SQL"
+      DTS:DTSID="{69DA0431-ECFE-4445-8A38-4A0AFAB9B40B}"
+      DTS:ObjectName="sqlserverdrei.f4.htw-berlin.de,1125">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Persist Security Info=True;Connect Timeout=30;Application Name=SSIS-Package-{69DA0431-ECFE-4445-8A38-4A0AFAB9B40B}sqlserverdrei.f4.htw-berlin.de,1125;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"></DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_BER]"
       DTS:CreationName="OLEDB"
@@ -24,7 +38,11 @@
       DTS:ObjectName="sqlserverdrei.f4.htw-berlin.de,1125.Data_BER">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Initial Catalog=Data_BER;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package-{74CC8B04-9FCE-419A-8722-94C31F022901}sqlserverdrei.f4.htw-berlin.de,1125.s0573527;" />
+          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Initial Catalog=Data_BER;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package-{74CC8B04-9FCE-419A-8722-94C31F022901}sqlserverdrei.f4.htw-berlin.de,1125.s0573527;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"></DTS:Password>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -34,7 +52,11 @@
       DTS:ObjectName="sqlserverdrei.f4.htw-berlin.de,1125.Data_FRA">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Initial Catalog=Data_FRA;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package-{74CC8B04-9FCE-419A-8722-94C31F022901}sqlserverdrei.f4.htw-berlin.de,1125.s0573527;" />
+          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Initial Catalog=Data_FRA;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package-{74CC8B04-9FCE-419A-8722-94C31F022901}sqlserverdrei.f4.htw-berlin.de,1125.s0573527;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"></DTS:Password>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -44,7 +66,11 @@
       DTS:ObjectName="sqlserverdrei.f4.htw-berlin.de,1125.Data_HAM">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Initial Catalog=Data_HAM;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package-{74CC8B04-9FCE-419A-8722-94C31F022901}sqlserverdrei.f4.htw-berlin.de,1125.s0573527;" />
+          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Initial Catalog=Data_HAM;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package-{74CC8B04-9FCE-419A-8722-94C31F022901}sqlserverdrei.f4.htw-berlin.de,1125.s0573527;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"></DTS:Password>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -54,7 +80,11 @@
       DTS:ObjectName="sqlserverdrei.f4.htw-berlin.de,1125.s0573527">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package-{74CC8B04-9FCE-419A-8722-94C31F022901}sqlserverdrei.f4.htw-berlin.de,1125.s0573527;" />
+          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package-{74CC8B04-9FCE-419A-8722-94C31F022901}sqlserverdrei.f4.htw-berlin.de,1125.s0573527;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"></DTS:Password>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -64,12 +94,58 @@
       DTS:ObjectName="sqlserverdrei.f4.htw-berlin.de,1125.u573527">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Provider=MSOLEDBSQL.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{E7ABF833-EABB-45A5-B315-3795CDA593E0}sqlserverdrei.f4.htw-berlin.de,1125.u573527;" />
+          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Provider=MSOLEDBSQL.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{E7ABF833-EABB-45A5-B315-3795CDA593E0}sqlserverdrei.f4.htw-berlin.de,1125.u573527;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"></DTS:Password>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Create Tables"
+      DTS:CreationName="Microsoft.DbMaintenanceTSQLExecuteTask"
+      DTS:Description="Task &quot;T-SQL-Anweisung ausführen&quot;"
+      DTS:DTSID="{CDB2E9CC-47B0-42BF-AE03-E4B3F3721FF2}"
+      DTS:ExecutableType="Microsoft.DbMaintenanceTSQLExecuteTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Create Tables"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{69DA0431-ECFE-4445-8A38-4A0AFAB9B40B}"
+          SQLTask:SqlStatementSource="Create Table BeschwerdeDim (&#xA;&#x9;BeschwerdeId int,&#xA;&#x9;Grund nvarchar(500),&#xA;&#x9;Start date,&#xA;&#x9;Ende date,&#xA;);&#xA;&#xA;Create Table DatumDim (&#xA;&#x9;DatumId int,&#xA;&#x9;Tag tinyint,&#xA;&#x9;Monat tinyint,&#xA;&#x9;Jahr tinyint,&#xA;&#x9;IstFeiertag bit,&#xA;);&#xA;&#xA;Create Table AdresseDim (&#xA;&#x9;Plz varchar(5),&#xA;&#x9;Ort varchar(48),&#xA;&#x9;Lat decimal(11, 8),&#xA;&#x9;Lon decimal(11, 8),&#xA;&#x9;Bundesland varchar(48),&#xA;&#x9;Start date,&#xA;&#x9;Ende date&#xA;);&#xA;&#xA;Create Table TransportmittelDim (&#xA;&#x9;TransId int,&#xA;&#x9;Marke nvarchar(48),&#xA;&#x9;Typ nvarchar(48),&#xA;&#x9;Ladevolumen decimal(5,1),&#xA;&#x9;Max_Gewicht int,&#xA;&#x9;Kosten_pro_km decimal(5,2),&#xA;&#x9;Start date,&#xA;&#x9;Ende date&#xA;);&#xA;&#xA;Create Table LieferungFakten (&#xA;&#x9;FaktenId int,&#xA;&#x9;BestellDatumDimId int,&#xA;&#x9;LieferDatumDimId int,&#xA;&#x9;StartAdresseDimId int,&#xA;&#x9;ZielAdresseDimId int,&#xA;&#x9;KundenDimId int,&#xA;&#x9;WerkDimId int,&#xA;&#x9;TransportDimId int,&#xA;&#x9;BeschwerdeDimId int,&#xA;&#x9;Volumen decimal(5,2),&#xA;&#x9;Gewicht int,&#xA;&#x9;Lieferkosten decimal(10,2),&#xA;&#x9;Umsatz decimal (10,2),&#xA;&#x9;Lieferdauer time,&#xA;&#x9;Lieferstrecke int,&#xA;);&#xA;"
+          SQLTask:ServerVersion="9"
+          SQLTask:ExtendedLogging="True"
+          SQLTask:LocalConnectionForLogging=""
+          SQLTask:TaskName=""
+          SQLTask:IgnoreDatabasesInNotOnlineState="False" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Drop Tables"
+      DTS:CreationName="Microsoft.DbMaintenanceTSQLExecuteTask"
+      DTS:Description="Task &quot;T-SQL-Anweisung ausführen&quot;"
+      DTS:DTSID="{E6E6E7F3-1758-4C93-9BC2-839393A82483}"
+      DTS:ExecutableType="Microsoft.DbMaintenanceTSQLExecuteTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Drop Tables"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{69DA0431-ECFE-4445-8A38-4A0AFAB9B40B}"
+          SQLTask:SqlStatementSource="Drop Table BeschwerdeDim, DatumDim, KundeDim, AdresseDim, TransportmittelDim, Lieferungfakten"
+          SQLTask:ServerVersion="9"
+          SQLTask:ExtendedLogging="True"
+          SQLTask:LocalConnectionForLogging=""
+          SQLTask:TaskName=""
+          SQLTask:IgnoreDatabasesInNotOnlineState="False" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\ETL AdresseDim"
       DTS:CreationName="Microsoft.Pipeline"
@@ -1204,7 +1280,8 @@
                   dataType="System.String"
                   description="Der auszuführende SQL-Befehl."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT CAST("Keine Beschwerde" AS NVARCHAR(50)) AS Grund FROM Beschwerde;</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT CAST('Keine Beschwerde' AS NVARCHAR(50)) AS Grund
+FROM  dbo.Beschwerde</property>
                 <property
                   dataType="System.String"
                   description="Die Variable, die den auszuführenden SQL-Befehl enthält."
@@ -1239,14 +1316,38 @@
                 <output
                   refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle]"
                   name="Ausgabe der OLE DB-Quelle">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Grund]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Grund]"
+                      length="50"
+                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Grund]"
+                      name="Grund"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
                   <externalMetadataColumns
-                    isUsed="True" />
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Grund]"
+                      dataType="wstr"
+                      length="50"
+                      name="Grund" />
+                  </externalMetadataColumns>
                 </output>
                 <output
                   refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle]"
                   isErrorOut="true"
                   name="Fehlerausgabe der OLE DB-Quelle">
                   <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Grund]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Grund]"
+                      name="Grund" />
                     <outputColumn
                       refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
                       dataType="i4"
@@ -1257,145 +1358,6 @@
                       refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-          </components>
-        </pipeline>
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\ETL DatumDim"
-      DTS:CreationName="Microsoft.Pipeline"
-      DTS:Description="Datenflusstask"
-      DTS:DTSID="{6FEB5CB7-37CD-453C-BE1E-352615B4C4E1}"
-      DTS:ExecutableType="Microsoft.Pipeline"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="ETL DatumDim"
-      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <pipeline
-          version="1">
-          <components>
-            <component
-              refId="Package\ETL DatumDim\DatumDim"
-              componentClassID="Microsoft.OLEDBDestination"
-              contactInfo="OLE DB-Ziel;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;4"
-              description="OLE DB-Ziel"
-              name="DatumDim"
-              usesDispositions="true"
-              version="4">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Gibt den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts an."
-                  name="OpenRowset">[dbo].[DatumDim]</property>
-                <property
-                  dataType="System.String"
-                  description="Gibt die Variable an, die den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts enthält."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="Der auszuführende SQL-Befehl."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Erzwingt die Verwendung des DefaultCodePage-Eigenschaftswerts beim Beschreiben von Zeichendaten."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Gibt den zum Zugreifen auf die Datenbank verwendeten Modus an."
-                  name="AccessMode"
-                  typeConverter="AccessMode">3</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Zeigt an, ob die für Identitätsspalten übergebenen Werte zum Ziel kopiert werden. Bei &quot;False&quot; werden die Werte für Identitätsspalten am Ziel automatisch generiert. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
-                  name="FastLoadKeepIdentity">false</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Zeigt an, ob für Spalten, die NULL enthalten, NULL am Ziel eingefügt wird. Bei &quot;False&quot; werden für Spalten, die NULL enthalten, am Ziel die Standardwerte eingefügt. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
-                  name="FastLoadKeepNulls">false</property>
-                <property
-                  dataType="System.String"
-                  description="Gibt die für die Option &quot;Schnelles Laden&quot; zu verwendenden Optionen an. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
-                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
-                <property
-                  dataType="System.Int32"
-                  description="Gibt an, wann beim Einfügen von Daten Commits ausgegeben werden. Der Wert &quot;0&quot; gibt an, dass ein Commit am Ende des Einfügens von Daten ausgegeben wird. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
-                  name="FastLoadMaxInsertCommitSize">2147483647</property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\ETL DatumDim\DatumDim.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527]"
-                  connectionManagerRefId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527]"
-                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
-                  name="OleDbConnection" />
-              </connections>
-              <inputs>
-                <input
-                  refId="Package\ETL DatumDim\DatumDim.Inputs[Eingabe des OLE DB-Ziels]"
-                  errorOrTruncationOperation="Einfügen"
-                  errorRowDisposition="FailComponent"
-                  hasSideEffects="true"
-                  name="Eingabe des OLE DB-Ziels">
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\ETL DatumDim\DatumDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[DatumId]"
-                      dataType="i4"
-                      name="DatumId" />
-                    <externalMetadataColumn
-                      refId="Package\ETL DatumDim\DatumDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Tag]"
-                      dataType="ui1"
-                      name="Tag" />
-                    <externalMetadataColumn
-                      refId="Package\ETL DatumDim\DatumDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Monat]"
-                      dataType="ui1"
-                      name="Monat" />
-                    <externalMetadataColumn
-                      refId="Package\ETL DatumDim\DatumDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Jahr]"
-                      dataType="ui1"
-                      name="Jahr" />
-                    <externalMetadataColumn
-                      refId="Package\ETL DatumDim\DatumDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[IstFeiertag]"
-                      dataType="bool"
-                      name="IstFeiertag" />
-                  </externalMetadataColumns>
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\ETL DatumDim\DatumDim.Outputs[Fehlerausgabe des OLE DB-Ziels]"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Fehlerausgabe des OLE DB-Ziels"
-                  synchronousInputId="Package\ETL DatumDim\DatumDim.Inputs[Eingabe des OLE DB-Ziels]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\ETL DatumDim\DatumDim.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\ETL DatumDim\DatumDim.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\ETL DatumDim\DatumDim.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\ETL DatumDim\DatumDim.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -2272,6 +2234,37 @@
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Script DatumDim"
+      DTS:CreationName="Microsoft.ExecuteProcess"
+      DTS:Description="Task &quot;Prozess ausführen&quot;"
+      DTS:DTSID="{07F57EA5-6A54-4790-9F40-1CA531E854C9}"
+      DTS:ExecutableType="Microsoft.ExecuteProcess"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Script DatumDim"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData />
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Seed Tables"
+      DTS:CreationName="Microsoft.DbMaintenanceTSQLExecuteTask"
+      DTS:Description="Task &quot;T-SQL-Anweisung ausführen&quot;"
+      DTS:DTSID="{41652978-2EC6-47E4-9049-A3DD5E34DD8B}"
+      DTS:ExecutableType="Microsoft.DbMaintenanceTSQLExecuteTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Seed Tables"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:ServerVersion="9"
+          SQLTask:ExtendedLogging="True"
+          SQLTask:LocalConnectionForLogging=""
+          SQLTask:TaskName=""
+          SQLTask:IgnoreDatabasesInNotOnlineState="False" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
@@ -2285,19 +2278,27 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Einschränkung 1]"
       DTS:CreationName=""
-      DTS:DTSID="{C1237B4E-BF1D-47F6-A8B7-FB25D98D8685}"
+      DTS:DTSID="{40325907-173E-48DF-AA10-A1597DD952B8}"
       DTS:From="Package\ETL BeschwerdeDim"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Einschränkung 1"
-      DTS:To="Package\ETL DatumDim" />
+      DTS:To="Package\Script DatumDim" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Einschränkung 2]"
       DTS:CreationName=""
-      DTS:DTSID="{7B181E0C-364D-4B61-A1C4-7607B0762D5F}"
-      DTS:From="Package\ETL DatumDim"
+      DTS:DTSID="{610028B1-3D06-4A58-9BE3-0EA40E326F60}"
+      DTS:From="Package\Script DatumDim"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Einschränkung 2"
       DTS:To="Package\ETL TransportmittelDim" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Einschränkung 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{B99C418C-41AE-4914-8C60-146F77843D9E}"
+      DTS:From="Package\Drop Tables"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Einschränkung 3"
+      DTS:To="Package\Create Tables" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Einschränkung 4]"
       DTS:CreationName=""
@@ -2306,6 +2307,22 @@
       DTS:LogicalAnd="True"
       DTS:ObjectName="Einschränkung 4"
       DTS:To="Package\ETL LieferungFakten" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Einschränkung 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{CF8394CA-4932-405C-BB8D-E23B056D70D5}"
+      DTS:From="Package\Create Tables"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Einschränkung 5"
+      DTS:To="Package\Seed Tables" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Einschränkung 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{B1144E89-681E-4E6F-B59A-BED67A2F8512}"
+      DTS:From="Package\Seed Tables"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Einschränkung 6"
+      DTS:To="Package\ETL AdresseDim" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--Dieser CDATA-Abschnitt enthält die Layoutinformationen des Pakets, z.B. Informationen wie X-/Y-Koordinaten, Breite und Höhe.-->
@@ -2320,107 +2337,41 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="158,42"
+          Size="158.5,42"
           Id="Package\ETL AdresseDim"
-          TopLeft="26.25,21.5763887817178" />
+          TopLeft="26.25,216.516864007462" />
         <NodeLayout
           Size="178,42"
           Id="Package\ETL BeschwerdeDim"
-          TopLeft="192.916666666666,81.2499995964269" />
-        <NodeLayout
-          Size="150,42"
-          Id="Package\ETL DatumDim"
-          TopLeft="26.6666666666667,154.374999233211" />
+          TopLeft="192.916666666666,276.190474822171" />
         <NodeLayout
           Size="177,42"
           Id="Package\ETL LieferungFakten"
-          TopLeft="16.5277777777778,287.384257831806" />
+          TopLeft="16.5277777777778,482.32473305755" />
         <NodeLayout
           Size="190,42"
           Id="Package\ETL TransportmittelDim"
-          TopLeft="183.888888888889,208.88888804587" />
+          TopLeft="182.388888888889,413.308529891197" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Einschränkung]"
-          TopLeft="184.75,42.5763887817178">
+          TopLeft="184.75,237.516864007462">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="96.9166666666663,38.6736108147091"
+              EndConnector="97.166666666666,38.6736108147092"
               Start="0,0"
-              End="96.9166666666663,31.1736108147091">
+              End="97.166666666666,31.1736108147092">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="92.9166666666663,0" />
+                    End="93.166666666666,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="92.9166666666663,0"
-                    Point2="96.9166666666663,0"
-                    Point3="96.9166666666663,4" />
+                    Point1="93.166666666666,0"
+                    Point2="97.166666666666,0"
+                    Point3="97.166666666666,4" />
                   <mssgle:LineSegment
-                    End="96.9166666666663,31.1736108147091" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Einschränkung 1]"
-          TopLeft="281.666666666666,123.249999596427">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-179.75,31.1249996367841"
-              Start="0,0"
-              End="-179.75,23.6249996367841">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,11.562499818392" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,11.562499818392"
-                    Point2="0,15.562499818392"
-                    Point3="-4,15.562499818392" />
-                  <mssgle:LineSegment
-                    End="-175.75,15.562499818392" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-175.75,15.562499818392"
-                    Point2="-179.75,15.562499818392"
-                    Point3="-179.75,19.562499818392" />
-                  <mssgle:LineSegment
-                    End="-179.75,23.6249996367841" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Einschränkung 2]"
-          TopLeft="177.166666666667,175.374999233211">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="101.722222222222,33.5138888126586"
-              Start="0,0"
-              End="101.722222222222,26.0138888126586">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="97.7222222222222,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="97.7222222222222,0"
-                    Point2="101.722222222222,0"
-                    Point3="101.722222222222,4" />
-                  <mssgle:LineSegment
-                    End="101.722222222222,26.0138888126586" />
+                    End="97.166666666666,31.1736108147092" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2431,30 +2382,210 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Einschränkung 4]"
-          TopLeft="278.888888888889,250.88888804587">
+          TopLeft="277.388888888889,455.308529891197">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-173.861111111111,36.4953697859362"
+              EndConnector="-172.361111111111,27.0162031663529"
               Start="0,0"
-              End="-173.861111111111,28.9953697859362">
+              End="-172.361111111111,19.5162031663529">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,14.2476848929681" />
+                    End="0,9.50810158317643" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,14.2476848929681"
-                    Point2="0,18.2476848929681"
-                    Point3="-4,18.2476848929681" />
+                    Point1="0,9.50810158317643"
+                    Point2="0,13.5081015831764"
+                    Point3="-4,13.5081015831764" />
                   <mssgle:LineSegment
-                    End="-169.861111111111,18.2476848929681" />
+                    End="-168.361111111111,13.5081015831764" />
                   <mssgle:CubicBezierSegment
-                    Point1="-169.861111111111,18.2476848929681"
-                    Point2="-173.861111111111,18.2476848929681"
-                    Point3="-173.861111111111,22.2476848929681" />
+                    Point1="-168.361111111111,13.5081015831764"
+                    Point2="-172.361111111111,13.5081015831764"
+                    Point3="-172.361111111111,17.5081015831764" />
                   <mssgle:LineSegment
-                    End="-173.861111111111,28.9953697859362" />
+                    End="-172.361111111111,19.5162031663529" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="158.5,42"
+          Id="Package\Script DatumDim"
+          TopLeft="22.75,343.39880807748" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Einschränkung 1]"
+          TopLeft="281.916666666666,318.190474822171">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-179.916666666666,25.2083332553092"
+              Start="0,0"
+              End="-179.916666666666,17.7083332553092">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,8.60416662765459" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,8.60416662765459"
+                    Point2="0,12.6041666276546"
+                    Point3="-4,12.6041666276546" />
+                  <mssgle:LineSegment
+                    End="-175.916666666666,12.6041666276546" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-175.916666666666,12.6041666276546"
+                    Point2="-179.916666666666,12.6041666276546"
+                    Point3="-179.916666666666,16.6041666276546" />
+                  <mssgle:LineSegment
+                    End="-179.916666666666,17.7083332553092" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Einschränkung 2]"
+          TopLeft="102,385.39880807748">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="175.388888888889,27.9097218137171"
+              Start="0,0"
+              End="175.388888888889,20.4097218137171">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,9.95486090685853" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,9.95486090685853"
+                    Point2="0,13.9548609068585"
+                    Point3="4,13.9548609068585" />
+                  <mssgle:LineSegment
+                    End="171.388888888889,13.9548609068585" />
+                  <mssgle:CubicBezierSegment
+                    Point1="171.388888888889,13.9548609068585"
+                    Point2="175.388888888889,13.9548609068585"
+                    Point3="175.388888888889,17.9548609068585" />
+                  <mssgle:LineSegment
+                    End="175.388888888889,20.4097218137171" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="145,42"
+          Id="Package\Create Tables"
+          TopLeft="7.14285714285705,78.928571036529" />
+        <NodeLayout
+          Size="136,42"
+          Id="Package\Drop Tables"
+          TopLeft="165.714285714286,6.96428567969376" />
+        <NodeLayout
+          Size="138,42"
+          Id="Package\Seed Tables"
+          TopLeft="168.571428571429,152.827380193279" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Einschränkung 3]"
+          TopLeft="233.714285714286,48.9642856796938">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-154.071428571429,29.9642853568352"
+              Start="0,0"
+              End="-154.071428571429,22.4642853568352">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,10.9821426784176" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10.9821426784176"
+                    Point2="0,14.9821426784176"
+                    Point3="-4,14.9821426784176" />
+                  <mssgle:LineSegment
+                    End="-150.071428571429,14.9821426784176" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-150.071428571429,14.9821426784176"
+                    Point2="-154.071428571429,14.9821426784176"
+                    Point3="-154.071428571429,18.9821426784176" />
+                  <mssgle:LineSegment
+                    End="-154.071428571429,22.4642853568352" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Einschränkung 5]"
+          TopLeft="79.6428571428571,120.928571036529">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="157.928571428572,31.8988091567502"
+              Start="0,0"
+              End="157.928571428572,24.3988091567502">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,11.9494045783751" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11.9494045783751"
+                    Point2="0,15.9494045783751"
+                    Point3="4,15.9494045783751" />
+                  <mssgle:LineSegment
+                    End="153.928571428572,15.9494045783751" />
+                  <mssgle:CubicBezierSegment
+                    Point1="153.928571428572,15.9494045783751"
+                    Point2="157.928571428572,15.9494045783751"
+                    Point3="157.928571428572,19.9494045783751" />
+                  <mssgle:LineSegment
+                    End="157.928571428572,24.3988091567502" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Einschränkung 6]"
+          TopLeft="168.571428571429,173.827380193279">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-63.0714285714286,42.6894838141831"
+              Start="0,0"
+              End="-63.0714285714286,35.1894838141831">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-59.0714285714286,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-59.0714285714286,0"
+                    Point2="-63.0714285714286,0"
+                    Point3="-63.0714285714286,4" />
+                  <mssgle:LineSegment
+                    End="-63.0714285714286,35.1894838141831" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2548,6 +2679,10 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
+          Size="171,42"
+          Id="Package\ETL BeschwerdeDim\Keine Beschwerde"
+          TopLeft="120,163" />
+        <NodeLayout
           Size="156,42"
           Id="Package\ETL BeschwerdeDim\BeschwerdeDim"
           TopLeft="807,46.5" />
@@ -2555,13 +2690,17 @@
           Size="164,42"
           Id="Package\ETL BeschwerdeDim\BER_Beschwerde"
           TopLeft="103.5,23.5" />
-        <NodeLayout
-          Size="171,42"
-          Id="Package\ETL BeschwerdeDim\Keine Beschwerde"
-          TopLeft="120,163" />
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL BeschwerdeDim\Keine Beschwerde">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\ETL BeschwerdeDim\BER_Beschwerde">
     <Properties>
@@ -2575,18 +2714,6 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\ETL DatumDim">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
-        <NodeLayout
-          Size="128.5,42"
-          Id="Package\ETL DatumDim\DatumDim"
-          TopLeft="17.5,18" />
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
   <TaskHost
     design-time-name="Package\ETL LieferungFakten">
     <LayoutInfo>
@@ -2609,13 +2736,13 @@
           Id="Package\ETL TransportmittelDim\TransportmittelDim"
           TopLeft="142.5,234" />
         <NodeLayout
-          Size="176,42"
-          Id="Package\ETL TransportmittelDim\FRA_Transportmittel"
-          TopLeft="26.5,23" />
-        <NodeLayout
           Size="178.5,42"
           Id="Package\ETL TransportmittelDim\HAM_Transportmittel"
           TopLeft="260,22.5" />
+        <NodeLayout
+          Size="176,42"
+          Id="Package\ETL TransportmittelDim\FRA_Transportmittel"
+          TopLeft="26.5,23" />
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -2642,14 +2769,6 @@
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\ETL BeschwerdeDim\Keine Beschwerde">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
