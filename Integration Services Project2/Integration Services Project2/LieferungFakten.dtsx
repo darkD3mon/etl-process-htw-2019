@@ -12,8 +12,8 @@
   DTS:ObjectName="LieferungFakten"
   DTS:PackageType="5"
   DTS:ProtectionLevel="2"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{9F89F0B6-472B-4D9C-A737-2EE317780C4B}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{5F81F6EE-6260-4F36-8517-FFE64EA3968F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -1600,7 +1600,7 @@ SET Ende = GETDATE();
                       cachedDataType="i4"
                       cachedName="TransId"
                       cachedSortKeyPosition="1"
-                      lineageId="Package\ETL AdresseDim\379:invalid">
+                      lineageId="Package\ETL AdresseDim\365:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1615,7 +1615,7 @@ SET Ende = GETDATE();
                       cachedLength="50"
                       cachedName="Marke"
                       cachedSortKeyPosition="2"
-                      lineageId="Package\ETL AdresseDim\380:invalid">
+                      lineageId="Package\ETL AdresseDim\366:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1630,7 +1630,7 @@ SET Ende = GETDATE();
                       cachedLength="50"
                       cachedName="Typ"
                       cachedSortKeyPosition="3"
-                      lineageId="Package\ETL AdresseDim\381:invalid">
+                      lineageId="Package\ETL AdresseDim\367:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1644,7 +1644,7 @@ SET Ende = GETDATE();
                       cachedDataType="r4"
                       cachedName="Ladevolumen"
                       cachedSortKeyPosition="4"
-                      lineageId="Package\ETL AdresseDim\382:invalid">
+                      lineageId="Package\ETL AdresseDim\368:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1657,7 +1657,7 @@ SET Ende = GETDATE();
                       refId="Package\ETL AdresseDim\Zusammenführen.Inputs[Zusammenführen Eingabe 1].Columns[Anz_Fahrer]"
                       cachedDataType="i4"
                       cachedName="Anz_Fahrer"
-                      lineageId="Package\ETL AdresseDim\383:invalid">
+                      lineageId="Package\ETL AdresseDim\369:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1671,7 +1671,7 @@ SET Ende = GETDATE();
                       cachedDataType="wstr"
                       cachedLength="10"
                       cachedName="Fuehrerscheinklasse"
-                      lineageId="Package\ETL AdresseDim\384:invalid">
+                      lineageId="Package\ETL AdresseDim\370:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1684,7 +1684,7 @@ SET Ende = GETDATE();
                       refId="Package\ETL AdresseDim\Zusammenführen.Inputs[Zusammenführen Eingabe 1].Columns[Anzahl_Bestand]"
                       cachedDataType="i4"
                       cachedName="Anzahl_Bestand"
-                      lineageId="Package\ETL AdresseDim\385:invalid">
+                      lineageId="Package\ETL AdresseDim\371:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1698,7 +1698,7 @@ SET Ende = GETDATE();
                       cachedDataType="r4"
                       cachedName="Max_Gewicht"
                       cachedSortKeyPosition="5"
-                      lineageId="Package\ETL AdresseDim\386:invalid">
+                      lineageId="Package\ETL AdresseDim\372:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1712,7 +1712,7 @@ SET Ende = GETDATE();
                       cachedDataType="r4"
                       cachedName="Kosten_pro_km"
                       cachedSortKeyPosition="6"
-                      lineageId="Package\ETL AdresseDim\387:invalid">
+                      lineageId="Package\ETL AdresseDim\373:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1733,7 +1733,7 @@ SET Ende = GETDATE();
                       cachedDataType="i4"
                       cachedName="TransId"
                       cachedSortKeyPosition="1"
-                      lineageId="Package\ETL AdresseDim\379:invalid">
+                      lineageId="Package\ETL AdresseDim\365:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1747,7 +1747,7 @@ SET Ende = GETDATE();
                       cachedDataType="wstr"
                       cachedLength="48"
                       cachedName="Marke"
-                      lineageId="Package\ETL AdresseDim\388:invalid">
+                      lineageId="Package\ETL AdresseDim\374:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1761,7 +1761,7 @@ SET Ende = GETDATE();
                       cachedDataType="wstr"
                       cachedLength="48"
                       cachedName="Typ"
-                      lineageId="Package\ETL AdresseDim\389:invalid">
+                      lineageId="Package\ETL AdresseDim\375:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1776,7 +1776,7 @@ SET Ende = GETDATE();
                       cachedName="Ladevolumen"
                       cachedPrecision="5"
                       cachedScale="1"
-                      lineageId="Package\ETL AdresseDim\390:invalid">
+                      lineageId="Package\ETL AdresseDim\376:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1789,7 +1789,7 @@ SET Ende = GETDATE();
                       refId="Package\ETL AdresseDim\Zusammenführen.Inputs[Zusammenführen Eingabe 2].Columns[Anz_Fahrer]"
                       cachedDataType="i4"
                       cachedName="Anz_Fahrer"
-                      lineageId="Package\ETL AdresseDim\383:invalid">
+                      lineageId="Package\ETL AdresseDim\369:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1803,7 +1803,7 @@ SET Ende = GETDATE();
                       cachedDataType="wstr"
                       cachedLength="10"
                       cachedName="Fuehrerscheinklasse"
-                      lineageId="Package\ETL AdresseDim\384:invalid">
+                      lineageId="Package\ETL AdresseDim\370:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1816,7 +1816,7 @@ SET Ende = GETDATE();
                       refId="Package\ETL AdresseDim\Zusammenführen.Inputs[Zusammenführen Eingabe 2].Columns[Anzahl_Bestand]"
                       cachedDataType="i4"
                       cachedName="Anzahl_Bestand"
-                      lineageId="Package\ETL AdresseDim\385:invalid">
+                      lineageId="Package\ETL AdresseDim\371:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1829,7 +1829,7 @@ SET Ende = GETDATE();
                       refId="Package\ETL AdresseDim\Zusammenführen.Inputs[Zusammenführen Eingabe 2].Columns[Max_Gewicht]"
                       cachedDataType="i4"
                       cachedName="Max_Gewicht"
-                      lineageId="Package\ETL AdresseDim\391:invalid">
+                      lineageId="Package\ETL AdresseDim\377:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1844,7 +1844,7 @@ SET Ende = GETDATE();
                       cachedName="Kosten_pro_km"
                       cachedPrecision="5"
                       cachedScale="2"
-                      lineageId="Package\ETL AdresseDim\392:invalid">
+                      lineageId="Package\ETL AdresseDim\378:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -2813,6 +2813,1435 @@ FROM  dbo.Beschwerde</property>
           version="1">
           <components>
             <component
+              refId="Package\ETL LieferungFakten\Beschwerde"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="Beschwerde"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Beschwerde]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL LieferungFakten\Beschwerde.Connections[OleDbConnection]"
+                  connectionManagerID="{85518BC2-AFCE-4BFA-98AF-87FAC45641A8}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_BER.u573527]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\ETL LieferungFakten\Beschwerde.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Beschwerde.Outputs[OLE DB Source Output].Columns[Grund]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\Beschwerde.Outputs[OLE DB Source Output].ExternalColumns[Grund]"
+                      length="255"
+                      lineageId="Package\ETL LieferungFakten\Beschwerde.Outputs[OLE DB Source Output].Columns[Grund]"
+                      name="Grund"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Beschwerde.Outputs[OLE DB Source Output].Columns[WerkId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\Beschwerde.Outputs[OLE DB Source Output].ExternalColumns[WerkId]"
+                      lineageId="Package\ETL LieferungFakten\Beschwerde.Outputs[OLE DB Source Output].Columns[WerkId]"
+                      name="WerkId"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Beschwerde.Outputs[OLE DB Source Output].ExternalColumns[BeschwerdeId]"
+                      dataType="i4"
+                      name="BeschwerdeId" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Beschwerde.Outputs[OLE DB Source Output].ExternalColumns[LieferauftragId]"
+                      dataType="i4"
+                      name="LieferauftragId" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Beschwerde.Outputs[OLE DB Source Output].ExternalColumns[KundenId]"
+                      dataType="i4"
+                      name="KundenId" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Beschwerde.Outputs[OLE DB Source Output].ExternalColumns[TmId]"
+                      dataType="i4"
+                      name="TmId" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Beschwerde.Outputs[OLE DB Source Output].ExternalColumns[Bestelldatum]"
+                      dataType="dbTimeStamp"
+                      name="Bestelldatum" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Beschwerde.Outputs[OLE DB Source Output].ExternalColumns[Lieferdatum]"
+                      dataType="dbTimeStamp"
+                      name="Lieferdatum" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Beschwerde.Outputs[OLE DB Source Output].ExternalColumns[Lieferdauer]"
+                      dataType="i4"
+                      name="Lieferdauer" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Beschwerde.Outputs[OLE DB Source Output].ExternalColumns[WerkId]"
+                      dataType="i4"
+                      name="WerkId" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Beschwerde.Outputs[OLE DB Source Output].ExternalColumns[Grund]"
+                      dataType="wstr"
+                      length="255"
+                      name="Grund" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\ETL LieferungFakten\Beschwerde.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Beschwerde.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\Beschwerde.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Beschwerde.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\Beschwerde.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Beschwerde.Outputs[OLE DB Source Error Output].Columns[Grund]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\ETL LieferungFakten\Beschwerde.Outputs[OLE DB Source Error Output].Columns[Grund]"
+                      name="Grund" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Beschwerde.Outputs[OLE DB Source Error Output].Columns[WerkId]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\Beschwerde.Outputs[OLE DB Source Error Output].Columns[WerkId]"
+                      name="WerkId" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL LieferungFakten\FRA_Kunde"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="FRA_Kunde"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Kunde]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL LieferungFakten\FRA_Kunde.Connections[OleDbConnection]"
+                  connectionManagerID="{4577AEC6-79B5-4D71-AFDF-F9B34AF1F7B5}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_FRA.u573527]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\ETL LieferungFakten\FRA_Kunde.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\FRA_Kunde.Outputs[OLE DB Source Output].Columns[KundId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\FRA_Kunde.Outputs[OLE DB Source Output].ExternalColumns[KundId]"
+                      lineageId="Package\ETL LieferungFakten\FRA_Kunde.Outputs[OLE DB Source Output].Columns[KundId]"
+                      name="KundId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\FRA_Kunde.Outputs[OLE DB Source Output].Columns[Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\FRA_Kunde.Outputs[OLE DB Source Output].ExternalColumns[Name]"
+                      length="50"
+                      lineageId="Package\ETL LieferungFakten\FRA_Kunde.Outputs[OLE DB Source Output].Columns[Name]"
+                      name="Name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\FRA_Kunde.Outputs[OLE DB Source Output].Columns[Firma]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\FRA_Kunde.Outputs[OLE DB Source Output].ExternalColumns[Firma]"
+                      length="50"
+                      lineageId="Package\ETL LieferungFakten\FRA_Kunde.Outputs[OLE DB Source Output].Columns[Firma]"
+                      name="Firma"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\FRA_Kunde.Outputs[OLE DB Source Output].Columns[Vorname]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\FRA_Kunde.Outputs[OLE DB Source Output].ExternalColumns[Vorname]"
+                      length="50"
+                      lineageId="Package\ETL LieferungFakten\FRA_Kunde.Outputs[OLE DB Source Output].Columns[Vorname]"
+                      name="Vorname"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\FRA_Kunde.Outputs[OLE DB Source Output].ExternalColumns[KundId]"
+                      dataType="i4"
+                      name="KundId" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\FRA_Kunde.Outputs[OLE DB Source Output].ExternalColumns[Name]"
+                      dataType="wstr"
+                      length="50"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\FRA_Kunde.Outputs[OLE DB Source Output].ExternalColumns[Firma]"
+                      dataType="wstr"
+                      length="50"
+                      name="Firma" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\FRA_Kunde.Outputs[OLE DB Source Output].ExternalColumns[Vorname]"
+                      dataType="wstr"
+                      length="50"
+                      name="Vorname" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\FRA_Kunde.Outputs[OLE DB Source Output].ExternalColumns[Email]"
+                      dataType="wstr"
+                      length="50"
+                      name="Email" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\ETL LieferungFakten\FRA_Kunde.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\FRA_Kunde.Outputs[OLE DB Source Error Output].Columns[KundId]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\FRA_Kunde.Outputs[OLE DB Source Error Output].Columns[KundId]"
+                      name="KundId" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\FRA_Kunde.Outputs[OLE DB Source Error Output].Columns[Name]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\ETL LieferungFakten\FRA_Kunde.Outputs[OLE DB Source Error Output].Columns[Name]"
+                      name="Name" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\FRA_Kunde.Outputs[OLE DB Source Error Output].Columns[Firma]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\ETL LieferungFakten\FRA_Kunde.Outputs[OLE DB Source Error Output].Columns[Firma]"
+                      name="Firma" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\FRA_Kunde.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\FRA_Kunde.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\FRA_Kunde.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\FRA_Kunde.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\FRA_Kunde.Outputs[OLE DB Source Error Output].Columns[Vorname]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\ETL LieferungFakten\FRA_Kunde.Outputs[OLE DB Source Error Output].Columns[Vorname]"
+                      name="Vorname" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL LieferungFakten\FRA_Transportmittel"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="FRA_Transportmittel"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Transportmittel]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL LieferungFakten\FRA_Transportmittel.Connections[OleDbConnection]"
+                  connectionManagerID="{4577AEC6-79B5-4D71-AFDF-F9B34AF1F7B5}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_FRA.u573527]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\ETL LieferungFakten\FRA_Transportmittel.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\FRA_Transportmittel.Outputs[OLE DB Source Output].Columns[Typ]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\FRA_Transportmittel.Outputs[OLE DB Source Output].ExternalColumns[Typ]"
+                      length="50"
+                      lineageId="Package\ETL LieferungFakten\FRA_Transportmittel.Outputs[OLE DB Source Output].Columns[Typ]"
+                      name="Typ"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\FRA_Transportmittel.Outputs[OLE DB Source Output].Columns[Tm_Id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\FRA_Transportmittel.Outputs[OLE DB Source Output].ExternalColumns[TransId]"
+                      lineageId="Package\ETL LieferungFakten\FRA_Transportmittel.Outputs[OLE DB Source Output].Columns[Tm_Id]"
+                      name="Tm_Id"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\FRA_Transportmittel.Outputs[OLE DB Source Output].ExternalColumns[TransId]"
+                      dataType="i4"
+                      name="TransId" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\FRA_Transportmittel.Outputs[OLE DB Source Output].ExternalColumns[Marke]"
+                      dataType="wstr"
+                      length="50"
+                      name="Marke" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\FRA_Transportmittel.Outputs[OLE DB Source Output].ExternalColumns[Typ]"
+                      dataType="wstr"
+                      length="50"
+                      name="Typ" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\FRA_Transportmittel.Outputs[OLE DB Source Output].ExternalColumns[Ladevolumen]"
+                      dataType="r4"
+                      name="Ladevolumen" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\FRA_Transportmittel.Outputs[OLE DB Source Output].ExternalColumns[Anz_Fahrer]"
+                      dataType="i4"
+                      name="Anz_Fahrer" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\FRA_Transportmittel.Outputs[OLE DB Source Output].ExternalColumns[Fuehrerscheinklasse]"
+                      dataType="wstr"
+                      length="10"
+                      name="Fuehrerscheinklasse" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\FRA_Transportmittel.Outputs[OLE DB Source Output].ExternalColumns[Anzahl_Bestand]"
+                      dataType="i4"
+                      name="Anzahl_Bestand" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\FRA_Transportmittel.Outputs[OLE DB Source Output].ExternalColumns[Max_Gewicht]"
+                      dataType="r4"
+                      name="Max_Gewicht" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\FRA_Transportmittel.Outputs[OLE DB Source Output].ExternalColumns[Kosten_pro_km]"
+                      dataType="r4"
+                      name="Kosten_pro_km" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\ETL LieferungFakten\FRA_Transportmittel.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\FRA_Transportmittel.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\FRA_Transportmittel.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\FRA_Transportmittel.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\FRA_Transportmittel.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\FRA_Transportmittel.Outputs[OLE DB Source Error Output].Columns[Typ]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\ETL LieferungFakten\FRA_Transportmittel.Outputs[OLE DB Source Error Output].Columns[Typ]"
+                      name="Typ" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\FRA_Transportmittel.Outputs[OLE DB Source Error Output].Columns[TransId]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\FRA_Transportmittel.Outputs[OLE DB Source Error Output].Columns[TransId]"
+                      name="TransId" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL LieferungFakten\FRA_Werk"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="FRA_Werk"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Werk]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL LieferungFakten\FRA_Werk.Connections[OleDbConnection]"
+                  connectionManagerID="{4577AEC6-79B5-4D71-AFDF-F9B34AF1F7B5}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_FRA.u573527]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\ETL LieferungFakten\FRA_Werk.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\FRA_Werk.Outputs[OLE DB Source Output].Columns[KundId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\FRA_Werk.Outputs[OLE DB Source Output].ExternalColumns[KundId]"
+                      lineageId="Package\ETL LieferungFakten\FRA_Werk.Outputs[OLE DB Source Output].Columns[KundId]"
+                      name="KundId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\FRA_Werk.Outputs[OLE DB Source Output].Columns[Werk_Id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\FRA_Werk.Outputs[OLE DB Source Output].ExternalColumns[WerkId]"
+                      lineageId="Package\ETL LieferungFakten\FRA_Werk.Outputs[OLE DB Source Output].Columns[Werk_Id]"
+                      name="Werk_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\FRA_Werk.Outputs[OLE DB Source Output].Columns[Plz]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\FRA_Werk.Outputs[OLE DB Source Output].ExternalColumns[Plz]"
+                      lineageId="Package\ETL LieferungFakten\FRA_Werk.Outputs[OLE DB Source Output].Columns[Plz]"
+                      name="Plz"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\FRA_Werk.Outputs[OLE DB Source Output].ExternalColumns[KundId]"
+                      dataType="i4"
+                      name="KundId" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\FRA_Werk.Outputs[OLE DB Source Output].ExternalColumns[WerkId]"
+                      dataType="i4"
+                      name="WerkId" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\FRA_Werk.Outputs[OLE DB Source Output].ExternalColumns[Plz]"
+                      dataType="i4"
+                      name="Plz" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\FRA_Werk.Outputs[OLE DB Source Output].ExternalColumns[Ort]"
+                      dataType="wstr"
+                      length="255"
+                      name="Ort" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\FRA_Werk.Outputs[OLE DB Source Output].ExternalColumns[Straße]"
+                      dataType="wstr"
+                      length="50"
+                      name="Straße" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\FRA_Werk.Outputs[OLE DB Source Output].ExternalColumns[Hausnummer]"
+                      dataType="i4"
+                      name="Hausnummer" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\ETL LieferungFakten\FRA_Werk.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\FRA_Werk.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\FRA_Werk.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\FRA_Werk.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\FRA_Werk.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\FRA_Werk.Outputs[OLE DB Source Error Output].Columns[KundId]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\FRA_Werk.Outputs[OLE DB Source Error Output].Columns[KundId]"
+                      name="KundId" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\FRA_Werk.Outputs[OLE DB Source Error Output].Columns[WerkId]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\FRA_Werk.Outputs[OLE DB Source Error Output].Columns[WerkId]"
+                      name="WerkId" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\FRA_Werk.Outputs[OLE DB Source Error Output].Columns[Plz]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\FRA_Werk.Outputs[OLE DB Source Error Output].Columns[Plz]"
+                      name="Plz" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL LieferungFakten\HAM_Kunde"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="HAM_Kunde"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Kunde]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL LieferungFakten\HAM_Kunde.Connections[OleDbConnection]"
+                  connectionManagerID="{7B23511D-19C0-497F-A82E-504765842600}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_HAM.u573527]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\ETL LieferungFakten\HAM_Kunde.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\HAM_Kunde.Outputs[OLE DB Source Output].Columns[Kunden_Id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\HAM_Kunde.Outputs[OLE DB Source Output].ExternalColumns[Kunden_Id]"
+                      lineageId="Package\ETL LieferungFakten\HAM_Kunde.Outputs[OLE DB Source Output].Columns[Kunden_Id]"
+                      name="Kunden_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\HAM_Kunde.Outputs[OLE DB Source Output].Columns[Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\HAM_Kunde.Outputs[OLE DB Source Output].ExternalColumns[Name]"
+                      length="50"
+                      lineageId="Package\ETL LieferungFakten\HAM_Kunde.Outputs[OLE DB Source Output].Columns[Name]"
+                      name="Name"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\HAM_Kunde.Outputs[OLE DB Source Output].ExternalColumns[Kunden_Id]"
+                      dataType="i4"
+                      name="Kunden_Id" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\HAM_Kunde.Outputs[OLE DB Source Output].ExternalColumns[Werk_Id]"
+                      dataType="i4"
+                      name="Werk_Id" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\HAM_Kunde.Outputs[OLE DB Source Output].ExternalColumns[Name]"
+                      dataType="wstr"
+                      length="50"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\HAM_Kunde.Outputs[OLE DB Source Output].ExternalColumns[Anschrift]"
+                      codePage="1252"
+                      dataType="text"
+                      name="Anschrift" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\HAM_Kunde.Outputs[OLE DB Source Output].ExternalColumns[Plz]"
+                      dataType="wstr"
+                      length="10"
+                      name="Plz" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\HAM_Kunde.Outputs[OLE DB Source Output].ExternalColumns[Ort]"
+                      dataType="wstr"
+                      length="50"
+                      name="Ort" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\ETL LieferungFakten\HAM_Kunde.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\HAM_Kunde.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\HAM_Kunde.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\HAM_Kunde.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\HAM_Kunde.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\HAM_Kunde.Outputs[OLE DB Source Error Output].Columns[Kunden_Id]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\HAM_Kunde.Outputs[OLE DB Source Error Output].Columns[Kunden_Id]"
+                      name="Kunden_Id" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\HAM_Kunde.Outputs[OLE DB Source Error Output].Columns[Name]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\ETL LieferungFakten\HAM_Kunde.Outputs[OLE DB Source Error Output].Columns[Name]"
+                      name="Name" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL LieferungFakten\HAM_Werk"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="HAM_Werk"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Kunde]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL LieferungFakten\HAM_Werk.Connections[OleDbConnection]"
+                  connectionManagerID="{7B23511D-19C0-497F-A82E-504765842600}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_HAM.u573527]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\ETL LieferungFakten\HAM_Werk.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\HAM_Werk.Outputs[OLE DB Source Output].Columns[Plz]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\HAM_Werk.Outputs[OLE DB Source Output].ExternalColumns[Plz]"
+                      length="10"
+                      lineageId="Package\ETL LieferungFakten\HAM_Werk.Outputs[OLE DB Source Output].Columns[Plz]"
+                      name="Plz"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\HAM_Werk.Outputs[OLE DB Source Output].Columns[Werk_Id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\HAM_Werk.Outputs[OLE DB Source Output].ExternalColumns[Werk_Id]"
+                      lineageId="Package\ETL LieferungFakten\HAM_Werk.Outputs[OLE DB Source Output].Columns[Werk_Id]"
+                      name="Werk_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\HAM_Werk.Outputs[OLE DB Source Output].Columns[Ort]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\HAM_Werk.Outputs[OLE DB Source Output].ExternalColumns[Ort]"
+                      length="50"
+                      lineageId="Package\ETL LieferungFakten\HAM_Werk.Outputs[OLE DB Source Output].Columns[Ort]"
+                      name="Ort"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\HAM_Werk.Outputs[OLE DB Source Output].ExternalColumns[Kunden_Id]"
+                      dataType="i4"
+                      name="Kunden_Id" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\HAM_Werk.Outputs[OLE DB Source Output].ExternalColumns[Werk_Id]"
+                      dataType="i4"
+                      name="Werk_Id" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\HAM_Werk.Outputs[OLE DB Source Output].ExternalColumns[Name]"
+                      dataType="wstr"
+                      length="50"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\HAM_Werk.Outputs[OLE DB Source Output].ExternalColumns[Anschrift]"
+                      codePage="1252"
+                      dataType="text"
+                      name="Anschrift" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\HAM_Werk.Outputs[OLE DB Source Output].ExternalColumns[Plz]"
+                      dataType="wstr"
+                      length="10"
+                      name="Plz" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\HAM_Werk.Outputs[OLE DB Source Output].ExternalColumns[Ort]"
+                      dataType="wstr"
+                      length="50"
+                      name="Ort" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\ETL LieferungFakten\HAM_Werk.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\HAM_Werk.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\HAM_Werk.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\HAM_Werk.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\HAM_Werk.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\HAM_Werk.Outputs[OLE DB Source Error Output].Columns[Plz]"
+                      dataType="wstr"
+                      length="10"
+                      lineageId="Package\ETL LieferungFakten\HAM_Werk.Outputs[OLE DB Source Error Output].Columns[Plz]"
+                      name="Plz" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\HAM_Werk.Outputs[OLE DB Source Error Output].Columns[Werk_Id]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\HAM_Werk.Outputs[OLE DB Source Error Output].Columns[Werk_Id]"
+                      name="Werk_Id" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\HAM_Werk.Outputs[OLE DB Source Error Output].Columns[Ort]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\ETL LieferungFakten\HAM_Werk.Outputs[OLE DB Source Error Output].Columns[Ort]"
+                      name="Ort" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL LieferungFakten\Lieferauftrag"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="Lieferauftrag"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Lieferauftrag]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL LieferungFakten\Lieferauftrag.Connections[OleDbConnection]"
+                  connectionManagerID="{7B23511D-19C0-497F-A82E-504765842600}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_HAM.u573527]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Output].Columns[ZielAdresseLon]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Output].ExternalColumns[Lon]"
+                      length="50"
+                      lineageId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Output].Columns[ZielAdresseLon]"
+                      name="ZielAdresseLon"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Output].Columns[ZielAdresseLat]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Output].ExternalColumns[Lat]"
+                      length="50"
+                      lineageId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Output].Columns[ZielAdresseLat]"
+                      name="ZielAdresseLat"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Output].Columns[BestellDatum]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Output].ExternalColumns[Bestelldatum]"
+                      lineageId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Output].Columns[BestellDatum]"
+                      name="BestellDatum"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Output].Columns[Lieferkosten]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Output].ExternalColumns[Lieferkosten]"
+                      lineageId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Output].Columns[Lieferkosten]"
+                      name="Lieferkosten"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Output].Columns[LieferDatum]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Output].ExternalColumns[Lieferdatum]"
+                      lineageId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Output].Columns[LieferDatum]"
+                      name="LieferDatum"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Output].Columns[KundenId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Output].ExternalColumns[KundenId]"
+                      lineageId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Output].Columns[KundenId]"
+                      name="KundenId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Output].Columns[Tm_Id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Output].ExternalColumns[Tm_Id]"
+                      lineageId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Output].Columns[Tm_Id]"
+                      name="Tm_Id"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Output].ExternalColumns[Lieferauftrag_Id]"
+                      dataType="i4"
+                      name="Lieferauftrag_Id" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Output].ExternalColumns[KundenId]"
+                      dataType="i4"
+                      name="KundenId" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Output].ExternalColumns[Tm_Id]"
+                      dataType="i4"
+                      name="Tm_Id" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Output].ExternalColumns[Bestelldatum]"
+                      dataType="dbTimeStamp"
+                      name="Bestelldatum" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Output].ExternalColumns[Lieferdatum]"
+                      dataType="dbTimeStamp"
+                      name="Lieferdatum" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Output].ExternalColumns[Lat]"
+                      dataType="wstr"
+                      length="50"
+                      name="Lat" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Output].ExternalColumns[Lon]"
+                      dataType="wstr"
+                      length="50"
+                      name="Lon" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Output].ExternalColumns[Lieferkosten]"
+                      dataType="cy"
+                      name="Lieferkosten" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Error Output].Columns[Lon]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Error Output].Columns[Lon]"
+                      name="Lon" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Error Output].Columns[Lat]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Error Output].Columns[Lat]"
+                      name="Lat" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Error Output].Columns[Bestelldatum]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Error Output].Columns[Bestelldatum]"
+                      name="Bestelldatum" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Error Output].Columns[Lieferkosten]"
+                      dataType="cy"
+                      lineageId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Error Output].Columns[Lieferkosten]"
+                      name="Lieferkosten" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Error Output].Columns[Lieferdatum]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Error Output].Columns[Lieferdatum]"
+                      name="Lieferdatum" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Error Output].Columns[KundenId]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Error Output].Columns[KundenId]"
+                      name="KundenId" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Error Output].Columns[Tm_Id]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\Lieferauftrag.Outputs[OLE DB Source Error Output].Columns[Tm_Id]"
+                      name="Tm_Id" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL LieferungFakten\Lieferung"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="Lieferung"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Lieferung]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL LieferungFakten\Lieferung.Connections[OleDbConnection]"
+                  connectionManagerID="{4577AEC6-79B5-4D71-AFDF-F9B34AF1F7B5}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_FRA.u573527]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].Columns[BestellDatum]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].ExternalColumns[Bestelldatum]"
+                      lineageId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].Columns[BestellDatum]"
+                      name="BestellDatum"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].Columns[Gewicht]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].ExternalColumns[Masse]"
+                      length="20"
+                      lineageId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].Columns[Gewicht]"
+                      name="Gewicht"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].Columns[Lieferdauer]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].ExternalColumns[Mgl_Lieferdauer]"
+                      lineageId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].Columns[Lieferdauer]"
+                      name="Lieferdauer"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].Columns[Lieferkosten]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].ExternalColumns[Lieferkostenpauschale]"
+                      lineageId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].Columns[Lieferkosten]"
+                      name="Lieferkosten"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].Columns[WerkId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].ExternalColumns[WerkId]"
+                      lineageId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].Columns[WerkId]"
+                      name="WerkId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].Columns[Volumen]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].ExternalColumns[Rauminhalt]"
+                      length="20"
+                      lineageId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].Columns[Volumen]"
+                      name="Volumen"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].Columns[Rabatt]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].ExternalColumns[Rabatt]"
+                      lineageId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].Columns[Rabatt]"
+                      name="Rabatt"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].Columns[Tm_Id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].ExternalColumns[TransId]"
+                      lineageId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].Columns[Tm_Id]"
+                      name="Tm_Id"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].ExternalColumns[LiefId]"
+                      dataType="i4"
+                      name="LiefId" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].ExternalColumns[Bestelldatum]"
+                      dataType="dbTimeStamp"
+                      name="Bestelldatum" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].ExternalColumns[WerkId]"
+                      dataType="i4"
+                      name="WerkId" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].ExternalColumns[Produktname]"
+                      dataType="wstr"
+                      length="50"
+                      name="Produktname" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].ExternalColumns[Anzahl_Packstueck]"
+                      dataType="i4"
+                      name="Anzahl_Packstueck" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].ExternalColumns[Rauminhalt]"
+                      dataType="wstr"
+                      length="20"
+                      name="Rauminhalt" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].ExternalColumns[Masse]"
+                      dataType="wstr"
+                      length="20"
+                      name="Masse" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].ExternalColumns[ProdID]"
+                      dataType="i4"
+                      name="ProdID" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].ExternalColumns[Mgl_Lieferdauer]"
+                      dataType="i4"
+                      name="Mgl_Lieferdauer" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].ExternalColumns[TransId]"
+                      dataType="i4"
+                      name="TransId" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].ExternalColumns[Rabatt]"
+                      dataType="r4"
+                      name="Rabatt" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].ExternalColumns[Lieferkostenpauschale]"
+                      dataType="r4"
+                      name="Lieferkostenpauschale" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Error Output].Columns[Bestelldatum]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Error Output].Columns[Bestelldatum]"
+                      name="Bestelldatum" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Error Output].Columns[Masse]"
+                      dataType="wstr"
+                      length="20"
+                      lineageId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Error Output].Columns[Masse]"
+                      name="Masse" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Error Output].Columns[Mgl_Lieferdauer]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Error Output].Columns[Mgl_Lieferdauer]"
+                      name="Mgl_Lieferdauer" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Error Output].Columns[Lieferkostenpauschale]"
+                      dataType="r4"
+                      lineageId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Error Output].Columns[Lieferkostenpauschale]"
+                      name="Lieferkostenpauschale" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Error Output].Columns[WerkId]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Error Output].Columns[WerkId]"
+                      name="WerkId" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Error Output].Columns[Rauminhalt]"
+                      dataType="wstr"
+                      length="20"
+                      lineageId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Error Output].Columns[Rauminhalt]"
+                      name="Rauminhalt" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Error Output].Columns[Rabatt]"
+                      dataType="r4"
+                      lineageId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Error Output].Columns[Rabatt]"
+                      name="Rabatt" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Error Output].Columns[TransId]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Error Output].Columns[TransId]"
+                      name="TransId" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\ETL LieferungFakten\LieferungFakten"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB-Ziel;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;4"
@@ -2972,7 +4401,382 @@ FROM  dbo.Beschwerde</property>
                 </output>
               </outputs>
             </component>
+            <component
+              refId="Package\ETL LieferungFakten\Masse bereinigen"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Masse bereinigen"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\ETL LieferungFakten\Masse bereinigen.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL LieferungFakten\Masse bereinigen.Inputs[Derived Column Input].Columns[Gewicht]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="Gewicht"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].Columns[Gewicht]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[RTRIM](#{Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].Columns[Gewicht]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">RTRIM(Gewicht)</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL LieferungFakten\Masse bereinigen.Inputs[Derived Column Input].Columns[Lieferkosten]"
+                      cachedDataType="r4"
+                      cachedName="Lieferkosten"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].Columns[Lieferkosten]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].Columns[Lieferkosten]} - #{Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].Columns[Rabatt]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">Lieferkosten - Rabatt</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL LieferungFakten\Masse bereinigen.Inputs[Derived Column Input].Columns[Rabatt]"
+                      cachedDataType="r4"
+                      cachedName="Rabatt"
+                      lineageId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output].Columns[Rabatt]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL LieferungFakten\Masse bereinigen.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\ETL LieferungFakten\Masse bereinigen.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL LieferungFakten\Masse bereinigen.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\ETL LieferungFakten\Masse bereinigen.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Masse bereinigen.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\Masse bereinigen.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Masse bereinigen.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\Masse bereinigen.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL LieferungFakten\Namen bereinigen"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Namen bereinigen"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\ETL LieferungFakten\Namen bereinigen.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL LieferungFakten\Namen bereinigen.Inputs[Derived Column Input].Columns[Name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Name"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL LieferungFakten\HAM_Kunde.Outputs[OLE DB Source Output].Columns[Name]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[RTRIM]([REPLACE](#{Package\ETL LieferungFakten\HAM_Kunde.Outputs[OLE DB Source Output].Columns[Name]},","," "))</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">RTRIM(REPLACE(Name,","," "))</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL LieferungFakten\Namen bereinigen.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\ETL LieferungFakten\Namen bereinigen.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Namen bereinigen.Outputs[Derived Column Output].Columns[Vorname]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\ETL LieferungFakten\Namen bereinigen.Outputs[Derived Column Output].Columns[Vorname]"
+                      name="Vorname"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[LTRIM](#{Package\ETL LieferungFakten\HAM_Kunde.Outputs[OLE DB Source Output].Columns[Name]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">LTRIM(Name)</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL LieferungFakten\Namen bereinigen.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\ETL LieferungFakten\Namen bereinigen.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Namen bereinigen.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\Namen bereinigen.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Namen bereinigen.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\Namen bereinigen.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL LieferungFakten\Produkt"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="Produkt"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Produkt]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL LieferungFakten\Produkt.Connections[OleDbConnection]"
+                  connectionManagerID="{7B23511D-19C0-497F-A82E-504765842600}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_HAM.u573527]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\ETL LieferungFakten\Produkt.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Produkt.Outputs[OLE DB Source Output].Columns[Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\Produkt.Outputs[OLE DB Source Output].ExternalColumns[Name]"
+                      length="50"
+                      lineageId="Package\ETL LieferungFakten\Produkt.Outputs[OLE DB Source Output].Columns[Name]"
+                      name="Name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Produkt.Outputs[OLE DB Source Output].Columns[Werk_Id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL LieferungFakten\Produkt.Outputs[OLE DB Source Output].ExternalColumns[Werk_Id]"
+                      lineageId="Package\ETL LieferungFakten\Produkt.Outputs[OLE DB Source Output].Columns[Werk_Id]"
+                      name="Werk_Id"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Produkt.Outputs[OLE DB Source Output].ExternalColumns[Produkt_Id]"
+                      dataType="i4"
+                      name="Produkt_Id" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Produkt.Outputs[OLE DB Source Output].ExternalColumns[Produktkategorie_Id]"
+                      dataType="i4"
+                      name="Produktkategorie_Id" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Produkt.Outputs[OLE DB Source Output].ExternalColumns[Werk_Id]"
+                      dataType="i4"
+                      name="Werk_Id" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Produkt.Outputs[OLE DB Source Output].ExternalColumns[Name]"
+                      dataType="wstr"
+                      length="50"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Produkt.Outputs[OLE DB Source Output].ExternalColumns[Beschreibung]"
+                      dataType="wstr"
+                      length="255"
+                      name="Beschreibung" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Produkt.Outputs[OLE DB Source Output].ExternalColumns[Lieferauftrag_Id]"
+                      dataType="i4"
+                      name="Lieferauftrag_Id" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Produkt.Outputs[OLE DB Source Output].ExternalColumns[Volumen]"
+                      dataType="r4"
+                      name="Volumen" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Produkt.Outputs[OLE DB Source Output].ExternalColumns[Gewicht]"
+                      dataType="r4"
+                      name="Gewicht" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Produkt.Outputs[OLE DB Source Output].ExternalColumns[Preis]"
+                      dataType="cy"
+                      name="Preis" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\Produkt.Outputs[OLE DB Source Output].ExternalColumns[Anzahl_Packstuecke]"
+                      dataType="i4"
+                      name="Anzahl_Packstuecke" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\ETL LieferungFakten\Produkt.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Produkt.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\Produkt.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Produkt.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\Produkt.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Produkt.Outputs[OLE DB Source Error Output].Columns[Name]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\ETL LieferungFakten\Produkt.Outputs[OLE DB Source Error Output].Columns[Name]"
+                      name="Name" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten\Produkt.Outputs[OLE DB Source Error Output].Columns[Werk_Id]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten\Produkt.Outputs[OLE DB Source Error Output].Columns[Werk_Id]"
+                      name="Werk_Id" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
           </components>
+          <paths>
+            <path
+              refId="Package\ETL LieferungFakten.Paths[OLE DB Source Output]"
+              endId="Package\ETL LieferungFakten\Masse bereinigen.Inputs[Derived Column Input]"
+              name="OLE DB Source Output"
+              startId="Package\ETL LieferungFakten\Lieferung.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\ETL LieferungFakten.Paths[OLE DB Source Output1]"
+              endId="Package\ETL LieferungFakten\Namen bereinigen.Inputs[Derived Column Input]"
+              name="OLE DB Source Output"
+              startId="Package\ETL LieferungFakten\HAM_Kunde.Outputs[OLE DB Source Output]" />
+          </paths>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
@@ -5255,12 +7059,12 @@ WHERE TransDimId = TransId;</property>
       DTS:To="Package\ETL AdresseDim" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
-<!--Dieser CDATA-Abschnitt enthält die Layoutinformationen des Pakets, z.B. Informationen wie X-/Y-Koordinaten, Breite und Höhe.-->
-<!--Wenn Sie diesen Abschnitt manuell ändern und Ihnen ein Fehler unterläuft, können Sie ihn löschen. -->
-<!--Das Paket kann zwar weiterhin normal geladen werden, aber frühere Layoutinformationen gehen verloren, und die Elemente auf der Entwurfsoberfläche werden vom Designer automatisch neu angeordnet.-->
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
 <Objects
   Version="8">
-  <!--Jeder darunter liegende Knoten enthält Eigenschaften, die sich nicht auf das Laufzeitverhalten auswirken.-->
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
   <Package
     design-time-name="Package">
     <LayoutInfo>
@@ -5533,53 +7337,53 @@ WHERE TransDimId = TransId;</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="162,42"
-          Id="Package\ETL AdresseDim\Zusammenführen"
-          TopLeft="157,685.499997449417" />
-        <NodeLayout
-          Size="130,42"
-          Id="Package\ETL AdresseDim\Sortieren 1"
-          TopLeft="364,133.5" />
-        <NodeLayout
-          Size="113,42"
-          Id="Package\ETL AdresseDim\Update"
-          TopLeft="483,606.833331277801" />
-        <NodeLayout
-          Size="173,42"
-          Id="Package\ETL AdresseDim\Abgeleitete Spalte 1"
-          TopLeft="104.5,298.458331850875" />
+          Size="135,42"
+          Id="Package\ETL AdresseDim\Geoposition"
+          TopLeft="129,32" />
         <NodeLayout
           Size="122,42"
           Id="Package\ETL AdresseDim\Sortieren"
           TopLeft="137.5,133" />
         <NodeLayout
-          Size="107.5,42"
-          Id="Package\ETL AdresseDim\Teilen"
-          TopLeft="485.5,486.583331875089" />
+          Size="113,42"
+          Id="Package\ETL AdresseDim\Update"
+          TopLeft="483,606.833331277801" />
         <NodeLayout
-          Size="135,42"
-          Id="Package\ETL AdresseDim\Geoposition"
-          TopLeft="129,32" />
-        <NodeLayout
-          Size="109,42"
-          Id="Package\ETL AdresseDim\Suche"
-          TopLeft="169.5,485.083332230234" />
+          Size="130,42"
+          Id="Package\ETL AdresseDim\Sortieren 1"
+          TopLeft="364,133.5" />
         <NodeLayout
           Size="136,42"
           Id="Package\ETL AdresseDim\AdresseDim"
           TopLeft="149,854.33333253695" />
         <NodeLayout
-          Size="164.5,42"
-          Id="Package\ETL AdresseDim\Abgeleitete Spalte"
-          TopLeft="111.071428571429,210.089284670761" />
+          Size="189,42"
+          Id="Package\ETL AdresseDim\Zusammenführungsjoin"
+          TopLeft="129,386.5" />
         <NodeLayout
           Size="138.5,42"
           Id="Package\ETL AdresseDim\Flatfilequelle"
           TopLeft="359.5,37.6874998748923" />
         <NodeLayout
-          Size="189,42"
-          Id="Package\ETL AdresseDim\Zusammenführungsjoin"
-          TopLeft="129,386.5" />
+          Size="173,42"
+          Id="Package\ETL AdresseDim\Abgeleitete Spalte 1"
+          TopLeft="104.5,298.458331850875" />
+        <NodeLayout
+          Size="107.5,42"
+          Id="Package\ETL AdresseDim\Teilen"
+          TopLeft="485.5,486.583331875089" />
+        <NodeLayout
+          Size="109,42"
+          Id="Package\ETL AdresseDim\Suche"
+          TopLeft="169.5,485.083332230234" />
+        <NodeLayout
+          Size="162,42"
+          Id="Package\ETL AdresseDim\Zusammenführen"
+          TopLeft="157,685.499997449417" />
+        <NodeLayout
+          Size="164.5,42"
+          Id="Package\ETL AdresseDim\Abgeleitete Spalte"
+          TopLeft="111.071428571429,210.089284670761" />
         <EdgeLayout
           Id="Package\ETL AdresseDim.Paths[Ausgabe der Suchübereinstimmungen]"
           TopLeft="278.5,506.833332052661">
@@ -5623,9 +7427,7 @@ WHERE TransDimId = TransId;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5647,9 +7449,7 @@ WHERE TransDimId = TransId;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5671,9 +7471,7 @@ WHERE TransDimId = TransId;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5695,9 +7493,7 @@ WHERE TransDimId = TransId;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5719,9 +7515,7 @@ WHERE TransDimId = TransId;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5755,9 +7549,7 @@ WHERE TransDimId = TransId;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5803,9 +7595,7 @@ WHERE TransDimId = TransId;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -5835,11 +7625,99 @@ WHERE TransDimId = TransId;</property>
     design-time-name="Package\ETL LieferungFakten">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="155,42"
           Id="Package\ETL LieferungFakten\LieferungFakten"
-          TopLeft="67,60" />
+          TopLeft="320,470.833333333333" />
+        <NodeLayout
+          Size="123,42"
+          Id="Package\ETL LieferungFakten\Lieferung"
+          TopLeft="14.8333333333333,30.5" />
+        <NodeLayout
+          Size="130.5,44.5"
+          Id="Package\ETL LieferungFakten\FRA_Werk"
+          TopLeft="187.5,26.8333333333333" />
+        <NodeLayout
+          Size="136,42"
+          Id="Package\ETL LieferungFakten\FRA_Kunde"
+          TopLeft="346,27.3333333333333" />
+        <NodeLayout
+          Size="176,42"
+          Id="Package\ETL LieferungFakten\FRA_Transportmittel"
+          TopLeft="543,27.3333333333333" />
+        <NodeLayout
+          Size="138,42"
+          Id="Package\ETL LieferungFakten\Lieferauftrag"
+          TopLeft="782.5,31.8333333333333" />
+        <NodeLayout
+          Size="138.5,42"
+          Id="Package\ETL LieferungFakten\HAM_Kunde"
+          TopLeft="973.5,33.8333333333333" />
+        <NodeLayout
+          Size="132.5,42"
+          Id="Package\ETL LieferungFakten\HAM_Werk"
+          TopLeft="1181.5,31.3333333333333" />
+        <NodeLayout
+          Size="115,42"
+          Id="Package\ETL LieferungFakten\Produkt"
+          TopLeft="1384.16666666667,36.6666666666667" />
+        <NodeLayout
+          Size="137,42"
+          Id="Package\ETL LieferungFakten\Beschwerde"
+          TopLeft="1575,35" />
+        <NodeLayout
+          Size="162,42"
+          Id="Package\ETL LieferungFakten\Masse bereinigen"
+          TopLeft="1.66666666666671,153.333333333333" />
+        <EdgeLayout
+          Id="Package\ETL LieferungFakten.Paths[OLE DB Source Output]"
+          TopLeft="79.5,72.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,80.8333333333333"
+              Start="0,0"
+              End="0,73.3333333333333">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,73.3333333333333" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="165,42"
+          Id="Package\ETL LieferungFakten\Namen bereinigen"
+          TopLeft="958.333333333333,129.333333333333" />
+        <EdgeLayout
+          Id="Package\ETL LieferungFakten.Paths[OLE DB Source Output1]"
+          TopLeft="1041.79166666667,75.8333333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,53.5"
+              Start="0,0"
+              End="0,46">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -6131,5 +8009,122 @@ WHERE TransDimId = TransId;</property>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL LieferungFakten\Lieferung">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL LieferungFakten\FRA_Werk">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL LieferungFakten\FRA_Kunde">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL LieferungFakten\FRA_Transportmittel">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL LieferungFakten\Lieferauftrag">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL LieferungFakten\HAM_Kunde">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL LieferungFakten\HAM_Werk">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL LieferungFakten\Produkt">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL LieferungFakten\Beschwerde">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
