@@ -12,8 +12,8 @@
   DTS:ObjectName="Package"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="14"
-  DTS:VersionGUID="{CA31F4C9-2C58-4DDD-9B49-AD0397ADBD20}">
+  DTS:VersionBuild="17"
+  DTS:VersionGUID="{4396795F-D7E3-4063-B8C1-E09E8896DC0C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -298,11 +298,11 @@
               </outputs>
             </component>
             <component
-              refId="Package\ETL AdresseDim\FRA_Kunde"
+              refId="Package\ETL AdresseDim\Bundesland"
               componentClassID="Microsoft.OLEDBSource"
               contactInfo="OLE DB-Quelle;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;7"
               description="OLE DB-Quelle"
-              name="FRA_Kunde"
+              name="Bundesland"
               usesDispositions="true"
               version="7">
               <properties>
@@ -313,7 +313,7 @@
                 <property
                   dataType="System.String"
                   description="Gibt den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts an."
-                  name="OpenRowset">[dbo].[Kunde]</property>
+                  name="OpenRowset">[dbo].[Bundesland]</property>
                 <property
                   dataType="System.String"
                   description="Gibt die Variable an, die den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts enthält."
@@ -347,139 +347,386 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\ETL AdresseDim\FRA_Kunde.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_FRA]"
-                  connectionManagerRefId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_FRA]"
+                  refId="Package\ETL AdresseDim\Bundesland.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527]"
+                  connectionManagerRefId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527]"
                   description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
                   name="OleDbConnection" />
               </connections>
               <outputs>
                 <output
-                  refId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle]"
+                  refId="Package\ETL AdresseDim\Bundesland.Outputs[Ausgabe der OLE DB-Quelle]"
                   name="Ausgabe der OLE DB-Quelle">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[KundId]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[KundId]"
-                      lineageId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[KundId]"
-                      name="KundId"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Name]"
+                      refId="Package\ETL AdresseDim\Bundesland.Outputs[Ausgabe der OLE DB-Quelle].Columns[Plz]"
                       dataType="wstr"
                       errorOrTruncationOperation="Konvertierung"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Name]"
-                      length="50"
-                      lineageId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Name]"
-                      name="Name"
+                      externalMetadataColumnId="Package\ETL AdresseDim\Bundesland.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Plz]"
+                      length="255"
+                      lineageId="Package\ETL AdresseDim\Bundesland.Outputs[Ausgabe der OLE DB-Quelle].Columns[Plz]"
+                      name="Plz"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Firma]"
+                      refId="Package\ETL AdresseDim\Bundesland.Outputs[Ausgabe der OLE DB-Quelle].Columns[Ort]"
                       dataType="wstr"
                       errorOrTruncationOperation="Konvertierung"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Firma]"
+                      externalMetadataColumnId="Package\ETL AdresseDim\Bundesland.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Ort]"
                       length="50"
-                      lineageId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Firma]"
-                      name="Firma"
+                      lineageId="Package\ETL AdresseDim\Bundesland.Outputs[Ausgabe der OLE DB-Quelle].Columns[Ort]"
+                      name="Ort"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Vorname]"
+                      refId="Package\ETL AdresseDim\Bundesland.Outputs[Ausgabe der OLE DB-Quelle].Columns[Bundesland]"
                       dataType="wstr"
                       errorOrTruncationOperation="Konvertierung"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Vorname]"
+                      externalMetadataColumnId="Package\ETL AdresseDim\Bundesland.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Bundesland]"
                       length="50"
-                      lineageId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Vorname]"
-                      name="Vorname"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Email]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Email]"
-                      length="50"
-                      lineageId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Email]"
-                      name="Email"
+                      lineageId="Package\ETL AdresseDim\Bundesland.Outputs[Ausgabe der OLE DB-Quelle].Columns[Bundesland]"
+                      name="Bundesland"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[KundId]"
-                      dataType="i4"
-                      name="KundId" />
+                      refId="Package\ETL AdresseDim\Bundesland.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Plz]"
+                      dataType="i2"
+                      name="Plz" />
                     <externalMetadataColumn
-                      refId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Name]"
+                      refId="Package\ETL AdresseDim\Bundesland.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Ort]"
                       dataType="wstr"
                       length="50"
-                      name="Name" />
+                      name="Ort" />
                     <externalMetadataColumn
-                      refId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Firma]"
+                      refId="Package\ETL AdresseDim\Bundesland.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Bundesland]"
                       dataType="wstr"
                       length="50"
-                      name="Firma" />
-                    <externalMetadataColumn
-                      refId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Vorname]"
-                      dataType="wstr"
-                      length="50"
-                      name="Vorname" />
-                    <externalMetadataColumn
-                      refId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Email]"
-                      dataType="wstr"
-                      length="50"
-                      name="Email" />
+                      name="Bundesland" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle]"
+                  refId="Package\ETL AdresseDim\Bundesland.Outputs[Fehlerausgabe der OLE DB-Quelle]"
                   isErrorOut="true"
                   name="Fehlerausgabe der OLE DB-Quelle">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[KundId]"
+                      refId="Package\ETL AdresseDim\Bundesland.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Ort]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\ETL AdresseDim\Bundesland.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Ort]"
+                      name="Ort" />
+                    <outputColumn
+                      refId="Package\ETL AdresseDim\Bundesland.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[KundId]"
-                      name="KundId" />
-                    <outputColumn
-                      refId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Name]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Name]"
-                      name="Name" />
-                    <outputColumn
-                      refId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Firma]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Firma]"
-                      name="Firma" />
-                    <outputColumn
-                      refId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Vorname]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Vorname]"
-                      name="Vorname" />
-                    <outputColumn
-                      refId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Email]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Email]"
-                      name="Email" />
-                    <outputColumn
-                      refId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
+                      lineageId="Package\ETL AdresseDim\Bundesland.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
+                      refId="Package\ETL AdresseDim\Bundesland.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Bundesland]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\ETL AdresseDim\Bundesland.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Bundesland]"
+                      name="Bundesland" />
+                    <outputColumn
+                      refId="Package\ETL AdresseDim\Bundesland.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\ETL AdresseDim\FRA_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
+                      lineageId="Package\ETL AdresseDim\Bundesland.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\ETL AdresseDim\Bundesland.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Plz]"
+                      dataType="i2"
+                      lineageId="Package\ETL AdresseDim\Bundesland.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Plz]"
+                      name="Plz" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL AdresseDim\Geoposition"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB-Quelle;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;7"
+              description="OLE DB-Quelle"
+              name="Geoposition"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts an."
+                  name="OpenRowset">[dbo].[Geoposition]</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt die Variable an, die den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts enthält."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Der auszuführende SQL-Befehl."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="Die Variable, die den auszuführenden SQL-Befehl enthält."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Erzwingt die Verwendung des DefaultCodePage-Eigenschaftswerts beim Beschreiben von Zeichendaten."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt den zum Zugreifen auf die Datenbank verwendeten Modus an."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="Die Zuordnungen zwischen den Parametern im SQL-Befehl und den Variablen."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL AdresseDim\Geoposition.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_BER]"
+                  connectionManagerRefId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_BER]"
+                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle]"
+                  name="Ausgabe der OLE DB-Quelle">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].Columns[Plz]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Plz]"
+                      length="255"
+                      lineageId="Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].Columns[Plz]"
+                      name="Plz"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].Columns[Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Name]"
+                      length="255"
+                      lineageId="Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].Columns[Name]"
+                      name="Name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lat]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Lat]"
+                      length="50"
+                      lineageId="Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lat]"
+                      name="Lat"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lon]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Lon]"
+                      length="50"
+                      lineageId="Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lon]"
+                      name="Lon"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Plz]"
+                      dataType="wstr"
+                      length="255"
+                      name="Plz" />
+                    <externalMetadataColumn
+                      refId="Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Loc_Id]"
+                      dataType="r8"
+                      name="Loc_Id" />
+                    <externalMetadataColumn
+                      refId="Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Ags]"
+                      dataType="r8"
+                      name="Ags" />
+                    <externalMetadataColumn
+                      refId="Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Ascii]"
+                      dataType="wstr"
+                      length="255"
+                      name="Ascii" />
+                    <externalMetadataColumn
+                      refId="Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Name]"
+                      dataType="wstr"
+                      length="255"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Lat]"
+                      dataType="wstr"
+                      length="50"
+                      name="Lat" />
+                    <externalMetadataColumn
+                      refId="Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Lon]"
+                      dataType="wstr"
+                      length="50"
+                      name="Lon" />
+                    <externalMetadataColumn
+                      refId="Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Amt]"
+                      dataType="wstr"
+                      length="255"
+                      name="Amt" />
+                    <externalMetadataColumn
+                      refId="Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Vorwahl]"
+                      dataType="r8"
+                      name="Vorwahl" />
+                    <externalMetadataColumn
+                      refId="Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Einwohner]"
+                      dataType="r8"
+                      name="Einwohner" />
+                    <externalMetadataColumn
+                      refId="Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Flaeche]"
+                      dataType="r8"
+                      name="Flaeche" />
+                    <externalMetadataColumn
+                      refId="Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Kz]"
+                      dataType="wstr"
+                      length="255"
+                      name="Kz" />
+                    <externalMetadataColumn
+                      refId="Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Typ]"
+                      dataType="wstr"
+                      length="255"
+                      name="Typ" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\ETL AdresseDim\Geoposition.Outputs[Fehlerausgabe der OLE DB-Quelle]"
+                  isErrorOut="true"
+                  name="Fehlerausgabe der OLE DB-Quelle">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL AdresseDim\Geoposition.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL AdresseDim\Geoposition.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL AdresseDim\Geoposition.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL AdresseDim\Geoposition.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\ETL AdresseDim\Geoposition.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Plz]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\ETL AdresseDim\Geoposition.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Plz]"
+                      name="Plz" />
+                    <outputColumn
+                      refId="Package\ETL AdresseDim\Geoposition.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Name]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\ETL AdresseDim\Geoposition.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Name]"
+                      name="Name" />
+                    <outputColumn
+                      refId="Package\ETL AdresseDim\Geoposition.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lat]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\ETL AdresseDim\Geoposition.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lat]"
+                      name="Lat" />
+                    <outputColumn
+                      refId="Package\ETL AdresseDim\Geoposition.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lon]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\ETL AdresseDim\Geoposition.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lon]"
+                      name="Lon" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL AdresseDim\OLE DB-Befehl"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="OLE DB-Befehl;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;2"
+              description="Führt eine SQL-Anweisung für jede Zeile in einem Datenfluss aus. Rufen Sie beispielsweise die gespeicherte Prozedur &quot;new employee setup&quot; für jede Zeile in der Tabelle &quot;new employees&quot; auf. Hinweis: Wenn Sie für jede Zeile eines umfangreichen Datenflusses eine SQL-Anweisung ausführen, kann der Vorgang länger dauern."
+              name="OLE DB-Befehl"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Der auszuführende SQL-Befehl."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT REPLACE (SUBSTRING(g.Name, 1, ISNULL(NULLIF(CHARINDEX(' ', g.Name) -1, -1), LEN(g.Name))), ',', '')
+FROM [dbo].[Geoposition] g;</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL AdresseDim\OLE DB-Befehl.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_BER]"
+                  connectionManagerRefId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_BER]"
+                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\ETL AdresseDim\OLE DB-Befehl.Inputs[Eingabe des OLE DB-Befehls]"
+                  errorOrTruncationOperation="Befehlsausführung"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Eingabe des OLE DB-Befehls">
+                  <externalMetadataColumns
+                    isUsed="True" />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL AdresseDim\OLE DB-Befehl.Outputs[Ausgabe des OLE DB-Befehls]"
+                  exclusionGroup="1"
+                  name="Ausgabe des OLE DB-Befehls"
+                  synchronousInputId="Package\ETL AdresseDim\OLE DB-Befehl.Inputs[Eingabe des OLE DB-Befehls]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL AdresseDim\OLE DB-Befehl.Outputs[Fehlerausgabe des OLE DB-Befehls]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Fehlerausgabe des OLE DB-Befehls"
+                  synchronousInputId="Package\ETL AdresseDim\OLE DB-Befehl.Inputs[Eingabe des OLE DB-Befehls]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL AdresseDim\OLE DB-Befehl.Outputs[Fehlerausgabe des OLE DB-Befehls].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL AdresseDim\OLE DB-Befehl.Outputs[Fehlerausgabe des OLE DB-Befehls].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL AdresseDim\OLE DB-Befehl.Outputs[Fehlerausgabe des OLE DB-Befehls].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL AdresseDim\OLE DB-Befehl.Outputs[Fehlerausgabe des OLE DB-Befehls].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -488,383 +735,508 @@
               </outputs>
             </component>
             <component
-              refId="Package\ETL AdresseDim\HAM_Kunde"
-              componentClassID="Microsoft.OLEDBSource"
-              contactInfo="OLE DB-Quelle;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;7"
-              description="OLE DB-Quelle"
-              name="HAM_Kunde"
-              usesDispositions="true"
-              version="7">
+              refId="Package\ETL AdresseDim\Sortieren"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sortieren;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;1"
+              description="Sortiert Eingabedaten in aufsteigender oder absteigender Folge, wenn sie nicht am Quellort sortiert werden können. Sortieren Sie beispielsweise Umsatzzahlen nach &quot;customer id&quot;, bevor sie in eine Flatfile geschrieben und einer anderen Abteilung zur Verfügung gestellt werden. Hinweis: Für umfangreiche Datenflüsse wird diese Transformation nicht empfohlen."
+              name="Sortieren"
+              version="1">
               <properties>
                 <property
-                  dataType="System.Int32"
-                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Gibt den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts an."
-                  name="OpenRowset">[dbo].[Kunde]</property>
-                <property
-                  dataType="System.String"
-                  description="Gibt die Variable an, die den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts enthält."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="Der auszuführende SQL-Befehl."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
-                <property
-                  dataType="System.String"
-                  description="Die Variable, die den auszuführenden SQL-Befehl enthält."
-                  name="SqlCommandVariable"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
-                  name="DefaultCodePage">1252</property>
-                <property
                   dataType="System.Boolean"
-                  description="Erzwingt die Verwendung des DefaultCodePage-Eigenschaftswerts beim Beschreiben von Zeichendaten."
-                  name="AlwaysUseDefaultCodePage">false</property>
+                  description="Zeigt an, ob die Sortiertransformation Zeilen mit doppelten Sortierwerten entfernt."
+                  name="EliminateDuplicates">false</property>
                 <property
                   dataType="System.Int32"
-                  description="Gibt den zum Zugreifen auf die Datenbank verwendeten Modus an."
-                  name="AccessMode"
-                  typeConverter="AccessMode">0</property>
-                <property
-                  dataType="System.String"
-                  description="Die Zuordnungen zwischen den Parametern im SQL-Befehl und den Variablen."
-                  name="ParameterMapping"></property>
+                  description="Gibt die maximale Anzahl der Threads an, die beim Sortieren verwendet werden können."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
               </properties>
-              <connections>
-                <connection
-                  refId="Package\ETL AdresseDim\HAM_Kunde.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_HAM]"
-                  connectionManagerRefId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_HAM]"
-                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
-                  name="OleDbConnection" />
-              </connections>
+              <inputs>
+                <input
+                  refId="Package\ETL AdresseDim\Sortieren.Inputs[Sortiereingabe]"
+                  name="Sortiereingabe">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL AdresseDim\Sortieren.Inputs[Sortiereingabe].Columns[Plz]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Plz"
+                      lineageId="Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].Columns[Plz]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Gibt die Vergleichsoptionen für Zeichendaten an."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Gibt die Sortierreihenfolge der Spalte an."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL AdresseDim\Sortieren.Inputs[Sortiereingabe].Columns[Name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Name"
+                      lineageId="Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].Columns[Name]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Gibt die Vergleichsoptionen für Zeichendaten an."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Gibt die Sortierreihenfolge der Spalte an."
+                          name="NewSortKeyPosition">2</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL AdresseDim\Sortieren.Inputs[Sortiereingabe].Columns[Lat]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Lat"
+                      lineageId="Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lat]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Gibt die Vergleichsoptionen für Zeichendaten an."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Gibt die Sortierreihenfolge der Spalte an."
+                          name="NewSortKeyPosition">3</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL AdresseDim\Sortieren.Inputs[Sortiereingabe].Columns[Lon]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Lon"
+                      lineageId="Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lon]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Gibt die Vergleichsoptionen für Zeichendaten an."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Gibt die Sortierreihenfolge der Spalte an."
+                          name="NewSortKeyPosition">4</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
               <outputs>
                 <output
-                  refId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle]"
-                  name="Ausgabe der OLE DB-Quelle">
+                  refId="Package\ETL AdresseDim\Sortieren.Outputs[Sortierausgabe]"
+                  isSorted="true"
+                  name="Sortierausgabe">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Kunden_Id]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Kunden_Id]"
-                      lineageId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Kunden_Id]"
-                      name="Kunden_Id"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Werk_Id]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Werk_Id]"
-                      lineageId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Werk_Id]"
-                      name="Werk_Id"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Name]"
+                      refId="Package\ETL AdresseDim\Sortieren.Outputs[Sortierausgabe].Columns[Plz]"
                       dataType="wstr"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Name]"
-                      length="50"
-                      lineageId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Name]"
-                      name="Name"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Anschrift]"
-                      codePage="1252"
-                      dataType="text"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Anschrift]"
-                      lineageId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Anschrift]"
-                      name="Anschrift"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Plz]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Plz]"
-                      length="10"
-                      lineageId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Plz]"
+                      length="255"
+                      lineageId="Package\ETL AdresseDim\Sortieren.Outputs[Sortierausgabe].Columns[Plz]"
                       name="Plz"
-                      truncationRowDisposition="FailComponent" />
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Gibt den Herkunftsbezeichner der Eingabespalte an, die dieser Ausgabespalte zugeordnet ist."
+                          name="SortColumnId">#{Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].Columns[Plz]}</property>
+                      </properties>
+                    </outputColumn>
                     <outputColumn
-                      refId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Ort]"
+                      refId="Package\ETL AdresseDim\Sortieren.Outputs[Sortierausgabe].Columns[Name]"
                       dataType="wstr"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Ort]"
-                      length="50"
-                      lineageId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Ort]"
-                      name="Ort"
-                      truncationRowDisposition="FailComponent" />
-                  </outputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Kunden_Id]"
-                      dataType="i4"
-                      name="Kunden_Id" />
-                    <externalMetadataColumn
-                      refId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Werk_Id]"
-                      dataType="i4"
-                      name="Werk_Id" />
-                    <externalMetadataColumn
-                      refId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Name]"
-                      dataType="wstr"
-                      length="50"
-                      name="Name" />
-                    <externalMetadataColumn
-                      refId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Anschrift]"
-                      codePage="1252"
-                      dataType="text"
-                      name="Anschrift" />
-                    <externalMetadataColumn
-                      refId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Plz]"
-                      dataType="wstr"
-                      length="10"
-                      name="Plz" />
-                    <externalMetadataColumn
-                      refId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Ort]"
+                      length="255"
+                      lineageId="Package\ETL AdresseDim\Sortieren.Outputs[Sortierausgabe].Columns[Name]"
+                      name="Name"
+                      sortKeyPosition="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Gibt den Herkunftsbezeichner der Eingabespalte an, die dieser Ausgabespalte zugeordnet ist."
+                          name="SortColumnId">#{Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].Columns[Name]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL AdresseDim\Sortieren.Outputs[Sortierausgabe].Columns[Lat]"
                       dataType="wstr"
                       length="50"
-                      name="Ort" />
-                  </externalMetadataColumns>
-                </output>
-                <output
-                  refId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle]"
-                  isErrorOut="true"
-                  name="Fehlerausgabe der OLE DB-Quelle">
-                  <outputColumns>
+                      lineageId="Package\ETL AdresseDim\Sortieren.Outputs[Sortierausgabe].Columns[Lat]"
+                      name="Lat"
+                      sortKeyPosition="3">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Gibt den Herkunftsbezeichner der Eingabespalte an, die dieser Ausgabespalte zugeordnet ist."
+                          name="SortColumnId">#{Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lat]}</property>
+                      </properties>
+                    </outputColumn>
                     <outputColumn
-                      refId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Kunden_Id]"
-                      dataType="i4"
-                      lineageId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Kunden_Id]"
-                      name="Kunden_Id" />
-                    <outputColumn
-                      refId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Werk_Id]"
-                      dataType="i4"
-                      lineageId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Werk_Id]"
-                      name="Werk_Id" />
-                    <outputColumn
-                      refId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Name]"
+                      refId="Package\ETL AdresseDim\Sortieren.Outputs[Sortierausgabe].Columns[Lon]"
                       dataType="wstr"
                       length="50"
-                      lineageId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Name]"
-                      name="Name" />
-                    <outputColumn
-                      refId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Anschrift]"
-                      codePage="1252"
-                      dataType="text"
-                      lineageId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Anschrift]"
-                      name="Anschrift" />
-                    <outputColumn
-                      refId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Plz]"
-                      dataType="wstr"
-                      length="10"
-                      lineageId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Plz]"
-                      name="Plz" />
-                    <outputColumn
-                      refId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Ort]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Ort]"
-                      name="Ort" />
-                    <outputColumn
-                      refId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\ETL AdresseDim\HAM_Kunde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
+                      lineageId="Package\ETL AdresseDim\Sortieren.Outputs[Sortierausgabe].Columns[Lon]"
+                      name="Lon"
+                      sortKeyPosition="4">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Gibt den Herkunftsbezeichner der Eingabespalte an, die dieser Ausgabespalte zugeordnet ist."
+                          name="SortColumnId">#{Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lon]}</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
               </outputs>
             </component>
             <component
-              refId="Package\ETL AdresseDim\HAM_Werk"
-              componentClassID="Microsoft.OLEDBSource"
-              contactInfo="OLE DB-Quelle;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;7"
-              description="OLE DB-Quelle"
-              name="HAM_Werk"
-              usesDispositions="true"
-              version="7">
+              refId="Package\ETL AdresseDim\Sortieren 1"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sortieren;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;1"
+              description="Sortiert Eingabedaten in aufsteigender oder absteigender Folge, wenn sie nicht am Quellort sortiert werden können. Sortieren Sie beispielsweise Umsatzzahlen nach &quot;customer id&quot;, bevor sie in eine Flatfile geschrieben und einer anderen Abteilung zur Verfügung gestellt werden. Hinweis: Für umfangreiche Datenflüsse wird diese Transformation nicht empfohlen."
+              name="Sortieren 1"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Zeigt an, ob die Sortiertransformation Zeilen mit doppelten Sortierwerten entfernt."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt die maximale Anzahl der Threads an, die beim Sortieren verwendet werden können."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\ETL AdresseDim\Sortieren 1.Inputs[Sortiereingabe]"
+                  name="Sortiereingabe">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL AdresseDim\Sortieren 1.Inputs[Sortiereingabe].Columns[Plz]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Plz"
+                      lineageId="Package\ETL AdresseDim\Bundesland.Outputs[Ausgabe der OLE DB-Quelle].Columns[Plz]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Gibt die Vergleichsoptionen für Zeichendaten an."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Gibt die Sortierreihenfolge der Spalte an."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL AdresseDim\Sortieren 1.Inputs[Sortiereingabe].Columns[Ort]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Ort"
+                      lineageId="Package\ETL AdresseDim\Bundesland.Outputs[Ausgabe der OLE DB-Quelle].Columns[Ort]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Gibt die Vergleichsoptionen für Zeichendaten an."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Gibt die Sortierreihenfolge der Spalte an."
+                          name="NewSortKeyPosition">2</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL AdresseDim\Sortieren 1.Inputs[Sortiereingabe].Columns[Bundesland]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Bundesland"
+                      lineageId="Package\ETL AdresseDim\Bundesland.Outputs[Ausgabe der OLE DB-Quelle].Columns[Bundesland]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Gibt die Vergleichsoptionen für Zeichendaten an."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Gibt die Sortierreihenfolge der Spalte an."
+                          name="NewSortKeyPosition">3</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL AdresseDim\Sortieren 1.Outputs[Sortierausgabe]"
+                  isSorted="true"
+                  name="Sortierausgabe">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL AdresseDim\Sortieren 1.Outputs[Sortierausgabe].Columns[Plz]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\ETL AdresseDim\Sortieren 1.Outputs[Sortierausgabe].Columns[Plz]"
+                      name="Plz"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Gibt den Herkunftsbezeichner der Eingabespalte an, die dieser Ausgabespalte zugeordnet ist."
+                          name="SortColumnId">#{Package\ETL AdresseDim\Bundesland.Outputs[Ausgabe der OLE DB-Quelle].Columns[Plz]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL AdresseDim\Sortieren 1.Outputs[Sortierausgabe].Columns[Ort]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\ETL AdresseDim\Sortieren 1.Outputs[Sortierausgabe].Columns[Ort]"
+                      name="Ort"
+                      sortKeyPosition="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Gibt den Herkunftsbezeichner der Eingabespalte an, die dieser Ausgabespalte zugeordnet ist."
+                          name="SortColumnId">#{Package\ETL AdresseDim\Bundesland.Outputs[Ausgabe der OLE DB-Quelle].Columns[Ort]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL AdresseDim\Sortieren 1.Outputs[Sortierausgabe].Columns[Bundesland]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\ETL AdresseDim\Sortieren 1.Outputs[Sortierausgabe].Columns[Bundesland]"
+                      name="Bundesland"
+                      sortKeyPosition="3">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Gibt den Herkunftsbezeichner der Eingabespalte an, die dieser Ausgabespalte zugeordnet ist."
+                          name="SortColumnId">#{Package\ETL AdresseDim\Bundesland.Outputs[Ausgabe der OLE DB-Quelle].Columns[Bundesland]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL AdresseDim\Zusammenführungsjoin"
+              componentClassID="Microsoft.MergeJoin"
+              contactInfo="Zusammenführungsjoin;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;1"
+              description="Kombinieren Sie zwei sortierte Datenflüsse mithilfe eines der Joins FULL, LEFT oder INNER in einem Datenfluss. Diese Transformation wird empfohlen, wenn Datenflüsse an ihrem Quellort sortiert werden können."
+              name="Zusammenführungsjoin"
+              version="1">
               <properties>
                 <property
                   dataType="System.Int32"
-                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Gibt den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts an."
-                  name="OpenRowset">[dbo].[Werk]</property>
-                <property
-                  dataType="System.String"
-                  description="Gibt die Variable an, die den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts enthält."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="Der auszuführende SQL-Befehl."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
-                <property
-                  dataType="System.String"
-                  description="Die Variable, die den auszuführenden SQL-Befehl enthält."
-                  name="SqlCommandVariable"></property>
+                  description="Gibt den Typ des auszuführenden Joins an."
+                  name="JoinType"
+                  typeConverter="JoinType">1</property>
                 <property
                   dataType="System.Int32"
-                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
-                  name="DefaultCodePage">1252</property>
+                  description="Gibt die Anzahl der Spalten im Sortierschlüssel an."
+                  name="NumKeyColumns">1</property>
                 <property
                   dataType="System.Boolean"
-                  description="Erzwingt die Verwendung des DefaultCodePage-Eigenschaftswerts beim Beschreiben von Zeichendaten."
-                  name="AlwaysUseDefaultCodePage">false</property>
+                  description="Zeigt an, ob die NULL-Werte als gleichberechtigte Werte behandelt werden."
+                  name="TreatNullsAsEqual">true</property>
                 <property
                   dataType="System.Int32"
-                  description="Gibt den zum Zugreifen auf die Datenbank verwendeten Modus an."
-                  name="AccessMode"
-                  typeConverter="AccessMode">0</property>
-                <property
-                  dataType="System.String"
-                  description="Die Zuordnungen zwischen den Parametern im SQL-Befehl und den Variablen."
-                  name="ParameterMapping"></property>
+                  description="Zeigt die pro Eingabe maximal angeforderten Puffer vor dem Blockieren an."
+                  name="MaxBuffersPerInput">5</property>
               </properties>
-              <connections>
-                <connection
-                  refId="Package\ETL AdresseDim\HAM_Werk.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_HAM]"
-                  connectionManagerRefId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_HAM]"
-                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
-                  name="OleDbConnection" />
-              </connections>
+              <inputs>
+                <input
+                  refId="Package\ETL AdresseDim\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins]"
+                  hasSideEffects="true"
+                  name="Linke Eingabe des Zusammenführungsjoins">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL AdresseDim\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins].Columns[Plz]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Plz"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\ETL AdresseDim\Sortieren.Outputs[Sortierausgabe].Columns[Plz]" />
+                    <inputColumn
+                      refId="Package\ETL AdresseDim\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins].Columns[Name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Name"
+                      cachedSortKeyPosition="2"
+                      lineageId="Package\ETL AdresseDim\Sortieren.Outputs[Sortierausgabe].Columns[Name]" />
+                    <inputColumn
+                      refId="Package\ETL AdresseDim\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins].Columns[Lat]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Lat"
+                      cachedSortKeyPosition="3"
+                      lineageId="Package\ETL AdresseDim\Sortieren.Outputs[Sortierausgabe].Columns[Lat]" />
+                    <inputColumn
+                      refId="Package\ETL AdresseDim\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins].Columns[Lon]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Lon"
+                      cachedSortKeyPosition="4"
+                      lineageId="Package\ETL AdresseDim\Sortieren.Outputs[Sortierausgabe].Columns[Lon]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\ETL AdresseDim\Zusammenführungsjoin.Inputs[Rechte Eingabe des Zusammenführungsjoins]"
+                  hasSideEffects="true"
+                  name="Rechte Eingabe des Zusammenführungsjoins">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL AdresseDim\Zusammenführungsjoin.Inputs[Rechte Eingabe des Zusammenführungsjoins].Columns[Plz]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Plz"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\ETL AdresseDim\Sortieren 1.Outputs[Sortierausgabe].Columns[Plz]" />
+                    <inputColumn
+                      refId="Package\ETL AdresseDim\Zusammenführungsjoin.Inputs[Rechte Eingabe des Zusammenführungsjoins].Columns[Ort]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Ort"
+                      cachedSortKeyPosition="2"
+                      lineageId="Package\ETL AdresseDim\Sortieren 1.Outputs[Sortierausgabe].Columns[Ort]" />
+                    <inputColumn
+                      refId="Package\ETL AdresseDim\Zusammenführungsjoin.Inputs[Rechte Eingabe des Zusammenführungsjoins].Columns[Bundesland]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Bundesland"
+                      cachedSortKeyPosition="3"
+                      lineageId="Package\ETL AdresseDim\Sortieren 1.Outputs[Sortierausgabe].Columns[Bundesland]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
               <outputs>
                 <output
-                  refId="Package\ETL AdresseDim\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle]"
-                  name="Ausgabe der OLE DB-Quelle">
+                  refId="Package\ETL AdresseDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins]"
+                  isSorted="true"
+                  name="Ausgabe des Zusammenführungsjoins">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\ETL AdresseDim\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle].Columns[Werk_Id]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL AdresseDim\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Werk_Id]"
-                      lineageId="Package\ETL AdresseDim\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle].Columns[Werk_Id]"
-                      name="Werk_Id"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ETL AdresseDim\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle].Columns[Anschrift]"
+                      refId="Package\ETL AdresseDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Plz]"
                       dataType="wstr"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL AdresseDim\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Anschrift]"
-                      length="50"
-                      lineageId="Package\ETL AdresseDim\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle].Columns[Anschrift]"
-                      name="Anschrift"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ETL AdresseDim\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle].Columns[Plz]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL AdresseDim\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Plz]"
-                      length="50"
-                      lineageId="Package\ETL AdresseDim\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle].Columns[Plz]"
+                      length="255"
+                      lineageId="Package\ETL AdresseDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Plz]"
                       name="Plz"
-                      truncationRowDisposition="FailComponent" />
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Die mit dieser Ausgabespalte verbundene Eingabespalte"
+                          name="InputColumnID">#{Package\ETL AdresseDim\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins].Columns[Plz]}</property>
+                      </properties>
+                    </outputColumn>
                     <outputColumn
-                      refId="Package\ETL AdresseDim\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle].Columns[Ort]"
+                      refId="Package\ETL AdresseDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Name]"
                       dataType="wstr"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL AdresseDim\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Ort]"
-                      length="50"
-                      lineageId="Package\ETL AdresseDim\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle].Columns[Ort]"
-                      name="Ort"
-                      truncationRowDisposition="FailComponent" />
-                  </outputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\ETL AdresseDim\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Werk_Id]"
-                      dataType="i4"
-                      name="Werk_Id" />
-                    <externalMetadataColumn
-                      refId="Package\ETL AdresseDim\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Anschrift]"
-                      dataType="wstr"
-                      length="50"
-                      name="Anschrift" />
-                    <externalMetadataColumn
-                      refId="Package\ETL AdresseDim\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Plz]"
-                      dataType="wstr"
-                      length="50"
-                      name="Plz" />
-                    <externalMetadataColumn
-                      refId="Package\ETL AdresseDim\HAM_Werk.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Ort]"
+                      length="255"
+                      lineageId="Package\ETL AdresseDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Name]"
+                      name="Name">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Die mit dieser Ausgabespalte verbundene Eingabespalte"
+                          name="InputColumnID">#{Package\ETL AdresseDim\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins].Columns[Name]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL AdresseDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Lat]"
                       dataType="wstr"
                       length="50"
-                      name="Ort" />
-                  </externalMetadataColumns>
-                </output>
-                <output
-                  refId="Package\ETL AdresseDim\HAM_Werk.Outputs[Fehlerausgabe der OLE DB-Quelle]"
-                  isErrorOut="true"
-                  name="Fehlerausgabe der OLE DB-Quelle">
-                  <outputColumns>
+                      lineageId="Package\ETL AdresseDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Lat]"
+                      name="Lat">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Die mit dieser Ausgabespalte verbundene Eingabespalte"
+                          name="InputColumnID">#{Package\ETL AdresseDim\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins].Columns[Lat]}</property>
+                      </properties>
+                    </outputColumn>
                     <outputColumn
-                      refId="Package\ETL AdresseDim\HAM_Werk.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Werk_Id]"
-                      dataType="i4"
-                      lineageId="Package\ETL AdresseDim\HAM_Werk.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Werk_Id]"
-                      name="Werk_Id" />
-                    <outputColumn
-                      refId="Package\ETL AdresseDim\HAM_Werk.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Anschrift]"
+                      refId="Package\ETL AdresseDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Lon]"
                       dataType="wstr"
                       length="50"
-                      lineageId="Package\ETL AdresseDim\HAM_Werk.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Anschrift]"
-                      name="Anschrift" />
+                      lineageId="Package\ETL AdresseDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Lon]"
+                      name="Lon">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Die mit dieser Ausgabespalte verbundene Eingabespalte"
+                          name="InputColumnID">#{Package\ETL AdresseDim\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins].Columns[Lon]}</property>
+                      </properties>
+                    </outputColumn>
                     <outputColumn
-                      refId="Package\ETL AdresseDim\HAM_Werk.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Plz]"
+                      refId="Package\ETL AdresseDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Bundesland]"
                       dataType="wstr"
                       length="50"
-                      lineageId="Package\ETL AdresseDim\HAM_Werk.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Plz]"
-                      name="Plz" />
-                    <outputColumn
-                      refId="Package\ETL AdresseDim\HAM_Werk.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Ort]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\ETL AdresseDim\HAM_Werk.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Ort]"
-                      name="Ort" />
-                    <outputColumn
-                      refId="Package\ETL AdresseDim\HAM_Werk.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\ETL AdresseDim\HAM_Werk.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\ETL AdresseDim\HAM_Werk.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\ETL AdresseDim\HAM_Werk.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
+                      lineageId="Package\ETL AdresseDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Bundesland]"
+                      name="Bundesland">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Die mit dieser Ausgabespalte verbundene Eingabespalte"
+                          name="InputColumnID">#{Package\ETL AdresseDim\Zusammenführungsjoin.Inputs[Rechte Eingabe des Zusammenführungsjoins].Columns[Bundesland]}</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
               </outputs>
             </component>
           </components>
+          <paths>
+            <path
+              refId="Package\ETL AdresseDim.Paths[Ausgabe der OLE DB-Quelle]"
+              endId="Package\ETL AdresseDim\Sortieren.Inputs[Sortiereingabe]"
+              name="Ausgabe der OLE DB-Quelle"
+              startId="Package\ETL AdresseDim\Geoposition.Outputs[Ausgabe der OLE DB-Quelle]" />
+            <path
+              refId="Package\ETL AdresseDim.Paths[Ausgabe der OLE DB-Quelle1]"
+              endId="Package\ETL AdresseDim\Sortieren 1.Inputs[Sortiereingabe]"
+              name="Ausgabe der OLE DB-Quelle"
+              startId="Package\ETL AdresseDim\Bundesland.Outputs[Ausgabe der OLE DB-Quelle]" />
+            <path
+              refId="Package\ETL AdresseDim.Paths[Ausgabe des OLE DB-Befehls]"
+              endId="Package\ETL AdresseDim\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins]"
+              name="Ausgabe des OLE DB-Befehls"
+              startId="Package\ETL AdresseDim\OLE DB-Befehl.Outputs[Ausgabe des OLE DB-Befehls]" />
+            <path
+              refId="Package\ETL AdresseDim.Paths[Sortierausgabe]"
+              endId="Package\ETL AdresseDim\Zusammenführungsjoin.Inputs[Rechte Eingabe des Zusammenführungsjoins]"
+              name="Sortierausgabe"
+              startId="Package\ETL AdresseDim\Sortieren 1.Outputs[Sortierausgabe]" />
+            <path
+              refId="Package\ETL AdresseDim.Paths[Sortierausgabe1]"
+              endId="Package\ETL AdresseDim\OLE DB-Befehl.Inputs[Eingabe des OLE DB-Befehls]"
+              name="Sortierausgabe"
+              startId="Package\ETL AdresseDim\Sortieren.Outputs[Sortierausgabe]" />
+          </paths>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
@@ -4089,67 +4461,174 @@ WHERE TransDimId = TransId;</property>
     design-time-name="Package\ETL AdresseDim">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
-        <NodeLayout
-          Size="136,42"
-          Id="Package\ETL AdresseDim\FRA_Kunde"
-          TopLeft="366,12.6666666881906" />
-        <NodeLayout
-          Size="132,42"
-          Id="Package\ETL AdresseDim\HAM_Werk"
-          TopLeft="200.5,10.8333332795236" />
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="175,42"
           Id="Package\ETL AdresseDim\AdresseDim"
-          TopLeft="167.5,191.208332383592" />
+          TopLeft="127,511.208332383592" />
         <NodeLayout
-          Size="138,42"
-          Id="Package\ETL AdresseDim\HAM_Kunde"
-          TopLeft="35.5,9.7499999515712" />
+          Size="135,42"
+          Id="Package\ETL AdresseDim\Geoposition"
+          TopLeft="129,32" />
+        <NodeLayout
+          Size="121.5,42"
+          Id="Package\ETL AdresseDim\Sortieren"
+          TopLeft="137.5,133" />
+        <EdgeLayout
+          Id="Package\ETL AdresseDim.Paths[Ausgabe der OLE DB-Quelle]"
+          TopLeft="197.375,74">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59"
+              Start="0,0"
+              End="0,51.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="134.5,42"
+          Id="Package\ETL AdresseDim\Bundesland"
+          TopLeft="378,32.7083323835921" />
+        <NodeLayout
+          Size="130.5,42"
+          Id="Package\ETL AdresseDim\Sortieren 1"
+          TopLeft="378.5,133.5" />
+        <EdgeLayout
+          Id="Package\ETL AdresseDim.Paths[Ausgabe der OLE DB-Quelle1]"
+          TopLeft="444.5,74.7083323835921">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,58.7916676164079"
+              Start="0,0"
+              End="0,51.2916676164079">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.2916676164079" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="189,42"
+          Id="Package\ETL AdresseDim\Zusammenführungsjoin"
+          TopLeft="129,386.5" />
+        <EdgeLayout
+          Id="Package\ETL AdresseDim.Paths[Sortierausgabe]"
+          TopLeft="443.75,175.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-220.25,211"
+              Start="0,0"
+              End="-220.25,203.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,101.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,101.5"
+                    Point2="0,105.5"
+                    Point3="-4,105.5" />
+                  <mssgle:LineSegment
+                    End="-216.25,105.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-216.25,105.5"
+                    Point2="-220.25,105.5"
+                    Point3="-220.25,109.5" />
+                  <mssgle:LineSegment
+                    End="-220.25,203.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="150.5,42"
+          Id="Package\ETL AdresseDim\OLE DB-Befehl"
+          TopLeft="129.5,218" />
+        <EdgeLayout
+          Id="Package\ETL AdresseDim.Paths[Sortierausgabe1]"
+          TopLeft="201.5,175">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,43"
+              Start="0,0"
+              End="0,35.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL AdresseDim.Paths[Ausgabe des OLE DB-Befehls]"
+          TopLeft="204.75,260">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-11.4166666666667,126.5"
+              Start="0,0"
+              End="-11.4166666666667,119">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,71.2628541448059" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,71.2628541448059"
+                    Point2="0,75.2628541448059"
+                    Point3="-4,75.2628541448059" />
+                  <mssgle:LineSegment
+                    End="-7.41666666666669,75.2628541448059" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-7.41666666666669,75.2628541448059"
+                    Point2="-11.4166666666667,75.2628541448059"
+                    Point3="-11.4166666666667,79.2628541448059" />
+                  <mssgle:LineSegment
+                    End="-11.4166666666667,119" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\ETL AdresseDim\FRA_Kunde">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\ETL AdresseDim\HAM_Werk">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\ETL AdresseDim\AdresseDim">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\ETL AdresseDim\HAM_Kunde">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4169,7 +4648,7 @@ WHERE TransDimId = TransId;</property>
         <NodeLayout
           Size="171,42"
           Id="Package\ETL BeschwerdeDim\Keine Beschwerde"
-          TopLeft="120,163" />
+          TopLeft="104.75,160.833333344095" />
         <NodeLayout
           Size="156,42"
           Id="Package\ETL BeschwerdeDim\BeschwerdeDim"
@@ -4536,6 +5015,32 @@ WHERE TransDimId = TransId;</property>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL AdresseDim\Geoposition">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL AdresseDim\Bundesland">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
