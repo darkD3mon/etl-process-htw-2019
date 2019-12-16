@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">LSPTOP</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1" SSIS:Salt="J0roVb3r1J4=" SSIS:IV="eLEt4tSkwTU0IpU1XsIr6g==" SSIS:Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc">R3i1PYjNoi/DogpbSvKOtwn234Kej5b+EyV+sdz3nXmmaeva7zVU/3o0czaHl7zf4G0E8z+eUrKuNWsN7vclGrfB/8lJq5DeuwGCElulYSObwzmePh2Rm3W9eVsWXN37znHPRfZWlRK6AvyquHhUeKyLjkx3s3nf/sX4F1SAMOWFCzeiwO0SEMF8/gG/zHSx</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1" SSIS:Salt="yZ3SCjodjNU=" SSIS:IV="Fa3OXFSsVfTb8tiQJa2ZPQ==" SSIS:Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc">cc28tLdjTbMFSN4noVzPjnt5iQ1hPSLqQ4p8PzO0Lg/f3MZlfkoNoM3ryifhWcKmYxXpP0j7Y91LGQgKLtKkfVv/0eaAwkpRYHlhHLX0BgPv2do1bedStDqfQsEmMc5LZRMQxvZUHYFzvILOdsILF/lp2Nv0h8zZIvfpVtbSABw4k2Kraz265Q6OkQPnaXPQ</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -629,14 +629,14 @@
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">47</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">55</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{82CDB92C-71B9-4C3D-ADA6-FA6E248DC563}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{9102EFC8-FA11-43F0-8C79-912BD4290BCA}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="ProtectionLevel">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">2</SSIS:Property>
               </SSIS:Properties>
               <SSIS:Parameters>
                 <SSIS:Parameter SSIS:Name="CM.postleitzahlen2.csv.ConnectionString">

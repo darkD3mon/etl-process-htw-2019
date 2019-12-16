@@ -11,9 +11,9 @@
   DTS:LocaleID="1031"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:ProtectionLevel="0"
-  DTS:VersionBuild="47"
-  DTS:VersionGUID="{82CDB92C-71B9-4C3D-ADA6-FA6E248DC563}">
+  DTS:ProtectionLevel="2"
+  DTS:VersionBuild="56"
+  DTS:VersionGUID="{280DCEB5-BDEC-4E1F-84CC-342160DA9AC7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -43,7 +43,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{FD05051C-A362-4545-B195-628C7770DD75}"
-          SQLTask:SqlStatementSource="CREATE TABLE [dbo].[Bundesland](&#xA;&#x9;BundeslandId int identity not null primary key&#xA;&#x9;[Ort] [nvarchar](50) NOT NULL,&#xA;&#x9;[Plz] [smallint] NOT NULL,&#xA;&#x9;[Bundesland] [nvarchar](50) NOT NULL&#xA;);&#xA;&#xA;Create Table BeschwerdeDim (&#xA;    BeschwerdeDimId int identity not null primary key,&#xA;    Grund nvarchar(500),&#xA;);&#xA; &#xA;Create Table DatumDim (&#xA;    DatumDimId int identity not null primary key,&#xA;    Tag tinyint,&#xA;    Monat tinyint,&#xA;    Jahr tinyint,&#xA;    IstFeiertag bit,&#xA;);&#xA; &#xA;Create Table AdresseDim (&#xA;    AdresseDimId int identity not null primary key,&#xA;    Plz varchar(5),&#xA;    Ort varchar(48),&#xA;    Lat decimal(11, 8),&#xA;    Lon decimal(11, 8),&#xA;    Bundesland varchar(48),&#xA;    Start date,&#xA;    Ende date&#xA;);&#xA; &#xA;Create Table TransportmittelDim (&#xA;    TransDimId int identity not null primary key,&#xA;    Marke nvarchar(48),&#xA;    Typ nvarchar(48),&#xA;    Ladevolumen decimal(5,1),&#xA;    Max_Gewicht int,&#xA;    Kosten_pro_km decimal(5,2),&#xA;    Start date,&#xA;    Ende date&#xA;);&#xA; &#xA;Create Table LieferungFakten (&#xA;    FaktenId int not null identity primary key,&#xA;    BestellDatumDimId int,&#xA;    LieferDatumDimId int,&#xA;    StartAdresseDimId int,&#xA;    ZielAdresseDimId int,&#xA;    TransDimId int,&#xA;    BeschwerdeDimId int,&#xA;    Volumen decimal(5,2),&#xA;    Gewicht int,&#xA;    Lieferkosten decimal(10,2),&#xA;    Umsatz decimal (10,2),&#xA;    Lieferdauer time,&#xA;    Lieferstrecke int,&#xA;    FOREIGN KEY (BestellDatumDimId) REFERENCES dbo.DatumDim (DatumDimId),&#xA;    FOREIGN KEY (LieferDatumDimId) REFERENCES dbo.DatumDim (DatumDimId),&#xA;    FOREIGN KEY (StartAdresseDimId) REFERENCES dbo.AdresseDim (AdresseDimId),&#xA;    FOREIGN KEY (ZielAdresseDimId) REFERENCES dbo.AdresseDim (AdresseDimId),&#xA;    FOREIGN KEY (TransDimId) REFERENCES dbo.TransportmittelDim (TransDimId),&#xA;    FOREIGN KEY (BeschwerdeDimId) REFERENCES dbo.BeschwerdeDim (BeschwerdeDimId)&#xA;);&#xA;"
+          SQLTask:SqlStatementSource="CREATE TABLE [dbo].[Bundesland](&#xA;&#x9;BundeslandId int identity not null primary key&#xA;&#x9;[Ort] [nvarchar](50) NOT NULL,&#xA;&#x9;[Plz] [smallint] NOT NULL,&#xA;&#x9;[Bundesland] [nvarchar](50) NOT NULL&#xA;);&#xA;&#xA;Create Table BeschwerdeDim (&#xA;    BeschwerdeDimId int identity not null primary key,&#xA;    Grund nvarchar(500),&#xA;);&#xA; &#xA;Create Table DatumDim (&#xA;    DatumDimId int identity not null primary key,&#xA;    Tag tinyint,&#xA;    Monat tinyint,&#xA;    Jahr tinyint,&#xA;    IstFeiertag bit,&#xA;);&#xA; &#xA;Create Table AdresseDim (&#xA;    AdresseDimId int identity not null primary key,&#xA;    Plz smallint,&#xA;    Ort varchar(48),&#xA;    Lat decimal(11, 8),&#xA;    Lon decimal(11, 8),&#xA;    Bundesland varchar(48),&#xA;    Start date,&#xA;    Ende date&#xA;);&#xA; &#xA;Create Table TransportmittelDim (&#xA;    TransDimId int identity not null primary key,&#xA;    Marke nvarchar(48),&#xA;    Typ nvarchar(48),&#xA;    Ladevolumen decimal(5,1),&#xA;    Max_Gewicht int,&#xA;    Kosten_pro_km decimal(5,2),&#xA;    Start date,&#xA;    Ende date&#xA;);&#xA; &#xA;Create Table LieferungFakten (&#xA;    FaktenId int not null identity primary key,&#xA;    BestellDatumDimId int,&#xA;    LieferDatumDimId int,&#xA;    StartAdresseDimId int,&#xA;    ZielAdresseDimId int,&#xA;    TransDimId int,&#xA;    BeschwerdeDimId int,&#xA;    Volumen decimal(5,2),&#xA;    Gewicht int,&#xA;    Lieferkosten decimal(10,2),&#xA;    Umsatz decimal (10,2),&#xA;    Lieferdauer time,&#xA;    Lieferstrecke int,&#xA;    FOREIGN KEY (BestellDatumDimId) REFERENCES dbo.DatumDim (DatumDimId),&#xA;    FOREIGN KEY (LieferDatumDimId) REFERENCES dbo.DatumDim (DatumDimId),&#xA;    FOREIGN KEY (StartAdresseDimId) REFERENCES dbo.AdresseDim (AdresseDimId),&#xA;    FOREIGN KEY (ZielAdresseDimId) REFERENCES dbo.AdresseDim (AdresseDimId),&#xA;    FOREIGN KEY (TransDimId) REFERENCES dbo.TransportmittelDim (TransDimId),&#xA;    FOREIGN KEY (BeschwerdeDimId) REFERENCES dbo.BeschwerdeDim (BeschwerdeDimId)&#xA;);&#xA;"
           SQLTask:ServerVersion="9"
           SQLTask:ExtendedLogging="True"
           SQLTask:LocalConnectionForLogging=""
@@ -64,7 +64,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{FD05051C-A362-4545-B195-628C7770DD75}"
-          SQLTask:SqlStatementSource="DROP table dbo.LieferungFakten;&#xA;DROP table dbo.BeschwerdeDim;;&#xA;DROP table dbo.DatumDim;&#xA;DROP table dbo.AdresseDim;&#xA;DROP table dbo.TransportmittelDim;&#xA;&#xA;"
+          SQLTask:SqlStatementSource="DROP table dbo.LieferungFakten;&#xA;DROP table dbo.BeschwerdeDim;;&#xA;DROP table dbo.DatumDim;&#xA;DROP table dbo.AdresseDim;&#xA;DROP table dbo.TransportmittelDim;&#xA;DROP table dbo.Bundesland;&#xA;"
           SQLTask:ServerVersion="9"
           SQLTask:ExtendedLogging="True"
           SQLTask:LocalConnectionForLogging=""
@@ -86,6 +86,89 @@
         <pipeline
           version="1">
           <components>
+            <component
+              refId="Package\ETL AdresseDim\Abgeleitete Spalte"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Abgeleitete Spalte;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;0"
+              description="Erstellt neue Spaltenwerte, indem Ausdrücke auf Transformationseingabespalten angewendet werden. Erstellen Sie neue Spalten, oder überschreiben Sie vorhandene. Verketten Sie beispielsweise die Werte der Spalten &quot;first name&quot; und &quot;last name&quot;, um die Spalte &quot;full name&quot; zu erhalten."
+              name="Abgeleitete Spalte"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\ETL AdresseDim\Abgeleitete Spalte.Inputs[Eingabe der abgeleiteten Spalte]"
+                  description="Eingabe der Transformation für abgeleiteten Spalten"
+                  name="Eingabe der abgeleiteten Spalte">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL AdresseDim\Abgeleitete Spalte.Inputs[Eingabe der abgeleiteten Spalte].Columns[Name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Name"
+                      cachedSortKeyPosition="2"
+                      lineageId="Package\ETL AdresseDim\Sortieren.Outputs[Sortierausgabe].Columns[Name]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL AdresseDim\Abgeleitete Spalte.Outputs[Ausgabe der abgeleiteten Spalte]"
+                  description="Standardausgabe der Transformation für abgeleitete Spalten"
+                  exclusionGroup="1"
+                  name="Ausgabe der abgeleiteten Spalte"
+                  synchronousInputId="Package\ETL AdresseDim\Abgeleitete Spalte.Inputs[Eingabe der abgeleiteten Spalte]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL AdresseDim\Abgeleitete Spalte.Outputs[Ausgabe der abgeleiteten Spalte].Columns[Ort]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Berechnung"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\ETL AdresseDim\Abgeleitete Spalte.Outputs[Ausgabe der abgeleiteten Spalte].Columns[Ort]"
+                      name="Ort"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Ausdruck für abgeleitete Spalte"
+                          name="Expression">[RTRIM]([REPLACE](#{Package\ETL AdresseDim\Sortieren.Outputs[Sortierausgabe].Columns[Name]},","," "))</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Angezeigter Ausdruck für abgeleitete Spalte"
+                          expressionType="Notify"
+                          name="FriendlyExpression">RTRIM(REPLACE(Name,","," "))</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL AdresseDim\Abgeleitete Spalte.Outputs[Fehlerausgabe der abgeleiteten Spalte]"
+                  description="Fehlerausgabe der Transformation für abgeleitete Spalten"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Fehlerausgabe der abgeleiteten Spalte"
+                  synchronousInputId="Package\ETL AdresseDim\Abgeleitete Spalte.Inputs[Eingabe der abgeleiteten Spalte]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL AdresseDim\Abgeleitete Spalte.Outputs[Fehlerausgabe der abgeleiteten Spalte].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL AdresseDim\Abgeleitete Spalte.Outputs[Fehlerausgabe der abgeleiteten Spalte].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL AdresseDim\Abgeleitete Spalte.Outputs[Fehlerausgabe der abgeleiteten Spalte].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL AdresseDim\Abgeleitete Spalte.Outputs[Fehlerausgabe der abgeleiteten Spalte].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
             <component
               refId="Package\ETL AdresseDim\AdresseDim"
               componentClassID="Microsoft.OLEDBDestination"
@@ -145,8 +228,8 @@
               <connections>
                 <connection
                   refId="Package\ETL AdresseDim\AdresseDim.Connections[OleDbConnection]"
-                  connectionManagerID="{E7ABF833-EABB-45A5-B315-3795CDA593E0}:invalid"
-                  connectionManagerRefId="{E7ABF833-EABB-45A5-B315-3795CDA593E0}:invalid"
+                  connectionManagerID="{352D8B30-1379-41B4-B8FA-69A1DB9220FE}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527.u573527]"
                   description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
                   name="OleDbConnection" />
               </connections>
@@ -157,6 +240,44 @@
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Eingabe des OLE DB-Ziels">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL AdresseDim\AdresseDim.Inputs[Eingabe des OLE DB-Ziels].Columns[Plz]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Plz"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\ETL AdresseDim\AdresseDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Plz]"
+                      lineageId="Package\ETL AdresseDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Plz]" />
+                    <inputColumn
+                      refId="Package\ETL AdresseDim\AdresseDim.Inputs[Eingabe des OLE DB-Ziels].Columns[Lat]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Lat"
+                      externalMetadataColumnId="Package\ETL AdresseDim\AdresseDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Lat]"
+                      lineageId="Package\ETL AdresseDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Lat]" />
+                    <inputColumn
+                      refId="Package\ETL AdresseDim\AdresseDim.Inputs[Eingabe des OLE DB-Ziels].Columns[Lon]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Lon"
+                      externalMetadataColumnId="Package\ETL AdresseDim\AdresseDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Lon]"
+                      lineageId="Package\ETL AdresseDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Lon]" />
+                    <inputColumn
+                      refId="Package\ETL AdresseDim\AdresseDim.Inputs[Eingabe des OLE DB-Ziels].Columns[Bundesland]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Bundesland"
+                      externalMetadataColumnId="Package\ETL AdresseDim\AdresseDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Bundesland]"
+                      lineageId="Package\ETL AdresseDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Bundesland]" />
+                    <inputColumn
+                      refId="Package\ETL AdresseDim\AdresseDim.Inputs[Eingabe des OLE DB-Ziels].Columns[Abgeleitete 1-Spalte]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Abgeleitete 1-Spalte"
+                      externalMetadataColumnId="Package\ETL AdresseDim\AdresseDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Ort]"
+                      lineageId="Package\ETL AdresseDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Abgeleitete 1-Spalte]" />
+                  </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
@@ -197,6 +318,10 @@
                       refId="Package\ETL AdresseDim\AdresseDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Ende]"
                       dataType="dbDate"
                       name="Ende" />
+                    <externalMetadataColumn
+                      refId="Package\ETL AdresseDim\AdresseDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[AdresseDimId]"
+                      dataType="i4"
+                      name="AdresseDimId" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -946,6 +1071,12 @@
                       cachedName="Lon"
                       cachedSortKeyPosition="4"
                       lineageId="Package\ETL AdresseDim\Sortieren.Outputs[Sortierausgabe].Columns[Lon]" />
+                    <inputColumn
+                      refId="Package\ETL AdresseDim\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins].Columns[Ort]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Ort"
+                      lineageId="Package\ETL AdresseDim\Abgeleitete Spalte.Outputs[Ausgabe der abgeleiteten Spalte].Columns[Ort]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -1001,20 +1132,6 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\ETL AdresseDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Name]"
-                      dataType="wstr"
-                      length="255"
-                      lineageId="Package\ETL AdresseDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Name]"
-                      name="Name">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Die mit dieser Ausgabespalte verbundene Eingabespalte"
-                          name="InputColumnID">#{Package\ETL AdresseDim\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins].Columns[Name]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
                       refId="Package\ETL AdresseDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Lat]"
                       dataType="wstr"
                       length="50"
@@ -1056,6 +1173,20 @@
                           name="InputColumnID">#{Package\ETL AdresseDim\Zusammenführungsjoin.Inputs[Rechte Eingabe des Zusammenführungsjoins].Columns[Bundesland]}</property>
                       </properties>
                     </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL AdresseDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Abgeleitete 1-Spalte]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\ETL AdresseDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Abgeleitete 1-Spalte]"
+                      name="Abgeleitete 1-Spalte">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Die mit dieser Ausgabespalte verbundene Eingabespalte"
+                          name="InputColumnID">#{Package\ETL AdresseDim\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins].Columns[Ort]}</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -1063,6 +1194,11 @@
             </component>
           </components>
           <paths>
+            <path
+              refId="Package\ETL AdresseDim.Paths[Ausgabe der abgeleiteten Spalte]"
+              endId="Package\ETL AdresseDim\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins]"
+              name="Ausgabe der abgeleiteten Spalte"
+              startId="Package\ETL AdresseDim\Abgeleitete Spalte.Outputs[Ausgabe der abgeleiteten Spalte]" />
             <path
               refId="Package\ETL AdresseDim.Paths[Ausgabe der OLE DB-Quelle]"
               endId="Package\ETL AdresseDim\Sortieren.Inputs[Sortiereingabe]"
@@ -1074,13 +1210,18 @@
               name="Ausgabe der OLE DB-Quelle"
               startId="Package\ETL AdresseDim\Bundesland.Outputs[Ausgabe der OLE DB-Quelle]" />
             <path
+              refId="Package\ETL AdresseDim.Paths[Ausgabe des Zusammenführungsjoins]"
+              endId="Package\ETL AdresseDim\AdresseDim.Inputs[Eingabe des OLE DB-Ziels]"
+              name="Ausgabe des Zusammenführungsjoins"
+              startId="Package\ETL AdresseDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins]" />
+            <path
               refId="Package\ETL AdresseDim.Paths[Sortierausgabe]"
               endId="Package\ETL AdresseDim\Zusammenführungsjoin.Inputs[Rechte Eingabe des Zusammenführungsjoins]"
               name="Sortierausgabe"
               startId="Package\ETL AdresseDim\Sortieren 1.Outputs[Sortierausgabe]" />
             <path
               refId="Package\ETL AdresseDim.Paths[Sortierausgabe1]"
-              endId="Package\ETL AdresseDim\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins]"
+              endId="Package\ETL AdresseDim\Abgeleitete Spalte.Inputs[Eingabe der abgeleiteten Spalte]"
               name="Sortierausgabe"
               startId="Package\ETL AdresseDim\Sortieren.Outputs[Sortierausgabe]" />
           </paths>
@@ -4534,25 +4675,51 @@ WHERE TransDimId = TransId;</property>
           Id="Package\ETL AdresseDim\Geoposition"
           TopLeft="129,32" />
         <NodeLayout
-          Size="130,42"
-          Id="Package\ETL AdresseDim\Sortieren 1"
-          TopLeft="378.5,133.5" />
-        <NodeLayout
-          Size="122,42"
-          Id="Package\ETL AdresseDim\Sortieren"
-          TopLeft="137.5,133" />
-        <NodeLayout
-          Size="134,42"
-          Id="Package\ETL AdresseDim\Bundesland"
-          TopLeft="378,32.7083323835921" />
+          Size="136,42"
+          Id="Package\ETL AdresseDim\AdresseDim"
+          TopLeft="127,511.208332383592" />
         <NodeLayout
           Size="189,42"
           Id="Package\ETL AdresseDim\Zusammenführungsjoin"
           TopLeft="129,386.5" />
         <NodeLayout
-          Size="175,42"
-          Id="Package\ETL AdresseDim\AdresseDim"
-          TopLeft="127,511.208332383592" />
+          Size="134,42"
+          Id="Package\ETL AdresseDim\Bundesland"
+          TopLeft="378,32.7083323835921" />
+        <NodeLayout
+          Size="130,42"
+          Id="Package\ETL AdresseDim\Sortieren 1"
+          TopLeft="378.5,133.5" />
+        <NodeLayout
+          Size="164.5,42"
+          Id="Package\ETL AdresseDim\Abgeleitete Spalte"
+          TopLeft="111.071428571429,210.089284670761" />
+        <NodeLayout
+          Size="122,42"
+          Id="Package\ETL AdresseDim\Sortieren"
+          TopLeft="137.5,133" />
+        <EdgeLayout
+          Id="Package\ETL AdresseDim.Paths[Sortierausgabe1]"
+          TopLeft="195.910714285714,175">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,35.0892846707609"
+              Start="0,0"
+              End="0,27.5892846707609">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.5892846707609" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\ETL AdresseDim.Paths[Sortierausgabe]"
           TopLeft="443.75,175.5">
@@ -4579,6 +4746,40 @@ WHERE TransDimId = TransId;</property>
                     Point3="-220.25,109.5" />
                   <mssgle:LineSegment
                     End="-220.25,203.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL AdresseDim.Paths[Ausgabe des Zusammenführungsjoins]"
+          TopLeft="223.5,428.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-28.5,82.7083323835921"
+              Start="0,0"
+              End="-28.5,75.2083323835921">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.354166191796" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,37.354166191796"
+                    Point2="0,41.354166191796"
+                    Point3="-4,41.354166191796" />
+                  <mssgle:LineSegment
+                    End="-24.5,41.354166191796" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-24.5,41.354166191796"
+                    Point2="-28.5,41.354166191796"
+                    Point3="-28.5,45.354166191796" />
+                  <mssgle:LineSegment
+                    End="-28.5,75.2083323835921" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4632,19 +4833,19 @@ WHERE TransDimId = TransId;</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ETL AdresseDim.Paths[Sortierausgabe1]"
-          TopLeft="195.916666666667,175">
+          Id="Package\ETL AdresseDim.Paths[Ausgabe der abgeleiteten Spalte]"
+          TopLeft="193.327380952381,252.089284670761">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,211.5"
+              EndConnector="0,134.410715329239"
               Start="0,0"
-              End="0,204">
+              End="0,126.910715329239">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,204" />
+                    End="0,126.910715329239" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4670,7 +4871,7 @@ WHERE TransDimId = TransId;</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\ETL AdresseDim\Bundesland">
+    design-time-name="Package\ETL AdresseDim\AdresseDim">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4683,7 +4884,7 @@ WHERE TransDimId = TransId;</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\ETL AdresseDim\AdresseDim">
+    design-time-name="Package\ETL AdresseDim\Bundesland">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -5043,29 +5244,6 @@ WHERE TransDimId = TransId;</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\ETL TransportmittelDim\Suche">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[TransportmittelDim]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\ETL TransportmittelDim\HAM_Transportmittel">
     <Properties>
       <Property>
@@ -5088,6 +5266,29 @@ WHERE TransDimId = TransId;</property>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL TransportmittelDim\Suche">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[TransportmittelDim]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
