@@ -12,8 +12,8 @@
   DTS:ObjectName="Package"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="23"
-  DTS:VersionGUID="{D19900A2-C51C-419E-9202-C5CA14B77658}">
+  DTS:VersionBuild="24"
+  DTS:VersionGUID="{46333F55-ED4B-492A-BD98-A96233BCBCB8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -24,7 +24,7 @@
       DTS:ObjectName="Create Table">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Persist Security Info=True;Connect Timeout=30;Application Name=SSIS-Package-{FD05051C-A362-4545-B195-628C7770DD75}Create Table;">
+          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Persist Security Info=True;Connect Timeout=30;Application Name=&quot;SSIS-Package-{FD05051C-A362-4545-B195-628C7770DD75}Create Table&quot;;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"></DTS:Password>
@@ -88,11 +88,7 @@
       DTS:ObjectName="sqlserverdrei.f4.htw-berlin.de,1125.s0573527">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package-{74CC8B04-9FCE-419A-8722-94C31F022901}sqlserverdrei.f4.htw-berlin.de,1125.s0573527;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"></DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package-{74CC8B04-9FCE-419A-8722-94C31F022901}sqlserverdrei.f4.htw-berlin.de,1125.s0573527;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -116,7 +112,7 @@
       DTS:ExecutableType="Microsoft.DbMaintenanceTSQLExecuteTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Create Tables"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -137,7 +133,7 @@
       DTS:ExecutableType="Microsoft.DbMaintenanceTSQLExecuteTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Drop Tables"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -4106,7 +4102,7 @@ WHERE TransDimId = TransId;</property>
       DTS:ExecutableType="Microsoft.BulkInsertTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Masseneinfügungstask"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <BulkInsertTask:BulkInsertTaskData
@@ -4123,7 +4119,7 @@ WHERE TransDimId = TransId;</property>
       DTS:ExecutableType="Microsoft.ExecuteProcess"
       DTS:LocaleID="-1"
       DTS:ObjectName="Script DatumDim"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData />
     </DTS:Executable>
@@ -4135,7 +4131,7 @@ WHERE TransDimId = TransId;</property>
       DTS:ExecutableType="Microsoft.DbMaintenanceTSQLExecuteTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Seed Tables"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -4227,7 +4223,7 @@ WHERE TransDimId = TransId;</property>
           Id="Package\Drop Tables"
           TopLeft="165.714285714286,6.96428567969376" />
         <NodeLayout
-          Size="158.5,42"
+          Size="158,42"
           Id="Package\ETL AdresseDim"
           TopLeft="26.25,216.516864007462" />
         <NodeLayout
@@ -4243,11 +4239,11 @@ WHERE TransDimId = TransId;</property>
           Id="Package\ETL TransportmittelDim"
           TopLeft="182.388888888889,413.308529891197" />
         <NodeLayout
-          Size="186.5,42"
+          Size="186,42"
           Id="Package\Masseneinfügungstask"
           TopLeft="341,138.395832742771" />
         <NodeLayout
-          Size="158.5,42"
+          Size="158,42"
           Id="Package\Script DatumDim"
           TopLeft="22.75,343.39880807748" />
         <NodeLayout
