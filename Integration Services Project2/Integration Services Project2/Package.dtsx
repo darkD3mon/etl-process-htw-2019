@@ -12,25 +12,11 @@
   DTS:ObjectName="Package"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="24"
-  DTS:VersionGUID="{46333F55-ED4B-492A-BD98-A96233BCBCB8}">
+  DTS:VersionBuild="47"
+  DTS:VersionGUID="{82CDB92C-71B9-4C3D-ADA6-FA6E248DC563}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Create Table]"
-      DTS:CreationName="ADO.NET:SQL"
-      DTS:DTSID="{FD05051C-A362-4545-B195-628C7770DD75}"
-      DTS:ObjectName="Create Table">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Persist Security Info=True;Connect Timeout=30;Application Name=&quot;SSIS-Package-{FD05051C-A362-4545-B195-628C7770DD75}Create Table&quot;;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"></DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[postleitzahlen2.csv]"
       DTS:CreationName="FILE"
@@ -39,66 +25,6 @@
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="C:\Users\Public\etl-process-htw-2019\postleitzahlen2.csv" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125]"
-      DTS:CreationName="ADO.NET:SQL"
-      DTS:DTSID="{69DA0431-ECFE-4445-8A38-4A0AFAB9B40B}"
-      DTS:ObjectName="sqlserverdrei.f4.htw-berlin.de,1125">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Persist Security Info=True;Connect Timeout=30;Application Name=SSIS-Package-{69DA0431-ECFE-4445-8A38-4A0AFAB9B40B}sqlserverdrei.f4.htw-berlin.de,1125;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_BER]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{7255d71f-80db-448d-8dae-564aca7cfea7}"
-      DTS:ObjectName="sqlserverdrei.f4.htw-berlin.de,1125.Data_BER">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Initial Catalog=Data_BER;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package-{74CC8B04-9FCE-419A-8722-94C31F022901}sqlserverdrei.f4.htw-berlin.de,1125.s0573527;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_FRA]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{996807ec-6e7f-46a7-99d8-5d233e94b0fb}"
-      DTS:ObjectName="sqlserverdrei.f4.htw-berlin.de,1125.Data_FRA">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Initial Catalog=Data_FRA;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package-{74CC8B04-9FCE-419A-8722-94C31F022901}sqlserverdrei.f4.htw-berlin.de,1125.s0573527;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_HAM]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{f9391b1d-75f1-4527-817f-8b1c95d18242}"
-      DTS:ObjectName="sqlserverdrei.f4.htw-berlin.de,1125.Data_HAM">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Initial Catalog=Data_HAM;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package-{74CC8B04-9FCE-419A-8722-94C31F022901}sqlserverdrei.f4.htw-berlin.de,1125.s0573527;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.s0573527]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{74CC8B04-9FCE-419A-8722-94C31F022901}"
-      DTS:ObjectName="sqlserverdrei.f4.htw-berlin.de,1125.s0573527">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package-{74CC8B04-9FCE-419A-8722-94C31F022901}sqlserverdrei.f4.htw-berlin.de,1125.s0573527;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{E7ABF833-EABB-45A5-B315-3795CDA593E0}"
-      DTS:ObjectName="sqlserverdrei.f4.htw-berlin.de,1125.u573527">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Provider=MSOLEDBSQL.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{E7ABF833-EABB-45A5-B315-3795CDA593E0}sqlserverdrei.f4.htw-berlin.de,1125.u573527;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -137,6 +63,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
+          SQLTask:Connection="{FD05051C-A362-4545-B195-628C7770DD75}"
           SQLTask:SqlStatementSource="DROP table dbo.LieferungFakten;&#xA;DROP table dbo.BeschwerdeDim;;&#xA;DROP table dbo.DatumDim;&#xA;DROP table dbo.AdresseDim;&#xA;DROP table dbo.TransportmittelDim;&#xA;&#xA;"
           SQLTask:ServerVersion="9"
           SQLTask:ExtendedLogging="True"
@@ -218,8 +145,8 @@
               <connections>
                 <connection
                   refId="Package\ETL AdresseDim\AdresseDim.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527]"
-                  connectionManagerRefId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527]"
+                  connectionManagerID="{E7ABF833-EABB-45A5-B315-3795CDA593E0}:invalid"
+                  connectionManagerRefId="{E7ABF833-EABB-45A5-B315-3795CDA593E0}:invalid"
                   description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
                   name="OleDbConnection" />
               </connections>
@@ -349,8 +276,8 @@
               <connections>
                 <connection
                   refId="Package\ETL AdresseDim\Bundesland.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527]"
-                  connectionManagerRefId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527]"
+                  connectionManagerID="{352D8B30-1379-41B4-B8FA-69A1DB9220FE}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527.u573527]"
                   description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
                   name="OleDbConnection" />
               </connections>
@@ -498,8 +425,8 @@
               <connections>
                 <connection
                   refId="Package\ETL AdresseDim\Geoposition.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_BER]"
-                  connectionManagerRefId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_BER]"
+                  connectionManagerID="{85518BC2-AFCE-4BFA-98AF-87FAC45641A8}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_BER.u573527]"
                   description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
                   name="OleDbConnection" />
               </connections>
@@ -654,82 +581,6 @@
                       length="50"
                       lineageId="Package\ETL AdresseDim\Geoposition.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lon]"
                       name="Lon" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\ETL AdresseDim\OLE DB-Befehl"
-              componentClassID="Microsoft.OLEDBCommand"
-              contactInfo="OLE DB-Befehl;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;2"
-              description="Führt eine SQL-Anweisung für jede Zeile in einem Datenfluss aus. Rufen Sie beispielsweise die gespeicherte Prozedur &quot;new employee setup&quot; für jede Zeile in der Tabelle &quot;new employees&quot; auf. Hinweis: Wenn Sie für jede Zeile eines umfangreichen Datenflusses eine SQL-Anweisung ausführen, kann der Vorgang länger dauern."
-              name="OLE DB-Befehl"
-              usesDispositions="true"
-              version="2">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Der auszuführende SQL-Befehl."
-                  expressionType="Notify"
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT REPLACE (SUBSTRING(g.Name, 1, ISNULL(NULLIF(CHARINDEX(' ', g.Name) -1, -1), LEN(g.Name))), ',', '')
-FROM [dbo].[Geoposition] g;</property>
-                <property
-                  dataType="System.Int32"
-                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
-                  name="DefaultCodePage">1252</property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\ETL AdresseDim\OLE DB-Befehl.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_BER]"
-                  connectionManagerRefId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_BER]"
-                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
-                  name="OleDbConnection" />
-              </connections>
-              <inputs>
-                <input
-                  refId="Package\ETL AdresseDim\OLE DB-Befehl.Inputs[Eingabe des OLE DB-Befehls]"
-                  errorOrTruncationOperation="Befehlsausführung"
-                  errorRowDisposition="FailComponent"
-                  hasSideEffects="true"
-                  name="Eingabe des OLE DB-Befehls">
-                  <externalMetadataColumns
-                    isUsed="True" />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\ETL AdresseDim\OLE DB-Befehl.Outputs[Ausgabe des OLE DB-Befehls]"
-                  exclusionGroup="1"
-                  name="Ausgabe des OLE DB-Befehls"
-                  synchronousInputId="Package\ETL AdresseDim\OLE DB-Befehl.Inputs[Eingabe des OLE DB-Befehls]">
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\ETL AdresseDim\OLE DB-Befehl.Outputs[Fehlerausgabe des OLE DB-Befehls]"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Fehlerausgabe des OLE DB-Befehls"
-                  synchronousInputId="Package\ETL AdresseDim\OLE DB-Befehl.Inputs[Eingabe des OLE DB-Befehls]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\ETL AdresseDim\OLE DB-Befehl.Outputs[Fehlerausgabe des OLE DB-Befehls].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\ETL AdresseDim\OLE DB-Befehl.Outputs[Fehlerausgabe des OLE DB-Befehls].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\ETL AdresseDim\OLE DB-Befehl.Outputs[Fehlerausgabe des OLE DB-Befehls].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\ETL AdresseDim\OLE DB-Befehl.Outputs[Fehlerausgabe des OLE DB-Befehls].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -1223,18 +1074,13 @@ FROM [dbo].[Geoposition] g;</property>
               name="Ausgabe der OLE DB-Quelle"
               startId="Package\ETL AdresseDim\Bundesland.Outputs[Ausgabe der OLE DB-Quelle]" />
             <path
-              refId="Package\ETL AdresseDim.Paths[Ausgabe des OLE DB-Befehls]"
-              endId="Package\ETL AdresseDim\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins]"
-              name="Ausgabe des OLE DB-Befehls"
-              startId="Package\ETL AdresseDim\OLE DB-Befehl.Outputs[Ausgabe des OLE DB-Befehls]" />
-            <path
               refId="Package\ETL AdresseDim.Paths[Sortierausgabe]"
               endId="Package\ETL AdresseDim\Zusammenführungsjoin.Inputs[Rechte Eingabe des Zusammenführungsjoins]"
               name="Sortierausgabe"
               startId="Package\ETL AdresseDim\Sortieren 1.Outputs[Sortierausgabe]" />
             <path
               refId="Package\ETL AdresseDim.Paths[Sortierausgabe1]"
-              endId="Package\ETL AdresseDim\OLE DB-Befehl.Inputs[Eingabe des OLE DB-Befehls]"
+              endId="Package\ETL AdresseDim\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins]"
               name="Sortierausgabe"
               startId="Package\ETL AdresseDim\Sortieren.Outputs[Sortierausgabe]" />
           </paths>
@@ -1245,6 +1091,7 @@ FROM [dbo].[Geoposition] g;</property>
       DTS:refId="Package\ETL BeschwerdeDim"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Datenflusstask"
+      DTS:Disabled="True"
       DTS:DTSID="{0C439E96-A959-4363-BA6D-262059C538C1}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -1306,8 +1153,8 @@ FROM [dbo].[Geoposition] g;</property>
               <connections>
                 <connection
                   refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_BER]"
-                  connectionManagerRefId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_BER]"
+                  connectionManagerID="{85518BC2-AFCE-4BFA-98AF-87FAC45641A8}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_BER.u573527]"
                   description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
                   name="OleDbConnection" />
               </connections>
@@ -1567,8 +1414,8 @@ FROM [dbo].[Geoposition] g;</property>
               <connections>
                 <connection
                   refId="Package\ETL BeschwerdeDim\BeschwerdeDim.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527]"
-                  connectionManagerRefId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527]"
+                  connectionManagerID="{E7ABF833-EABB-45A5-B315-3795CDA593E0}:invalid"
+                  connectionManagerRefId="{E7ABF833-EABB-45A5-B315-3795CDA593E0}:invalid"
                   description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
                   name="OleDbConnection" />
               </connections>
@@ -1642,7 +1489,7 @@ FROM [dbo].[Geoposition] g;</property>
                 <property
                   dataType="System.String"
                   description="Gibt den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts an."
-                  name="OpenRowset"></property>
+                  name="OpenRowset">[dbo].[Beschwerde]</property>
                 <property
                   dataType="System.String"
                   description="Gibt die Variable an, die den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts enthält."
@@ -1669,7 +1516,7 @@ FROM  dbo.Beschwerde</property>
                   dataType="System.Int32"
                   description="Gibt den zum Zugreifen auf die Datenbank verwendeten Modus an."
                   name="AccessMode"
-                  typeConverter="AccessMode">2</property>
+                  typeConverter="AccessMode">0</property>
                 <property
                   dataType="System.String"
                   description="Die Zuordnungen zwischen den Parametern im SQL-Befehl und den Variablen."
@@ -1678,8 +1525,8 @@ FROM  dbo.Beschwerde</property>
               <connections>
                 <connection
                   refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_BER]"
-                  connectionManagerRefId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_BER]"
+                  connectionManagerID="{85518BC2-AFCE-4BFA-98AF-87FAC45641A8}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_BER.u573527]"
                   description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
                   name="OleDbConnection" />
               </connections>
@@ -1698,14 +1545,118 @@ FROM  dbo.Beschwerde</property>
                       lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Grund]"
                       name="Grund"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[BeschwerdeId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[BeschwerdeId]"
+                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[BeschwerdeId]"
+                      name="BeschwerdeId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[LieferauftragId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[LieferauftragId]"
+                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[LieferauftragId]"
+                      name="LieferauftragId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[KundenId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[KundenId]"
+                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[KundenId]"
+                      name="KundenId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[TmId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[TmId]"
+                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[TmId]"
+                      name="TmId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Bestelldatum]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Bestelldatum]"
+                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Bestelldatum]"
+                      name="Bestelldatum"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lieferdatum]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Lieferdatum]"
+                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lieferdatum]"
+                      name="Lieferdatum"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lieferdauer]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Lieferdauer]"
+                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lieferdauer]"
+                      name="Lieferdauer"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[WerkId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[WerkId]"
+                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[WerkId]"
+                      name="WerkId"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Grund]"
                       dataType="wstr"
-                      length="50"
+                      length="255"
                       name="Grund" />
+                    <externalMetadataColumn
+                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[BeschwerdeId]"
+                      dataType="i4"
+                      name="BeschwerdeId" />
+                    <externalMetadataColumn
+                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[LieferauftragId]"
+                      dataType="i4"
+                      name="LieferauftragId" />
+                    <externalMetadataColumn
+                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[KundenId]"
+                      dataType="i4"
+                      name="KundenId" />
+                    <externalMetadataColumn
+                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[TmId]"
+                      dataType="i4"
+                      name="TmId" />
+                    <externalMetadataColumn
+                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Bestelldatum]"
+                      dataType="dbTimeStamp"
+                      name="Bestelldatum" />
+                    <externalMetadataColumn
+                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Lieferdatum]"
+                      dataType="dbTimeStamp"
+                      name="Lieferdatum" />
+                    <externalMetadataColumn
+                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Lieferdauer]"
+                      dataType="i4"
+                      name="Lieferdauer" />
+                    <externalMetadataColumn
+                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[WerkId]"
+                      dataType="i4"
+                      name="WerkId" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -1714,9 +1665,49 @@ FROM  dbo.Beschwerde</property>
                   name="Fehlerausgabe der OLE DB-Quelle">
                   <outputColumns>
                     <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[BeschwerdeId]"
+                      dataType="i4"
+                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[BeschwerdeId]"
+                      name="BeschwerdeId" />
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[LieferauftragId]"
+                      dataType="i4"
+                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[LieferauftragId]"
+                      name="LieferauftragId" />
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[KundenId]"
+                      dataType="i4"
+                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[KundenId]"
+                      name="KundenId" />
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[TmId]"
+                      dataType="i4"
+                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[TmId]"
+                      name="TmId" />
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Bestelldatum]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Bestelldatum]"
+                      name="Bestelldatum" />
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lieferdatum]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lieferdatum]"
+                      name="Lieferdatum" />
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lieferdauer]"
+                      dataType="i4"
+                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lieferdauer]"
+                      name="Lieferdauer" />
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[WerkId]"
+                      dataType="i4"
+                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[WerkId]"
+                      name="WerkId" />
+                    <outputColumn
                       refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Grund]"
                       dataType="wstr"
-                      length="50"
+                      length="255"
                       lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Grund]"
                       name="Grund" />
                     <outputColumn
@@ -1744,6 +1735,7 @@ FROM  dbo.Beschwerde</property>
       DTS:refId="Package\ETL LieferungFakten"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Datenflusstask"
+      DTS:Disabled="True"
       DTS:DTSID="{660AEE34-188C-49A2-906A-27EAD241B3D0}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -1813,8 +1805,8 @@ FROM  dbo.Beschwerde</property>
               <connections>
                 <connection
                   refId="Package\ETL LieferungFakten\LieferungFakten.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527]"
-                  connectionManagerRefId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527]"
+                  connectionManagerID="{352D8B30-1379-41B4-B8FA-69A1DB9220FE}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527.u573527]"
                   description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
                   name="OleDbConnection" />
               </connections>
@@ -1847,18 +1839,6 @@ FROM  dbo.Beschwerde</property>
                       refId="Package\ETL LieferungFakten\LieferungFakten.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[ZielAdresseDimId]"
                       dataType="i4"
                       name="ZielAdresseDimId" />
-                    <externalMetadataColumn
-                      refId="Package\ETL LieferungFakten\LieferungFakten.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[KundenDimId]"
-                      dataType="i4"
-                      name="KundenDimId" />
-                    <externalMetadataColumn
-                      refId="Package\ETL LieferungFakten\LieferungFakten.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[WerkDimId]"
-                      dataType="i4"
-                      name="WerkDimId" />
-                    <externalMetadataColumn
-                      refId="Package\ETL LieferungFakten\LieferungFakten.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[TransportDimId]"
-                      dataType="i4"
-                      name="TransportDimId" />
                     <externalMetadataColumn
                       refId="Package\ETL LieferungFakten\LieferungFakten.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[BeschwerdeDimId]"
                       dataType="i4"
@@ -1894,6 +1874,10 @@ FROM  dbo.Beschwerde</property>
                       refId="Package\ETL LieferungFakten\LieferungFakten.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Lieferstrecke]"
                       dataType="i4"
                       name="Lieferstrecke" />
+                    <externalMetadataColumn
+                      refId="Package\ETL LieferungFakten\LieferungFakten.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[TransDimId]"
+                      dataType="i4"
+                      name="TransDimId" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -1930,6 +1914,7 @@ FROM  dbo.Beschwerde</property>
       DTS:refId="Package\ETL TransportmittelDim"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Datenflusstask"
+      DTS:Disabled="True"
       DTS:DTSID="{077DBD62-4A3B-4ABD-9095-02450B3C9DB6}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -2166,8 +2151,8 @@ FROM  dbo.Beschwerde</property>
               <connections>
                 <connection
                   refId="Package\ETL TransportmittelDim\FRA_Transportmittel.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_FRA]"
-                  connectionManagerRefId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_FRA]"
+                  connectionManagerID="{4577AEC6-79B5-4D71-AFDF-F9B34AF1F7B5}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_FRA.u573527]"
                   description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
                   name="OleDbConnection" />
               </connections>
@@ -2176,15 +2161,6 @@ FROM  dbo.Beschwerde</property>
                   refId="Package\ETL TransportmittelDim\FRA_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle]"
                   name="Ausgabe der OLE DB-Quelle">
                   <outputColumns>
-                    <outputColumn
-                      refId="Package\ETL TransportmittelDim\FRA_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].Columns[TransId]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL TransportmittelDim\FRA_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[TransId]"
-                      lineageId="Package\ETL TransportmittelDim\FRA_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].Columns[TransId]"
-                      name="TransId"
-                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\ETL TransportmittelDim\FRA_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].Columns[Marke]"
                       dataType="wstr"
@@ -2215,6 +2191,25 @@ FROM  dbo.Beschwerde</property>
                       name="Ladevolumen"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
+                      refId="Package\ETL TransportmittelDim\FRA_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].Columns[TransId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL TransportmittelDim\FRA_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[TransId]"
+                      lineageId="Package\ETL TransportmittelDim\FRA_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].Columns[TransId]"
+                      name="TransId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL TransportmittelDim\FRA_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].Columns[Fuehrerscheinklasse]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL TransportmittelDim\FRA_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Fuehrerscheinklasse]"
+                      length="10"
+                      lineageId="Package\ETL TransportmittelDim\FRA_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].Columns[Fuehrerscheinklasse]"
+                      name="Fuehrerscheinklasse"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
                       refId="Package\ETL TransportmittelDim\FRA_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].Columns[Max_Gewicht]"
                       dataType="r4"
                       errorOrTruncationOperation="Konvertierung"
@@ -2236,10 +2231,6 @@ FROM  dbo.Beschwerde</property>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\ETL TransportmittelDim\FRA_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[TransId]"
-                      dataType="i4"
-                      name="TransId" />
-                    <externalMetadataColumn
                       refId="Package\ETL TransportmittelDim\FRA_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Marke]"
                       dataType="wstr"
                       length="50"
@@ -2258,14 +2249,18 @@ FROM  dbo.Beschwerde</property>
                       dataType="i4"
                       name="Anz_Fahrer" />
                     <externalMetadataColumn
+                      refId="Package\ETL TransportmittelDim\FRA_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Anzahl_Bestand]"
+                      dataType="i4"
+                      name="Anzahl_Bestand" />
+                    <externalMetadataColumn
+                      refId="Package\ETL TransportmittelDim\FRA_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[TransId]"
+                      dataType="i4"
+                      name="TransId" />
+                    <externalMetadataColumn
                       refId="Package\ETL TransportmittelDim\FRA_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Fuehrerscheinklasse]"
                       dataType="wstr"
                       length="10"
                       name="Fuehrerscheinklasse" />
-                    <externalMetadataColumn
-                      refId="Package\ETL TransportmittelDim\FRA_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Anzahl_Bestand]"
-                      dataType="i4"
-                      name="Anzahl_Bestand" />
                     <externalMetadataColumn
                       refId="Package\ETL TransportmittelDim\FRA_Transportmittel.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Max_Gewicht]"
                       dataType="r4"
@@ -2282,6 +2277,11 @@ FROM  dbo.Beschwerde</property>
                   name="Fehlerausgabe der OLE DB-Quelle">
                   <outputColumns>
                     <outputColumn
+                      refId="Package\ETL TransportmittelDim\FRA_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[TransId]"
+                      dataType="i4"
+                      lineageId="Package\ETL TransportmittelDim\FRA_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[TransId]"
+                      name="TransId" />
+                    <outputColumn
                       refId="Package\ETL TransportmittelDim\FRA_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
                       dataType="i4"
                       lineageId="Package\ETL TransportmittelDim\FRA_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
@@ -2294,11 +2294,6 @@ FROM  dbo.Beschwerde</property>
                       name="ErrorColumn"
                       specialFlags="2" />
                     <outputColumn
-                      refId="Package\ETL TransportmittelDim\FRA_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[TransId]"
-                      dataType="i4"
-                      lineageId="Package\ETL TransportmittelDim\FRA_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[TransId]"
-                      name="TransId" />
-                    <outputColumn
                       refId="Package\ETL TransportmittelDim\FRA_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Marke]"
                       dataType="wstr"
                       length="50"
@@ -2310,6 +2305,12 @@ FROM  dbo.Beschwerde</property>
                       length="50"
                       lineageId="Package\ETL TransportmittelDim\FRA_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Typ]"
                       name="Typ" />
+                    <outputColumn
+                      refId="Package\ETL TransportmittelDim\FRA_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Fuehrerscheinklasse]"
+                      dataType="wstr"
+                      length="10"
+                      lineageId="Package\ETL TransportmittelDim\FRA_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Fuehrerscheinklasse]"
+                      name="Fuehrerscheinklasse" />
                     <outputColumn
                       refId="Package\ETL TransportmittelDim\FRA_Transportmittel.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Ladevolumen]"
                       dataType="r4"
@@ -2381,8 +2382,8 @@ FROM  dbo.Beschwerde</property>
               <connections>
                 <connection
                   refId="Package\ETL TransportmittelDim\HAM_Transportmittel.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_HAM]"
-                  connectionManagerRefId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_HAM]"
+                  connectionManagerID="{7B23511D-19C0-497F-A82E-504765842600}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_HAM.u573527]"
                   description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
                   name="OleDbConnection" />
               </connections>
@@ -3059,8 +3060,8 @@ where [refTable].[TransDimId] = ?</property>
               <connections>
                 <connection
                   refId="Package\ETL TransportmittelDim\Suche.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527]"
-                  connectionManagerRefId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527]"
+                  connectionManagerID="{352D8B30-1379-41B4-B8FA-69A1DB9220FE}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527.u573527]"
                   description="Verbindungs-Manager für den Zugriff auf Suchdaten."
                   name="OleDbConnection" />
               </connections>
@@ -3282,8 +3283,8 @@ where [refTable].[TransDimId] = ?</property>
               <connections>
                 <connection
                   refId="Package\ETL TransportmittelDim\TransportmittelDim.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527]"
-                  connectionManagerRefId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527]"
+                  connectionManagerID="{E7ABF833-EABB-45A5-B315-3795CDA593E0}:invalid"
+                  connectionManagerRefId="{E7ABF833-EABB-45A5-B315-3795CDA593E0}:invalid"
                   description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
                   name="OleDbConnection" />
               </connections>
@@ -3395,8 +3396,8 @@ WHERE TransDimId = TransId;</property>
               <connections>
                 <connection
                   refId="Package\ETL TransportmittelDim\Update.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527]"
-                  connectionManagerRefId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527]"
+                  connectionManagerID="{352D8B30-1379-41B4-B8FA-69A1DB9220FE}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527.u573527]"
                   description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
                   name="OleDbConnection" />
               </connections>
@@ -4115,11 +4116,12 @@ WHERE TransDimId = TransId;</property>
       DTS:refId="Package\Script DatumDim"
       DTS:CreationName="Microsoft.ExecuteProcess"
       DTS:Description="Task &quot;Prozess ausführen&quot;"
+      DTS:Disabled="True"
       DTS:DTSID="{07F57EA5-6A54-4790-9F40-1CA531E854C9}"
       DTS:ExecutableType="Microsoft.ExecuteProcess"
       DTS:LocaleID="-1"
       DTS:ObjectName="Script DatumDim"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData />
     </DTS:Executable>
@@ -4135,6 +4137,7 @@ WHERE TransDimId = TransId;</property>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
+          SQLTask:Connection="{FD05051C-A362-4545-B195-628C7770DD75}"
           SQLTask:SqlStatementSource=";"
           SQLTask:ServerVersion="9"
           SQLTask:ExtendedLogging="True"
@@ -4201,6 +4204,14 @@ WHERE TransDimId = TransId;</property>
       DTS:LogicalAnd="True"
       DTS:ObjectName="Einschränkung 6"
       DTS:To="Package\Masseneinfügungstask" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Einschränkung 7]"
+      DTS:CreationName=""
+      DTS:DTSID="{F7B9CD4C-D686-4E6B-8A83-770B4C0C42BF}"
+      DTS:From="Package\Masseneinfügungstask"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Einschränkung 7"
+      DTS:To="Package\ETL AdresseDim" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--Dieser CDATA-Abschnitt enthält die Layoutinformationen des Pakets, z.B. Informationen wie X-/Y-Koordinaten, Breite und Höhe.-->
@@ -4213,7 +4224,7 @@ WHERE TransDimId = TransId;</property>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="145,42"
           Id="Package\Create Tables"
@@ -4476,6 +4487,40 @@ WHERE TransDimId = TransId;</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Einschränkung 7]"
+          TopLeft="434,180.395832742771">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-328.75,36.121031264691"
+              Start="0,0"
+              End="-328.75,28.621031264691">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.0605156323455" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.0605156323455"
+                    Point2="0,18.0605156323455"
+                    Point3="-4,18.0605156323455" />
+                  <mssgle:LineSegment
+                    End="-324.75,18.0605156323455" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-324.75,18.0605156323455"
+                    Point2="-328.75,18.0605156323455"
+                    Point3="-328.75,22.0605156323455" />
+                  <mssgle:LineSegment
+                    End="-328.75,28.621031264691" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -4489,15 +4534,15 @@ WHERE TransDimId = TransId;</property>
           Id="Package\ETL AdresseDim\Geoposition"
           TopLeft="129,32" />
         <NodeLayout
-          Size="130.5,42"
+          Size="130,42"
           Id="Package\ETL AdresseDim\Sortieren 1"
           TopLeft="378.5,133.5" />
         <NodeLayout
-          Size="121.5,42"
+          Size="122,42"
           Id="Package\ETL AdresseDim\Sortieren"
           TopLeft="137.5,133" />
         <NodeLayout
-          Size="134.5,42"
+          Size="134,42"
           Id="Package\ETL AdresseDim\Bundesland"
           TopLeft="378,32.7083323835921" />
         <NodeLayout
@@ -4508,10 +4553,6 @@ WHERE TransDimId = TransId;</property>
           Size="175,42"
           Id="Package\ETL AdresseDim\AdresseDim"
           TopLeft="127,511.208332383592" />
-        <NodeLayout
-          Size="150.5,42"
-          Id="Package\ETL AdresseDim\OLE DB-Befehl"
-          TopLeft="129.5,218" />
         <EdgeLayout
           Id="Package\ETL AdresseDim.Paths[Sortierausgabe]"
           TopLeft="443.75,175.5">
@@ -4538,40 +4579,6 @@ WHERE TransDimId = TransId;</property>
                     Point3="-220.25,109.5" />
                   <mssgle:LineSegment
                     End="-220.25,203.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL AdresseDim.Paths[Ausgabe des OLE DB-Befehls]"
-          TopLeft="204.75,260">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-11.4166666666667,126.5"
-              Start="0,0"
-              End="-11.4166666666667,119">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,71.2628541448059" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,71.2628541448059"
-                    Point2="0,75.2628541448059"
-                    Point3="-4,75.2628541448059" />
-                  <mssgle:LineSegment
-                    End="-7.41666666666669,75.2628541448059" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-7.41666666666669,75.2628541448059"
-                    Point2="-11.4166666666667,75.2628541448059"
-                    Point3="-11.4166666666667,79.2628541448059" />
-                  <mssgle:LineSegment
-                    End="-11.4166666666667,119" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4626,18 +4633,18 @@ WHERE TransDimId = TransId;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\ETL AdresseDim.Paths[Sortierausgabe1]"
-          TopLeft="201.5,175">
+          TopLeft="195.916666666667,175">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,43"
+              EndConnector="0,211.5"
               Start="0,0"
-              End="0,35.5">
+              End="0,204">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,35.5" />
+                    End="0,204" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4714,6 +4721,11 @@ WHERE TransDimId = TransId;</property>
       <Property>
         <Name>DataSourceViewID</Name>
       </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
@@ -4741,17 +4753,38 @@ WHERE TransDimId = TransId;</property>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL LieferungFakten\LieferungFakten">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\ETL TransportmittelDim">
     <LayoutInfo>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="168,42"
-          Id="Package\ETL TransportmittelDim\TransportmittelDim"
-          TopLeft="115.5,551.5" />
+          Size="109,42"
+          Id="Package\ETL TransportmittelDim\Suche"
+          TopLeft="149,313.5" />
         <NodeLayout
-          Size="178.5,42"
+          Size="130,42"
+          Id="Package\ETL TransportmittelDim\Sortieren 1"
+          TopLeft="282,144.5" />
+        <NodeLayout
+          Size="122,42"
+          Id="Package\ETL TransportmittelDim\Sortieren"
+          TopLeft="57,138.5" />
+        <NodeLayout
+          Size="178,42"
           Id="Package\ETL TransportmittelDim\HAM_Transportmittel"
           TopLeft="260,22.5" />
         <NodeLayout
@@ -4759,27 +4792,39 @@ WHERE TransDimId = TransId;</property>
           Id="Package\ETL TransportmittelDim\FRA_Transportmittel"
           TopLeft="26.5,23" />
         <NodeLayout
+          Size="113,42"
+          Id="Package\ETL TransportmittelDim\Update"
+          TopLeft="527.5,421" />
+        <NodeLayout
+          Size="162,42"
+          Id="Package\ETL TransportmittelDim\Zusammenführen"
+          TopLeft="129,428.5" />
+        <NodeLayout
           Size="135,42"
           Id="Package\ETL TransportmittelDim\Vereinigung"
           TopLeft="137,239" />
         <NodeLayout
-          Size="121.5,42"
-          Id="Package\ETL TransportmittelDim\Sortieren"
-          TopLeft="57,138.5" />
+          Size="158,42"
+          Id="Package\ETL TransportmittelDim\Bedingtes Teilen"
+          TopLeft="506,314" />
+        <NodeLayout
+          Size="168,42"
+          Id="Package\ETL TransportmittelDim\TransportmittelDim"
+          TopLeft="115.5,551.5" />
         <EdgeLayout
-          Id="Package\ETL TransportmittelDim.Paths[Ausgabe der OLE DB-Quelle]"
-          TopLeft="116.125,65">
+          Id="Package\ETL TransportmittelDim.Paths[Zusammenführen Ausgabe 1]"
+          TopLeft="204,281">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,73.5"
+              EndConnector="0,32.5"
               Start="0,0"
-              End="0,66">
+              End="0,25">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,66" />
+                    End="0,25" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4788,24 +4833,56 @@ WHERE TransDimId = TransId;</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="130.5,42"
-          Id="Package\ETL TransportmittelDim\Sortieren 1"
-          TopLeft="282,144.5" />
         <EdgeLayout
-          Id="Package\ETL TransportmittelDim.Paths[Ausgabe der OLE DB-Quelle1]"
-          TopLeft="348.25,64.5">
+          Id="Package\ETL TransportmittelDim.Paths[Suchausgabe nicht übereinstimmender Einträge]"
+          TopLeft="206.625,355.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,80"
+              EndConnector="0,73"
               Start="0,0"
-              End="0,72.5">
+              End="0,65.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,72.5" />
+                    End="0,65.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-106.01701171875,26.91845703125,212.0340234375,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL TransportmittelDim.Paths[Sortierausgabe1]"
+          TopLeft="117.75,180.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="65.5833333333333,58.5"
+              Start="0,0"
+              End="65.5833333333333,51">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.6888726207906" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,30.6888726207906"
+                    Point2="0,34.6888726207906"
+                    Point3="4,34.6888726207906" />
+                  <mssgle:LineSegment
+                    End="61.5833333333333,34.6888726207906" />
+                  <mssgle:CubicBezierSegment
+                    Point1="61.5833333333333,34.6888726207906"
+                    Point2="65.5833333333333,34.6888726207906"
+                    Point3="65.5833333333333,38.6888726207906" />
+                  <mssgle:LineSegment
+                    End="65.5833333333333,51" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4848,126 +4925,6 @@ WHERE TransDimId = TransId;</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL TransportmittelDim.Paths[Sortierausgabe1]"
-          TopLeft="117.75,180.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="65.5833333333333,58.5"
-              Start="0,0"
-              End="65.5833333333333,51">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,30.6888726207906" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,30.6888726207906"
-                    Point2="0,34.6888726207906"
-                    Point3="4,34.6888726207906" />
-                  <mssgle:LineSegment
-                    End="61.5833333333333,34.6888726207906" />
-                  <mssgle:CubicBezierSegment
-                    Point1="61.5833333333333,34.6888726207906"
-                    Point2="65.5833333333333,34.6888726207906"
-                    Point3="65.5833333333333,38.6888726207906" />
-                  <mssgle:LineSegment
-                    End="65.5833333333333,51" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="109,42"
-          Id="Package\ETL TransportmittelDim\Suche"
-          TopLeft="149,313.5" />
-        <EdgeLayout
-          Id="Package\ETL TransportmittelDim.Paths[Zusammenführen Ausgabe 1]"
-          TopLeft="204,281">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,32.5"
-              Start="0,0"
-              End="0,25">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="157.5,42"
-          Id="Package\ETL TransportmittelDim\Bedingtes Teilen"
-          TopLeft="506,314" />
-        <EdgeLayout
-          Id="Package\ETL TransportmittelDim.Paths[Ausgabe der Suchübereinstimmungen]"
-          TopLeft="258,334.75">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="248,0"
-              Start="0,0"
-              End="240.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="240.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="35.98,5,168.54,11.6630859375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="161.5,42"
-          Id="Package\ETL TransportmittelDim\Zusammenführen"
-          TopLeft="129,428.5" />
-        <EdgeLayout
-          Id="Package\ETL TransportmittelDim.Paths[Suchausgabe nicht übereinstimmender Einträge]"
-          TopLeft="206.625,355.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,73"
-              Start="0,0"
-              End="0,65.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,65.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-106.01701171875,26.91845703125,212.0340234375,11.6630859375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="113,42"
-          Id="Package\ETL TransportmittelDim\Update"
-          TopLeft="527.5,421" />
         <EdgeLayout
           Id="Package\ETL TransportmittelDim.Paths[Fall 1]"
           TopLeft="584.375,356">
@@ -5014,6 +4971,74 @@ WHERE TransDimId = TransId;</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL TransportmittelDim.Paths[Ausgabe der Suchübereinstimmungen]"
+          TopLeft="258,334.75">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="248,0"
+              Start="0,0"
+              End="240.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="240.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="35.98,5,168.54,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL TransportmittelDim.Paths[Ausgabe der OLE DB-Quelle1]"
+          TopLeft="348.25,64.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,80"
+              Start="0,0"
+              End="0,72.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,72.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL TransportmittelDim.Paths[Ausgabe der OLE DB-Quelle]"
+          TopLeft="116.125,65">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,73.5"
+              Start="0,0"
+              End="0,66">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,66" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -5023,7 +5048,7 @@ WHERE TransDimId = TransId;</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -5033,7 +5058,7 @@ WHERE TransDimId = TransId;</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="table_management"
+  DTS:DTSID="{FD05051C-A362-4545-B195-628C7770DD75}"
+  DTS:CreationName="ADO.NET:SQL">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Initial Catalog=u573527;Persist Security Info=True;Connect Timeout=30;Application Name=&quot;SSIS-Package-{FD05051C-A362-4545-B195-628C7770DD75}Create Table&quot;;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1"
+        p4:Salt="eKOY4pikaO8="
+        p4:IV="/KvXGcGL5PJ34DadoZ8PVQ=="
+        p4:Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc" xmlns:p4="www.microsoft.com/SqlServer/SSIS">ifVVsctHaZAP82xt5BOVqv9xf6eUJMOz/tohAMmt+KSJq1HOxfZFjO2TZgVObv7EC3MHx7PVyqoNiTgp+80Uz9yQBvaM+zJe7ArIAZHQnY0nBlCXYwyBhZVd8zXSb+x7M53kV+z1lkM4PaGshMHugfMJFdf4eP0qJXshYCVSG/o=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
