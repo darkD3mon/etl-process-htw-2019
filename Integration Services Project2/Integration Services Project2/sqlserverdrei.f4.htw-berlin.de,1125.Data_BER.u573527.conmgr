@@ -1,0 +1,17 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="sqlserverdrei.f4.htw-berlin.de,1125.Data_BER.u573527"
+  DTS:DTSID="{85518BC2-AFCE-4BFA-98AF-87FAC45641A8}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Initial Catalog=Data_BER;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1"
+        p4:Salt="xThj/6S48x8="
+        p4:IV="P0vycGvGbw6MRGIcEwr9yg=="
+        p4:Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc" xmlns:p4="www.microsoft.com/SqlServer/SSIS">f0IuwKOBPRK77WLSn9ziZN75PC6pG409MDQsNCbaANDQKBVw9wcnMbLBQIkFgtOlpDUKxWfMMjG4twmXVdymd0ANm5AAz8K+5Rv6OFfZXFzji7n1O2Bocriz1oQmtZPBRGTY+14Q3Y9FDo7u6JMjy7WwuAhw4Da5QJAzLtW2qpE=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
