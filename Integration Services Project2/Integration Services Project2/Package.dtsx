@@ -12,11 +12,25 @@
   DTS:ObjectName="Package"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="17"
-  DTS:VersionGUID="{4396795F-D7E3-4063-B8C1-E09E8896DC0C}">
+  DTS:VersionBuild="18"
+  DTS:VersionGUID="{B169755E-308C-46F0-BEDD-543F41F1F487}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Create Table]"
+      DTS:CreationName="ADO.NET:SQL"
+      DTS:DTSID="{FD05051C-A362-4545-B195-628C7770DD75}"
+      DTS:ObjectName="Create Table">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Connect Timeout=30;">
+          <DTS:Password
+            DTS:Name="PWD"
+            Sensitive="1"></DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125]"
       DTS:CreationName="ADO.NET:SQL"
@@ -24,11 +38,7 @@
       DTS:ObjectName="sqlserverdrei.f4.htw-berlin.de,1125">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Persist Security Info=True;Connect Timeout=30;Application Name=SSIS-Package-{69DA0431-ECFE-4445-8A38-4A0AFAB9B40B}sqlserverdrei.f4.htw-berlin.de,1125;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"></DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Persist Security Info=True;Connect Timeout=30;Application Name=SSIS-Package-{69DA0431-ECFE-4445-8A38-4A0AFAB9B40B}sqlserverdrei.f4.htw-berlin.de,1125;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -38,11 +48,7 @@
       DTS:ObjectName="sqlserverdrei.f4.htw-berlin.de,1125.Data_BER">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Initial Catalog=Data_BER;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package-{74CC8B04-9FCE-419A-8722-94C31F022901}sqlserverdrei.f4.htw-berlin.de,1125.s0573527;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"></DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Initial Catalog=Data_BER;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package-{74CC8B04-9FCE-419A-8722-94C31F022901}sqlserverdrei.f4.htw-berlin.de,1125.s0573527;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -52,11 +58,7 @@
       DTS:ObjectName="sqlserverdrei.f4.htw-berlin.de,1125.Data_FRA">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Initial Catalog=Data_FRA;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package-{74CC8B04-9FCE-419A-8722-94C31F022901}sqlserverdrei.f4.htw-berlin.de,1125.s0573527;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"></DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Initial Catalog=Data_FRA;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package-{74CC8B04-9FCE-419A-8722-94C31F022901}sqlserverdrei.f4.htw-berlin.de,1125.s0573527;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -66,11 +68,7 @@
       DTS:ObjectName="sqlserverdrei.f4.htw-berlin.de,1125.Data_HAM">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Initial Catalog=Data_HAM;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package-{74CC8B04-9FCE-419A-8722-94C31F022901}sqlserverdrei.f4.htw-berlin.de,1125.s0573527;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"></DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Initial Catalog=Data_HAM;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package-{74CC8B04-9FCE-419A-8722-94C31F022901}sqlserverdrei.f4.htw-berlin.de,1125.s0573527;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -80,11 +78,7 @@
       DTS:ObjectName="sqlserverdrei.f4.htw-berlin.de,1125.s0573527">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package-{74CC8B04-9FCE-419A-8722-94C31F022901}sqlserverdrei.f4.htw-berlin.de,1125.s0573527;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"></DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package-{74CC8B04-9FCE-419A-8722-94C31F022901}sqlserverdrei.f4.htw-berlin.de,1125.s0573527;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -94,11 +88,7 @@
       DTS:ObjectName="sqlserverdrei.f4.htw-berlin.de,1125.u573527">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Provider=MSOLEDBSQL.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{E7ABF833-EABB-45A5-B315-3795CDA593E0}sqlserverdrei.f4.htw-berlin.de,1125.u573527;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"></DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=sqlserverdrei.f4.htw-berlin.de,1125;User ID=u573527;Provider=MSOLEDBSQL.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{E7ABF833-EABB-45A5-B315-3795CDA593E0}sqlserverdrei.f4.htw-berlin.de,1125.u573527;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -116,7 +106,8 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:SqlStatementSource="Create Table BeschwerdeDim (&#xA;&#x9;BeschwerdeId int,&#xA;&#x9;Grund nvarchar(500),&#xA;&#x9;Start date,&#xA;&#x9;Ende date,&#xA;);&#xA;&#xA;Create Table DatumDim (&#xA;&#x9;DatumId int,&#xA;&#x9;Tag tinyint,&#xA;&#x9;Monat tinyint,&#xA;&#x9;Jahr tinyint,&#xA;&#x9;IstFeiertag bit,&#xA;);&#xA;&#xA;Create Table AdresseDim (&#xA;&#x9;Plz varchar(5),&#xA;&#x9;Ort varchar(48),&#xA;&#x9;Lat decimal(11, 8),&#xA;&#x9;Lon decimal(11, 8),&#xA;&#x9;Bundesland varchar(48),&#xA;&#x9;Start date,&#xA;&#x9;Ende date&#xA;);&#xA;&#xA;Create Table TransportmittelDim (&#xA;&#x9;TransId int,&#xA;&#x9;Marke nvarchar(48),&#xA;&#x9;Typ nvarchar(48),&#xA;&#x9;Ladevolumen decimal(5,1),&#xA;&#x9;Max_Gewicht int,&#xA;&#x9;Kosten_pro_km decimal(5,2),&#xA;&#x9;Start date,&#xA;&#x9;Ende date&#xA;);&#xA;&#xA;Create Table LieferungFakten (&#xA;&#x9;FaktenId int,&#xA;&#x9;BestellDatumDimId int,&#xA;&#x9;LieferDatumDimId int,&#xA;&#x9;StartAdresseDimId int,&#xA;&#x9;ZielAdresseDimId int,&#xA;&#x9;KundenDimId int,&#xA;&#x9;WerkDimId int,&#xA;&#x9;TransportDimId int,&#xA;&#x9;BeschwerdeDimId int,&#xA;&#x9;Volumen decimal(5,2),&#xA;&#x9;Gewicht int,&#xA;&#x9;Lieferkosten decimal(10,2),&#xA;&#x9;Umsatz decimal (10,2),&#xA;&#x9;Lieferdauer time,&#xA;&#x9;Lieferstrecke int,&#xA;);&#xA;"
+          SQLTask:Connection="{FD05051C-A362-4545-B195-628C7770DD75}"
+          SQLTask:SqlStatementSource="Create Table BeschwerdeDim (&#xA;    BeschwerdeDimId int identity not null primary key,&#xA;    Grund nvarchar(500),&#xA;);&#xA; &#xA;Create Table DatumDim (&#xA;    DatumDimId int identity not null primary key,&#xA;    Tag tinyint,&#xA;    Monat tinyint,&#xA;    Jahr tinyint,&#xA;    IstFeiertag bit,&#xA;);&#xA; &#xA;Create Table AdresseDim (&#xA;    AdresseDimId int identity not null primary key,&#xA;    Plz varchar(5),&#xA;    Ort varchar(48),&#xA;    Lat decimal(11, 8),&#xA;    Lon decimal(11, 8),&#xA;    Bundesland varchar(48),&#xA;    Start date,&#xA;    Ende date&#xA;);&#xA; &#xA;Create Table TransportmittelDim (&#xA;    TransDimId int identity not null primary key,&#xA;    Marke nvarchar(48),&#xA;    Typ nvarchar(48),&#xA;    Ladevolumen decimal(5,1),&#xA;    Max_Gewicht int,&#xA;    Kosten_pro_km decimal(5,2),&#xA;    Start date,&#xA;    Ende date&#xA;);&#xA; &#xA;Create Table LieferungFakten (&#xA;    FaktenId int not null identity primary key,&#xA;    BestellDatumDimId int,&#xA;    LieferDatumDimId int,&#xA;    StartAdresseDimId int,&#xA;    ZielAdresseDimId int,&#xA;    TransDimId int,&#xA;    BeschwerdeDimId int,&#xA;    Volumen decimal(5,2),&#xA;    Gewicht int,&#xA;    Lieferkosten decimal(10,2),&#xA;    Umsatz decimal (10,2),&#xA;    Lieferdauer time,&#xA;    Lieferstrecke int,&#xA;    FOREIGN KEY (BestellDatumDimId) REFERENCES dbo.DatumDim (DatumDimId),&#xA;    FOREIGN KEY (LieferDatumDimId) REFERENCES dbo.DatumDim (DatumDimId),&#xA;    FOREIGN KEY (StartAdresseDimId) REFERENCES dbo.AdresseDim (AdresseDimId),&#xA;    FOREIGN KEY (ZielAdresseDimId) REFERENCES dbo.AdresseDim (AdresseDimId),&#xA;    FOREIGN KEY (TransDimId) REFERENCES dbo.TransportmittelDim (TransDimId),&#xA;    FOREIGN KEY (BeschwerdeDimId) REFERENCES dbo.BeschwerdeDim (BeschwerdeDimId)&#xA;);&#xA;"
           SQLTask:ServerVersion="9"
           SQLTask:ExtendedLogging="True"
           SQLTask:LocalConnectionForLogging=""
@@ -136,7 +127,8 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:SqlStatementSource="Drop Table BeschwerdeDim, DatumDim, KundeDim, AdresseDim, TransportmittelDim, Lieferungfakten"
+          SQLTask:Connection="{FD05051C-A362-4545-B195-628C7770DD75}"
+          SQLTask:SqlStatementSource="DROP table dbo.LieferungFakten;&#xA;DROP table dbo.BeschwerdeDim;;&#xA;DROP table dbo.DatumDim;&#xA;DROP table dbo.AdresseDim;&#xA;DROP table dbo.TransportmittelDim;&#xA;&#xA;"
           SQLTask:ServerVersion="9"
           SQLTask:ExtendedLogging="True"
           SQLTask:LocalConnectionForLogging=""
@@ -4117,6 +4109,7 @@ WHERE TransDimId = TransId;</property>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
+          SQLTask:Connection="{FD05051C-A362-4545-B195-628C7770DD75}"
           SQLTask:SqlStatementSource=";"
           SQLTask:ServerVersion="9"
           SQLTask:ExtendedLogging="True"
@@ -4463,73 +4456,33 @@ WHERE TransDimId = TransId;</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="175,42"
-          Id="Package\ETL AdresseDim\AdresseDim"
-          TopLeft="127,511.208332383592" />
-        <NodeLayout
           Size="135,42"
           Id="Package\ETL AdresseDim\Geoposition"
           TopLeft="129,32" />
         <NodeLayout
+          Size="130.5,42"
+          Id="Package\ETL AdresseDim\Sortieren 1"
+          TopLeft="378.5,133.5" />
+        <NodeLayout
           Size="121.5,42"
           Id="Package\ETL AdresseDim\Sortieren"
           TopLeft="137.5,133" />
-        <EdgeLayout
-          Id="Package\ETL AdresseDim.Paths[Ausgabe der OLE DB-Quelle]"
-          TopLeft="197.375,74">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,59"
-              Start="0,0"
-              End="0,51.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,51.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <NodeLayout
           Size="134.5,42"
           Id="Package\ETL AdresseDim\Bundesland"
           TopLeft="378,32.7083323835921" />
         <NodeLayout
-          Size="130.5,42"
-          Id="Package\ETL AdresseDim\Sortieren 1"
-          TopLeft="378.5,133.5" />
-        <EdgeLayout
-          Id="Package\ETL AdresseDim.Paths[Ausgabe der OLE DB-Quelle1]"
-          TopLeft="444.5,74.7083323835921">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,58.7916676164079"
-              Start="0,0"
-              End="0,51.2916676164079">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,51.2916676164079" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
           Size="189,42"
           Id="Package\ETL AdresseDim\Zusammenführungsjoin"
           TopLeft="129,386.5" />
+        <NodeLayout
+          Size="175,42"
+          Id="Package\ETL AdresseDim\AdresseDim"
+          TopLeft="127,511.208332383592" />
+        <NodeLayout
+          Size="150.5,42"
+          Id="Package\ETL AdresseDim\OLE DB-Befehl"
+          TopLeft="129.5,218" />
         <EdgeLayout
           Id="Package\ETL AdresseDim.Paths[Sortierausgabe]"
           TopLeft="443.75,175.5">
@@ -4556,32 +4509,6 @@ WHERE TransDimId = TransId;</property>
                     Point3="-220.25,109.5" />
                   <mssgle:LineSegment
                     End="-220.25,203.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="150.5,42"
-          Id="Package\ETL AdresseDim\OLE DB-Befehl"
-          TopLeft="129.5,218" />
-        <EdgeLayout
-          Id="Package\ETL AdresseDim.Paths[Sortierausgabe1]"
-          TopLeft="201.5,175">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,43"
-              Start="0,0"
-              End="0,35.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4624,9 +4551,101 @@ WHERE TransDimId = TransId;</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL AdresseDim.Paths[Ausgabe der OLE DB-Quelle1]"
+          TopLeft="444.5,74.7083323835921">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,58.7916676164079"
+              Start="0,0"
+              End="0,51.2916676164079">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.2916676164079" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL AdresseDim.Paths[Ausgabe der OLE DB-Quelle]"
+          TopLeft="197.375,74">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59"
+              Start="0,0"
+              End="0,51.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL AdresseDim.Paths[Sortierausgabe1]"
+          TopLeft="201.5,175">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,43"
+              Start="0,0"
+              End="0,35.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL AdresseDim\Geoposition">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL AdresseDim\Bundesland">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\ETL AdresseDim\AdresseDim">
     <Properties>
@@ -4970,6 +4989,29 @@ WHERE TransDimId = TransId;</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
+    design-time-name="Package\ETL TransportmittelDim\Suche">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[TransportmittelDim]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\ETL TransportmittelDim\HAM_Transportmittel">
     <Properties>
       <Property>
@@ -4984,55 +5026,6 @@ WHERE TransDimId = TransId;</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\ETL TransportmittelDim\FRA_Transportmittel">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\ETL TransportmittelDim\Suche">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[TransportmittelDim]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\ETL AdresseDim\Geoposition">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\ETL AdresseDim\Bundesland">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
