@@ -12,8 +12,8 @@
   DTS:ObjectName="BeschwerdeDim"
   DTS:PackageType="5"
   DTS:ProtectionLevel="2"
-  DTS:VersionBuild="72"
-  DTS:VersionGUID="{00E54C05-6E35-4E5F-9A70-F4335F9BFD5E}">
+  DTS:VersionBuild="79"
+  DTS:VersionGUID="{911C2A91-C3E5-40BD-9267-A6B8C8C3C1F1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -1602,7 +1602,7 @@ SET Ende = GETDATE();
                       cachedDataType="i4"
                       cachedName="TransId"
                       cachedSortKeyPosition="1"
-                      lineageId="Package\ETL AdresseDim\337:invalid">
+                      lineageId="Package\ETL AdresseDim\407:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1617,7 +1617,7 @@ SET Ende = GETDATE();
                       cachedLength="50"
                       cachedName="Marke"
                       cachedSortKeyPosition="2"
-                      lineageId="Package\ETL AdresseDim\338:invalid">
+                      lineageId="Package\ETL AdresseDim\408:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1632,7 +1632,7 @@ SET Ende = GETDATE();
                       cachedLength="50"
                       cachedName="Typ"
                       cachedSortKeyPosition="3"
-                      lineageId="Package\ETL AdresseDim\339:invalid">
+                      lineageId="Package\ETL AdresseDim\409:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1646,7 +1646,7 @@ SET Ende = GETDATE();
                       cachedDataType="r4"
                       cachedName="Ladevolumen"
                       cachedSortKeyPosition="4"
-                      lineageId="Package\ETL AdresseDim\340:invalid">
+                      lineageId="Package\ETL AdresseDim\410:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1659,7 +1659,7 @@ SET Ende = GETDATE();
                       refId="Package\ETL AdresseDim\Zusammenführen.Inputs[Zusammenführen Eingabe 1].Columns[Anz_Fahrer]"
                       cachedDataType="i4"
                       cachedName="Anz_Fahrer"
-                      lineageId="Package\ETL AdresseDim\341:invalid">
+                      lineageId="Package\ETL AdresseDim\411:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1673,7 +1673,7 @@ SET Ende = GETDATE();
                       cachedDataType="wstr"
                       cachedLength="10"
                       cachedName="Fuehrerscheinklasse"
-                      lineageId="Package\ETL AdresseDim\342:invalid">
+                      lineageId="Package\ETL AdresseDim\412:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1686,7 +1686,7 @@ SET Ende = GETDATE();
                       refId="Package\ETL AdresseDim\Zusammenführen.Inputs[Zusammenführen Eingabe 1].Columns[Anzahl_Bestand]"
                       cachedDataType="i4"
                       cachedName="Anzahl_Bestand"
-                      lineageId="Package\ETL AdresseDim\343:invalid">
+                      lineageId="Package\ETL AdresseDim\413:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1700,7 +1700,7 @@ SET Ende = GETDATE();
                       cachedDataType="r4"
                       cachedName="Max_Gewicht"
                       cachedSortKeyPosition="5"
-                      lineageId="Package\ETL AdresseDim\344:invalid">
+                      lineageId="Package\ETL AdresseDim\414:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1714,7 +1714,7 @@ SET Ende = GETDATE();
                       cachedDataType="r4"
                       cachedName="Kosten_pro_km"
                       cachedSortKeyPosition="6"
-                      lineageId="Package\ETL AdresseDim\345:invalid">
+                      lineageId="Package\ETL AdresseDim\415:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1735,7 +1735,7 @@ SET Ende = GETDATE();
                       cachedDataType="i4"
                       cachedName="TransId"
                       cachedSortKeyPosition="1"
-                      lineageId="Package\ETL AdresseDim\337:invalid">
+                      lineageId="Package\ETL AdresseDim\407:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1749,7 +1749,7 @@ SET Ende = GETDATE();
                       cachedDataType="wstr"
                       cachedLength="48"
                       cachedName="Marke"
-                      lineageId="Package\ETL AdresseDim\346:invalid">
+                      lineageId="Package\ETL AdresseDim\416:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1763,7 +1763,7 @@ SET Ende = GETDATE();
                       cachedDataType="wstr"
                       cachedLength="48"
                       cachedName="Typ"
-                      lineageId="Package\ETL AdresseDim\347:invalid">
+                      lineageId="Package\ETL AdresseDim\417:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1778,7 +1778,7 @@ SET Ende = GETDATE();
                       cachedName="Ladevolumen"
                       cachedPrecision="5"
                       cachedScale="1"
-                      lineageId="Package\ETL AdresseDim\348:invalid">
+                      lineageId="Package\ETL AdresseDim\418:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1791,7 +1791,7 @@ SET Ende = GETDATE();
                       refId="Package\ETL AdresseDim\Zusammenführen.Inputs[Zusammenführen Eingabe 2].Columns[Anz_Fahrer]"
                       cachedDataType="i4"
                       cachedName="Anz_Fahrer"
-                      lineageId="Package\ETL AdresseDim\341:invalid">
+                      lineageId="Package\ETL AdresseDim\411:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1805,7 +1805,7 @@ SET Ende = GETDATE();
                       cachedDataType="wstr"
                       cachedLength="10"
                       cachedName="Fuehrerscheinklasse"
-                      lineageId="Package\ETL AdresseDim\342:invalid">
+                      lineageId="Package\ETL AdresseDim\412:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1818,7 +1818,7 @@ SET Ende = GETDATE();
                       refId="Package\ETL AdresseDim\Zusammenführen.Inputs[Zusammenführen Eingabe 2].Columns[Anzahl_Bestand]"
                       cachedDataType="i4"
                       cachedName="Anzahl_Bestand"
-                      lineageId="Package\ETL AdresseDim\343:invalid">
+                      lineageId="Package\ETL AdresseDim\413:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1831,7 +1831,7 @@ SET Ende = GETDATE();
                       refId="Package\ETL AdresseDim\Zusammenführen.Inputs[Zusammenführen Eingabe 2].Columns[Max_Gewicht]"
                       cachedDataType="i4"
                       cachedName="Max_Gewicht"
-                      lineageId="Package\ETL AdresseDim\349:invalid">
+                      lineageId="Package\ETL AdresseDim\419:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1846,7 +1846,7 @@ SET Ende = GETDATE();
                       cachedName="Kosten_pro_km"
                       cachedPrecision="5"
                       cachedScale="2"
-                      lineageId="Package\ETL AdresseDim\350:invalid">
+                      lineageId="Package\ETL AdresseDim\420:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -2407,6 +2407,81 @@ SET Ende = GETDATE();
                       refId="Package\ETL BeschwerdeDim\BeschwerdeDim.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\ETL BeschwerdeDim\BeschwerdeDim.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL BeschwerdeDim\Kein Grund"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="OLE DB-Befehl;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;2"
+              description="Führt eine SQL-Anweisung für jede Zeile in einem Datenfluss aus. Rufen Sie beispielsweise die gespeicherte Prozedur &quot;new employee setup&quot; für jede Zeile in der Tabelle &quot;new employees&quot; auf. Hinweis: Wenn Sie für jede Zeile eines umfangreichen Datenflusses eine SQL-Anweisung ausführen, kann der Vorgang länger dauern."
+              name="Kein Grund"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Der auszuführende SQL-Befehl."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">INSERT INTO BeschwerdeDim (Grund) VALUES('Keine Beschwerde')</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL BeschwerdeDim\Kein Grund.Connections[OleDbConnection]"
+                  connectionManagerID="{352D8B30-1379-41B4-B8FA-69A1DB9220FE}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527.u573527]"
+                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\ETL BeschwerdeDim\Kein Grund.Inputs[Eingabe des OLE DB-Befehls]"
+                  errorOrTruncationOperation="Befehlsausführung"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Eingabe des OLE DB-Befehls">
+                  <externalMetadataColumns
+                    isUsed="True" />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL BeschwerdeDim\Kein Grund.Outputs[Ausgabe des OLE DB-Befehls]"
+                  exclusionGroup="1"
+                  name="Ausgabe des OLE DB-Befehls"
+                  synchronousInputId="Package\ETL BeschwerdeDim\Kein Grund.Inputs[Eingabe des OLE DB-Befehls]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL BeschwerdeDim\Kein Grund.Outputs[Fehlerausgabe des OLE DB-Befehls]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Fehlerausgabe des OLE DB-Befehls"
+                  synchronousInputId="Package\ETL BeschwerdeDim\Kein Grund.Inputs[Eingabe des OLE DB-Befehls]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Kein Grund.Outputs[Fehlerausgabe des OLE DB-Befehls].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL BeschwerdeDim\Kein Grund.Outputs[Fehlerausgabe des OLE DB-Befehls].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Kein Grund.Outputs[Fehlerausgabe des OLE DB-Befehls].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL BeschwerdeDim\Kein Grund.Outputs[Fehlerausgabe des OLE DB-Befehls].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -3162,8 +3237,8 @@ where [refTable].[Grund] = ?</property>
                   expressionType="Notify"
                   name="SqlCommand"
                   UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">UPDATE AdresseDim
-SET Ende = GETDATE();
-</property>
+SET Ende = CAST(GETDATE() AS Date)
+;</property>
                 <property
                   dataType="System.Int32"
                   description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
@@ -3224,7 +3299,7 @@ SET Ende = GETDATE();
           <paths>
             <path
               refId="Package\ETL BeschwerdeDim.Paths[Ausgabe der OLE DB-Quelle]"
-              endId="Package\ETL BeschwerdeDim\Sortieren.Inputs[Sortiereingabe]"
+              endId="Package\ETL BeschwerdeDim\Kein Grund.Inputs[Eingabe des OLE DB-Befehls]"
               name="Ausgabe der OLE DB-Quelle"
               startId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle]" />
             <path
@@ -3232,6 +3307,11 @@ SET Ende = GETDATE();
               endId="Package\ETL BeschwerdeDim\Bedingtes Teilen.Inputs[Eingabe für bedingtes Teilen]"
               name="Ausgabe der Suchübereinstimmungen"
               startId="Package\ETL BeschwerdeDim\SQL Lookup.Outputs[Ausgabe der Suchübereinstimmungen]" />
+            <path
+              refId="Package\ETL BeschwerdeDim.Paths[Ausgabe des OLE DB-Befehls]"
+              endId="Package\ETL BeschwerdeDim\Sortieren.Inputs[Sortiereingabe]"
+              name="Ausgabe des OLE DB-Befehls"
+              startId="Package\ETL BeschwerdeDim\Kein Grund.Outputs[Ausgabe des OLE DB-Befehls]" />
             <path
               refId="Package\ETL BeschwerdeDim.Paths[geändert]"
               endId="Package\ETL BeschwerdeDim\Update.Inputs[Eingabe des OLE DB-Befehls]"
@@ -6271,24 +6351,68 @@ WHERE TransDimId = TransId;</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="124,42"
+          Id="Package\ETL BeschwerdeDim\Sortieren"
+          TopLeft="301,125" />
+        <NodeLayout
           Size="140,42"
           Id="Package\ETL BeschwerdeDim\SQL Lookup"
-          TopLeft="403.5,50.833333344095" />
-        <NodeLayout
-          Size="159,42"
-          Id="Package\ETL BeschwerdeDim\BeschwerdeDim"
-          TopLeft="935,53.5" />
+          TopLeft="415.5,50.833333344095" />
         <NodeLayout
           Size="114,42"
           Id="Package\ETL BeschwerdeDim\Update"
-          TopLeft="890,237" />
+          TopLeft="902,237" />
+        <NodeLayout
+          Size="155,42"
+          Id="Package\ETL BeschwerdeDim\OLE DB-Quelle"
+          TopLeft="1,75" />
         <NodeLayout
           Size="161,42"
           Id="Package\ETL BeschwerdeDim\Bedingtes Teilen"
-          TopLeft="556,136" />
+          TopLeft="568,136" />
+        <NodeLayout
+          Size="159,42"
+          Id="Package\ETL BeschwerdeDim\BeschwerdeDim"
+          TopLeft="947,53.5" />
+        <EdgeLayout
+          Id="Package\ETL BeschwerdeDim.Paths[Ausgabe der Suchübereinstimmungen]"
+          TopLeft="485.5,92.833333344095">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="163,43.166666655905"
+              Start="0,0"
+              End="163,35.666666655905">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.5833333279525" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.5833333279525"
+                    Point2="0,21.5833333279525"
+                    Point3="4,21.5833333279525" />
+                  <mssgle:LineSegment
+                    End="159,21.5833333279525" />
+                  <mssgle:CubicBezierSegment
+                    Point1="159,21.5833333279525"
+                    Point2="163,21.5833333279525"
+                    Point3="163,25.5833333279525" />
+                  <mssgle:LineSegment
+                    End="163,35.666666655905" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-2.77000000000002,26.5833333279525,168.54,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\ETL BeschwerdeDim.Paths[Suchausgabe nicht übereinstimmender Einträge]"
-          TopLeft="543.5,73.1666666720475">
+          TopLeft="555.5,73.1666666720475">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -6311,8 +6435,42 @@ WHERE TransDimId = TransId;</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\ETL BeschwerdeDim.Paths[Sortierausgabe]"
+          TopLeft="363,125">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="100.5,-32.166666655905"
+              Start="0,0"
+              End="100.5,-24.666666655905">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-15.0819208975708" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-15.0819208975708"
+                    Point2="0,-19.0819208975708"
+                    Point3="4,-19.0819208975708" />
+                  <mssgle:LineSegment
+                    End="96.5,-19.0819208975708" />
+                  <mssgle:CubicBezierSegment
+                    Point1="96.5,-19.0819208975708"
+                    Point2="100.5,-19.0819208975708"
+                    Point3="100.5,-23.0819208975708" />
+                  <mssgle:LineSegment
+                    End="100.5,-24.666666655905" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\ETL BeschwerdeDim.Paths[geändert]"
-          TopLeft="636.5,178">
+          TopLeft="648.5,178">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -6347,75 +6505,29 @@ WHERE TransDimId = TransId;</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="155,42"
-          Id="Package\ETL BeschwerdeDim\OLE DB-Quelle"
-          TopLeft="75,63" />
-        <EdgeLayout
-          Id="Package\ETL BeschwerdeDim.Paths[Ausgabe der Suchübereinstimmungen]"
-          TopLeft="473.5,92.833333344095">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="163,43.166666655905"
-              Start="0,0"
-              End="163,35.666666655905">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,17.5833333279525" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,17.5833333279525"
-                    Point2="0,21.5833333279525"
-                    Point3="4,21.5833333279525" />
-                  <mssgle:LineSegment
-                    End="159,21.5833333279525" />
-                  <mssgle:CubicBezierSegment
-                    Point1="159,21.5833333279525"
-                    Point2="163,21.5833333279525"
-                    Point3="163,25.5833333279525" />
-                  <mssgle:LineSegment
-                    End="163,35.666666655905" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-2.77000000000002,26.5833333279525,168.54,11.6630859375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="124,42"
-          Id="Package\ETL BeschwerdeDim\Sortieren"
-          TopLeft="257,115" />
+          Size="135,42"
+          Id="Package\ETL BeschwerdeDim\Kein Grund"
+          TopLeft="130,131" />
         <EdgeLayout
           Id="Package\ETL BeschwerdeDim.Paths[Ausgabe der OLE DB-Quelle]"
-          TopLeft="230,84">
+          TopLeft="156,96">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="27,52"
+              EndConnector="41.5,35"
               Start="0,0"
-              End="19.5,52">
+              End="41.5,27.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="9.5,0" />
+                    End="37.5,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="9.5,0"
-                    Point2="13.5,0"
-                    Point3="13.5,4" />
+                    Point1="37.5,0"
+                    Point2="41.5,0"
+                    Point3="41.5,4" />
                   <mssgle:LineSegment
-                    End="13.5,48" />
-                  <mssgle:CubicBezierSegment
-                    Point1="13.5,48"
-                    Point2="13.5,52"
-                    Point3="17.5,52" />
-                  <mssgle:LineSegment
-                    End="19.5,52" />
+                    End="41.5,27.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6425,25 +6537,19 @@ WHERE TransDimId = TransId;</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ETL BeschwerdeDim.Paths[Sortierausgabe]"
-          TopLeft="319,115">
+          Id="Package\ETL BeschwerdeDim.Paths[Ausgabe des OLE DB-Befehls]"
+          TopLeft="265,149">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="84.5,-43.166666655905"
+              EndConnector="36,0"
               Start="0,0"
-              End="77,-43.166666655905">
+              End="28.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-39.166666655905" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,-39.166666655905"
-                    Point2="0,-43.166666655905"
-                    Point3="4,-43.166666655905" />
-                  <mssgle:LineSegment
-                    End="77,-43.166666655905" />
+                    End="28.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6455,19 +6561,6 @@ WHERE TransDimId = TransId;</property>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\ETL BeschwerdeDim\BeschwerdeDim">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\ETL BeschwerdeDim\SQL Lookup">
     <Properties>
@@ -6484,10 +6577,36 @@ WHERE TransDimId = TransId;</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL BeschwerdeDim\OLE DB-Quelle">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL BeschwerdeDim\BeschwerdeDim">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -6791,18 +6910,5 @@ WHERE TransDimId = TransId;</property>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\ETL BeschwerdeDim\OLE DB-Quelle">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
