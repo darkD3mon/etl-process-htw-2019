@@ -12,8 +12,8 @@
   DTS:ObjectName="BeschwerdeDim"
   DTS:PackageType="5"
   DTS:ProtectionLevel="2"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{4CECBBDC-DE9C-45F1-980F-3200F432F9F6}">
+  DTS:VersionBuild="79"
+  DTS:VersionGUID="{911C2A91-C3E5-40BD-9267-A6B8C8C3C1F1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -22,6 +22,7 @@
       DTS:refId="Package\Create Tables"
       DTS:CreationName="Microsoft.DbMaintenanceTSQLExecuteTask"
       DTS:Description="Task &quot;T-SQL-Anweisung ausführen&quot;"
+      DTS:Disabled="True"
       DTS:DTSID="{2d21ff7b-c3c6-4108-91d6-2eac1d5aafce}"
       DTS:ExecutableType="Microsoft.DbMaintenanceTSQLExecuteTask"
       DTS:LocaleID="-1"
@@ -43,6 +44,7 @@
       DTS:refId="Package\Drop Tables"
       DTS:CreationName="Microsoft.DbMaintenanceTSQLExecuteTask"
       DTS:Description="Task &quot;T-SQL-Anweisung ausführen&quot;"
+      DTS:Disabled="True"
       DTS:DTSID="{850f2526-8300-4fc8-845a-28acf4d68e75}"
       DTS:ExecutableType="Microsoft.DbMaintenanceTSQLExecuteTask"
       DTS:LocaleID="-1"
@@ -1600,7 +1602,7 @@ SET Ende = GETDATE();
                       cachedDataType="i4"
                       cachedName="TransId"
                       cachedSortKeyPosition="1"
-                      lineageId="Package\ETL AdresseDim\351:invalid">
+                      lineageId="Package\ETL AdresseDim\407:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1615,7 +1617,7 @@ SET Ende = GETDATE();
                       cachedLength="50"
                       cachedName="Marke"
                       cachedSortKeyPosition="2"
-                      lineageId="Package\ETL AdresseDim\352:invalid">
+                      lineageId="Package\ETL AdresseDim\408:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1630,7 +1632,7 @@ SET Ende = GETDATE();
                       cachedLength="50"
                       cachedName="Typ"
                       cachedSortKeyPosition="3"
-                      lineageId="Package\ETL AdresseDim\353:invalid">
+                      lineageId="Package\ETL AdresseDim\409:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1644,7 +1646,7 @@ SET Ende = GETDATE();
                       cachedDataType="r4"
                       cachedName="Ladevolumen"
                       cachedSortKeyPosition="4"
-                      lineageId="Package\ETL AdresseDim\354:invalid">
+                      lineageId="Package\ETL AdresseDim\410:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1657,7 +1659,7 @@ SET Ende = GETDATE();
                       refId="Package\ETL AdresseDim\Zusammenführen.Inputs[Zusammenführen Eingabe 1].Columns[Anz_Fahrer]"
                       cachedDataType="i4"
                       cachedName="Anz_Fahrer"
-                      lineageId="Package\ETL AdresseDim\355:invalid">
+                      lineageId="Package\ETL AdresseDim\411:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1671,7 +1673,7 @@ SET Ende = GETDATE();
                       cachedDataType="wstr"
                       cachedLength="10"
                       cachedName="Fuehrerscheinklasse"
-                      lineageId="Package\ETL AdresseDim\356:invalid">
+                      lineageId="Package\ETL AdresseDim\412:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1684,7 +1686,7 @@ SET Ende = GETDATE();
                       refId="Package\ETL AdresseDim\Zusammenführen.Inputs[Zusammenführen Eingabe 1].Columns[Anzahl_Bestand]"
                       cachedDataType="i4"
                       cachedName="Anzahl_Bestand"
-                      lineageId="Package\ETL AdresseDim\357:invalid">
+                      lineageId="Package\ETL AdresseDim\413:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1698,7 +1700,7 @@ SET Ende = GETDATE();
                       cachedDataType="r4"
                       cachedName="Max_Gewicht"
                       cachedSortKeyPosition="5"
-                      lineageId="Package\ETL AdresseDim\358:invalid">
+                      lineageId="Package\ETL AdresseDim\414:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1712,7 +1714,7 @@ SET Ende = GETDATE();
                       cachedDataType="r4"
                       cachedName="Kosten_pro_km"
                       cachedSortKeyPosition="6"
-                      lineageId="Package\ETL AdresseDim\359:invalid">
+                      lineageId="Package\ETL AdresseDim\415:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1733,7 +1735,7 @@ SET Ende = GETDATE();
                       cachedDataType="i4"
                       cachedName="TransId"
                       cachedSortKeyPosition="1"
-                      lineageId="Package\ETL AdresseDim\351:invalid">
+                      lineageId="Package\ETL AdresseDim\407:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1747,7 +1749,7 @@ SET Ende = GETDATE();
                       cachedDataType="wstr"
                       cachedLength="48"
                       cachedName="Marke"
-                      lineageId="Package\ETL AdresseDim\360:invalid">
+                      lineageId="Package\ETL AdresseDim\416:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1761,7 +1763,7 @@ SET Ende = GETDATE();
                       cachedDataType="wstr"
                       cachedLength="48"
                       cachedName="Typ"
-                      lineageId="Package\ETL AdresseDim\361:invalid">
+                      lineageId="Package\ETL AdresseDim\417:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1776,7 +1778,7 @@ SET Ende = GETDATE();
                       cachedName="Ladevolumen"
                       cachedPrecision="5"
                       cachedScale="1"
-                      lineageId="Package\ETL AdresseDim\362:invalid">
+                      lineageId="Package\ETL AdresseDim\418:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1789,7 +1791,7 @@ SET Ende = GETDATE();
                       refId="Package\ETL AdresseDim\Zusammenführen.Inputs[Zusammenführen Eingabe 2].Columns[Anz_Fahrer]"
                       cachedDataType="i4"
                       cachedName="Anz_Fahrer"
-                      lineageId="Package\ETL AdresseDim\355:invalid">
+                      lineageId="Package\ETL AdresseDim\411:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1803,7 +1805,7 @@ SET Ende = GETDATE();
                       cachedDataType="wstr"
                       cachedLength="10"
                       cachedName="Fuehrerscheinklasse"
-                      lineageId="Package\ETL AdresseDim\356:invalid">
+                      lineageId="Package\ETL AdresseDim\412:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1816,7 +1818,7 @@ SET Ende = GETDATE();
                       refId="Package\ETL AdresseDim\Zusammenführen.Inputs[Zusammenführen Eingabe 2].Columns[Anzahl_Bestand]"
                       cachedDataType="i4"
                       cachedName="Anzahl_Bestand"
-                      lineageId="Package\ETL AdresseDim\357:invalid">
+                      lineageId="Package\ETL AdresseDim\413:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1829,7 +1831,7 @@ SET Ende = GETDATE();
                       refId="Package\ETL AdresseDim\Zusammenführen.Inputs[Zusammenführen Eingabe 2].Columns[Max_Gewicht]"
                       cachedDataType="i4"
                       cachedName="Max_Gewicht"
-                      lineageId="Package\ETL AdresseDim\363:invalid">
+                      lineageId="Package\ETL AdresseDim\419:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1844,7 +1846,7 @@ SET Ende = GETDATE();
                       cachedName="Kosten_pro_km"
                       cachedPrecision="5"
                       cachedScale="2"
-                      lineageId="Package\ETL AdresseDim\364:invalid">
+                      lineageId="Package\ETL AdresseDim\420:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -2157,7 +2159,6 @@ SET Ende = GETDATE();
       DTS:refId="Package\ETL BeschwerdeDim"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Datenflusstask"
-      DTS:Disabled="True"
       DTS:DTSID="{7c1418c5-8988-407d-b384-ef242ffde13a}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -2169,251 +2170,123 @@ SET Ende = GETDATE();
           version="1">
           <components>
             <component
-              refId="Package\ETL BeschwerdeDim\BER_Beschwerde"
-              componentClassID="Microsoft.OLEDBSource"
-              contactInfo="OLE DB-Quelle;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;7"
-              description="OLE DB-Quelle"
-              name="BER_Beschwerde"
-              usesDispositions="true"
-              version="7">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Gibt den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts an."
-                  name="OpenRowset">[dbo].[Beschwerde]</property>
-                <property
-                  dataType="System.String"
-                  description="Gibt die Variable an, die den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts enthält."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="Der auszuführende SQL-Befehl."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
-                <property
-                  dataType="System.String"
-                  description="Die Variable, die den auszuführenden SQL-Befehl enthält."
-                  name="SqlCommandVariable"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Erzwingt die Verwendung des DefaultCodePage-Eigenschaftswerts beim Beschreiben von Zeichendaten."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Gibt den zum Zugreifen auf die Datenbank verwendeten Modus an."
-                  name="AccessMode"
-                  typeConverter="AccessMode">0</property>
-                <property
-                  dataType="System.String"
-                  description="Die Zuordnungen zwischen den Parametern im SQL-Befehl und den Variablen."
-                  name="ParameterMapping"></property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Connections[OleDbConnection]"
-                  connectionManagerID="{85518BC2-AFCE-4BFA-98AF-87FAC45641A8}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_BER.u573527]"
-                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
-                  name="OleDbConnection" />
-              </connections>
+              refId="Package\ETL BeschwerdeDim\Bedingtes Teilen"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Bedingtes Teilen;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;0"
+              description="Leitet Datenzeilen je nach Inhalt der Daten an verschiedene Ausgaben weiter. Geben Sie mithilfe von Bedingungen (SSIS-Ausdrücken) an, welche Zeilen weitergeleitet werden. Trennen Sie beispielsweise Datensätze, die bereinigt werden müssen, von Datensätzen, die bereit zum Laden sind, oder leiten Sie nur eine Teilmenge der Datensätze weiter."
+              name="Bedingtes Teilen"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\ETL BeschwerdeDim\Bedingtes Teilen.Inputs[Eingabe für bedingtes Teilen]"
+                  description="Transformation für Eingabe für bedingtes Teilen"
+                  name="Eingabe für bedingtes Teilen">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL BeschwerdeDim\Bedingtes Teilen.Inputs[Eingabe für bedingtes Teilen].Columns[Grund]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Grund"
+                      lineageId="Package\ETL BeschwerdeDim\SQL Lookup.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Grund]" />
+                    <inputColumn
+                      refId="Package\ETL BeschwerdeDim\Bedingtes Teilen.Inputs[Eingabe für bedingtes Teilen].Columns[Grund1]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Grund"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\ETL BeschwerdeDim\Sortieren.Outputs[Sortierausgabe].Columns[Grund]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
               <outputs>
                 <output
-                  refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle]"
-                  name="Ausgabe der OLE DB-Quelle">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[BeschwerdeId]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[BeschwerdeId]"
-                      lineageId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[BeschwerdeId]"
-                      name="BeschwerdeId"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[LieferauftragId]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[LieferauftragId]"
-                      lineageId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[LieferauftragId]"
-                      name="LieferauftragId"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[KundenId]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[KundenId]"
-                      lineageId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[KundenId]"
-                      name="KundenId"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[TmId]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[TmId]"
-                      lineageId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[TmId]"
-                      name="TmId"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Bestelldatum]"
-                      dataType="dbTimeStamp"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Bestelldatum]"
-                      lineageId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Bestelldatum]"
-                      name="Bestelldatum"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lieferdatum]"
-                      dataType="dbTimeStamp"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Lieferdatum]"
-                      lineageId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lieferdatum]"
-                      name="Lieferdatum"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lieferdauer]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Lieferdauer]"
-                      lineageId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lieferdauer]"
-                      name="Lieferdauer"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[WerkId]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[WerkId]"
-                      lineageId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[WerkId]"
-                      name="WerkId"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Grund]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Grund]"
-                      length="255"
-                      lineageId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Grund]"
-                      name="Grund"
-                      truncationRowDisposition="FailComponent" />
-                  </outputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[BeschwerdeId]"
-                      dataType="i4"
-                      name="BeschwerdeId" />
-                    <externalMetadataColumn
-                      refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[LieferauftragId]"
-                      dataType="i4"
-                      name="LieferauftragId" />
-                    <externalMetadataColumn
-                      refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[KundenId]"
-                      dataType="i4"
-                      name="KundenId" />
-                    <externalMetadataColumn
-                      refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[TmId]"
-                      dataType="i4"
-                      name="TmId" />
-                    <externalMetadataColumn
-                      refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Bestelldatum]"
-                      dataType="dbTimeStamp"
-                      name="Bestelldatum" />
-                    <externalMetadataColumn
-                      refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Lieferdatum]"
-                      dataType="dbTimeStamp"
-                      name="Lieferdatum" />
-                    <externalMetadataColumn
-                      refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Lieferdauer]"
-                      dataType="i4"
-                      name="Lieferdauer" />
-                    <externalMetadataColumn
-                      refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[WerkId]"
-                      dataType="i4"
-                      name="WerkId" />
-                    <externalMetadataColumn
-                      refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Grund]"
-                      dataType="wstr"
-                      length="255"
-                      name="Grund" />
-                  </externalMetadataColumns>
+                  refId="Package\ETL BeschwerdeDim\Bedingtes Teilen.Outputs[geändert]"
+                  description="Ausgabe &quot;1&quot; der Transformation für bedingtes Teilen"
+                  errorOrTruncationOperation="Berechnung"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="geändert"
+                  synchronousInputId="Package\ETL BeschwerdeDim\Bedingtes Teilen.Inputs[Eingabe für bedingtes Teilen]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Gibt den Ausdruck an. Die Version des Ausdrucks verwendet Herkunftsbezeichner anstelle von Spaltennamen."
+                      name="Expression">#{Package\ETL BeschwerdeDim\SQL Lookup.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Grund]} != #{Package\ETL BeschwerdeDim\Sortieren.Outputs[Sortierausgabe].Columns[Grund]}</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Gibt die angezeigte Version des Ausdrucks an. Die Version des Ausdrucks verwendet Spaltennamen."
+                      expressionType="Notify"
+                      name="FriendlyExpression">[SQL Lookup].Grund != Sortieren.Grund</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Gibt die Position der Bedingung in der Liste der von der Transformation ausgewerteten Bedingungen an. Werte werden aufsteigend vom niedrigsten zum höchsten ausgewertet."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle]"
+                  refId="Package\ETL BeschwerdeDim\Bedingtes Teilen.Outputs[nicht geändert]"
+                  description="Ausgabe &quot;2&quot; der Transformation für bedingtes Teilen"
+                  errorOrTruncationOperation="Berechnung"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="nicht geändert"
+                  synchronousInputId="Package\ETL BeschwerdeDim\Bedingtes Teilen.Inputs[Eingabe für bedingtes Teilen]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Gibt den Ausdruck an. Die Version des Ausdrucks verwendet Herkunftsbezeichner anstelle von Spaltennamen."
+                      name="Expression">#{Package\ETL BeschwerdeDim\SQL Lookup.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Grund]} == #{Package\ETL BeschwerdeDim\Sortieren.Outputs[Sortierausgabe].Columns[Grund]}</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Gibt die angezeigte Version des Ausdrucks an. Die Version des Ausdrucks verwendet Spaltennamen."
+                      expressionType="Notify"
+                      name="FriendlyExpression">[SQL Lookup].Grund == Sortieren.Grund</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Gibt die Position der Bedingung in der Liste der von der Transformation ausgewerteten Bedingungen an. Werte werden aufsteigend vom niedrigsten zum höchsten ausgewertet."
+                      name="EvaluationOrder">1</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL BeschwerdeDim\Bedingtes Teilen.Outputs[Standardausgabe für bedingtes Teilen]"
+                  description="Transformation für Standardausgabe für bedingtes Teilen"
+                  exclusionGroup="1"
+                  name="Standardausgabe für bedingtes Teilen"
+                  synchronousInputId="Package\ETL BeschwerdeDim\Bedingtes Teilen.Inputs[Eingabe für bedingtes Teilen]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL BeschwerdeDim\Bedingtes Teilen.Outputs[Fehlerausgabe für bedingtes Teilen]"
+                  description="Transformation für Fehlerausgabe für bedingtes Teilen"
+                  exclusionGroup="1"
                   isErrorOut="true"
-                  name="Fehlerausgabe der OLE DB-Quelle">
+                  name="Fehlerausgabe für bedingtes Teilen"
+                  synchronousInputId="Package\ETL BeschwerdeDim\Bedingtes Teilen.Inputs[Eingabe für bedingtes Teilen]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[BeschwerdeId]"
+                      refId="Package\ETL BeschwerdeDim\Bedingtes Teilen.Outputs[Fehlerausgabe für bedingtes Teilen].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[BeschwerdeId]"
-                      name="BeschwerdeId" />
-                    <outputColumn
-                      refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[LieferauftragId]"
-                      dataType="i4"
-                      lineageId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[LieferauftragId]"
-                      name="LieferauftragId" />
-                    <outputColumn
-                      refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[KundenId]"
-                      dataType="i4"
-                      lineageId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[KundenId]"
-                      name="KundenId" />
-                    <outputColumn
-                      refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[TmId]"
-                      dataType="i4"
-                      lineageId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[TmId]"
-                      name="TmId" />
-                    <outputColumn
-                      refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Bestelldatum]"
-                      dataType="dbTimeStamp"
-                      lineageId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Bestelldatum]"
-                      name="Bestelldatum" />
-                    <outputColumn
-                      refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lieferdatum]"
-                      dataType="dbTimeStamp"
-                      lineageId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lieferdatum]"
-                      name="Lieferdatum" />
-                    <outputColumn
-                      refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lieferdauer]"
-                      dataType="i4"
-                      lineageId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lieferdauer]"
-                      name="Lieferdauer" />
-                    <outputColumn
-                      refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[WerkId]"
-                      dataType="i4"
-                      lineageId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[WerkId]"
-                      name="WerkId" />
-                    <outputColumn
-                      refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Grund]"
-                      dataType="wstr"
-                      length="255"
-                      lineageId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Grund]"
-                      name="Grund" />
-                    <outputColumn
-                      refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
+                      lineageId="Package\ETL BeschwerdeDim\Bedingtes Teilen.Outputs[Fehlerausgabe für bedingtes Teilen].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
+                      refId="Package\ETL BeschwerdeDim\Bedingtes Teilen.Outputs[Fehlerausgabe für bedingtes Teilen].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\ETL BeschwerdeDim\BER_Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
+                      lineageId="Package\ETL BeschwerdeDim\Bedingtes Teilen.Outputs[Fehlerausgabe für bedingtes Teilen].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -2480,8 +2353,8 @@ SET Ende = GETDATE();
               <connections>
                 <connection
                   refId="Package\ETL BeschwerdeDim\BeschwerdeDim.Connections[OleDbConnection]"
-                  connectionManagerID="{E7ABF833-EABB-45A5-B315-3795CDA593E0}:invalid"
-                  connectionManagerRefId="{E7ABF833-EABB-45A5-B315-3795CDA593E0}:invalid"
+                  connectionManagerID="{352D8B30-1379-41B4-B8FA-69A1DB9220FE}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527.u573527]"
                   description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
                   name="OleDbConnection" />
               </connections>
@@ -2492,25 +2365,27 @@ SET Ende = GETDATE();
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Eingabe des OLE DB-Ziels">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL BeschwerdeDim\BeschwerdeDim.Inputs[Eingabe des OLE DB-Ziels].Columns[Grund]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Grund"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\ETL BeschwerdeDim\BeschwerdeDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Grund]"
+                      lineageId="Package\ETL BeschwerdeDim\Sortieren.Outputs[Sortierausgabe].Columns[Grund]" />
+                  </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\ETL BeschwerdeDim\BeschwerdeDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[BeschwerdeId]"
-                      dataType="i4"
-                      name="BeschwerdeId" />
-                    <externalMetadataColumn
                       refId="Package\ETL BeschwerdeDim\BeschwerdeDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Grund]"
                       dataType="wstr"
-                      length="500"
+                      length="255"
                       name="Grund" />
                     <externalMetadataColumn
-                      refId="Package\ETL BeschwerdeDim\BeschwerdeDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Start]"
-                      dataType="dbDate"
-                      name="Start" />
-                    <externalMetadataColumn
-                      refId="Package\ETL BeschwerdeDim\BeschwerdeDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Ende]"
-                      dataType="dbDate"
-                      name="Ende" />
+                      refId="Package\ETL BeschwerdeDim\BeschwerdeDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[BeschwerdeDimId]"
+                      dataType="i4"
+                      name="BeschwerdeDimId" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -2540,11 +2415,86 @@ SET Ende = GETDATE();
               </outputs>
             </component>
             <component
-              refId="Package\ETL BeschwerdeDim\Keine Beschwerde"
+              refId="Package\ETL BeschwerdeDim\Kein Grund"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="OLE DB-Befehl;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;2"
+              description="Führt eine SQL-Anweisung für jede Zeile in einem Datenfluss aus. Rufen Sie beispielsweise die gespeicherte Prozedur &quot;new employee setup&quot; für jede Zeile in der Tabelle &quot;new employees&quot; auf. Hinweis: Wenn Sie für jede Zeile eines umfangreichen Datenflusses eine SQL-Anweisung ausführen, kann der Vorgang länger dauern."
+              name="Kein Grund"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Der auszuführende SQL-Befehl."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">INSERT INTO BeschwerdeDim (Grund) VALUES('Keine Beschwerde')</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL BeschwerdeDim\Kein Grund.Connections[OleDbConnection]"
+                  connectionManagerID="{352D8B30-1379-41B4-B8FA-69A1DB9220FE}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527.u573527]"
+                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\ETL BeschwerdeDim\Kein Grund.Inputs[Eingabe des OLE DB-Befehls]"
+                  errorOrTruncationOperation="Befehlsausführung"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Eingabe des OLE DB-Befehls">
+                  <externalMetadataColumns
+                    isUsed="True" />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL BeschwerdeDim\Kein Grund.Outputs[Ausgabe des OLE DB-Befehls]"
+                  exclusionGroup="1"
+                  name="Ausgabe des OLE DB-Befehls"
+                  synchronousInputId="Package\ETL BeschwerdeDim\Kein Grund.Inputs[Eingabe des OLE DB-Befehls]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL BeschwerdeDim\Kein Grund.Outputs[Fehlerausgabe des OLE DB-Befehls]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Fehlerausgabe des OLE DB-Befehls"
+                  synchronousInputId="Package\ETL BeschwerdeDim\Kein Grund.Inputs[Eingabe des OLE DB-Befehls]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Kein Grund.Outputs[Fehlerausgabe des OLE DB-Befehls].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL BeschwerdeDim\Kein Grund.Outputs[Fehlerausgabe des OLE DB-Befehls].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Kein Grund.Outputs[Fehlerausgabe des OLE DB-Befehls].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL BeschwerdeDim\Kein Grund.Outputs[Fehlerausgabe des OLE DB-Befehls].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL BeschwerdeDim\OLE DB-Quelle"
               componentClassID="Microsoft.OLEDBSource"
               contactInfo="OLE DB-Quelle;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;7"
               description="OLE DB-Quelle"
-              name="Keine Beschwerde"
+              name="OLE DB-Quelle"
               usesDispositions="true"
               version="7">
               <properties>
@@ -2564,8 +2514,7 @@ SET Ende = GETDATE();
                   dataType="System.String"
                   description="Der auszuführende SQL-Befehl."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT CAST('Keine Beschwerde' AS NVARCHAR(50)) AS Grund
-FROM  dbo.Beschwerde</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.String"
                   description="Die Variable, die den auszuführenden SQL-Befehl enthält."
@@ -2590,7 +2539,7 @@ FROM  dbo.Beschwerde</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Connections[OleDbConnection]"
+                  refId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Connections[OleDbConnection]"
                   connectionManagerID="{85518BC2-AFCE-4BFA-98AF-87FAC45641A8}:external"
                   connectionManagerRefId="Project.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_BER.u573527]"
                   description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
@@ -2598,194 +2547,747 @@ FROM  dbo.Beschwerde</property>
               </connections>
               <outputs>
                 <output
-                  refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle]"
+                  refId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle]"
                   name="Ausgabe der OLE DB-Quelle">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Grund]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Konvertierung"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Grund]"
-                      length="50"
-                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Grund]"
-                      name="Grund"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[BeschwerdeId]"
+                      refId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[BeschwerdeId]"
                       dataType="i4"
                       errorOrTruncationOperation="Konvertierung"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[BeschwerdeId]"
-                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[BeschwerdeId]"
+                      externalMetadataColumnId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[BeschwerdeId]"
+                      lineageId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[BeschwerdeId]"
                       name="BeschwerdeId"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[LieferauftragId]"
+                      refId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[LieferauftragId]"
                       dataType="i4"
                       errorOrTruncationOperation="Konvertierung"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[LieferauftragId]"
-                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[LieferauftragId]"
+                      externalMetadataColumnId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[LieferauftragId]"
+                      lineageId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[LieferauftragId]"
                       name="LieferauftragId"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[KundenId]"
+                      refId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[KundenId]"
                       dataType="i4"
                       errorOrTruncationOperation="Konvertierung"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[KundenId]"
-                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[KundenId]"
+                      externalMetadataColumnId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[KundenId]"
+                      lineageId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[KundenId]"
                       name="KundenId"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[TmId]"
+                      refId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[TmId]"
                       dataType="i4"
                       errorOrTruncationOperation="Konvertierung"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[TmId]"
-                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[TmId]"
+                      externalMetadataColumnId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[TmId]"
+                      lineageId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[TmId]"
                       name="TmId"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Bestelldatum]"
+                      refId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[Bestelldatum]"
                       dataType="dbTimeStamp"
                       errorOrTruncationOperation="Konvertierung"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Bestelldatum]"
-                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Bestelldatum]"
+                      externalMetadataColumnId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Bestelldatum]"
+                      lineageId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[Bestelldatum]"
                       name="Bestelldatum"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lieferdatum]"
+                      refId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lieferdatum]"
                       dataType="dbTimeStamp"
                       errorOrTruncationOperation="Konvertierung"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Lieferdatum]"
-                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lieferdatum]"
+                      externalMetadataColumnId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Lieferdatum]"
+                      lineageId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lieferdatum]"
                       name="Lieferdatum"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lieferdauer]"
+                      refId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lieferdauer]"
                       dataType="i4"
                       errorOrTruncationOperation="Konvertierung"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Lieferdauer]"
-                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lieferdauer]"
+                      externalMetadataColumnId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Lieferdauer]"
+                      lineageId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lieferdauer]"
                       name="Lieferdauer"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[WerkId]"
+                      refId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[WerkId]"
                       dataType="i4"
                       errorOrTruncationOperation="Konvertierung"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[WerkId]"
-                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].Columns[WerkId]"
+                      externalMetadataColumnId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[WerkId]"
+                      lineageId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[WerkId]"
                       name="WerkId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[Grund]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Grund]"
+                      length="255"
+                      lineageId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[Grund]"
+                      name="Grund"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Grund]"
-                      dataType="wstr"
-                      length="255"
-                      name="Grund" />
-                    <externalMetadataColumn
-                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[BeschwerdeId]"
+                      refId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[BeschwerdeId]"
                       dataType="i4"
                       name="BeschwerdeId" />
                     <externalMetadataColumn
-                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[LieferauftragId]"
+                      refId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[LieferauftragId]"
                       dataType="i4"
                       name="LieferauftragId" />
                     <externalMetadataColumn
-                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[KundenId]"
+                      refId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[KundenId]"
                       dataType="i4"
                       name="KundenId" />
                     <externalMetadataColumn
-                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[TmId]"
+                      refId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[TmId]"
                       dataType="i4"
                       name="TmId" />
                     <externalMetadataColumn
-                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Bestelldatum]"
+                      refId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Bestelldatum]"
                       dataType="dbTimeStamp"
                       name="Bestelldatum" />
                     <externalMetadataColumn
-                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Lieferdatum]"
+                      refId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Lieferdatum]"
                       dataType="dbTimeStamp"
                       name="Lieferdatum" />
                     <externalMetadataColumn
-                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Lieferdauer]"
+                      refId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Lieferdauer]"
                       dataType="i4"
                       name="Lieferdauer" />
                     <externalMetadataColumn
-                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[WerkId]"
+                      refId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[WerkId]"
                       dataType="i4"
                       name="WerkId" />
+                    <externalMetadataColumn
+                      refId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Grund]"
+                      dataType="wstr"
+                      length="255"
+                      name="Grund" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle]"
+                  refId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Fehlerausgabe der OLE DB-Quelle]"
                   isErrorOut="true"
                   name="Fehlerausgabe der OLE DB-Quelle">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[BeschwerdeId]"
+                      refId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[BeschwerdeId]"
                       dataType="i4"
-                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[BeschwerdeId]"
+                      lineageId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[BeschwerdeId]"
                       name="BeschwerdeId" />
                     <outputColumn
-                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[LieferauftragId]"
+                      refId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[LieferauftragId]"
                       dataType="i4"
-                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[LieferauftragId]"
+                      lineageId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[LieferauftragId]"
                       name="LieferauftragId" />
                     <outputColumn
-                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[KundenId]"
+                      refId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[KundenId]"
                       dataType="i4"
-                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[KundenId]"
+                      lineageId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[KundenId]"
                       name="KundenId" />
                     <outputColumn
-                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[TmId]"
+                      refId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[TmId]"
                       dataType="i4"
-                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[TmId]"
+                      lineageId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[TmId]"
                       name="TmId" />
                     <outputColumn
-                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Bestelldatum]"
+                      refId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Bestelldatum]"
                       dataType="dbTimeStamp"
-                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Bestelldatum]"
+                      lineageId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Bestelldatum]"
                       name="Bestelldatum" />
                     <outputColumn
-                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lieferdatum]"
+                      refId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lieferdatum]"
                       dataType="dbTimeStamp"
-                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lieferdatum]"
+                      lineageId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lieferdatum]"
                       name="Lieferdatum" />
                     <outputColumn
-                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lieferdauer]"
+                      refId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lieferdauer]"
                       dataType="i4"
-                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lieferdauer]"
+                      lineageId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Lieferdauer]"
                       name="Lieferdauer" />
                     <outputColumn
-                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[WerkId]"
+                      refId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[WerkId]"
                       dataType="i4"
-                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[WerkId]"
+                      lineageId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[WerkId]"
                       name="WerkId" />
                     <outputColumn
-                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Grund]"
+                      refId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Grund]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Grund]"
+                      lineageId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Grund]"
                       name="Grund" />
                     <outputColumn
-                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
+                      refId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
+                      lineageId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
+                      refId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\ETL BeschwerdeDim\Keine Beschwerde.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
+                      lineageId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL BeschwerdeDim\Sortieren"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sortieren;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;1"
+              description="Sortiert Eingabedaten in aufsteigender oder absteigender Folge, wenn sie nicht am Quellort sortiert werden können. Sortieren Sie beispielsweise Umsatzzahlen nach &quot;customer id&quot;, bevor sie in eine Flatfile geschrieben und einer anderen Abteilung zur Verfügung gestellt werden. Hinweis: Für umfangreiche Datenflüsse wird diese Transformation nicht empfohlen."
+              name="Sortieren"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Zeigt an, ob die Sortiertransformation Zeilen mit doppelten Sortierwerten entfernt."
+                  name="EliminateDuplicates">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt die maximale Anzahl der Threads an, die beim Sortieren verwendet werden können."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\ETL BeschwerdeDim\Sortieren.Inputs[Sortiereingabe]"
+                  name="Sortiereingabe">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL BeschwerdeDim\Sortieren.Inputs[Sortiereingabe].Columns[BeschwerdeId]"
+                      cachedDataType="i4"
+                      cachedName="BeschwerdeId"
+                      lineageId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[BeschwerdeId]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Gibt die Vergleichsoptionen für Zeichendaten an."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Gibt die Sortierreihenfolge der Spalte an."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL BeschwerdeDim\Sortieren.Inputs[Sortiereingabe].Columns[LieferauftragId]"
+                      cachedDataType="i4"
+                      cachedName="LieferauftragId"
+                      lineageId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[LieferauftragId]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Gibt die Vergleichsoptionen für Zeichendaten an."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Gibt die Sortierreihenfolge der Spalte an."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL BeschwerdeDim\Sortieren.Inputs[Sortiereingabe].Columns[KundenId]"
+                      cachedDataType="i4"
+                      cachedName="KundenId"
+                      lineageId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[KundenId]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Gibt die Vergleichsoptionen für Zeichendaten an."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Gibt die Sortierreihenfolge der Spalte an."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL BeschwerdeDim\Sortieren.Inputs[Sortiereingabe].Columns[TmId]"
+                      cachedDataType="i4"
+                      cachedName="TmId"
+                      lineageId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[TmId]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Gibt die Vergleichsoptionen für Zeichendaten an."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Gibt die Sortierreihenfolge der Spalte an."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL BeschwerdeDim\Sortieren.Inputs[Sortiereingabe].Columns[Bestelldatum]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="Bestelldatum"
+                      lineageId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[Bestelldatum]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Gibt die Vergleichsoptionen für Zeichendaten an."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Gibt die Sortierreihenfolge der Spalte an."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL BeschwerdeDim\Sortieren.Inputs[Sortiereingabe].Columns[Lieferdatum]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="Lieferdatum"
+                      lineageId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lieferdatum]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Gibt die Vergleichsoptionen für Zeichendaten an."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Gibt die Sortierreihenfolge der Spalte an."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL BeschwerdeDim\Sortieren.Inputs[Sortiereingabe].Columns[Lieferdauer]"
+                      cachedDataType="i4"
+                      cachedName="Lieferdauer"
+                      lineageId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lieferdauer]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Gibt die Vergleichsoptionen für Zeichendaten an."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Gibt die Sortierreihenfolge der Spalte an."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL BeschwerdeDim\Sortieren.Inputs[Sortiereingabe].Columns[WerkId]"
+                      cachedDataType="i4"
+                      cachedName="WerkId"
+                      lineageId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[WerkId]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Gibt die Vergleichsoptionen für Zeichendaten an."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Gibt die Sortierreihenfolge der Spalte an."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL BeschwerdeDim\Sortieren.Inputs[Sortiereingabe].Columns[Grund]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Grund"
+                      lineageId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[Grund]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Gibt die Vergleichsoptionen für Zeichendaten an."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Gibt die Sortierreihenfolge der Spalte an."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL BeschwerdeDim\Sortieren.Outputs[Sortierausgabe]"
+                  isSorted="true"
+                  name="Sortierausgabe">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Sortieren.Outputs[Sortierausgabe].Columns[BeschwerdeId]"
+                      dataType="i4"
+                      lineageId="Package\ETL BeschwerdeDim\Sortieren.Outputs[Sortierausgabe].Columns[BeschwerdeId]"
+                      name="BeschwerdeId">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Gibt den Herkunftsbezeichner der Eingabespalte an, die dieser Ausgabespalte zugeordnet ist."
+                          name="SortColumnId">#{Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[BeschwerdeId]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Sortieren.Outputs[Sortierausgabe].Columns[LieferauftragId]"
+                      dataType="i4"
+                      lineageId="Package\ETL BeschwerdeDim\Sortieren.Outputs[Sortierausgabe].Columns[LieferauftragId]"
+                      name="LieferauftragId">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Gibt den Herkunftsbezeichner der Eingabespalte an, die dieser Ausgabespalte zugeordnet ist."
+                          name="SortColumnId">#{Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[LieferauftragId]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Sortieren.Outputs[Sortierausgabe].Columns[KundenId]"
+                      dataType="i4"
+                      lineageId="Package\ETL BeschwerdeDim\Sortieren.Outputs[Sortierausgabe].Columns[KundenId]"
+                      name="KundenId">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Gibt den Herkunftsbezeichner der Eingabespalte an, die dieser Ausgabespalte zugeordnet ist."
+                          name="SortColumnId">#{Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[KundenId]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Sortieren.Outputs[Sortierausgabe].Columns[TmId]"
+                      dataType="i4"
+                      lineageId="Package\ETL BeschwerdeDim\Sortieren.Outputs[Sortierausgabe].Columns[TmId]"
+                      name="TmId">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Gibt den Herkunftsbezeichner der Eingabespalte an, die dieser Ausgabespalte zugeordnet ist."
+                          name="SortColumnId">#{Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[TmId]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Sortieren.Outputs[Sortierausgabe].Columns[Bestelldatum]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\ETL BeschwerdeDim\Sortieren.Outputs[Sortierausgabe].Columns[Bestelldatum]"
+                      name="Bestelldatum">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Gibt den Herkunftsbezeichner der Eingabespalte an, die dieser Ausgabespalte zugeordnet ist."
+                          name="SortColumnId">#{Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[Bestelldatum]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Sortieren.Outputs[Sortierausgabe].Columns[Lieferdatum]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\ETL BeschwerdeDim\Sortieren.Outputs[Sortierausgabe].Columns[Lieferdatum]"
+                      name="Lieferdatum">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Gibt den Herkunftsbezeichner der Eingabespalte an, die dieser Ausgabespalte zugeordnet ist."
+                          name="SortColumnId">#{Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lieferdatum]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Sortieren.Outputs[Sortierausgabe].Columns[Lieferdauer]"
+                      dataType="i4"
+                      lineageId="Package\ETL BeschwerdeDim\Sortieren.Outputs[Sortierausgabe].Columns[Lieferdauer]"
+                      name="Lieferdauer">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Gibt den Herkunftsbezeichner der Eingabespalte an, die dieser Ausgabespalte zugeordnet ist."
+                          name="SortColumnId">#{Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[Lieferdauer]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Sortieren.Outputs[Sortierausgabe].Columns[WerkId]"
+                      dataType="i4"
+                      lineageId="Package\ETL BeschwerdeDim\Sortieren.Outputs[Sortierausgabe].Columns[WerkId]"
+                      name="WerkId">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Gibt den Herkunftsbezeichner der Eingabespalte an, die dieser Ausgabespalte zugeordnet ist."
+                          name="SortColumnId">#{Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[WerkId]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Sortieren.Outputs[Sortierausgabe].Columns[Grund]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\ETL BeschwerdeDim\Sortieren.Outputs[Sortierausgabe].Columns[Grund]"
+                      name="Grund"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Gibt den Herkunftsbezeichner der Eingabespalte an, die dieser Ausgabespalte zugeordnet ist."
+                          name="SortColumnId">#{Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle].Columns[Grund]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL BeschwerdeDim\SQL Lookup"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Suche;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;6"
+              description="Verknüpft zusätzliche Spalten mit dem Datenfluss, indem Werte in einer Tabelle gesucht werden. Verknüpfen Sie beispielsweise die Spalte &quot;employee id&quot; mit der Tabelle &quot;employees&quot;, um &quot;hire date&quot; und &quot;employee name&quot; zu erhalten. Diese Transformation wird empfohlen, wenn der Arbeitsspeicher die Nachschlagetabelle aufnehmen kann."
+              name="SQL Lookup"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Gibt die SQL-Anweisung an, die die Nachschlagetabelle generiert."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from [dbo].[BeschwerdeDim]</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt eine SQL-Anweisung an, die Parameter zum Generieren der Nachschlagetabelle verwendet."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (select * from [dbo].[BeschwerdeDim]) [refTable]
+where [refTable].[Grund] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt den Typ der Verbindung an, der zum Zugreifen auf das Verweisdataset verwendet wird."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt den Cachetyp der Nachschlagetabelle an."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt an, wie die Suchtransformation Zeilen ohne übereinstimmende Einträge im Verweisdataset behandelt."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt den Prozentwert des Caches an, der für Zeilen ohne übereinstimmende Einträge im Verweisdataset zugewiesen ist."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximale Speicherauslastung für den Verweiscache auf einer 32-Bit-Plattform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximale Speicherauslastung für den Verweiscache auf einer 64-Bit-Plattform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Zeigt an, ob auf Metadaten in einem XML-Format verwiesen werden soll."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="BeschwerdeDimId" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Grund" dataType="DT_WSTR" length="255" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Gibt die Liste der Herkunftsbezeichner an, die den von der SQL-Anweisung in der SQLCommand-Eigenschaft verwendeten Parametern zugeordnet sind. Einträge in der Liste sind durch Semikolons getrennt."
+                  name="ParameterMap">#{Package\ETL BeschwerdeDim\Sortieren.Outputs[Sortierausgabe].Columns[Grund]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Bestimmt, ob doppelte Schlüssel in den Verweisdaten bei Verwendung des Vollcachemodus als Fehler behandelt werden sollen."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL BeschwerdeDim\SQL Lookup.Connections[OleDbConnection]"
+                  connectionManagerID="{352D8B30-1379-41B4-B8FA-69A1DB9220FE}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527.u573527]"
+                  description="Verbindungs-Manager für den Zugriff auf Suchdaten."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\ETL BeschwerdeDim\SQL Lookup.Inputs[Eingabe der Suche]"
+                  name="Eingabe der Suche">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL BeschwerdeDim\SQL Lookup.Inputs[Eingabe der Suche].Columns[Grund]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Grund"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\ETL BeschwerdeDim\Sortieren.Outputs[Sortierausgabe].Columns[Grund]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Gibt die Spalte in der Verweistabelle an, mit der eine Spalte verknüpft wird."
+                          name="JoinToReferenceColumn">Grund</property>
+                        <property
+                          dataType="System.Null"
+                          description="Gibt die Spalte in der Verweistabelle an, aus der eine Spalte kopiert ist."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL BeschwerdeDim\SQL Lookup.Outputs[Ausgabe der Suchübereinstimmungen]"
+                  errorOrTruncationOperation="Suche"
+                  exclusionGroup="1"
+                  name="Ausgabe der Suchübereinstimmungen"
+                  synchronousInputId="Package\ETL BeschwerdeDim\SQL Lookup.Inputs[Eingabe der Suche]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\SQL Lookup.Outputs[Ausgabe der Suchübereinstimmungen].Columns[BeschwerdeDimId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Spalte kopieren"
+                      lineageId="Package\ETL BeschwerdeDim\SQL Lookup.Outputs[Ausgabe der Suchübereinstimmungen].Columns[BeschwerdeDimId]"
+                      name="BeschwerdeDimId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Gibt die Spalte in der Verweistabelle an, aus der eine Spalte kopiert ist."
+                          name="CopyFromReferenceColumn">BeschwerdeDimId</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\SQL Lookup.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Grund]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Spalte kopieren"
+                      length="255"
+                      lineageId="Package\ETL BeschwerdeDim\SQL Lookup.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Grund]"
+                      name="Grund"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Gibt die Spalte in der Verweistabelle an, aus der eine Spalte kopiert ist."
+                          name="CopyFromReferenceColumn">Grund</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL BeschwerdeDim\SQL Lookup.Outputs[Suchausgabe nicht übereinstimmender Einträge]"
+                  description="Die Suchausgabe, die Zeilen ohne übereinstimmende Einträge im Verweisdataset behandelt. Verwenden Sie diese Ausgabe, wenn die NoMatchBehavior-Eigenschaft auf &quot;Zeilen ohne übereinstimmende Einträge an die Ausgabe nicht übereinstimmender Einträge senden&quot; festgelegt ist."
+                  exclusionGroup="1"
+                  name="Suchausgabe nicht übereinstimmender Einträge"
+                  synchronousInputId="Package\ETL BeschwerdeDim\SQL Lookup.Inputs[Eingabe der Suche]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL BeschwerdeDim\SQL Lookup.Outputs[Fehlerausgabe der Suche]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Fehlerausgabe der Suche"
+                  synchronousInputId="Package\ETL BeschwerdeDim\SQL Lookup.Inputs[Eingabe der Suche]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\SQL Lookup.Outputs[Fehlerausgabe der Suche].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL BeschwerdeDim\SQL Lookup.Outputs[Fehlerausgabe der Suche].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\SQL Lookup.Outputs[Fehlerausgabe der Suche].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL BeschwerdeDim\SQL Lookup.Outputs[Fehlerausgabe der Suche].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL BeschwerdeDim\Update"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="OLE DB-Befehl;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;2"
+              description="Führt eine SQL-Anweisung für jede Zeile in einem Datenfluss aus. Rufen Sie beispielsweise die gespeicherte Prozedur &quot;new employee setup&quot; für jede Zeile in der Tabelle &quot;new employees&quot; auf. Hinweis: Wenn Sie für jede Zeile eines umfangreichen Datenflusses eine SQL-Anweisung ausführen, kann der Vorgang länger dauern."
+              name="Update"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Der auszuführende SQL-Befehl."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">UPDATE AdresseDim
+SET Ende = CAST(GETDATE() AS Date)
+;</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL BeschwerdeDim\Update.Connections[OleDbConnection]"
+                  connectionManagerID="{352D8B30-1379-41B4-B8FA-69A1DB9220FE}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527.u573527]"
+                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\ETL BeschwerdeDim\Update.Inputs[Eingabe des OLE DB-Befehls]"
+                  errorOrTruncationOperation="Befehlsausführung"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Eingabe des OLE DB-Befehls">
+                  <externalMetadataColumns
+                    isUsed="True" />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL BeschwerdeDim\Update.Outputs[Ausgabe des OLE DB-Befehls]"
+                  exclusionGroup="1"
+                  name="Ausgabe des OLE DB-Befehls"
+                  synchronousInputId="Package\ETL BeschwerdeDim\Update.Inputs[Eingabe des OLE DB-Befehls]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL BeschwerdeDim\Update.Outputs[Fehlerausgabe des OLE DB-Befehls]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Fehlerausgabe des OLE DB-Befehls"
+                  synchronousInputId="Package\ETL BeschwerdeDim\Update.Inputs[Eingabe des OLE DB-Befehls]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Update.Outputs[Fehlerausgabe des OLE DB-Befehls].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL BeschwerdeDim\Update.Outputs[Fehlerausgabe des OLE DB-Befehls].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL BeschwerdeDim\Update.Outputs[Fehlerausgabe des OLE DB-Befehls].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL BeschwerdeDim\Update.Outputs[Fehlerausgabe des OLE DB-Befehls].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -2794,6 +3296,38 @@ FROM  dbo.Beschwerde</property>
               </outputs>
             </component>
           </components>
+          <paths>
+            <path
+              refId="Package\ETL BeschwerdeDim.Paths[Ausgabe der OLE DB-Quelle]"
+              endId="Package\ETL BeschwerdeDim\Kein Grund.Inputs[Eingabe des OLE DB-Befehls]"
+              name="Ausgabe der OLE DB-Quelle"
+              startId="Package\ETL BeschwerdeDim\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle]" />
+            <path
+              refId="Package\ETL BeschwerdeDim.Paths[Ausgabe der Suchübereinstimmungen]"
+              endId="Package\ETL BeschwerdeDim\Bedingtes Teilen.Inputs[Eingabe für bedingtes Teilen]"
+              name="Ausgabe der Suchübereinstimmungen"
+              startId="Package\ETL BeschwerdeDim\SQL Lookup.Outputs[Ausgabe der Suchübereinstimmungen]" />
+            <path
+              refId="Package\ETL BeschwerdeDim.Paths[Ausgabe des OLE DB-Befehls]"
+              endId="Package\ETL BeschwerdeDim\Sortieren.Inputs[Sortiereingabe]"
+              name="Ausgabe des OLE DB-Befehls"
+              startId="Package\ETL BeschwerdeDim\Kein Grund.Outputs[Ausgabe des OLE DB-Befehls]" />
+            <path
+              refId="Package\ETL BeschwerdeDim.Paths[geändert]"
+              endId="Package\ETL BeschwerdeDim\Update.Inputs[Eingabe des OLE DB-Befehls]"
+              name="geändert"
+              startId="Package\ETL BeschwerdeDim\Bedingtes Teilen.Outputs[geändert]" />
+            <path
+              refId="Package\ETL BeschwerdeDim.Paths[Sortierausgabe]"
+              endId="Package\ETL BeschwerdeDim\SQL Lookup.Inputs[Eingabe der Suche]"
+              name="Sortierausgabe"
+              startId="Package\ETL BeschwerdeDim\Sortieren.Outputs[Sortierausgabe]" />
+            <path
+              refId="Package\ETL BeschwerdeDim.Paths[Suchausgabe nicht übereinstimmender Einträge]"
+              endId="Package\ETL BeschwerdeDim\BeschwerdeDim.Inputs[Eingabe des OLE DB-Ziels]"
+              name="Suchausgabe nicht übereinstimmender Einträge"
+              startId="Package\ETL BeschwerdeDim\SQL Lookup.Outputs[Suchausgabe nicht übereinstimmender Einträge]" />
+          </paths>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
@@ -5533,53 +6067,53 @@ WHERE TransDimId = TransId;</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="162,42"
-          Id="Package\ETL AdresseDim\Zusammenführen"
-          TopLeft="157,685.499997449417" />
-        <NodeLayout
-          Size="130,42"
-          Id="Package\ETL AdresseDim\Sortieren 1"
-          TopLeft="364,133.5" />
-        <NodeLayout
-          Size="113,42"
-          Id="Package\ETL AdresseDim\Update"
-          TopLeft="483,606.833331277801" />
-        <NodeLayout
-          Size="173,42"
-          Id="Package\ETL AdresseDim\Abgeleitete Spalte 1"
-          TopLeft="104.5,298.458331850875" />
+          Size="135,42"
+          Id="Package\ETL AdresseDim\Geoposition"
+          TopLeft="129,32" />
         <NodeLayout
           Size="122,42"
           Id="Package\ETL AdresseDim\Sortieren"
           TopLeft="137.5,133" />
         <NodeLayout
-          Size="107.5,42"
-          Id="Package\ETL AdresseDim\Teilen"
-          TopLeft="485.5,486.583331875089" />
+          Size="113,42"
+          Id="Package\ETL AdresseDim\Update"
+          TopLeft="483,606.833331277801" />
         <NodeLayout
-          Size="135,42"
-          Id="Package\ETL AdresseDim\Geoposition"
-          TopLeft="129,32" />
-        <NodeLayout
-          Size="109,42"
-          Id="Package\ETL AdresseDim\Suche"
-          TopLeft="169.5,485.083332230234" />
+          Size="130,42"
+          Id="Package\ETL AdresseDim\Sortieren 1"
+          TopLeft="364,133.5" />
         <NodeLayout
           Size="136,42"
           Id="Package\ETL AdresseDim\AdresseDim"
           TopLeft="149,854.33333253695" />
         <NodeLayout
-          Size="164.5,42"
-          Id="Package\ETL AdresseDim\Abgeleitete Spalte"
-          TopLeft="111.071428571429,210.089284670761" />
+          Size="189,42"
+          Id="Package\ETL AdresseDim\Zusammenführungsjoin"
+          TopLeft="129,386.5" />
         <NodeLayout
           Size="138.5,42"
           Id="Package\ETL AdresseDim\Flatfilequelle"
           TopLeft="359.5,37.6874998748923" />
         <NodeLayout
-          Size="189,42"
-          Id="Package\ETL AdresseDim\Zusammenführungsjoin"
-          TopLeft="129,386.5" />
+          Size="173,42"
+          Id="Package\ETL AdresseDim\Abgeleitete Spalte 1"
+          TopLeft="104.5,298.458331850875" />
+        <NodeLayout
+          Size="107.5,42"
+          Id="Package\ETL AdresseDim\Teilen"
+          TopLeft="485.5,486.583331875089" />
+        <NodeLayout
+          Size="109,42"
+          Id="Package\ETL AdresseDim\Suche"
+          TopLeft="169.5,485.083332230234" />
+        <NodeLayout
+          Size="162,42"
+          Id="Package\ETL AdresseDim\Zusammenführen"
+          TopLeft="157,685.499997449417" />
+        <NodeLayout
+          Size="164.5,42"
+          Id="Package\ETL AdresseDim\Abgeleitete Spalte"
+          TopLeft="111.071428571429,210.089284670761" />
         <EdgeLayout
           Id="Package\ETL AdresseDim.Paths[Ausgabe der Suchübereinstimmungen]"
           TopLeft="278.5,506.833332052661">
@@ -5815,22 +6349,267 @@ WHERE TransDimId = TransId;</property>
     design-time-name="Package\ETL BeschwerdeDim">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="171,42"
-          Id="Package\ETL BeschwerdeDim\Keine Beschwerde"
-          TopLeft="104.75,160.833333344095" />
+          Size="124,42"
+          Id="Package\ETL BeschwerdeDim\Sortieren"
+          TopLeft="301,125" />
         <NodeLayout
-          Size="156,42"
+          Size="140,42"
+          Id="Package\ETL BeschwerdeDim\SQL Lookup"
+          TopLeft="415.5,50.833333344095" />
+        <NodeLayout
+          Size="114,42"
+          Id="Package\ETL BeschwerdeDim\Update"
+          TopLeft="902,237" />
+        <NodeLayout
+          Size="155,42"
+          Id="Package\ETL BeschwerdeDim\OLE DB-Quelle"
+          TopLeft="1,75" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\ETL BeschwerdeDim\Bedingtes Teilen"
+          TopLeft="568,136" />
+        <NodeLayout
+          Size="159,42"
           Id="Package\ETL BeschwerdeDim\BeschwerdeDim"
-          TopLeft="807,46.5" />
+          TopLeft="947,53.5" />
+        <EdgeLayout
+          Id="Package\ETL BeschwerdeDim.Paths[Ausgabe der Suchübereinstimmungen]"
+          TopLeft="485.5,92.833333344095">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="163,43.166666655905"
+              Start="0,0"
+              End="163,35.666666655905">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.5833333279525" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.5833333279525"
+                    Point2="0,21.5833333279525"
+                    Point3="4,21.5833333279525" />
+                  <mssgle:LineSegment
+                    End="159,21.5833333279525" />
+                  <mssgle:CubicBezierSegment
+                    Point1="159,21.5833333279525"
+                    Point2="163,21.5833333279525"
+                    Point3="163,25.5833333279525" />
+                  <mssgle:LineSegment
+                    End="163,35.666666655905" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-2.77000000000002,26.5833333279525,168.54,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL BeschwerdeDim.Paths[Suchausgabe nicht übereinstimmender Einträge]"
+          TopLeft="555.5,73.1666666720475">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="391.5,0"
+              Start="0,0"
+              End="384,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="384,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="85.98298828125,5,212.0340234375,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL BeschwerdeDim.Paths[Sortierausgabe]"
+          TopLeft="363,125">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="100.5,-32.166666655905"
+              Start="0,0"
+              End="100.5,-24.666666655905">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-15.0819208975708" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-15.0819208975708"
+                    Point2="0,-19.0819208975708"
+                    Point3="4,-19.0819208975708" />
+                  <mssgle:LineSegment
+                    End="96.5,-19.0819208975708" />
+                  <mssgle:CubicBezierSegment
+                    Point1="96.5,-19.0819208975708"
+                    Point2="100.5,-19.0819208975708"
+                    Point3="100.5,-23.0819208975708" />
+                  <mssgle:LineSegment
+                    End="100.5,-24.666666655905" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL BeschwerdeDim.Paths[geändert]"
+          TopLeft="648.5,178">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="310.5,59"
+              Start="0,0"
+              End="310.5,51.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25.5"
+                    Point2="0,29.5"
+                    Point3="4,29.5" />
+                  <mssgle:LineSegment
+                    End="306.5,29.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="306.5,29.5"
+                    Point2="310.5,29.5"
+                    Point3="310.5,33.5" />
+                  <mssgle:LineSegment
+                    End="310.5,51.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="134.72400390625,34.5,41.0519921875,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <NodeLayout
-          Size="164,42"
-          Id="Package\ETL BeschwerdeDim\BER_Beschwerde"
-          TopLeft="103.5,23.5" />
+          Size="135,42"
+          Id="Package\ETL BeschwerdeDim\Kein Grund"
+          TopLeft="130,131" />
+        <EdgeLayout
+          Id="Package\ETL BeschwerdeDim.Paths[Ausgabe der OLE DB-Quelle]"
+          TopLeft="156,96">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="41.5,35"
+              Start="0,0"
+              End="41.5,27.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="37.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="37.5,0"
+                    Point2="41.5,0"
+                    Point3="41.5,4" />
+                  <mssgle:LineSegment
+                    End="41.5,27.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL BeschwerdeDim.Paths[Ausgabe des OLE DB-Befehls]"
+          TopLeft="265,149">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="36,0"
+              Start="0,0"
+              End="28.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="28.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL BeschwerdeDim\SQL Lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[BeschwerdeDim]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL BeschwerdeDim\OLE DB-Quelle">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL BeschwerdeDim\BeschwerdeDim">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\ETL LieferungFakten">
     <LayoutInfo>
