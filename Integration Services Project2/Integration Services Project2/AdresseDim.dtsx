@@ -12,8 +12,8 @@
   DTS:ObjectName="AdresseDim"
   DTS:PackageType="5"
   DTS:ProtectionLevel="2"
-  DTS:VersionBuild="15"
-  DTS:VersionGUID="{BB8A62BF-E19C-43FB-B976-3DFED546F92E}">
+  DTS:VersionBuild="17"
+  DTS:VersionGUID="{EA714713-C77E-4165-90A2-F2AB04296908}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -74,6 +74,79 @@
         <pipeline
           version="1">
           <components>
+            <component
+              refId="Package\ETL AdresseDim\Berechnung Start - Current Date"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Abgeleitete Spalte;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;0"
+              description="Erstellt neue Spaltenwerte, indem Ausdrücke auf Transformationseingabespalten angewendet werden. Erstellen Sie neue Spalten, oder überschreiben Sie vorhandene. Verketten Sie beispielsweise die Werte der Spalten &quot;first name&quot; und &quot;last name&quot;, um die Spalte &quot;full name&quot; zu erhalten."
+              name="Berechnung Start - Current Date"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\ETL AdresseDim\Berechnung Start - Current Date.Inputs[Eingabe der abgeleiteten Spalte]"
+                  description="Eingabe der Transformation für abgeleiteten Spalten"
+                  name="Eingabe der abgeleiteten Spalte">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL AdresseDim\Berechnung Start - Current Date.Outputs[Ausgabe der abgeleiteten Spalte]"
+                  description="Standardausgabe der Transformation für abgeleitete Spalten"
+                  exclusionGroup="1"
+                  name="Ausgabe der abgeleiteten Spalte"
+                  synchronousInputId="Package\ETL AdresseDim\Berechnung Start - Current Date.Inputs[Eingabe der abgeleiteten Spalte]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL AdresseDim\Berechnung Start - Current Date.Outputs[Ausgabe der abgeleiteten Spalte].Columns[Start]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Berechnung"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL AdresseDim\Berechnung Start - Current Date.Outputs[Ausgabe der abgeleiteten Spalte].Columns[Start]"
+                      name="Start"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Ausdruck für abgeleitete Spalte"
+                          name="Expression">[GETDATE]()</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Angezeigter Ausdruck für abgeleitete Spalte"
+                          expressionType="Notify"
+                          name="FriendlyExpression">GETDATE()</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL AdresseDim\Berechnung Start - Current Date.Outputs[Fehlerausgabe der abgeleiteten Spalte]"
+                  description="Fehlerausgabe der Transformation für abgeleitete Spalten"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Fehlerausgabe der abgeleiteten Spalte"
+                  synchronousInputId="Package\ETL AdresseDim\Berechnung Start - Current Date.Inputs[Eingabe der abgeleiteten Spalte]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL AdresseDim\Berechnung Start - Current Date.Outputs[Fehlerausgabe der abgeleiteten Spalte].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL AdresseDim\Berechnung Start - Current Date.Outputs[Fehlerausgabe der abgeleiteten Spalte].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL AdresseDim\Berechnung Start - Current Date.Outputs[Fehlerausgabe der abgeleiteten Spalte].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL AdresseDim\Berechnung Start - Current Date.Outputs[Fehlerausgabe der abgeleiteten Spalte].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
             <component
               refId="Package\ETL AdresseDim\Datentyp konvertieren"
               componentClassID="Microsoft.DerivedColumn"
@@ -741,6 +814,12 @@
                       cachedName="Bundesland"
                       externalMetadataColumnId="Package\ETL AdresseDim\OLE DB-Ziel.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Bundesland]"
                       lineageId="Package\ETL AdresseDim\Zusammenführen.Outputs[Zusammenführen Ausgabe 1].Columns[Bundesland]" />
+                    <inputColumn
+                      refId="Package\ETL AdresseDim\OLE DB-Ziel.Inputs[Eingabe des OLE DB-Ziels].Columns[Start]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="Start"
+                      externalMetadataColumnId="Package\ETL AdresseDim\OLE DB-Ziel.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Start]"
+                      lineageId="Package\ETL AdresseDim\Berechnung Start - Current Date.Outputs[Ausgabe der abgeleiteten Spalte].Columns[Start]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -2059,6 +2138,11 @@ SET Ende = CAST(GETDATE() AS Date);
               name="Ausgabe der abgeleiteten Spalte"
               startId="Package\ETL AdresseDim\Datentyp konvertieren.Outputs[Ausgabe der abgeleiteten Spalte]" />
             <path
+              refId="Package\ETL AdresseDim.Paths[Ausgabe der abgeleiteten Spalte2]"
+              endId="Package\ETL AdresseDim\OLE DB-Ziel.Inputs[Eingabe des OLE DB-Ziels]"
+              name="Ausgabe der abgeleiteten Spalte"
+              startId="Package\ETL AdresseDim\Berechnung Start - Current Date.Outputs[Ausgabe der abgeleiteten Spalte]" />
+            <path
               refId="Package\ETL AdresseDim.Paths[Ausgabe der Flatfilequelle]"
               endId="Package\ETL AdresseDim\Sortieren 1.Inputs[Sortiereingabe]"
               name="Ausgabe der Flatfilequelle"
@@ -2105,7 +2189,7 @@ SET Ende = CAST(GETDATE() AS Date);
               startId="Package\ETL AdresseDim\Suche.Outputs[Suchausgabe nicht übereinstimmender Einträge]" />
             <path
               refId="Package\ETL AdresseDim.Paths[Zusammenführen Ausgabe 1]"
-              endId="Package\ETL AdresseDim\OLE DB-Ziel.Inputs[Eingabe des OLE DB-Ziels]"
+              endId="Package\ETL AdresseDim\Berechnung Start - Current Date.Inputs[Eingabe der abgeleiteten Spalte]"
               name="Zusammenführen Ausgabe 1"
               startId="Package\ETL AdresseDim\Zusammenführen.Outputs[Zusammenführen Ausgabe 1]" />
           </paths>
@@ -5492,33 +5576,49 @@ WHERE TransDimId = TransId;</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="135,42"
-          Id="Package\ETL AdresseDim\Geoposition"
-          TopLeft="129,32" />
+          Size="159,42"
+          Id="Package\ETL AdresseDim\Name bereinigen"
+          TopLeft="111.071428571429,210.089284670761" />
         <NodeLayout
-          Size="122,42"
-          Id="Package\ETL AdresseDim\Sortieren"
-          TopLeft="137.5,133" />
-        <NodeLayout
-          Size="113,42"
-          Id="Package\ETL AdresseDim\Update"
-          TopLeft="483,606.833331277801" />
-        <NodeLayout
-          Size="138.5,42"
-          Id="Package\ETL AdresseDim\Flatfilequelle"
-          TopLeft="358.5,33.3541665630829" />
+          Size="130.5,42"
+          Id="Package\ETL AdresseDim\Sortieren 1"
+          TopLeft="361,124.583332714521" />
         <NodeLayout
           Size="107.5,42"
           Id="Package\ETL AdresseDim\Teilen"
           TopLeft="485.5,486.583331875089" />
         <NodeLayout
+          Size="138.5,42"
+          Id="Package\ETL AdresseDim\Flatfilequelle"
+          TopLeft="358.5,33.3541665630829" />
+        <NodeLayout
+          Size="161.5,42"
+          Id="Package\ETL AdresseDim\Zusammenführen"
+          TopLeft="138.5,688.708332028446" />
+        <NodeLayout
           Size="109,42"
           Id="Package\ETL AdresseDim\Suche"
-          TopLeft="169.5,485.083332230234" />
+          TopLeft="138,486.708332222163" />
         <NodeLayout
-          Size="159,42"
-          Id="Package\ETL AdresseDim\Name bereinigen"
-          TopLeft="111.071428571429,210.089284670761" />
+          Size="138,42"
+          Id="Package\ETL AdresseDim\OLE DB-Ziel"
+          TopLeft="149.5,915.010414736915" />
+        <NodeLayout
+          Size="122,42"
+          Id="Package\ETL AdresseDim\Sortieren"
+          TopLeft="137.5,133" />
+        <NodeLayout
+          Size="189,42"
+          Id="Package\ETL AdresseDim\Zusammenführungsjoin"
+          TopLeft="97,322.291665065827" />
+        <NodeLayout
+          Size="181.5,42"
+          Id="Package\ETL AdresseDim\Datentyp konvertieren"
+          TopLeft="334,207.458332302877" />
+        <NodeLayout
+          Size="135,42"
+          Id="Package\ETL AdresseDim\Geoposition"
+          TopLeft="129,32" />
         <EdgeLayout
           Id="Package\ETL AdresseDim.Paths[Ausgabe der OLE DB-Quelle]"
           TopLeft="197.5,74">
@@ -5542,60 +5642,6 @@ WHERE TransDimId = TransId;</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ETL AdresseDim.Paths[Sortierausgabe]"
-          TopLeft="194.535714285715,175">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,35.089284670761"
-              Start="0,0"
-              End="0,27.589284670761">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,27.589284670761" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL AdresseDim.Paths[geändert]"
-          TopLeft="539.375,528.583331875089">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,78.2499994027116"
-              Start="0,0"
-              End="0,70.7499994027116">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,70.7499994027116" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-20.52599609375,29.5434567326058,41.0519921875,11.6630859375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="181.5,42"
-          Id="Package\ETL AdresseDim\Datentyp konvertieren"
-          TopLeft="334,207.458332302877" />
-        <NodeLayout
-          Size="130.5,42"
-          Id="Package\ETL AdresseDim\Sortieren 1"
-          TopLeft="361,124.583332714521" />
-        <EdgeLayout
           Id="Package\ETL AdresseDim.Paths[Ausgabe der Flatfilequelle]"
           TopLeft="427,75.3541665630829">
           <EdgeLayout.Curve>
@@ -5609,54 +5655,6 @@ WHERE TransDimId = TransId;</property>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,41.7291661514383" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL AdresseDim.Paths[Sortierausgabe1]"
-          TopLeft="425.5,166.583332714521">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,40.8749995883554"
-              Start="0,0"
-              End="0,33.3749995883554">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.3749995883554" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="189,42"
-          Id="Package\ETL AdresseDim\Zusammenführungsjoin"
-          TopLeft="97,322.291665065827" />
-        <EdgeLayout
-          Id="Package\ETL AdresseDim.Paths[Ausgabe der abgeleiteten Spalte]"
-          TopLeft="191.035714285715,252.089284670761">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,70.2023803950656"
-              Start="0,0"
-              End="0,62.7023803950656">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,62.7023803950656" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5700,31 +5698,63 @@ WHERE TransDimId = TransId;</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ETL AdresseDim.Paths[Ausgabe des Zusammenführungsjoins]"
-          TopLeft="191.5,364.291665065827">
+          Id="Package\ETL AdresseDim.Paths[Ausgabe der abgeleiteten Spalte]"
+          TopLeft="191.035714285715,252.089284670761">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="32.5,120.791667164407"
+              EndConnector="0,70.2023803950656"
               Start="0,0"
-              End="32.5,113.291667164407">
+              End="0,62.7023803950656">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,56.3958335822037" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,56.3958335822037"
-                    Point2="0,60.3958335822037"
-                    Point3="4,60.3958335822037" />
+                    End="0,62.7023803950656" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL AdresseDim.Paths[Sortierausgabe1]"
+          TopLeft="425.5,166.583332714521">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,40.8749995883554"
+              Start="0,0"
+              End="0,33.3749995883554">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="28.5,60.3958335822037" />
-                  <mssgle:CubicBezierSegment
-                    Point1="28.5,60.3958335822037"
-                    Point2="32.5,60.3958335822037"
-                    Point3="32.5,64.3958335822037" />
+                    End="0,33.3749995883554" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL AdresseDim.Paths[Sortierausgabe]"
+          TopLeft="194.535714285715,175">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,35.089284670761"
+              Start="0,0"
+              End="0,27.589284670761">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="32.5,113.291667164407" />
+                    End="0,27.589284670761" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5735,58 +5765,46 @@ WHERE TransDimId = TransId;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\ETL AdresseDim.Paths[Ausgabe der Suchübereinstimmungen]"
-          TopLeft="278.5,506.833332052661">
+          TopLeft="247,507.645832048626">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="207,0"
+              EndConnector="238.5,0"
               Start="0,0"
-              End="199.5,0">
+              End="231,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="199.5,0" />
+                    End="231,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="15.48,5,168.54,11.6630859375"
+              BoundingBox="31.23,5,168.54,11.6630859375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="161.5,42"
-          Id="Package\ETL AdresseDim\Zusammenführen"
-          TopLeft="167,687.083332036518" />
+          Size="229.5,42"
+          Id="Package\ETL AdresseDim\Berechnung Start - Current Date"
+          TopLeft="98.75,800.885413744125" />
         <EdgeLayout
-          Id="Package\ETL AdresseDim.Paths[Ausgabe des OLE DB-Befehls]"
-          TopLeft="539.5,648.833331277801">
+          Id="Package\ETL AdresseDim.Paths[Zusammenführen Ausgabe 1]"
+          TopLeft="216.375,730.708332028446">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-266.166666666667,38.2500007587174"
+              EndConnector="0,70.1770817156782"
               Start="0,0"
-              End="-266.166666666667,30.7500007587174">
+              End="0,62.6770817156782">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,18.7248624985881" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,18.7248624985881"
-                    Point2="0,22.7248624985881"
-                    Point3="-4,22.7248624985881" />
-                  <mssgle:LineSegment
-                    End="-262.166666666667,22.7248624985881" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-262.166666666667,22.7248624985881"
-                    Point2="-266.166666666667,22.7248624985881"
-                    Point3="-266.166666666667,26.7248624985881" />
-                  <mssgle:LineSegment
-                    End="-266.166666666667,30.7500007587174" />
+                    End="0,62.6770817156782" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5797,7 +5815,7 @@ WHERE TransDimId = TransId;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\ETL AdresseDim.Paths[Suchausgabe nicht übereinstimmender Einträge]"
-          TopLeft="223.083333333333,527.083332230234">
+          TopLeft="193.083333333333,528.708332222163">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5815,40 +5833,108 @@ WHERE TransDimId = TransId;</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-106.01701171875,70.4184569343922,212.0340234375,11.6630859375"
+              BoundingBox="-106.01701171875,70.4184569343919,212.0340234375,11.6630859375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="138,42"
-          Id="Package\ETL AdresseDim\OLE DB-Ziel"
-          TopLeft="232,767.666664880183" />
         <EdgeLayout
-          Id="Package\ETL AdresseDim.Paths[Zusammenführen Ausgabe 1]"
-          TopLeft="247.75,729.083332036518">
+          Id="Package\ETL AdresseDim.Paths[Ausgabe des Zusammenführungsjoins]"
+          TopLeft="192,364.291665065827">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="53.25,38.5833328436646"
+              EndConnector="0,122.416667156336"
               Start="0,0"
-              End="53.25,31.0833328436646">
+              End="0,114.916667156336">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,15.2916664218323" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,15.2916664218323"
-                    Point2="0,19.2916664218323"
-                    Point3="4,19.2916664218323" />
+                    End="0,114.916667156336" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="113,42"
+          Id="Package\ETL AdresseDim\Update"
+          TopLeft="483,606.833331277801" />
+        <EdgeLayout
+          Id="Package\ETL AdresseDim.Paths[Ausgabe des OLE DB-Befehls]"
+          TopLeft="539.5,648.833331277801">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-294.666666666667,39.8750007506454"
+              Start="0,0"
+              End="-294.666666666667,32.3750007506454">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="49.25,19.2916664218323" />
+                    End="0,19.6902978095496" />
                   <mssgle:CubicBezierSegment
-                    Point1="49.25,19.2916664218323"
-                    Point2="53.25,19.2916664218323"
-                    Point3="53.25,23.2916664218323" />
+                    Point1="0,19.6902978095496"
+                    Point2="0,23.6902978095496"
+                    Point3="-4,23.6902978095496" />
                   <mssgle:LineSegment
-                    End="53.25,31.0833328436646" />
+                    End="-290.666666666667,23.6902978095496" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-290.666666666667,23.6902978095496"
+                    Point2="-294.666666666667,23.6902978095496"
+                    Point3="-294.666666666667,27.6902978095496" />
+                  <mssgle:LineSegment
+                    End="-294.666666666667,32.3750007506454" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL AdresseDim.Paths[geändert]"
+          TopLeft="539.375,528.583331875089">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,78.2499994027116"
+              Start="0,0"
+              End="0,70.7499994027116">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,70.7499994027116" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-20.52599609375,29.5434567326058,41.0519921875,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL AdresseDim.Paths[Ausgabe der abgeleiteten Spalte2]"
+          TopLeft="216,842.885413744125">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,72.1250009927899"
+              Start="0,0"
+              End="0,64.6250009927899">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,64.6250009927899" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5861,7 +5947,7 @@ WHERE TransDimId = TransId;</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\ETL AdresseDim\Geoposition">
+    design-time-name="Package\ETL AdresseDim\OLE DB-Ziel">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -5893,6 +5979,19 @@ WHERE TransDimId = TransId;</property>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL AdresseDim\Geoposition">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -5992,7 +6091,9 @@ WHERE TransDimId = TransId;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6050,7 +6151,9 @@ WHERE TransDimId = TransId;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6084,7 +6187,9 @@ WHERE TransDimId = TransId;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6130,7 +6235,9 @@ WHERE TransDimId = TransId;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6176,7 +6283,9 @@ WHERE TransDimId = TransId;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6198,24 +6307,13 @@ WHERE TransDimId = TransId;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\ETL AdresseDim\OLE DB-Ziel">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
