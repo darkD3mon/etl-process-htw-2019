@@ -12,8 +12,8 @@
   DTS:ObjectName="TransportmittelDim"
   DTS:PackageType="5"
   DTS:ProtectionLevel="2"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{DF45C398-93E0-4D65-B27B-61975E1EE5E4}">
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{31589EA4-DE5B-48C0-B314-2D154E2AE3F1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -1600,7 +1600,7 @@ SET Ende = GETDATE();
                       cachedDataType="i4"
                       cachedName="TransId"
                       cachedSortKeyPosition="1"
-                      lineageId="Package\ETL AdresseDim\365:invalid">
+                      lineageId="Package\ETL AdresseDim\393:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1615,7 +1615,7 @@ SET Ende = GETDATE();
                       cachedLength="50"
                       cachedName="Marke"
                       cachedSortKeyPosition="2"
-                      lineageId="Package\ETL AdresseDim\366:invalid">
+                      lineageId="Package\ETL AdresseDim\394:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1630,7 +1630,7 @@ SET Ende = GETDATE();
                       cachedLength="50"
                       cachedName="Typ"
                       cachedSortKeyPosition="3"
-                      lineageId="Package\ETL AdresseDim\367:invalid">
+                      lineageId="Package\ETL AdresseDim\395:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1644,7 +1644,7 @@ SET Ende = GETDATE();
                       cachedDataType="r4"
                       cachedName="Ladevolumen"
                       cachedSortKeyPosition="4"
-                      lineageId="Package\ETL AdresseDim\368:invalid">
+                      lineageId="Package\ETL AdresseDim\396:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1657,7 +1657,7 @@ SET Ende = GETDATE();
                       refId="Package\ETL AdresseDim\Zusammenführen.Inputs[Zusammenführen Eingabe 1].Columns[Anz_Fahrer]"
                       cachedDataType="i4"
                       cachedName="Anz_Fahrer"
-                      lineageId="Package\ETL AdresseDim\369:invalid">
+                      lineageId="Package\ETL AdresseDim\397:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1671,7 +1671,7 @@ SET Ende = GETDATE();
                       cachedDataType="wstr"
                       cachedLength="10"
                       cachedName="Fuehrerscheinklasse"
-                      lineageId="Package\ETL AdresseDim\370:invalid">
+                      lineageId="Package\ETL AdresseDim\398:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1684,7 +1684,7 @@ SET Ende = GETDATE();
                       refId="Package\ETL AdresseDim\Zusammenführen.Inputs[Zusammenführen Eingabe 1].Columns[Anzahl_Bestand]"
                       cachedDataType="i4"
                       cachedName="Anzahl_Bestand"
-                      lineageId="Package\ETL AdresseDim\371:invalid">
+                      lineageId="Package\ETL AdresseDim\399:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1698,7 +1698,7 @@ SET Ende = GETDATE();
                       cachedDataType="r4"
                       cachedName="Max_Gewicht"
                       cachedSortKeyPosition="5"
-                      lineageId="Package\ETL AdresseDim\372:invalid">
+                      lineageId="Package\ETL AdresseDim\400:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1712,7 +1712,7 @@ SET Ende = GETDATE();
                       cachedDataType="r4"
                       cachedName="Kosten_pro_km"
                       cachedSortKeyPosition="6"
-                      lineageId="Package\ETL AdresseDim\373:invalid">
+                      lineageId="Package\ETL AdresseDim\401:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1733,7 +1733,7 @@ SET Ende = GETDATE();
                       cachedDataType="i4"
                       cachedName="TransId"
                       cachedSortKeyPosition="1"
-                      lineageId="Package\ETL AdresseDim\365:invalid">
+                      lineageId="Package\ETL AdresseDim\393:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1747,7 +1747,7 @@ SET Ende = GETDATE();
                       cachedDataType="wstr"
                       cachedLength="48"
                       cachedName="Marke"
-                      lineageId="Package\ETL AdresseDim\374:invalid">
+                      lineageId="Package\ETL AdresseDim\402:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1761,7 +1761,7 @@ SET Ende = GETDATE();
                       cachedDataType="wstr"
                       cachedLength="48"
                       cachedName="Typ"
-                      lineageId="Package\ETL AdresseDim\375:invalid">
+                      lineageId="Package\ETL AdresseDim\403:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1776,7 +1776,7 @@ SET Ende = GETDATE();
                       cachedName="Ladevolumen"
                       cachedPrecision="5"
                       cachedScale="1"
-                      lineageId="Package\ETL AdresseDim\376:invalid">
+                      lineageId="Package\ETL AdresseDim\404:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1789,7 +1789,7 @@ SET Ende = GETDATE();
                       refId="Package\ETL AdresseDim\Zusammenführen.Inputs[Zusammenführen Eingabe 2].Columns[Anz_Fahrer]"
                       cachedDataType="i4"
                       cachedName="Anz_Fahrer"
-                      lineageId="Package\ETL AdresseDim\369:invalid">
+                      lineageId="Package\ETL AdresseDim\397:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1803,7 +1803,7 @@ SET Ende = GETDATE();
                       cachedDataType="wstr"
                       cachedLength="10"
                       cachedName="Fuehrerscheinklasse"
-                      lineageId="Package\ETL AdresseDim\370:invalid">
+                      lineageId="Package\ETL AdresseDim\398:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1816,7 +1816,7 @@ SET Ende = GETDATE();
                       refId="Package\ETL AdresseDim\Zusammenführen.Inputs[Zusammenführen Eingabe 2].Columns[Anzahl_Bestand]"
                       cachedDataType="i4"
                       cachedName="Anzahl_Bestand"
-                      lineageId="Package\ETL AdresseDim\371:invalid">
+                      lineageId="Package\ETL AdresseDim\399:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1829,7 +1829,7 @@ SET Ende = GETDATE();
                       refId="Package\ETL AdresseDim\Zusammenführen.Inputs[Zusammenführen Eingabe 2].Columns[Max_Gewicht]"
                       cachedDataType="i4"
                       cachedName="Max_Gewicht"
-                      lineageId="Package\ETL AdresseDim\377:invalid">
+                      lineageId="Package\ETL AdresseDim\405:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1844,7 +1844,7 @@ SET Ende = GETDATE();
                       cachedName="Kosten_pro_km"
                       cachedPrecision="5"
                       cachedScale="2"
-                      lineageId="Package\ETL AdresseDim\378:invalid">
+                      lineageId="Package\ETL AdresseDim\406:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -2980,7 +2980,6 @@ FROM  dbo.Beschwerde</property>
       DTS:refId="Package\ETL TransportmittelDim"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Datenflusstask"
-      DTS:Disabled="True"
       DTS:DTSID="{02645B80-0B8B-4583-9672-069917F16741}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -3010,62 +3009,58 @@ FROM  dbo.Beschwerde</property>
                       cachedLength="50"
                       cachedName="Marke"
                       cachedSortKeyPosition="2"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Marke]" />
+                      lineageId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Marke]" />
                     <inputColumn
                       refId="Package\ETL TransportmittelDim\Bedingtes Teilen.Inputs[Eingabe für bedingtes Teilen].Columns[Typ]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Typ"
                       cachedSortKeyPosition="3"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Typ]" />
+                      lineageId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Typ]" />
                     <inputColumn
                       refId="Package\ETL TransportmittelDim\Bedingtes Teilen.Inputs[Eingabe für bedingtes Teilen].Columns[Ladevolumen]"
                       cachedDataType="r4"
                       cachedName="Ladevolumen"
                       cachedSortKeyPosition="4"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Ladevolumen]" />
+                      lineageId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Ladevolumen]" />
                     <inputColumn
                       refId="Package\ETL TransportmittelDim\Bedingtes Teilen.Inputs[Eingabe für bedingtes Teilen].Columns[Max_Gewicht]"
                       cachedDataType="r4"
                       cachedName="Max_Gewicht"
                       cachedSortKeyPosition="5"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Max_Gewicht]" />
+                      lineageId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Max_Gewicht]" />
                     <inputColumn
                       refId="Package\ETL TransportmittelDim\Bedingtes Teilen.Inputs[Eingabe für bedingtes Teilen].Columns[Kosten_pro_km]"
                       cachedDataType="r4"
                       cachedName="Kosten_pro_km"
                       cachedSortKeyPosition="6"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Kosten_pro_km]" />
+                      lineageId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Kosten_pro_km]" />
                     <inputColumn
                       refId="Package\ETL TransportmittelDim\Bedingtes Teilen.Inputs[Eingabe für bedingtes Teilen].Columns[Marke1]"
                       cachedDataType="wstr"
-                      cachedLength="48"
+                      cachedLength="50"
                       cachedName="Marke"
                       lineageId="Package\ETL TransportmittelDim\Suche.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Marke]" />
                     <inputColumn
                       refId="Package\ETL TransportmittelDim\Bedingtes Teilen.Inputs[Eingabe für bedingtes Teilen].Columns[Typ1]"
                       cachedDataType="wstr"
-                      cachedLength="48"
+                      cachedLength="50"
                       cachedName="Typ"
                       lineageId="Package\ETL TransportmittelDim\Suche.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Typ]" />
                     <inputColumn
                       refId="Package\ETL TransportmittelDim\Bedingtes Teilen.Inputs[Eingabe für bedingtes Teilen].Columns[Ladevolumen1]"
-                      cachedDataType="numeric"
+                      cachedDataType="r4"
                       cachedName="Ladevolumen"
-                      cachedPrecision="5"
-                      cachedScale="1"
                       lineageId="Package\ETL TransportmittelDim\Suche.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Ladevolumen]" />
                     <inputColumn
                       refId="Package\ETL TransportmittelDim\Bedingtes Teilen.Inputs[Eingabe für bedingtes Teilen].Columns[Max_Gewicht1]"
-                      cachedDataType="i4"
+                      cachedDataType="r4"
                       cachedName="Max_Gewicht"
                       lineageId="Package\ETL TransportmittelDim\Suche.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Max_Gewicht]" />
                     <inputColumn
                       refId="Package\ETL TransportmittelDim\Bedingtes Teilen.Inputs[Eingabe für bedingtes Teilen].Columns[Kosten_pro_km1]"
-                      cachedDataType="numeric"
+                      cachedDataType="r4"
                       cachedName="Kosten_pro_km"
-                      cachedPrecision="5"
-                      cachedScale="2"
                       lineageId="Package\ETL TransportmittelDim\Suche.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Kosten_pro_km]" />
                   </inputColumns>
                   <externalMetadataColumns />
@@ -3073,12 +3068,12 @@ FROM  dbo.Beschwerde</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\ETL TransportmittelDim\Bedingtes Teilen.Outputs[Fall 1]"
+                  refId="Package\ETL TransportmittelDim\Bedingtes Teilen.Outputs[geändert]"
                   description="Ausgabe &quot;1&quot; der Transformation für bedingtes Teilen"
                   errorOrTruncationOperation="Berechnung"
                   errorRowDisposition="FailComponent"
                   exclusionGroup="1"
-                  name="Fall 1"
+                  name="geändert"
                   synchronousInputId="Package\ETL TransportmittelDim\Bedingtes Teilen.Inputs[Eingabe für bedingtes Teilen]"
                   truncationRowDisposition="FailComponent">
                   <properties>
@@ -3086,45 +3081,17 @@ FROM  dbo.Beschwerde</property>
                       containsID="true"
                       dataType="System.String"
                       description="Gibt den Ausdruck an. Die Version des Ausdrucks verwendet Herkunftsbezeichner anstelle von Spaltennamen."
-                      name="Expression">(#{Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Marke]} != #{Package\ETL TransportmittelDim\Suche.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Marke]}) || (#{Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Typ]} != #{Package\ETL TransportmittelDim\Suche.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Typ]}) || (#{Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Max_Gewicht]} != #{Package\ETL TransportmittelDim\Suche.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Max_Gewicht]}) || (#{Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Kosten_pro_km]} != #{Package\ETL TransportmittelDim\Suche.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Kosten_pro_km]}) || (#{Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Ladevolumen]} != #{Package\ETL TransportmittelDim\Suche.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Ladevolumen]})</property>
+                      name="Expression">#{Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Marke]} != #{Package\ETL TransportmittelDim\Suche.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Marke]} || #{Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Typ]} != #{Package\ETL TransportmittelDim\Suche.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Typ]} || #{Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Ladevolumen]} != #{Package\ETL TransportmittelDim\Suche.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Ladevolumen]} || #{Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Max_Gewicht]} != #{Package\ETL TransportmittelDim\Suche.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Max_Gewicht]} || #{Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Kosten_pro_km]} != #{Package\ETL TransportmittelDim\Suche.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Kosten_pro_km]}</property>
                     <property
                       containsID="true"
                       dataType="System.String"
                       description="Gibt die angezeigte Version des Ausdrucks an. Die Version des Ausdrucks verwendet Spaltennamen."
                       expressionType="Notify"
-                      name="FriendlyExpression">(Vereinigung.Marke != Suche.Marke) || (Vereinigung.Typ != Suche.Typ) || (Vereinigung.Max_Gewicht != Suche.Max_Gewicht) || (Vereinigung.Kosten_pro_km != Suche.Kosten_pro_km) || (Vereinigung.Ladevolumen != Suche.Ladevolumen)</property>
+                      name="FriendlyExpression">[Zusammenführungsjoin].Marke != Suche.Marke || [Zusammenführungsjoin].Typ != Suche.Typ || [Zusammenführungsjoin].Ladevolumen != Suche.Ladevolumen || [Zusammenführungsjoin].Max_Gewicht != Suche.Max_Gewicht || [Zusammenführungsjoin].Kosten_pro_km != Suche.Kosten_pro_km</property>
                     <property
                       dataType="System.Int32"
                       description="Gibt die Position der Bedingung in der Liste der von der Transformation ausgewerteten Bedingungen an. Werte werden aufsteigend vom niedrigsten zum höchsten ausgewertet."
                       name="EvaluationOrder">0</property>
-                  </properties>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\ETL TransportmittelDim\Bedingtes Teilen.Outputs[Fall 2]"
-                  description="Ausgabe &quot;2&quot; der Transformation für bedingtes Teilen"
-                  errorOrTruncationOperation="Berechnung"
-                  errorRowDisposition="FailComponent"
-                  exclusionGroup="1"
-                  name="Fall 2"
-                  synchronousInputId="Package\ETL TransportmittelDim\Bedingtes Teilen.Inputs[Eingabe für bedingtes Teilen]"
-                  truncationRowDisposition="FailComponent">
-                  <properties>
-                    <property
-                      containsID="true"
-                      dataType="System.String"
-                      description="Gibt den Ausdruck an. Die Version des Ausdrucks verwendet Herkunftsbezeichner anstelle von Spaltennamen."
-                      name="Expression">(#{Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Marke]} == #{Package\ETL TransportmittelDim\Suche.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Marke]}) &amp;&amp; (#{Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Typ]} == #{Package\ETL TransportmittelDim\Suche.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Typ]}) &amp;&amp; (#{Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Max_Gewicht]} == #{Package\ETL TransportmittelDim\Suche.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Max_Gewicht]}) &amp;&amp; (#{Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Kosten_pro_km]} == #{Package\ETL TransportmittelDim\Suche.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Kosten_pro_km]}) &amp;&amp; (#{Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Ladevolumen]} == #{Package\ETL TransportmittelDim\Suche.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Ladevolumen]})</property>
-                    <property
-                      containsID="true"
-                      dataType="System.String"
-                      description="Gibt die angezeigte Version des Ausdrucks an. Die Version des Ausdrucks verwendet Spaltennamen."
-                      expressionType="Notify"
-                      name="FriendlyExpression">(Vereinigung.Marke == Suche.Marke) &amp;&amp; (Vereinigung.Typ == Suche.Typ) &amp;&amp; (Vereinigung.Max_Gewicht == Suche.Max_Gewicht) &amp;&amp; (Vereinigung.Kosten_pro_km == Suche.Kosten_pro_km) &amp;&amp; (Vereinigung.Ladevolumen == Suche.Ladevolumen)</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Gibt die Position der Bedingung in der Liste der von der Transformation ausgewerteten Bedingungen an. Werte werden aufsteigend vom niedrigsten zum höchsten ausgewertet."
-                      name="EvaluationOrder">1</property>
                   </properties>
                   <externalMetadataColumns />
                 </output>
@@ -3159,6 +3126,79 @@ FROM  dbo.Beschwerde</property>
                       refId="Package\ETL TransportmittelDim\Bedingtes Teilen.Outputs[Fehlerausgabe für bedingtes Teilen].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\ETL TransportmittelDim\Bedingtes Teilen.Outputs[Fehlerausgabe für bedingtes Teilen].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL TransportmittelDim\Berechnung Start - GetDate"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Abgeleitete Spalte;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;0"
+              description="Erstellt neue Spaltenwerte, indem Ausdrücke auf Transformationseingabespalten angewendet werden. Erstellen Sie neue Spalten, oder überschreiben Sie vorhandene. Verketten Sie beispielsweise die Werte der Spalten &quot;first name&quot; und &quot;last name&quot;, um die Spalte &quot;full name&quot; zu erhalten."
+              name="Berechnung Start - GetDate"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\ETL TransportmittelDim\Berechnung Start - GetDate.Inputs[Eingabe der abgeleiteten Spalte]"
+                  description="Eingabe der Transformation für abgeleiteten Spalten"
+                  name="Eingabe der abgeleiteten Spalte">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL TransportmittelDim\Berechnung Start - GetDate.Outputs[Ausgabe der abgeleiteten Spalte]"
+                  description="Standardausgabe der Transformation für abgeleitete Spalten"
+                  exclusionGroup="1"
+                  name="Ausgabe der abgeleiteten Spalte"
+                  synchronousInputId="Package\ETL TransportmittelDim\Berechnung Start - GetDate.Inputs[Eingabe der abgeleiteten Spalte]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL TransportmittelDim\Berechnung Start - GetDate.Outputs[Ausgabe der abgeleiteten Spalte].Columns[Start]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Berechnung"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL TransportmittelDim\Berechnung Start - GetDate.Outputs[Ausgabe der abgeleiteten Spalte].Columns[Start]"
+                      name="Start"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Ausdruck für abgeleitete Spalte"
+                          name="Expression">[GETDATE]()</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Angezeigter Ausdruck für abgeleitete Spalte"
+                          expressionType="Notify"
+                          name="FriendlyExpression">GETDATE()</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL TransportmittelDim\Berechnung Start - GetDate.Outputs[Fehlerausgabe der abgeleiteten Spalte]"
+                  description="Fehlerausgabe der Transformation für abgeleitete Spalten"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Fehlerausgabe der abgeleiteten Spalte"
+                  synchronousInputId="Package\ETL TransportmittelDim\Berechnung Start - GetDate.Inputs[Eingabe der abgeleiteten Spalte]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL TransportmittelDim\Berechnung Start - GetDate.Outputs[Fehlerausgabe der abgeleiteten Spalte].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL TransportmittelDim\Berechnung Start - GetDate.Outputs[Fehlerausgabe der abgeleiteten Spalte].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL TransportmittelDim\Berechnung Start - GetDate.Outputs[Fehlerausgabe der abgeleiteten Spalte].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL TransportmittelDim\Berechnung Start - GetDate.Outputs[Fehlerausgabe der abgeleiteten Spalte].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -4108,12 +4148,12 @@ where [refTable].[TransDimId] = ?</property>
                 <property
                   dataType="System.String"
                   description="Zeigt an, ob auf Metadaten in einem XML-Format verwiesen werden soll."
-                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="TransDimId" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Marke" dataType="DT_WSTR" length="48" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Typ" dataType="DT_WSTR" length="48" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Ladevolumen" dataType="DT_NUMERIC" length="0" precision="5" scale="1" codePage="0"/&gt;&lt;referenceColumn name="Max_Gewicht" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Kosten_pro_km" dataType="DT_NUMERIC" length="0" precision="5" scale="2" codePage="0"/&gt;&lt;referenceColumn name="Start" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Ende" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="TransDimId" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Marke" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Typ" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Ladevolumen" dataType="DT_R4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Max_Gewicht" dataType="DT_R4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Kosten_pro_km" dataType="DT_R4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Start" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Ende" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
                 <property
                   containsID="true"
                   dataType="System.String"
                   description="Gibt die Liste der Herkunftsbezeichner an, die den von der SQL-Anweisung in der SQLCommand-Eigenschaft verwendeten Parametern zugeordnet sind. Einträge in der Liste sind durch Semikolons getrennt."
-                  name="ParameterMap">#{Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[TransId]};</property>
+                  name="ParameterMap">#{Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[TransId]};</property>
                 <property
                   dataType="System.Int32"
                   description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
@@ -4141,7 +4181,7 @@ where [refTable].[TransDimId] = ?</property>
                       cachedDataType="i4"
                       cachedName="TransId"
                       cachedSortKeyPosition="1"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[TransId]">
+                      lineageId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[TransId]">
                       <properties>
                         <property
                           dataType="System.String"
@@ -4183,7 +4223,7 @@ where [refTable].[TransDimId] = ?</property>
                       refId="Package\ETL TransportmittelDim\Suche.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Marke]"
                       dataType="wstr"
                       errorOrTruncationOperation="Spalte kopieren"
-                      length="48"
+                      length="50"
                       lineageId="Package\ETL TransportmittelDim\Suche.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Marke]"
                       name="Marke"
                       truncationRowDisposition="FailComponent">
@@ -4198,7 +4238,7 @@ where [refTable].[TransDimId] = ?</property>
                       refId="Package\ETL TransportmittelDim\Suche.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Typ]"
                       dataType="wstr"
                       errorOrTruncationOperation="Spalte kopieren"
-                      length="48"
+                      length="50"
                       lineageId="Package\ETL TransportmittelDim\Suche.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Typ]"
                       name="Typ"
                       truncationRowDisposition="FailComponent">
@@ -4211,12 +4251,10 @@ where [refTable].[TransDimId] = ?</property>
                     </outputColumn>
                     <outputColumn
                       refId="Package\ETL TransportmittelDim\Suche.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Ladevolumen]"
-                      dataType="numeric"
+                      dataType="r4"
                       errorOrTruncationOperation="Spalte kopieren"
                       lineageId="Package\ETL TransportmittelDim\Suche.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Ladevolumen]"
                       name="Ladevolumen"
-                      precision="5"
-                      scale="1"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -4227,7 +4265,7 @@ where [refTable].[TransDimId] = ?</property>
                     </outputColumn>
                     <outputColumn
                       refId="Package\ETL TransportmittelDim\Suche.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Max_Gewicht]"
-                      dataType="i4"
+                      dataType="r4"
                       errorOrTruncationOperation="Spalte kopieren"
                       lineageId="Package\ETL TransportmittelDim\Suche.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Max_Gewicht]"
                       name="Max_Gewicht"
@@ -4241,12 +4279,10 @@ where [refTable].[TransDimId] = ?</property>
                     </outputColumn>
                     <outputColumn
                       refId="Package\ETL TransportmittelDim\Suche.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Kosten_pro_km]"
-                      dataType="numeric"
+                      dataType="r4"
                       errorOrTruncationOperation="Spalte kopieren"
                       lineageId="Package\ETL TransportmittelDim\Suche.Outputs[Ausgabe der Suchübereinstimmungen].Columns[Kosten_pro_km]"
                       name="Kosten_pro_km"
-                      precision="5"
-                      scale="2"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -4349,8 +4385,8 @@ where [refTable].[TransDimId] = ?</property>
               <connections>
                 <connection
                   refId="Package\ETL TransportmittelDim\TransportmittelDim.Connections[OleDbConnection]"
-                  connectionManagerID="{E7ABF833-EABB-45A5-B315-3795CDA593E0}:invalid"
-                  connectionManagerRefId="{E7ABF833-EABB-45A5-B315-3795CDA593E0}:invalid"
+                  connectionManagerID="{352D8B30-1379-41B4-B8FA-69A1DB9220FE}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527.u573527]"
                   description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
                   name="OleDbConnection" />
               </connections>
@@ -4361,42 +4397,75 @@ where [refTable].[TransDimId] = ?</property>
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Eingabe des OLE DB-Ziels">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL TransportmittelDim\TransportmittelDim.Inputs[Eingabe des OLE DB-Ziels].Columns[Marke]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Marke"
+                      cachedSortKeyPosition="2"
+                      externalMetadataColumnId="Package\ETL TransportmittelDim\TransportmittelDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Marke]"
+                      lineageId="Package\ETL TransportmittelDim\Zusammenführen.Outputs[Zusammenführen Ausgabe 1].Columns[Marke]" />
+                    <inputColumn
+                      refId="Package\ETL TransportmittelDim\TransportmittelDim.Inputs[Eingabe des OLE DB-Ziels].Columns[Typ]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Typ"
+                      cachedSortKeyPosition="3"
+                      externalMetadataColumnId="Package\ETL TransportmittelDim\TransportmittelDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Typ]"
+                      lineageId="Package\ETL TransportmittelDim\Zusammenführen.Outputs[Zusammenführen Ausgabe 1].Columns[Typ]" />
+                    <inputColumn
+                      refId="Package\ETL TransportmittelDim\TransportmittelDim.Inputs[Eingabe des OLE DB-Ziels].Columns[Ladevolumen]"
+                      cachedDataType="r4"
+                      cachedName="Ladevolumen"
+                      cachedSortKeyPosition="4"
+                      externalMetadataColumnId="Package\ETL TransportmittelDim\TransportmittelDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Ladevolumen]"
+                      lineageId="Package\ETL TransportmittelDim\Zusammenführen.Outputs[Zusammenführen Ausgabe 1].Columns[Ladevolumen]" />
+                    <inputColumn
+                      refId="Package\ETL TransportmittelDim\TransportmittelDim.Inputs[Eingabe des OLE DB-Ziels].Columns[Max_Gewicht]"
+                      cachedDataType="r4"
+                      cachedName="Max_Gewicht"
+                      cachedSortKeyPosition="5"
+                      externalMetadataColumnId="Package\ETL TransportmittelDim\TransportmittelDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Max_Gewicht]"
+                      lineageId="Package\ETL TransportmittelDim\Zusammenführen.Outputs[Zusammenführen Ausgabe 1].Columns[Max_Gewicht]" />
+                    <inputColumn
+                      refId="Package\ETL TransportmittelDim\TransportmittelDim.Inputs[Eingabe des OLE DB-Ziels].Columns[Kosten_pro_km]"
+                      cachedDataType="r4"
+                      cachedName="Kosten_pro_km"
+                      cachedSortKeyPosition="6"
+                      externalMetadataColumnId="Package\ETL TransportmittelDim\TransportmittelDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Kosten_pro_km]"
+                      lineageId="Package\ETL TransportmittelDim\Zusammenführen.Outputs[Zusammenführen Ausgabe 1].Columns[Kosten_pro_km]" />
+                    <inputColumn
+                      refId="Package\ETL TransportmittelDim\TransportmittelDim.Inputs[Eingabe des OLE DB-Ziels].Columns[Start]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="Start"
+                      externalMetadataColumnId="Package\ETL TransportmittelDim\TransportmittelDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Start]"
+                      lineageId="Package\ETL TransportmittelDim\Berechnung Start - GetDate.Outputs[Ausgabe der abgeleiteten Spalte].Columns[Start]" />
+                  </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\ETL TransportmittelDim\TransportmittelDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[FRATransId]"
-                      dataType="i4"
-                      name="FRATransId" />
-                    <externalMetadataColumn
-                      refId="Package\ETL TransportmittelDim\TransportmittelDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[HAMTransId]"
-                      dataType="i4"
-                      name="HAMTransId" />
-                    <externalMetadataColumn
                       refId="Package\ETL TransportmittelDim\TransportmittelDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Marke]"
                       dataType="wstr"
-                      length="48"
+                      length="50"
                       name="Marke" />
                     <externalMetadataColumn
                       refId="Package\ETL TransportmittelDim\TransportmittelDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Typ]"
                       dataType="wstr"
-                      length="48"
+                      length="50"
                       name="Typ" />
                     <externalMetadataColumn
                       refId="Package\ETL TransportmittelDim\TransportmittelDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Ladevolumen]"
-                      dataType="numeric"
-                      name="Ladevolumen"
-                      precision="5"
-                      scale="1" />
+                      dataType="r4"
+                      name="Ladevolumen" />
                     <externalMetadataColumn
                       refId="Package\ETL TransportmittelDim\TransportmittelDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Max_Gewicht]"
-                      dataType="i4"
+                      dataType="r4"
                       name="Max_Gewicht" />
                     <externalMetadataColumn
                       refId="Package\ETL TransportmittelDim\TransportmittelDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Kosten_pro_km]"
-                      dataType="numeric"
-                      name="Kosten_pro_km"
-                      precision="5"
-                      scale="2" />
+                      dataType="r4"
+                      name="Kosten_pro_km" />
                     <externalMetadataColumn
                       refId="Package\ETL TransportmittelDim\TransportmittelDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Start]"
                       dataType="dbDate"
@@ -4405,6 +4474,10 @@ where [refTable].[TransDimId] = ?</property>
                       refId="Package\ETL TransportmittelDim\TransportmittelDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Ende]"
                       dataType="dbDate"
                       name="Ende" />
+                    <externalMetadataColumn
+                      refId="Package\ETL TransportmittelDim\TransportmittelDim.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[TransDimId]"
+                      dataType="i4"
+                      name="TransDimId" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -4452,8 +4525,7 @@ where [refTable].[TransDimId] = ?</property>
                   expressionType="Notify"
                   name="SqlCommand"
                   UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">UPDATE TransportmittelDim
-SET Ende = CAST(GETDATE() As date)
-WHERE TransDimId = TransId;</property>
+SET Ende = CAST(GETDATE() As date);</property>
                 <property
                   dataType="System.Int32"
                   description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
@@ -4511,266 +4583,6 @@ WHERE TransDimId = TransId;</property>
               </outputs>
             </component>
             <component
-              refId="Package\ETL TransportmittelDim\Vereinigung"
-              componentClassID="Microsoft.Merge"
-              contactInfo="Zusammenführen;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;1"
-              description="Kombiniert Zeilen aus mehreren sortierten Datenflüssen in einem sortierten Datenfluss. Im Unterschied zum Zusammenführungsjoin fließen alle Zeilen in die Ausgabe ein. Kombinieren Sie beispielsweise zwei sortierte Kundenlisten in einer einzelnen sortierten Liste. Wenn Sortierung unwichtig ist, verwenden Sie die UNION ALL-Transformation. "
-              name="Vereinigung"
-              version="1">
-              <inputs>
-                <input
-                  refId="Package\ETL TransportmittelDim\Vereinigung.Inputs[Zusammenführen Eingabe 1]"
-                  name="Zusammenführen Eingabe 1">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\ETL TransportmittelDim\Vereinigung.Inputs[Zusammenführen Eingabe 1].Columns[TransId]"
-                      cachedDataType="i4"
-                      cachedName="TransId"
-                      cachedSortKeyPosition="1"
-                      lineageId="Package\ETL TransportmittelDim\Sortieren.Outputs[Sortierausgabe].Columns[TransId]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Herkunfts-ID für Ausgabespalte"
-                          name="OutputColumnLineageID">#{Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[TransId]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\ETL TransportmittelDim\Vereinigung.Inputs[Zusammenführen Eingabe 1].Columns[Marke]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Marke"
-                      cachedSortKeyPosition="2"
-                      lineageId="Package\ETL TransportmittelDim\Sortieren.Outputs[Sortierausgabe].Columns[Marke]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Herkunfts-ID für Ausgabespalte"
-                          name="OutputColumnLineageID">#{Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Marke]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\ETL TransportmittelDim\Vereinigung.Inputs[Zusammenführen Eingabe 1].Columns[Typ]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Typ"
-                      cachedSortKeyPosition="3"
-                      lineageId="Package\ETL TransportmittelDim\Sortieren.Outputs[Sortierausgabe].Columns[Typ]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Herkunfts-ID für Ausgabespalte"
-                          name="OutputColumnLineageID">#{Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Typ]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\ETL TransportmittelDim\Vereinigung.Inputs[Zusammenführen Eingabe 1].Columns[Ladevolumen]"
-                      cachedDataType="r4"
-                      cachedName="Ladevolumen"
-                      cachedSortKeyPosition="4"
-                      lineageId="Package\ETL TransportmittelDim\Sortieren.Outputs[Sortierausgabe].Columns[Ladevolumen]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Herkunfts-ID für Ausgabespalte"
-                          name="OutputColumnLineageID">#{Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Ladevolumen]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\ETL TransportmittelDim\Vereinigung.Inputs[Zusammenführen Eingabe 1].Columns[Max_Gewicht]"
-                      cachedDataType="r4"
-                      cachedName="Max_Gewicht"
-                      cachedSortKeyPosition="5"
-                      lineageId="Package\ETL TransportmittelDim\Sortieren.Outputs[Sortierausgabe].Columns[Max_Gewicht]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Herkunfts-ID für Ausgabespalte"
-                          name="OutputColumnLineageID">#{Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Max_Gewicht]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\ETL TransportmittelDim\Vereinigung.Inputs[Zusammenführen Eingabe 1].Columns[Kosten_pro_km]"
-                      cachedDataType="r4"
-                      cachedName="Kosten_pro_km"
-                      cachedSortKeyPosition="6"
-                      lineageId="Package\ETL TransportmittelDim\Sortieren.Outputs[Sortierausgabe].Columns[Kosten_pro_km]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Herkunfts-ID für Ausgabespalte"
-                          name="OutputColumnLineageID">#{Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Kosten_pro_km]}</property>
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-                <input
-                  refId="Package\ETL TransportmittelDim\Vereinigung.Inputs[Zusammenführen Eingabe 2]"
-                  name="Zusammenführen Eingabe 2">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\ETL TransportmittelDim\Vereinigung.Inputs[Zusammenführen Eingabe 2].Columns[Marke]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Marke"
-                      cachedSortKeyPosition="2"
-                      lineageId="Package\ETL TransportmittelDim\Sortieren 1.Outputs[Sortierausgabe].Columns[Marke]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Herkunfts-ID für Ausgabespalte"
-                          name="OutputColumnLineageID">#{Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Marke]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\ETL TransportmittelDim\Vereinigung.Inputs[Zusammenführen Eingabe 2].Columns[Typ]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Typ"
-                      cachedSortKeyPosition="3"
-                      lineageId="Package\ETL TransportmittelDim\Sortieren 1.Outputs[Sortierausgabe].Columns[Typ]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Herkunfts-ID für Ausgabespalte"
-                          name="OutputColumnLineageID">#{Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Typ]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\ETL TransportmittelDim\Vereinigung.Inputs[Zusammenführen Eingabe 2].Columns[Ladevolumen]"
-                      cachedDataType="r4"
-                      cachedName="Ladevolumen"
-                      cachedSortKeyPosition="4"
-                      lineageId="Package\ETL TransportmittelDim\Sortieren 1.Outputs[Sortierausgabe].Columns[Ladevolumen]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Herkunfts-ID für Ausgabespalte"
-                          name="OutputColumnLineageID">#{Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Ladevolumen]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\ETL TransportmittelDim\Vereinigung.Inputs[Zusammenführen Eingabe 2].Columns[TransId]"
-                      cachedDataType="i4"
-                      cachedName="TransId"
-                      cachedSortKeyPosition="1"
-                      lineageId="Package\ETL TransportmittelDim\Sortieren 1.Outputs[Sortierausgabe].Columns[TransId]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Herkunfts-ID für Ausgabespalte"
-                          name="OutputColumnLineageID">#{Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[TransId]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\ETL TransportmittelDim\Vereinigung.Inputs[Zusammenführen Eingabe 2].Columns[Max_Gewicht]"
-                      cachedDataType="r4"
-                      cachedName="Max_Gewicht"
-                      cachedSortKeyPosition="5"
-                      lineageId="Package\ETL TransportmittelDim\Sortieren 1.Outputs[Sortierausgabe].Columns[Max_Gewicht]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Herkunfts-ID für Ausgabespalte"
-                          name="OutputColumnLineageID">#{Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Max_Gewicht]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\ETL TransportmittelDim\Vereinigung.Inputs[Zusammenführen Eingabe 2].Columns[Kosten_pro_km]"
-                      cachedDataType="r4"
-                      cachedName="Kosten_pro_km"
-                      cachedSortKeyPosition="6"
-                      lineageId="Package\ETL TransportmittelDim\Sortieren 1.Outputs[Sortierausgabe].Columns[Kosten_pro_km]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Herkunfts-ID für Ausgabespalte"
-                          name="OutputColumnLineageID">#{Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Kosten_pro_km]}</property>
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1]"
-                  isSorted="true"
-                  name="Zusammenführen Ausgabe 1">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[TransId]"
-                      dataType="i4"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[TransId]"
-                      name="TransId"
-                      sortKeyPosition="1" />
-                    <outputColumn
-                      refId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Marke]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Marke]"
-                      name="Marke"
-                      sortKeyPosition="2" />
-                    <outputColumn
-                      refId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Typ]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Typ]"
-                      name="Typ"
-                      sortKeyPosition="3" />
-                    <outputColumn
-                      refId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Ladevolumen]"
-                      dataType="r4"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Ladevolumen]"
-                      name="Ladevolumen"
-                      sortKeyPosition="4" />
-                    <outputColumn
-                      refId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Anz_Fahrer]"
-                      dataType="i4"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Anz_Fahrer]"
-                      name="Anz_Fahrer" />
-                    <outputColumn
-                      refId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Fuehrerscheinklasse]"
-                      dataType="wstr"
-                      length="10"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Fuehrerscheinklasse]"
-                      name="Fuehrerscheinklasse" />
-                    <outputColumn
-                      refId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Anzahl_Bestand]"
-                      dataType="i4"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Anzahl_Bestand]"
-                      name="Anzahl_Bestand" />
-                    <outputColumn
-                      refId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Max_Gewicht]"
-                      dataType="r4"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Max_Gewicht]"
-                      name="Max_Gewicht"
-                      sortKeyPosition="5" />
-                    <outputColumn
-                      refId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Kosten_pro_km]"
-                      dataType="r4"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Kosten_pro_km]"
-                      name="Kosten_pro_km"
-                      sortKeyPosition="6" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
               refId="Package\ETL TransportmittelDim\Zusammenführen"
               componentClassID="Microsoft.Merge"
               contactInfo="Zusammenführen;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;1"
@@ -4787,7 +4599,7 @@ WHERE TransDimId = TransId;</property>
                       cachedDataType="i4"
                       cachedName="TransId"
                       cachedSortKeyPosition="1"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[TransId]">
+                      lineageId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[TransId]">
                       <properties>
                         <property
                           containsID="true"
@@ -4802,7 +4614,7 @@ WHERE TransDimId = TransId;</property>
                       cachedLength="50"
                       cachedName="Marke"
                       cachedSortKeyPosition="2"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Marke]">
+                      lineageId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Marke]">
                       <properties>
                         <property
                           containsID="true"
@@ -4817,7 +4629,7 @@ WHERE TransDimId = TransId;</property>
                       cachedLength="50"
                       cachedName="Typ"
                       cachedSortKeyPosition="3"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Typ]">
+                      lineageId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Typ]">
                       <properties>
                         <property
                           containsID="true"
@@ -4831,7 +4643,7 @@ WHERE TransDimId = TransId;</property>
                       cachedDataType="r4"
                       cachedName="Ladevolumen"
                       cachedSortKeyPosition="4"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Ladevolumen]">
+                      lineageId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Ladevolumen]">
                       <properties>
                         <property
                           containsID="true"
@@ -4841,51 +4653,11 @@ WHERE TransDimId = TransId;</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\ETL TransportmittelDim\Zusammenführen.Inputs[Zusammenführen Eingabe 1].Columns[Anz_Fahrer]"
-                      cachedDataType="i4"
-                      cachedName="Anz_Fahrer"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Anz_Fahrer]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Herkunfts-ID für Ausgabespalte"
-                          name="OutputColumnLineageID">#{Package\ETL TransportmittelDim\Zusammenführen.Outputs[Zusammenführen Ausgabe 1].Columns[Anz_Fahrer]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\ETL TransportmittelDim\Zusammenführen.Inputs[Zusammenführen Eingabe 1].Columns[Fuehrerscheinklasse]"
-                      cachedDataType="wstr"
-                      cachedLength="10"
-                      cachedName="Fuehrerscheinklasse"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Fuehrerscheinklasse]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Herkunfts-ID für Ausgabespalte"
-                          name="OutputColumnLineageID">#{Package\ETL TransportmittelDim\Zusammenführen.Outputs[Zusammenführen Ausgabe 1].Columns[Fuehrerscheinklasse]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\ETL TransportmittelDim\Zusammenführen.Inputs[Zusammenführen Eingabe 1].Columns[Anzahl_Bestand]"
-                      cachedDataType="i4"
-                      cachedName="Anzahl_Bestand"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Anzahl_Bestand]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Herkunfts-ID für Ausgabespalte"
-                          name="OutputColumnLineageID">#{Package\ETL TransportmittelDim\Zusammenführen.Outputs[Zusammenführen Ausgabe 1].Columns[Anzahl_Bestand]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
                       refId="Package\ETL TransportmittelDim\Zusammenführen.Inputs[Zusammenführen Eingabe 1].Columns[Max_Gewicht]"
                       cachedDataType="r4"
                       cachedName="Max_Gewicht"
                       cachedSortKeyPosition="5"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Max_Gewicht]">
+                      lineageId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Max_Gewicht]">
                       <properties>
                         <property
                           containsID="true"
@@ -4899,7 +4671,7 @@ WHERE TransDimId = TransId;</property>
                       cachedDataType="r4"
                       cachedName="Kosten_pro_km"
                       cachedSortKeyPosition="6"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Kosten_pro_km]">
+                      lineageId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Kosten_pro_km]">
                       <properties>
                         <property
                           containsID="true"
@@ -4920,7 +4692,7 @@ WHERE TransDimId = TransId;</property>
                       cachedDataType="i4"
                       cachedName="TransId"
                       cachedSortKeyPosition="1"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[TransId]">
+                      lineageId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[TransId]">
                       <properties>
                         <property
                           containsID="true"
@@ -4935,7 +4707,7 @@ WHERE TransDimId = TransId;</property>
                       cachedLength="50"
                       cachedName="Marke"
                       cachedSortKeyPosition="2"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Marke]">
+                      lineageId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Marke]">
                       <properties>
                         <property
                           containsID="true"
@@ -4950,7 +4722,7 @@ WHERE TransDimId = TransId;</property>
                       cachedLength="50"
                       cachedName="Typ"
                       cachedSortKeyPosition="3"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Typ]">
+                      lineageId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Typ]">
                       <properties>
                         <property
                           containsID="true"
@@ -4964,7 +4736,7 @@ WHERE TransDimId = TransId;</property>
                       cachedDataType="r4"
                       cachedName="Ladevolumen"
                       cachedSortKeyPosition="4"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Ladevolumen]">
+                      lineageId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Ladevolumen]">
                       <properties>
                         <property
                           containsID="true"
@@ -4974,51 +4746,11 @@ WHERE TransDimId = TransId;</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\ETL TransportmittelDim\Zusammenführen.Inputs[Zusammenführen Eingabe 2].Columns[Anz_Fahrer]"
-                      cachedDataType="i4"
-                      cachedName="Anz_Fahrer"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Anz_Fahrer]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Herkunfts-ID für Ausgabespalte"
-                          name="OutputColumnLineageID">#{Package\ETL TransportmittelDim\Zusammenführen.Outputs[Zusammenführen Ausgabe 1].Columns[Anz_Fahrer]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\ETL TransportmittelDim\Zusammenführen.Inputs[Zusammenführen Eingabe 2].Columns[Fuehrerscheinklasse]"
-                      cachedDataType="wstr"
-                      cachedLength="10"
-                      cachedName="Fuehrerscheinklasse"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Fuehrerscheinklasse]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Herkunfts-ID für Ausgabespalte"
-                          name="OutputColumnLineageID">#{Package\ETL TransportmittelDim\Zusammenführen.Outputs[Zusammenführen Ausgabe 1].Columns[Fuehrerscheinklasse]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\ETL TransportmittelDim\Zusammenführen.Inputs[Zusammenführen Eingabe 2].Columns[Anzahl_Bestand]"
-                      cachedDataType="i4"
-                      cachedName="Anzahl_Bestand"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Anzahl_Bestand]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Herkunfts-ID für Ausgabespalte"
-                          name="OutputColumnLineageID">#{Package\ETL TransportmittelDim\Zusammenführen.Outputs[Zusammenführen Ausgabe 1].Columns[Anzahl_Bestand]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
                       refId="Package\ETL TransportmittelDim\Zusammenführen.Inputs[Zusammenführen Eingabe 2].Columns[Max_Gewicht]"
                       cachedDataType="r4"
                       cachedName="Max_Gewicht"
                       cachedSortKeyPosition="5"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Max_Gewicht]">
+                      lineageId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Max_Gewicht]">
                       <properties>
                         <property
                           containsID="true"
@@ -5032,7 +4764,7 @@ WHERE TransDimId = TransId;</property>
                       cachedDataType="r4"
                       cachedName="Kosten_pro_km"
                       cachedSortKeyPosition="6"
-                      lineageId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1].Columns[Kosten_pro_km]">
+                      lineageId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Kosten_pro_km]">
                       <properties>
                         <property
                           containsID="true"
@@ -5078,22 +4810,6 @@ WHERE TransDimId = TransId;</property>
                       name="Ladevolumen"
                       sortKeyPosition="4" />
                     <outputColumn
-                      refId="Package\ETL TransportmittelDim\Zusammenführen.Outputs[Zusammenführen Ausgabe 1].Columns[Anz_Fahrer]"
-                      dataType="i4"
-                      lineageId="Package\ETL TransportmittelDim\Zusammenführen.Outputs[Zusammenführen Ausgabe 1].Columns[Anz_Fahrer]"
-                      name="Anz_Fahrer" />
-                    <outputColumn
-                      refId="Package\ETL TransportmittelDim\Zusammenführen.Outputs[Zusammenführen Ausgabe 1].Columns[Fuehrerscheinklasse]"
-                      dataType="wstr"
-                      length="10"
-                      lineageId="Package\ETL TransportmittelDim\Zusammenführen.Outputs[Zusammenführen Ausgabe 1].Columns[Fuehrerscheinklasse]"
-                      name="Fuehrerscheinklasse" />
-                    <outputColumn
-                      refId="Package\ETL TransportmittelDim\Zusammenführen.Outputs[Zusammenführen Ausgabe 1].Columns[Anzahl_Bestand]"
-                      dataType="i4"
-                      lineageId="Package\ETL TransportmittelDim\Zusammenführen.Outputs[Zusammenführen Ausgabe 1].Columns[Anzahl_Bestand]"
-                      name="Anzahl_Bestand" />
-                    <outputColumn
                       refId="Package\ETL TransportmittelDim\Zusammenführen.Outputs[Zusammenführen Ausgabe 1].Columns[Max_Gewicht]"
                       dataType="r4"
                       lineageId="Package\ETL TransportmittelDim\Zusammenführen.Outputs[Zusammenführen Ausgabe 1].Columns[Max_Gewicht]"
@@ -5110,8 +4826,230 @@ WHERE TransDimId = TransId;</property>
                 </output>
               </outputs>
             </component>
+            <component
+              refId="Package\ETL TransportmittelDim\Zusammenführungsjoin"
+              componentClassID="Microsoft.MergeJoin"
+              contactInfo="Zusammenführungsjoin;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;1"
+              description="Kombinieren Sie zwei sortierte Datenflüsse mithilfe eines der Joins FULL, LEFT oder INNER in einem Datenfluss. Diese Transformation wird empfohlen, wenn Datenflüsse an ihrem Quellort sortiert werden können."
+              name="Zusammenführungsjoin"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt den Typ des auszuführenden Joins an."
+                  name="JoinType"
+                  typeConverter="JoinType">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt die Anzahl der Spalten im Sortierschlüssel an."
+                  name="NumKeyColumns">6</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Zeigt an, ob die NULL-Werte als gleichberechtigte Werte behandelt werden."
+                  name="TreatNullsAsEqual">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Zeigt die pro Eingabe maximal angeforderten Puffer vor dem Blockieren an."
+                  name="MaxBuffersPerInput">5</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins]"
+                  hasSideEffects="true"
+                  name="Linke Eingabe des Zusammenführungsjoins">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins].Columns[TransId]"
+                      cachedDataType="i4"
+                      cachedName="TransId"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\ETL TransportmittelDim\Sortieren.Outputs[Sortierausgabe].Columns[TransId]" />
+                    <inputColumn
+                      refId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins].Columns[Marke]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Marke"
+                      cachedSortKeyPosition="2"
+                      lineageId="Package\ETL TransportmittelDim\Sortieren.Outputs[Sortierausgabe].Columns[Marke]" />
+                    <inputColumn
+                      refId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins].Columns[Typ]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Typ"
+                      cachedSortKeyPosition="3"
+                      lineageId="Package\ETL TransportmittelDim\Sortieren.Outputs[Sortierausgabe].Columns[Typ]" />
+                    <inputColumn
+                      refId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins].Columns[Ladevolumen]"
+                      cachedDataType="r4"
+                      cachedName="Ladevolumen"
+                      cachedSortKeyPosition="4"
+                      lineageId="Package\ETL TransportmittelDim\Sortieren.Outputs[Sortierausgabe].Columns[Ladevolumen]" />
+                    <inputColumn
+                      refId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins].Columns[Max_Gewicht]"
+                      cachedDataType="r4"
+                      cachedName="Max_Gewicht"
+                      cachedSortKeyPosition="5"
+                      lineageId="Package\ETL TransportmittelDim\Sortieren.Outputs[Sortierausgabe].Columns[Max_Gewicht]" />
+                    <inputColumn
+                      refId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins].Columns[Kosten_pro_km]"
+                      cachedDataType="r4"
+                      cachedName="Kosten_pro_km"
+                      cachedSortKeyPosition="6"
+                      lineageId="Package\ETL TransportmittelDim\Sortieren.Outputs[Sortierausgabe].Columns[Kosten_pro_km]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Inputs[Rechte Eingabe des Zusammenführungsjoins]"
+                  hasSideEffects="true"
+                  name="Rechte Eingabe des Zusammenführungsjoins">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Inputs[Rechte Eingabe des Zusammenführungsjoins].Columns[TransId]"
+                      cachedDataType="i4"
+                      cachedName="TransId"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\ETL TransportmittelDim\Sortieren 1.Outputs[Sortierausgabe].Columns[TransId]" />
+                    <inputColumn
+                      refId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Inputs[Rechte Eingabe des Zusammenführungsjoins].Columns[Marke]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Marke"
+                      cachedSortKeyPosition="2"
+                      lineageId="Package\ETL TransportmittelDim\Sortieren 1.Outputs[Sortierausgabe].Columns[Marke]" />
+                    <inputColumn
+                      refId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Inputs[Rechte Eingabe des Zusammenführungsjoins].Columns[Typ]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Typ"
+                      cachedSortKeyPosition="3"
+                      lineageId="Package\ETL TransportmittelDim\Sortieren 1.Outputs[Sortierausgabe].Columns[Typ]" />
+                    <inputColumn
+                      refId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Inputs[Rechte Eingabe des Zusammenführungsjoins].Columns[Ladevolumen]"
+                      cachedDataType="r4"
+                      cachedName="Ladevolumen"
+                      cachedSortKeyPosition="4"
+                      lineageId="Package\ETL TransportmittelDim\Sortieren 1.Outputs[Sortierausgabe].Columns[Ladevolumen]" />
+                    <inputColumn
+                      refId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Inputs[Rechte Eingabe des Zusammenführungsjoins].Columns[Max_Gewicht]"
+                      cachedDataType="r4"
+                      cachedName="Max_Gewicht"
+                      cachedSortKeyPosition="5"
+                      lineageId="Package\ETL TransportmittelDim\Sortieren 1.Outputs[Sortierausgabe].Columns[Max_Gewicht]" />
+                    <inputColumn
+                      refId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Inputs[Rechte Eingabe des Zusammenführungsjoins].Columns[Kosten_pro_km]"
+                      cachedDataType="r4"
+                      cachedName="Kosten_pro_km"
+                      cachedSortKeyPosition="6"
+                      lineageId="Package\ETL TransportmittelDim\Sortieren 1.Outputs[Sortierausgabe].Columns[Kosten_pro_km]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins]"
+                  isSorted="true"
+                  name="Ausgabe des Zusammenführungsjoins">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[TransId]"
+                      dataType="i4"
+                      lineageId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[TransId]"
+                      name="TransId"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Die mit dieser Ausgabespalte verbundene Eingabespalte"
+                          name="InputColumnID">#{Package\ETL TransportmittelDim\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins].Columns[TransId]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Marke]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Marke]"
+                      name="Marke"
+                      sortKeyPosition="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Die mit dieser Ausgabespalte verbundene Eingabespalte"
+                          name="InputColumnID">#{Package\ETL TransportmittelDim\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins].Columns[Marke]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Typ]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Typ]"
+                      name="Typ"
+                      sortKeyPosition="3">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Die mit dieser Ausgabespalte verbundene Eingabespalte"
+                          name="InputColumnID">#{Package\ETL TransportmittelDim\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins].Columns[Typ]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Ladevolumen]"
+                      dataType="r4"
+                      lineageId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Ladevolumen]"
+                      name="Ladevolumen"
+                      sortKeyPosition="4">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Die mit dieser Ausgabespalte verbundene Eingabespalte"
+                          name="InputColumnID">#{Package\ETL TransportmittelDim\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins].Columns[Ladevolumen]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Max_Gewicht]"
+                      dataType="r4"
+                      lineageId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Max_Gewicht]"
+                      name="Max_Gewicht"
+                      sortKeyPosition="5">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Die mit dieser Ausgabespalte verbundene Eingabespalte"
+                          name="InputColumnID">#{Package\ETL TransportmittelDim\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins].Columns[Max_Gewicht]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Kosten_pro_km]"
+                      dataType="r4"
+                      lineageId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Kosten_pro_km]"
+                      name="Kosten_pro_km"
+                      sortKeyPosition="6">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Die mit dieser Ausgabespalte verbundene Eingabespalte"
+                          name="InputColumnID">#{Package\ETL TransportmittelDim\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins].Columns[Kosten_pro_km]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
           </components>
           <paths>
+            <path
+              refId="Package\ETL TransportmittelDim.Paths[Ausgabe der abgeleiteten Spalte]"
+              endId="Package\ETL TransportmittelDim\TransportmittelDim.Inputs[Eingabe des OLE DB-Ziels]"
+              name="Ausgabe der abgeleiteten Spalte"
+              startId="Package\ETL TransportmittelDim\Berechnung Start - GetDate.Outputs[Ausgabe der abgeleiteten Spalte]" />
             <path
               refId="Package\ETL TransportmittelDim.Paths[Ausgabe der OLE DB-Quelle]"
               endId="Package\ETL TransportmittelDim\Sortieren.Inputs[Sortiereingabe]"
@@ -5133,20 +5071,25 @@ WHERE TransDimId = TransId;</property>
               name="Ausgabe des OLE DB-Befehls"
               startId="Package\ETL TransportmittelDim\Update.Outputs[Ausgabe des OLE DB-Befehls]" />
             <path
-              refId="Package\ETL TransportmittelDim.Paths[Fall 1]"
+              refId="Package\ETL TransportmittelDim.Paths[Ausgabe des Zusammenführungsjoins]"
+              endId="Package\ETL TransportmittelDim\Suche.Inputs[Eingabe der Suche]"
+              name="Ausgabe des Zusammenführungsjoins"
+              startId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins]" />
+            <path
+              refId="Package\ETL TransportmittelDim.Paths[geändert]"
               endId="Package\ETL TransportmittelDim\Update.Inputs[Eingabe des OLE DB-Befehls]"
-              name="Fall 1"
-              startId="Package\ETL TransportmittelDim\Bedingtes Teilen.Outputs[Fall 1]" />
+              name="geändert"
+              startId="Package\ETL TransportmittelDim\Bedingtes Teilen.Outputs[geändert]" />
             <path
               refId="Package\ETL TransportmittelDim.Paths[Sortierausgabe]"
-              endId="Package\ETL TransportmittelDim\Vereinigung.Inputs[Zusammenführen Eingabe 2]"
-              name="Sortierausgabe"
-              startId="Package\ETL TransportmittelDim\Sortieren 1.Outputs[Sortierausgabe]" />
-            <path
-              refId="Package\ETL TransportmittelDim.Paths[Sortierausgabe1]"
-              endId="Package\ETL TransportmittelDim\Vereinigung.Inputs[Zusammenführen Eingabe 1]"
+              endId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins]"
               name="Sortierausgabe"
               startId="Package\ETL TransportmittelDim\Sortieren.Outputs[Sortierausgabe]" />
+            <path
+              refId="Package\ETL TransportmittelDim.Paths[Sortierausgabe1]"
+              endId="Package\ETL TransportmittelDim\Zusammenführungsjoin.Inputs[Rechte Eingabe des Zusammenführungsjoins]"
+              name="Sortierausgabe"
+              startId="Package\ETL TransportmittelDim\Sortieren 1.Outputs[Sortierausgabe]" />
             <path
               refId="Package\ETL TransportmittelDim.Paths[Suchausgabe nicht übereinstimmender Einträge]"
               endId="Package\ETL TransportmittelDim\Zusammenführen.Inputs[Zusammenführen Eingabe 1]"
@@ -5154,9 +5097,9 @@ WHERE TransDimId = TransId;</property>
               startId="Package\ETL TransportmittelDim\Suche.Outputs[Suchausgabe nicht übereinstimmender Einträge]" />
             <path
               refId="Package\ETL TransportmittelDim.Paths[Zusammenführen Ausgabe 1]"
-              endId="Package\ETL TransportmittelDim\Suche.Inputs[Eingabe der Suche]"
+              endId="Package\ETL TransportmittelDim\Berechnung Start - GetDate.Inputs[Eingabe der abgeleiteten Spalte]"
               name="Zusammenführen Ausgabe 1"
-              startId="Package\ETL TransportmittelDim\Vereinigung.Outputs[Zusammenführen Ausgabe 1]" />
+              startId="Package\ETL TransportmittelDim\Zusammenführen.Outputs[Zusammenführen Ausgabe 1]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -5533,53 +5476,53 @@ WHERE TransDimId = TransId;</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="162,42"
-          Id="Package\ETL AdresseDim\Zusammenführen"
-          TopLeft="157,685.499997449417" />
-        <NodeLayout
-          Size="130,42"
-          Id="Package\ETL AdresseDim\Sortieren 1"
-          TopLeft="364,133.5" />
-        <NodeLayout
-          Size="113,42"
-          Id="Package\ETL AdresseDim\Update"
-          TopLeft="483,606.833331277801" />
-        <NodeLayout
-          Size="173,42"
-          Id="Package\ETL AdresseDim\Abgeleitete Spalte 1"
-          TopLeft="104.5,298.458331850875" />
+          Size="135,42"
+          Id="Package\ETL AdresseDim\Geoposition"
+          TopLeft="129,32" />
         <NodeLayout
           Size="122,42"
           Id="Package\ETL AdresseDim\Sortieren"
           TopLeft="137.5,133" />
         <NodeLayout
-          Size="107.5,42"
-          Id="Package\ETL AdresseDim\Teilen"
-          TopLeft="485.5,486.583331875089" />
+          Size="113,42"
+          Id="Package\ETL AdresseDim\Update"
+          TopLeft="483,606.833331277801" />
         <NodeLayout
-          Size="135,42"
-          Id="Package\ETL AdresseDim\Geoposition"
-          TopLeft="129,32" />
-        <NodeLayout
-          Size="109,42"
-          Id="Package\ETL AdresseDim\Suche"
-          TopLeft="169.5,485.083332230234" />
+          Size="130,42"
+          Id="Package\ETL AdresseDim\Sortieren 1"
+          TopLeft="364,133.5" />
         <NodeLayout
           Size="136,42"
           Id="Package\ETL AdresseDim\AdresseDim"
           TopLeft="149,854.33333253695" />
         <NodeLayout
-          Size="164.5,42"
-          Id="Package\ETL AdresseDim\Abgeleitete Spalte"
-          TopLeft="111.071428571429,210.089284670761" />
+          Size="189,42"
+          Id="Package\ETL AdresseDim\Zusammenführungsjoin"
+          TopLeft="129,386.5" />
         <NodeLayout
           Size="138.5,42"
           Id="Package\ETL AdresseDim\Flatfilequelle"
           TopLeft="359.5,37.6874998748923" />
         <NodeLayout
-          Size="189,42"
-          Id="Package\ETL AdresseDim\Zusammenführungsjoin"
-          TopLeft="129,386.5" />
+          Size="173,42"
+          Id="Package\ETL AdresseDim\Abgeleitete Spalte 1"
+          TopLeft="104.5,298.458331850875" />
+        <NodeLayout
+          Size="107.5,42"
+          Id="Package\ETL AdresseDim\Teilen"
+          TopLeft="485.5,486.583331875089" />
+        <NodeLayout
+          Size="109,42"
+          Id="Package\ETL AdresseDim\Suche"
+          TopLeft="169.5,485.083332230234" />
+        <NodeLayout
+          Size="162,42"
+          Id="Package\ETL AdresseDim\Zusammenführen"
+          TopLeft="157,685.499997449417" />
+        <NodeLayout
+          Size="164.5,42"
+          Id="Package\ETL AdresseDim\Abgeleitete Spalte"
+          TopLeft="111.071428571429,210.089284670761" />
         <EdgeLayout
           Id="Package\ETL AdresseDim.Paths[Ausgabe der Suchübereinstimmungen]"
           TopLeft="278.5,506.833332052661">
@@ -5859,7 +5802,7 @@ WHERE TransDimId = TransId;</property>
         <NodeLayout
           Size="113,42"
           Id="Package\ETL TransportmittelDim\Update"
-          TopLeft="527.5,421" />
+          TopLeft="517.916666666667,421" />
         <NodeLayout
           Size="176,42"
           Id="Package\ETL TransportmittelDim\FRA_Transportmittel"
@@ -5867,219 +5810,11 @@ WHERE TransDimId = TransId;</property>
         <NodeLayout
           Size="168,42"
           Id="Package\ETL TransportmittelDim\TransportmittelDim"
-          TopLeft="115.5,551.5" />
-        <NodeLayout
-          Size="162,42"
-          Id="Package\ETL TransportmittelDim\Zusammenführen"
-          TopLeft="129,428.5" />
-        <NodeLayout
-          Size="135,42"
-          Id="Package\ETL TransportmittelDim\Vereinigung"
-          TopLeft="137,239" />
-        <NodeLayout
-          Size="158,42"
-          Id="Package\ETL TransportmittelDim\Bedingtes Teilen"
-          TopLeft="506,314" />
-        <NodeLayout
-          Size="109,42"
-          Id="Package\ETL TransportmittelDim\Suche"
-          TopLeft="149,313.5" />
+          TopLeft="128.416666666667,592.263889323851" />
         <NodeLayout
           Size="130,42"
           Id="Package\ETL TransportmittelDim\Sortieren 1"
           TopLeft="282,144.5" />
-        <EdgeLayout
-          Id="Package\ETL TransportmittelDim.Paths[Zusammenführen Ausgabe 1]"
-          TopLeft="204,281">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,32.5"
-              Start="0,0"
-              End="0,25">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL TransportmittelDim.Paths[Suchausgabe nicht übereinstimmender Einträge]"
-          TopLeft="206.625,355.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,73"
-              Start="0,0"
-              End="0,65.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,65.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-106.01701171875,26.91845703125,212.0340234375,11.6630859375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL TransportmittelDim.Paths[Sortierausgabe1]"
-          TopLeft="117.75,180.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="65.5833333333333,58.5"
-              Start="0,0"
-              End="65.5833333333333,51">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,30.6888726207906" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,30.6888726207906"
-                    Point2="0,34.6888726207906"
-                    Point3="4,34.6888726207906" />
-                  <mssgle:LineSegment
-                    End="61.5833333333333,34.6888726207906" />
-                  <mssgle:CubicBezierSegment
-                    Point1="61.5833333333333,34.6888726207906"
-                    Point2="65.5833333333333,34.6888726207906"
-                    Point3="65.5833333333333,38.6888726207906" />
-                  <mssgle:LineSegment
-                    End="65.5833333333333,51" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL TransportmittelDim.Paths[Sortierausgabe]"
-          TopLeft="347.25,186.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-121.583333333333,52.5"
-              Start="0,0"
-              End="-121.583333333333,45">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,27.1310395314788" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,27.1310395314788"
-                    Point2="0,31.1310395314788"
-                    Point3="-4,31.1310395314788" />
-                  <mssgle:LineSegment
-                    End="-117.583333333333,31.1310395314788" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-117.583333333333,31.1310395314788"
-                    Point2="-121.583333333333,31.1310395314788"
-                    Point3="-121.583333333333,35.1310395314788" />
-                  <mssgle:LineSegment
-                    End="-121.583333333333,45" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL TransportmittelDim.Paths[Fall 1]"
-          TopLeft="584.375,356">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,65"
-              Start="0,0"
-              End="0,57.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,57.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-12.04056640625,23.87548828125,24.0811328125,9.7490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL TransportmittelDim.Paths[Ausgabe des OLE DB-Befehls]"
-          TopLeft="527.5,445.75">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-237,0"
-              Start="0,0"
-              End="-229.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-229.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL TransportmittelDim.Paths[Ausgabe der Suchübereinstimmungen]"
-          TopLeft="258,334.75">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="248,0"
-              Start="0,0"
-              End="240.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="240.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="35.98,5,168.54,11.6630859375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\ETL TransportmittelDim.Paths[Ausgabe der OLE DB-Quelle1]"
           TopLeft="348.25,64.5">
@@ -6099,9 +5834,7 @@ WHERE TransDimId = TransId;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6123,13 +5856,321 @@ WHERE TransDimId = TransId;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="209,42"
+          Id="Package\ETL TransportmittelDim\Berechnung Start - GetDate"
+          TopLeft="105.416666666667,510.520831604695" />
+        <EdgeLayout
+          Id="Package\ETL TransportmittelDim.Paths[Ausgabe der abgeleiteten Spalte]"
+          TopLeft="211.166666666667,552.520831604695">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,39.7430577191559"
+              Start="0,0"
+              End="0,32.2430577191559">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.2430577191559" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="189,42"
+          Id="Package\ETL TransportmittelDim\Zusammenführungsjoin"
+          TopLeft="126.666666666667,236.840277416804" />
+        <EdgeLayout
+          Id="Package\ETL TransportmittelDim.Paths[Sortierausgabe]"
+          TopLeft="118,180.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="103.166666666667,56.340277416804"
+              Start="0,0"
+              End="103.166666666667,48.840277416804">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.170138708402" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.170138708402"
+                    Point2="0,28.170138708402"
+                    Point3="4,28.170138708402" />
+                  <mssgle:LineSegment
+                    End="99.1666666666667,28.170138708402" />
+                  <mssgle:CubicBezierSegment
+                    Point1="99.1666666666667,28.170138708402"
+                    Point2="103.166666666667,28.170138708402"
+                    Point3="103.166666666667,32.170138708402" />
+                  <mssgle:LineSegment
+                    End="103.166666666667,48.840277416804" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL TransportmittelDim.Paths[Sortierausgabe1]"
+          TopLeft="347,186.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-95.6666666666666,50.340277416804"
+              Start="0,0"
+              End="-95.6666666666666,42.840277416804">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.9506162595256" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25.9506162595256"
+                    Point2="0,29.9506162595256"
+                    Point3="-4,29.9506162595256" />
+                  <mssgle:LineSegment
+                    End="-91.6666666666666,29.9506162595256" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-91.6666666666666,29.9506162595256"
+                    Point2="-95.6666666666666,29.9506162595256"
+                    Point3="-95.6666666666666,33.9506162595256" />
+                  <mssgle:LineSegment
+                    End="-95.6666666666666,42.840277416804" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="109,42"
+          Id="Package\ETL TransportmittelDim\Suche"
+          TopLeft="158.75,307.152776939243" />
+        <EdgeLayout
+          Id="Package\ETL TransportmittelDim.Paths[Ausgabe des Zusammenführungsjoins]"
+          TopLeft="217.208333333333,278.840277416804">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,28.3124995224385"
+              Start="0,0"
+              End="0,20.8124995224385">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.8124995224385" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="157.5,42"
+          Id="Package\ETL TransportmittelDim\Bedingtes Teilen"
+          TopLeft="497.083333333333,305.798610279302" />
+        <EdgeLayout
+          Id="Package\ETL TransportmittelDim.Paths[Ausgabe der Suchübereinstimmungen]"
+          TopLeft="267.75,327.475693609272">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="229.333333333333,0"
+              Start="0,0"
+              End="221.833333333333,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="221.833333333333,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
+              BoundingBox="26.6466666666666,5,168.54,11.6630859375"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL TransportmittelDim.Paths[geändert]"
+          TopLeft="575.125,347.798610279302">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,73.2013897206978"
+              Start="0,0"
+              End="0,65.7013897206978">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,65.7013897206978" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-20.52599609375,27.0191518915989,41.0519921875,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="161.5,42"
+          Id="Package\ETL TransportmittelDim\Zusammenführen"
+          TopLeft="134.583333333333,428.124998560589" />
+        <EdgeLayout
+          Id="Package\ETL TransportmittelDim.Paths[Suchausgabe nicht übereinstimmender Einträge]"
+          TopLeft="214.291666666667,349.152776939243">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,78.9722216213467"
+              Start="0,0"
+              End="0,71.4722216213467">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,71.4722216213467" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-106.01701171875,29.9045678419234,212.0340234375,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL TransportmittelDim.Paths[Ausgabe des OLE DB-Befehls]"
+          TopLeft="517.916666666667,445.562499280295">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-221.833333333333,0"
+              Start="0,0"
+              End="-214.333333333333,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-214.333333333333,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL TransportmittelDim.Paths[Zusammenführen Ausgabe 1]"
+          TopLeft="212.625,470.124998560589">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,40.3958330441059"
+              Start="0,0"
+              End="0,32.8958330441059">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.8958330441059" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL TransportmittelDim\HAM_Transportmittel">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL TransportmittelDim\FRA_Transportmittel">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL TransportmittelDim\TransportmittelDim">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL TransportmittelDim\Suche">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[TransportmittelDim]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
