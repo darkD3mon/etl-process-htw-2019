@@ -12,8 +12,8 @@
   DTS:ObjectName="DatumDim"
   DTS:PackageType="5"
   DTS:ProtectionLevel="2"
-  DTS:VersionBuild="1"
-  DTS:VersionGUID="{E9333D90-4E37-4CA9-A324-AFFF7DA5B5CF}">
+  DTS:VersionBuild="16"
+  DTS:VersionGUID="{A5182BD8-F547-4FA5-ABD1-E4120A3F0096}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -31,7 +31,28 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{FD05051C-A362-4545-B195-628C7770DD75}"
-          SQLTask:SqlStatementSource="CREATE TABLE Bundesland(&#xA; BundeslandId int identity not null primary key,&#xA; Ort nvarchar(255) NOT NULL,&#xA; Plz nvarchar(255) NOT NULL,&#xA; Bundesland nvarchar(255) NOT NULL,&#xA;);&#xA; &#xA;Create Table BeschwerdeDim (&#xA;    BeschwerdeDimId int identity not null primary key,&#xA;    Grund nvarchar(255),&#xA;);&#xA; &#xA;Create Table DatumDim (&#xA;    DatumDimId int identity not null primary key,&#xA;    Tag tinyint,&#xA;    Monat tinyint,&#xA;    Jahr tinyint,&#xA;    IstFeiertag bit,&#xA;);&#xA; &#xA;Create Table AdresseDim (&#xA;    AdresseDimId int identity not null primary key,&#xA;    Plz nvarchar(255),&#xA;    Ort nvarchar(255),&#xA;    Lat nvarchar(50),&#xA;    Lon nvarchar(50),&#xA;    Bundesland nvarchar(50),&#xA;    Start date,&#xA;    Ende date&#xA;);&#xA; &#xA;Create Table TransportmittelDim (&#xA;    TransDimId int identity not null primary key,&#xA;    Marke nchar(50),&#xA;    Typ nchar(50),&#xA;    Ladevolumen real,&#xA;    Max_Gewicht real,&#xA;    Kosten_pro_km real,&#xA;    Start date,&#xA;    Ende date&#xA;);&#xA; &#xA;Create Table LieferungFakten (&#xA;    FaktenId int not null identity primary key,&#xA;    BestellDatumDimId int,&#xA;    LieferDatumDimId int,&#xA;    StartAdresseDimId int,&#xA;    ZielAdresseDimId int,&#xA;    TransDimId int,&#xA;    BeschwerdeDimId int,&#xA;    Volumen nchar(20),&#xA;    Gewicht nchar(20),&#xA;    Lieferkosten money,&#xA;    Umsatz decimal(10,2),&#xA;    Lieferdauer time,&#xA;    Lieferstrecke int,&#xA;    FOREIGN KEY (BestellDatumDimId) REFERENCES dbo.DatumDim (DatumDimId),&#xA;    FOREIGN KEY (LieferDatumDimId) REFERENCES dbo.DatumDim (DatumDimId),&#xA;    FOREIGN KEY (StartAdresseDimId) REFERENCES dbo.AdresseDim (AdresseDimId),&#xA;    FOREIGN KEY (ZielAdresseDimId) REFERENCES dbo.AdresseDim (AdresseDimId),&#xA;    FOREIGN KEY (TransDimId) REFERENCES dbo.TransportmittelDim (TransDimId),&#xA;    FOREIGN KEY (BeschwerdeDimId) REFERENCES dbo.BeschwerdeDim (BeschwerdeDimId)&#xA;);&#xA;"
+          SQLTask:SqlStatementSource="CREATE TABLE Bundesland(&#xA; BundeslandId int identity not null primary key,&#xA; Ort nvarchar(255) NOT NULL,&#xA; Plz nvarchar(255) NOT NULL,&#xA; Bundesland nvarchar(255) NOT NULL,&#xA;);&#xA; &#xA;Create Table BeschwerdeDim (&#xA;    BeschwerdeDimId int identity not null primary key,&#xA;    Grund nvarchar(255),&#xA;);&#xA; &#xA;Create Table DatumDim (&#xA;    DatumDimId int identity not null primary key,&#xA;    Tag int,&#xA;    Monat int,&#xA;    Jahr int,&#xA;    IstFeiertag bit,&#xA;);&#xA; &#xA;Create Table AdresseDim (&#xA;    AdresseDimId int identity not null primary key,&#xA;    Plz nvarchar(255),&#xA;    Ort nvarchar(255),&#xA;    Lat nvarchar(50),&#xA;    Lon nvarchar(50),&#xA;    Bundesland nvarchar(50),&#xA;    Start date,&#xA;    Ende date&#xA;);&#xA; &#xA;Create Table TransportmittelDim (&#xA;    TransDimId int identity not null primary key,&#xA;    Marke nchar(50),&#xA;    Typ nchar(50),&#xA;    Ladevolumen real,&#xA;    Max_Gewicht real,&#xA;    Kosten_pro_km real,&#xA;    Start date,&#xA;    Ende date&#xA;);&#xA; &#xA;Create Table LieferungFakten (&#xA;    FaktenId int not null identity primary key,&#xA;    BestellDatumDimId int,&#xA;    LieferDatumDimId int,&#xA;    StartAdresseDimId int,&#xA;    ZielAdresseDimId int,&#xA;    TransDimId int,&#xA;    BeschwerdeDimId int,&#xA;    Volumen nchar(20),&#xA;    Gewicht nchar(20),&#xA;    Lieferkosten money,&#xA;    Umsatz decimal(10,2),&#xA;    Lieferdauer time,&#xA;    Lieferstrecke int,&#xA;    FOREIGN KEY (BestellDatumDimId) REFERENCES dbo.DatumDim (DatumDimId),&#xA;    FOREIGN KEY (LieferDatumDimId) REFERENCES dbo.DatumDim (DatumDimId),&#xA;    FOREIGN KEY (StartAdresseDimId) REFERENCES dbo.AdresseDim (AdresseDimId),&#xA;    FOREIGN KEY (ZielAdresseDimId) REFERENCES dbo.AdresseDim (AdresseDimId),&#xA;    FOREIGN KEY (TransDimId) REFERENCES dbo.TransportmittelDim (TransDimId),&#xA;    FOREIGN KEY (BeschwerdeDimId) REFERENCES dbo.BeschwerdeDim (BeschwerdeDimId)&#xA;);&#xA;"
+          SQLTask:ServerVersion="9"
+          SQLTask:ExtendedLogging="True"
+          SQLTask:LocalConnectionForLogging=""
+          SQLTask:TaskName=""
+          SQLTask:IgnoreDatabasesInNotOnlineState="False" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\DatumDim Script"
+      DTS:CreationName="Microsoft.DbMaintenanceTSQLExecuteTask"
+      DTS:Description="Task &quot;T-SQL-Anweisung ausführen&quot;"
+      DTS:DTSID="{274E67F2-3683-49C0-8CCE-77EA56CD38E4}"
+      DTS:ExecutableType="Microsoft.DbMaintenanceTSQLExecuteTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DatumDim Script"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{FD05051C-A362-4545-B195-628C7770DD75}"
+          SQLTask:SqlStatementSource="  DECLARE @start DATE = '2015-01-01'&#xA;  WHILE @start &lt; GETDATE()&#xA;  BEGIN&#xA;&#x9;INSERT INTO  DatumDim (Jahr,Monat,Tag, IstFeiertag)&#xA;&#x9;VALUES(DATEPART(YY,@start),DATEPART(mm,@start),DATEPART(dd,@start), 0)&#xA;&#x9;SET @start = DATEADD(dd,1,@start)&#xA;  END&#xA;&#xA;&#xA;/*Update HOLIDAY fields of UK as per Govt. Declaration of National Holiday*/&#xA;&#x9;&#xA;--Heilige drei Könige&#xA;&#x9;UPDATE [dbo].[DatumDim]&#xA;&#x9;&#x9;SET IstFeiertag = 1&#xA;&#x9;WHERE [Monat] = 1 AND [Tag]  = 6&#xA;&#xA;--Maifeiertag&#xA;&#x9;UPDATE [dbo].[DatumDim]&#xA;&#x9;&#x9;SET IstFeiertag = 1&#xA;&#x9;WHERE [Monat] = 5 AND [Tag]  = 1&#xA;&#xA;--Tag der Deutschen Einheit&#xA;&#x9;UPDATE [dbo].[DatumDim]&#xA;&#x9;&#x9;SET IstFeiertag = 1&#xA;&#x9;WHERE [Monat] = 10 AND [Tag]  = 3&#xA;&#xA;--Mariä Himmelfahrt&#xA;&#x9;UPDATE [dbo].[DatumDim]&#xA;&#x9;&#x9;SET IstFeiertag = 1&#xA;&#x9;WHERE [Monat] = 8 AND [Tag]  = 15&#xA;&#xA;--Reformationstag&#xA;&#x9;UPDATE [dbo].[DatumDim]&#xA;&#x9;&#x9;SET IstFeiertag = 1&#xA;&#x9;WHERE [Monat] = 10 AND [Tag]  = 31&#xA;&#xA;--Allerheiligen&#xA;&#x9;UPDATE [dbo].[DatumDim]&#xA;&#x9;&#x9;SET IstFeiertag = 1&#xA;&#x9;WHERE [Monat] = 11 AND [Tag]  = 1&#xA;&#xA;--1. Weihnachtstag&#xA;&#x9;UPDATE [dbo].[DatumDim]&#xA;&#x9;&#x9;SET IstFeiertag = 1&#xA;&#x9;WHERE [Monat] = 12 AND [Tag]  = 25&#xA;&#xA;--2. Weihnachtstag&#xA;&#x9;UPDATE [dbo].[DatumDim]&#xA;&#x9;&#x9;SET IstFeiertag = 1&#xA;&#x9;WHERE [Monat] = 12 AND [Tag]  = 26&#xA;&#xA;--New Years Day&#xA;&#x9;UPDATE [dbo].[DatumDim]&#xA;&#x9;&#x9;SET IstFeiertag = 1&#xA;&#x9;WHERE [Monat] = 1 AND [Tag] = 1"
           SQLTask:ServerVersion="9"
           SQLTask:ExtendedLogging="True"
           SQLTask:LocalConnectionForLogging=""
@@ -1600,7 +1621,7 @@ SET Ende = GETDATE();
                       cachedDataType="i4"
                       cachedName="TransId"
                       cachedSortKeyPosition="1"
-                      lineageId="Package\ETL AdresseDim\351:invalid">
+                      lineageId="Package\ETL AdresseDim\676:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1615,7 +1636,7 @@ SET Ende = GETDATE();
                       cachedLength="50"
                       cachedName="Marke"
                       cachedSortKeyPosition="2"
-                      lineageId="Package\ETL AdresseDim\352:invalid">
+                      lineageId="Package\ETL AdresseDim\677:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1630,7 +1651,7 @@ SET Ende = GETDATE();
                       cachedLength="50"
                       cachedName="Typ"
                       cachedSortKeyPosition="3"
-                      lineageId="Package\ETL AdresseDim\353:invalid">
+                      lineageId="Package\ETL AdresseDim\678:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1644,7 +1665,7 @@ SET Ende = GETDATE();
                       cachedDataType="r4"
                       cachedName="Ladevolumen"
                       cachedSortKeyPosition="4"
-                      lineageId="Package\ETL AdresseDim\354:invalid">
+                      lineageId="Package\ETL AdresseDim\679:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1657,7 +1678,7 @@ SET Ende = GETDATE();
                       refId="Package\ETL AdresseDim\Zusammenführen.Inputs[Zusammenführen Eingabe 1].Columns[Anz_Fahrer]"
                       cachedDataType="i4"
                       cachedName="Anz_Fahrer"
-                      lineageId="Package\ETL AdresseDim\355:invalid">
+                      lineageId="Package\ETL AdresseDim\680:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1671,7 +1692,7 @@ SET Ende = GETDATE();
                       cachedDataType="wstr"
                       cachedLength="10"
                       cachedName="Fuehrerscheinklasse"
-                      lineageId="Package\ETL AdresseDim\356:invalid">
+                      lineageId="Package\ETL AdresseDim\681:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1684,7 +1705,7 @@ SET Ende = GETDATE();
                       refId="Package\ETL AdresseDim\Zusammenführen.Inputs[Zusammenführen Eingabe 1].Columns[Anzahl_Bestand]"
                       cachedDataType="i4"
                       cachedName="Anzahl_Bestand"
-                      lineageId="Package\ETL AdresseDim\357:invalid">
+                      lineageId="Package\ETL AdresseDim\682:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1698,7 +1719,7 @@ SET Ende = GETDATE();
                       cachedDataType="r4"
                       cachedName="Max_Gewicht"
                       cachedSortKeyPosition="5"
-                      lineageId="Package\ETL AdresseDim\358:invalid">
+                      lineageId="Package\ETL AdresseDim\683:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1712,7 +1733,7 @@ SET Ende = GETDATE();
                       cachedDataType="r4"
                       cachedName="Kosten_pro_km"
                       cachedSortKeyPosition="6"
-                      lineageId="Package\ETL AdresseDim\359:invalid">
+                      lineageId="Package\ETL AdresseDim\684:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1733,7 +1754,7 @@ SET Ende = GETDATE();
                       cachedDataType="i4"
                       cachedName="TransId"
                       cachedSortKeyPosition="1"
-                      lineageId="Package\ETL AdresseDim\351:invalid">
+                      lineageId="Package\ETL AdresseDim\676:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1747,7 +1768,7 @@ SET Ende = GETDATE();
                       cachedDataType="wstr"
                       cachedLength="48"
                       cachedName="Marke"
-                      lineageId="Package\ETL AdresseDim\360:invalid">
+                      lineageId="Package\ETL AdresseDim\685:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1761,7 +1782,7 @@ SET Ende = GETDATE();
                       cachedDataType="wstr"
                       cachedLength="48"
                       cachedName="Typ"
-                      lineageId="Package\ETL AdresseDim\361:invalid">
+                      lineageId="Package\ETL AdresseDim\686:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1776,7 +1797,7 @@ SET Ende = GETDATE();
                       cachedName="Ladevolumen"
                       cachedPrecision="5"
                       cachedScale="1"
-                      lineageId="Package\ETL AdresseDim\362:invalid">
+                      lineageId="Package\ETL AdresseDim\687:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1789,7 +1810,7 @@ SET Ende = GETDATE();
                       refId="Package\ETL AdresseDim\Zusammenführen.Inputs[Zusammenführen Eingabe 2].Columns[Anz_Fahrer]"
                       cachedDataType="i4"
                       cachedName="Anz_Fahrer"
-                      lineageId="Package\ETL AdresseDim\355:invalid">
+                      lineageId="Package\ETL AdresseDim\680:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1803,7 +1824,7 @@ SET Ende = GETDATE();
                       cachedDataType="wstr"
                       cachedLength="10"
                       cachedName="Fuehrerscheinklasse"
-                      lineageId="Package\ETL AdresseDim\356:invalid">
+                      lineageId="Package\ETL AdresseDim\681:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1816,7 +1837,7 @@ SET Ende = GETDATE();
                       refId="Package\ETL AdresseDim\Zusammenführen.Inputs[Zusammenführen Eingabe 2].Columns[Anzahl_Bestand]"
                       cachedDataType="i4"
                       cachedName="Anzahl_Bestand"
-                      lineageId="Package\ETL AdresseDim\357:invalid">
+                      lineageId="Package\ETL AdresseDim\682:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1829,7 +1850,7 @@ SET Ende = GETDATE();
                       refId="Package\ETL AdresseDim\Zusammenführen.Inputs[Zusammenführen Eingabe 2].Columns[Max_Gewicht]"
                       cachedDataType="i4"
                       cachedName="Max_Gewicht"
-                      lineageId="Package\ETL AdresseDim\363:invalid">
+                      lineageId="Package\ETL AdresseDim\688:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -1844,7 +1865,7 @@ SET Ende = GETDATE();
                       cachedName="Kosten_pro_km"
                       cachedPrecision="5"
                       cachedScale="2"
-                      lineageId="Package\ETL AdresseDim\364:invalid">
+                      lineageId="Package\ETL AdresseDim\689:invalid">
                       <properties>
                         <property
                           containsID="true"
@@ -5170,7 +5191,7 @@ WHERE TransDimId = TransId;</property>
       DTS:ExecutableType="Microsoft.ExecuteProcess"
       DTS:LocaleID="-1"
       DTS:ObjectName="Script DatumDim"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData />
     </DTS:Executable>
@@ -5248,11 +5269,11 @@ WHERE TransDimId = TransId;</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Einschränkung 6]"
       DTS:CreationName=""
-      DTS:DTSID="{e49d0bb1-77a2-45c5-9859-d346eb2fbdc9}"
+      DTS:DTSID="{40D6106B-8492-42CB-B7D3-7929566CA0E4}"
       DTS:From="Package\Seed Tables"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Einschränkung 6"
-      DTS:To="Package\ETL AdresseDim" />
+      DTS:To="Package\DatumDim Script" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--Dieser CDATA-Abschnitt enthält die Layoutinformationen des Pakets, z.B. Informationen wie X-/Y-Koordinaten, Breite und Höhe.-->
@@ -5270,6 +5291,10 @@ WHERE TransDimId = TransId;</property>
           Size="145,42"
           Id="Package\Create Tables"
           TopLeft="60,131.964285356835" />
+        <NodeLayout
+          Size="162,42"
+          Id="Package\DatumDim Script"
+          TopLeft="488,306" />
         <NodeLayout
           Size="136,42"
           Id="Package\Drop Tables"
@@ -5496,26 +5521,26 @@ WHERE TransDimId = TransId;</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-132.071428571429,48.772817012992"
+              EndConnector="278.571428571428,85.220238685224"
               Start="0,0"
-              End="-132.071428571429,41.272817012992">
+              End="278.571428571428,77.720238685224">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.386408506496" />
+                    End="0,38.610119342612" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20.386408506496"
-                    Point2="0,24.386408506496"
-                    Point3="-4,24.386408506496" />
+                    Point1="0,38.610119342612"
+                    Point2="0,42.610119342612"
+                    Point3="4,42.610119342612" />
                   <mssgle:LineSegment
-                    End="-128.071428571429,24.386408506496" />
+                    End="274.571428571428,42.610119342612" />
                   <mssgle:CubicBezierSegment
-                    Point1="-128.071428571429,24.386408506496"
-                    Point2="-132.071428571429,24.386408506496"
-                    Point3="-132.071428571429,28.386408506496" />
+                    Point1="274.571428571428,42.610119342612"
+                    Point2="278.571428571428,42.610119342612"
+                    Point3="278.571428571428,46.610119342612" />
                   <mssgle:LineSegment
-                    End="-132.071428571429,41.272817012992" />
+                    End="278.571428571428,77.720238685224" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5533,53 +5558,53 @@ WHERE TransDimId = TransId;</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="162,42"
-          Id="Package\ETL AdresseDim\Zusammenführen"
-          TopLeft="157,685.499997449417" />
-        <NodeLayout
-          Size="130,42"
-          Id="Package\ETL AdresseDim\Sortieren 1"
-          TopLeft="364,133.5" />
-        <NodeLayout
-          Size="113,42"
-          Id="Package\ETL AdresseDim\Update"
-          TopLeft="483,606.833331277801" />
-        <NodeLayout
-          Size="173,42"
-          Id="Package\ETL AdresseDim\Abgeleitete Spalte 1"
-          TopLeft="104.5,298.458331850875" />
+          Size="135,42"
+          Id="Package\ETL AdresseDim\Geoposition"
+          TopLeft="129,32" />
         <NodeLayout
           Size="122,42"
           Id="Package\ETL AdresseDim\Sortieren"
           TopLeft="137.5,133" />
         <NodeLayout
-          Size="107.5,42"
-          Id="Package\ETL AdresseDim\Teilen"
-          TopLeft="485.5,486.583331875089" />
+          Size="113,42"
+          Id="Package\ETL AdresseDim\Update"
+          TopLeft="483,606.833331277801" />
         <NodeLayout
-          Size="135,42"
-          Id="Package\ETL AdresseDim\Geoposition"
-          TopLeft="129,32" />
-        <NodeLayout
-          Size="109,42"
-          Id="Package\ETL AdresseDim\Suche"
-          TopLeft="169.5,485.083332230234" />
+          Size="130,42"
+          Id="Package\ETL AdresseDim\Sortieren 1"
+          TopLeft="364,133.5" />
         <NodeLayout
           Size="136,42"
           Id="Package\ETL AdresseDim\AdresseDim"
           TopLeft="149,854.33333253695" />
         <NodeLayout
-          Size="164.5,42"
-          Id="Package\ETL AdresseDim\Abgeleitete Spalte"
-          TopLeft="111.071428571429,210.089284670761" />
+          Size="189,42"
+          Id="Package\ETL AdresseDim\Zusammenführungsjoin"
+          TopLeft="129,386.5" />
         <NodeLayout
           Size="138.5,42"
           Id="Package\ETL AdresseDim\Flatfilequelle"
           TopLeft="359.5,37.6874998748923" />
         <NodeLayout
-          Size="189,42"
-          Id="Package\ETL AdresseDim\Zusammenführungsjoin"
-          TopLeft="129,386.5" />
+          Size="173,42"
+          Id="Package\ETL AdresseDim\Abgeleitete Spalte 1"
+          TopLeft="104.5,298.458331850875" />
+        <NodeLayout
+          Size="107.5,42"
+          Id="Package\ETL AdresseDim\Teilen"
+          TopLeft="485.5,486.583331875089" />
+        <NodeLayout
+          Size="109,42"
+          Id="Package\ETL AdresseDim\Suche"
+          TopLeft="169.5,485.083332230234" />
+        <NodeLayout
+          Size="162,42"
+          Id="Package\ETL AdresseDim\Zusammenführen"
+          TopLeft="157,685.499997449417" />
+        <NodeLayout
+          Size="164.5,42"
+          Id="Package\ETL AdresseDim\Abgeleitete Spalte"
+          TopLeft="111.071428571429,210.089284670761" />
         <EdgeLayout
           Id="Package\ETL AdresseDim.Paths[Ausgabe der Suchübereinstimmungen]"
           TopLeft="278.5,506.833332052661">
