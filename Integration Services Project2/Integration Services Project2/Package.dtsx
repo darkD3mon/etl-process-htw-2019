@@ -12,8 +12,8 @@
   DTS:ObjectName="Package"
   DTS:PackageType="5"
   DTS:ProtectionLevel="2"
-  DTS:VersionBuild="88"
-  DTS:VersionGUID="{FFE5636F-8927-4747-B997-8B20C6B39257}">
+  DTS:VersionBuild="91"
+  DTS:VersionGUID="{BD2957D2-D4F9-4E98-93EC-641192FF2B6B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -30,6 +30,27 @@
   </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Add Keine Beschwerde"
+      DTS:CreationName="Microsoft.DbMaintenanceTSQLExecuteTask"
+      DTS:Description="Task &quot;T-SQL-Anweisung ausführen&quot;"
+      DTS:DTSID="{E93A5884-5F6B-4AE4-82A5-7D927D2FC23C}"
+      DTS:ExecutableType="Microsoft.DbMaintenanceTSQLExecuteTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Add Keine Beschwerde"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{FD05051C-A362-4545-B195-628C7770DD75}"
+          SQLTask:SqlStatementSource="INSERT INTO BeschwerdeDim (Grund) VALUES('Keine Beschwerde')"
+          SQLTask:ServerVersion="9"
+          SQLTask:ExtendedLogging="True"
+          SQLTask:LocalConnectionForLogging=""
+          SQLTask:TaskName=""
+          SQLTask:IgnoreDatabasesInNotOnlineState="False" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Create Tables"
       DTS:CreationName="Microsoft.DbMaintenanceTSQLExecuteTask"
@@ -2489,81 +2510,6 @@ SET Ende = CAST(GETDATE() AS Date);
               </outputs>
             </component>
             <component
-              refId="Package\ETL BeschwerdeDim 1\Kein Grund"
-              componentClassID="Microsoft.OLEDBCommand"
-              contactInfo="OLE DB-Befehl;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;2"
-              description="Führt eine SQL-Anweisung für jede Zeile in einem Datenfluss aus. Rufen Sie beispielsweise die gespeicherte Prozedur &quot;new employee setup&quot; für jede Zeile in der Tabelle &quot;new employees&quot; auf. Hinweis: Wenn Sie für jede Zeile eines umfangreichen Datenflusses eine SQL-Anweisung ausführen, kann der Vorgang länger dauern."
-              name="Kein Grund"
-              usesDispositions="true"
-              version="2">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Der auszuführende SQL-Befehl."
-                  expressionType="Notify"
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">INSERT INTO BeschwerdeDim (Grund) VALUES('Keine Beschwerde')</property>
-                <property
-                  dataType="System.Int32"
-                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
-                  name="DefaultCodePage">1252</property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\ETL BeschwerdeDim 1\Kein Grund.Connections[OleDbConnection]"
-                  connectionManagerID="{352D8B30-1379-41B4-B8FA-69A1DB9220FE}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527.u573527]"
-                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
-                  name="OleDbConnection" />
-              </connections>
-              <inputs>
-                <input
-                  refId="Package\ETL BeschwerdeDim 1\Kein Grund.Inputs[Eingabe des OLE DB-Befehls]"
-                  errorOrTruncationOperation="Befehlsausführung"
-                  errorRowDisposition="FailComponent"
-                  hasSideEffects="true"
-                  name="Eingabe des OLE DB-Befehls">
-                  <externalMetadataColumns
-                    isUsed="True" />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\ETL BeschwerdeDim 1\Kein Grund.Outputs[Ausgabe des OLE DB-Befehls]"
-                  exclusionGroup="1"
-                  name="Ausgabe des OLE DB-Befehls"
-                  synchronousInputId="Package\ETL BeschwerdeDim 1\Kein Grund.Inputs[Eingabe des OLE DB-Befehls]">
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\ETL BeschwerdeDim 1\Kein Grund.Outputs[Fehlerausgabe des OLE DB-Befehls]"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Fehlerausgabe des OLE DB-Befehls"
-                  synchronousInputId="Package\ETL BeschwerdeDim 1\Kein Grund.Inputs[Eingabe des OLE DB-Befehls]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\ETL BeschwerdeDim 1\Kein Grund.Outputs[Fehlerausgabe des OLE DB-Befehls].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\ETL BeschwerdeDim 1\Kein Grund.Outputs[Fehlerausgabe des OLE DB-Befehls].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\ETL BeschwerdeDim 1\Kein Grund.Outputs[Fehlerausgabe des OLE DB-Befehls].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\ETL BeschwerdeDim 1\Kein Grund.Outputs[Fehlerausgabe des OLE DB-Befehls].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
               refId="Package\ETL BeschwerdeDim 1\OLE DB-Quelle"
               componentClassID="Microsoft.OLEDBSource"
               contactInfo="OLE DB-Quelle;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;7"
@@ -3373,7 +3319,7 @@ SET Ende = CAST(GETDATE() AS Date)
           <paths>
             <path
               refId="Package\ETL BeschwerdeDim 1.Paths[Ausgabe der OLE DB-Quelle]"
-              endId="Package\ETL BeschwerdeDim 1\Kein Grund.Inputs[Eingabe des OLE DB-Befehls]"
+              endId="Package\ETL BeschwerdeDim 1\Sortieren.Inputs[Sortiereingabe]"
               name="Ausgabe der OLE DB-Quelle"
               startId="Package\ETL BeschwerdeDim 1\OLE DB-Quelle.Outputs[Ausgabe der OLE DB-Quelle]" />
             <path
@@ -3381,11 +3327,6 @@ SET Ende = CAST(GETDATE() AS Date)
               endId="Package\ETL BeschwerdeDim 1\Bedingtes Teilen.Inputs[Eingabe für bedingtes Teilen]"
               name="Ausgabe der Suchübereinstimmungen"
               startId="Package\ETL BeschwerdeDim 1\SQL Lookup.Outputs[Ausgabe der Suchübereinstimmungen]" />
-            <path
-              refId="Package\ETL BeschwerdeDim 1.Paths[Ausgabe des OLE DB-Befehls]"
-              endId="Package\ETL BeschwerdeDim 1\Sortieren.Inputs[Sortiereingabe]"
-              name="Ausgabe des OLE DB-Befehls"
-              startId="Package\ETL BeschwerdeDim 1\Kein Grund.Outputs[Ausgabe des OLE DB-Befehls]" />
             <path
               refId="Package\ETL BeschwerdeDim 1.Paths[geändert]"
               endId="Package\ETL BeschwerdeDim 1\Update.Inputs[Eingabe des OLE DB-Befehls]"
@@ -5768,6 +5709,14 @@ SET Ende = CAST(GETDATE() As date);</property>
       DTS:ObjectName="Einschränkung 3"
       DTS:To="Package\Create Tables" />
     <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Einschränkung 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{0CE06181-8412-4492-A28E-BC812998571F}"
+      DTS:From="Package\ETL BeschwerdeDim 1"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Einschränkung 4"
+      DTS:To="Package\Add Keine Beschwerde" />
+    <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Einschränkung 5]"
       DTS:CreationName=""
       DTS:DTSID="{CF8394CA-4932-405C-BB8D-E23B056D70D5}"
@@ -5778,8 +5727,8 @@ SET Ende = CAST(GETDATE() As date);</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Einschränkung 6]"
       DTS:CreationName=""
-      DTS:DTSID="{EA842FDB-959E-40E7-A2FD-7686AE1AB122}"
-      DTS:From="Package\ETL BeschwerdeDim 1"
+      DTS:DTSID="{F95716B5-7FC3-410F-AAB4-67DEA4556AF3}"
+      DTS:From="Package\Add Keine Beschwerde"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Einschränkung 6"
       DTS:To="Package\DatumDim Script" />
@@ -5801,17 +5750,135 @@ SET Ende = CAST(GETDATE() As date);</property>
           Id="Package\Create Tables"
           TopLeft="7.14285714285705,78.928571036529" />
         <NodeLayout
+          Size="158,42"
+          Id="Package\DatumDim Script"
+          TopLeft="532.142857142857,404.897650615441" />
+        <NodeLayout
           Size="136,42"
           Id="Package\Drop Tables"
           TopLeft="165.714285714286,6.96428567969376" />
+        <NodeLayout
+          Size="167,42"
+          Id="Package\ETL AdresseDim 1"
+          TopLeft="369.642857142857,175.366401755535" />
+        <NodeLayout
+          Size="186,42"
+          Id="Package\ETL BeschwerdeDim 1"
+          TopLeft="525.267857142857,297.241401150175" />
         <NodeLayout
           Size="177,42"
           Id="Package\ETL LieferungFakten"
           TopLeft="16.5277777777778,482.32473305755" />
         <NodeLayout
+          Size="190,42"
+          Id="Package\ETL TransportmittelDim 1"
+          TopLeft="332.767857142857,539.637233279515" />
+        <NodeLayout
           Size="138,42"
           Id="Package\Seed Tables"
           TopLeft="168.571428571429,125.74404699447" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Einschränkung]"
+          TopLeft="306.571428571429,146.74404699447">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="63.071428571428,49.6223547610647"
+              Start="0,0"
+              End="55.571428571428,49.6223547610647">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="27.535714285714,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="27.535714285714,0"
+                    Point2="31.535714285714,0"
+                    Point3="31.535714285714,4" />
+                  <mssgle:LineSegment
+                    End="31.535714285714,45.6223547610647" />
+                  <mssgle:CubicBezierSegment
+                    Point1="31.535714285714,45.6223547610647"
+                    Point2="31.535714285714,49.6223547610647"
+                    Point3="35.535714285714,49.6223547610647" />
+                  <mssgle:LineSegment
+                    End="55.571428571428,49.6223547610647" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Einschränkung 1]"
+          TopLeft="453.142857142857,217.366401755535">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="165.125,79.8749993946404"
+              Start="0,0"
+              End="165.125,72.3749993946404">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.9374996973202" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,35.9374996973202"
+                    Point2="0,39.9374996973202"
+                    Point3="4,39.9374996973202" />
+                  <mssgle:LineSegment
+                    End="161.125,39.9374996973202" />
+                  <mssgle:CubicBezierSegment
+                    Point1="161.125,39.9374996973202"
+                    Point2="165.125,39.9374996973202"
+                    Point3="165.125,43.9374996973202" />
+                  <mssgle:LineSegment
+                    End="165.125,72.3749993946404" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Einschränkung 2]"
+          TopLeft="611.392857142857,446.897650615441">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-183.625,92.7395826640745"
+              Start="0,0"
+              End="-183.625,85.2395826640745">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42.3697913320373" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,42.3697913320373"
+                    Point2="0,46.3697913320373"
+                    Point3="-4,46.3697913320373" />
+                  <mssgle:LineSegment
+                    End="-179.625,46.3697913320373" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-179.625,46.3697913320373"
+                    Point2="-183.625,46.3697913320373"
+                    Point3="-183.625,50.3697913320373" />
+                  <mssgle:LineSegment
+                    End="-183.625,85.2395826640745" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Einschränkung 3]"
           TopLeft="233.714285714286,48.9642856796938">
@@ -5875,35 +5942,35 @@ SET Ende = CAST(GETDATE() As date);</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="167,42"
-          Id="Package\ETL AdresseDim 1"
-          TopLeft="369.642857142857,175.366401755535" />
+          Size="193,42"
+          Id="Package\Add Keine Beschwerde"
+          TopLeft="831,344" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Einschränkung]"
-          TopLeft="306.571428571429,146.74404699447">
+          Id="Package.PrecedenceConstraints[Einschränkung 4]"
+          TopLeft="711.267857142857,318.241401150175">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="63.071428571428,49.6223547610647"
+              EndConnector="119.732142857143,46.758598849825"
               Start="0,0"
-              End="55.571428571428,49.6223547610647">
+              End="112.232142857143,46.758598849825">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="27.535714285714,0" />
+                    End="55.8660714285715,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="27.535714285714,0"
-                    Point2="31.535714285714,0"
-                    Point3="31.535714285714,4" />
+                    Point1="55.8660714285715,0"
+                    Point2="59.8660714285715,0"
+                    Point3="59.8660714285715,4" />
                   <mssgle:LineSegment
-                    End="31.535714285714,45.6223547610647" />
+                    End="59.8660714285715,42.758598849825" />
                   <mssgle:CubicBezierSegment
-                    Point1="31.535714285714,45.6223547610647"
-                    Point2="31.535714285714,49.6223547610647"
-                    Point3="35.535714285714,49.6223547610647" />
+                    Point1="59.8660714285715,42.758598849825"
+                    Point2="59.8660714285715,46.758598849825"
+                    Point3="63.8660714285715,46.758598849825" />
                   <mssgle:LineSegment
-                    End="55.571428571428,49.6223547610647" />
+                    End="112.232142857143,46.758598849825" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5912,100 +5979,32 @@ SET Ende = CAST(GETDATE() As date);</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="186,42"
-          Id="Package\ETL BeschwerdeDim 1"
-          TopLeft="525.267857142857,297.241401150175" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Einschränkung 1]"
-          TopLeft="453.142857142857,217.366401755535">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="165.125,79.8749993946404"
-              Start="0,0"
-              End="165.125,72.3749993946404">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35.9374996973202" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,35.9374996973202"
-                    Point2="0,39.9374996973202"
-                    Point3="4,39.9374996973202" />
-                  <mssgle:LineSegment
-                    End="161.125,39.9374996973202" />
-                  <mssgle:CubicBezierSegment
-                    Point1="161.125,39.9374996973202"
-                    Point2="165.125,39.9374996973202"
-                    Point3="165.125,43.9374996973202" />
-                  <mssgle:LineSegment
-                    End="165.125,72.3749993946404" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="158.5,42"
-          Id="Package\DatumDim Script"
-          TopLeft="532.142857142857,404.897650615441" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Einschränkung 6]"
-          TopLeft="614.830357142857,339.241401150175">
+          TopLeft="831,370.666666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,65.6562494652656"
+              EndConnector="-140.857142857143,55.2309839487743"
               Start="0,0"
-              End="0,58.1562494652656">
+              End="-133.357142857143,55.2309839487743">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,58.1562494652656" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="190,42"
-          Id="Package\ETL TransportmittelDim 1"
-          TopLeft="332.767857142857,539.637233279515" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Einschränkung 2]"
-          TopLeft="611.392857142857,446.897650615441">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-183.625,92.7395826640745"
-              Start="0,0"
-              End="-183.625,85.2395826640745">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,42.3697913320373" />
+                    End="-55.4442988204456,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,42.3697913320373"
-                    Point2="0,46.3697913320373"
-                    Point3="-4,46.3697913320373" />
+                    Point1="-55.4442988204456,0"
+                    Point2="-59.4442988204456,0"
+                    Point3="-59.4442988204456,4" />
                   <mssgle:LineSegment
-                    End="-179.625,46.3697913320373" />
+                    End="-59.4442988204456,51.2309839487743" />
                   <mssgle:CubicBezierSegment
-                    Point1="-179.625,46.3697913320373"
-                    Point2="-183.625,46.3697913320373"
-                    Point3="-183.625,50.3697913320373" />
+                    Point1="-59.4442988204456,51.2309839487743"
+                    Point2="-59.4442988204456,55.2309839487743"
+                    Point3="-63.4442988204456,55.2309839487743" />
                   <mssgle:LineSegment
-                    End="-183.625,85.2395826640745" />
+                    End="-133.357142857143,55.2309839487743" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6017,31 +6016,6 @@ SET Ende = CAST(GETDATE() As date);</property>
       </GraphLayout>
     </LayoutInfo>
   </Package>
-  <TaskHost
-    design-time-name="Package\ETL LieferungFakten">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
-        <NodeLayout
-          Size="155,42"
-          Id="Package\ETL LieferungFakten\LieferungFakten"
-          TopLeft="67,60" />
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\ETL LieferungFakten\LieferungFakten">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\ETL AdresseDim 1">
     <LayoutInfo>
@@ -6460,10 +6434,6 @@ SET Ende = CAST(GETDATE() As date);</property>
           Id="Package\ETL BeschwerdeDim 1\Sortieren"
           TopLeft="301,125" />
         <NodeLayout
-          Size="135,42"
-          Id="Package\ETL BeschwerdeDim 1\Kein Grund"
-          TopLeft="130,131" />
-        <NodeLayout
           Size="161,42"
           Id="Package\ETL BeschwerdeDim 1\Bedingtes Teilen"
           TopLeft="568,136" />
@@ -6566,28 +6536,6 @@ SET Ende = CAST(GETDATE() As date);</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ETL BeschwerdeDim 1.Paths[Ausgabe des OLE DB-Befehls]"
-          TopLeft="265,149">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="36,0"
-              Start="0,0"
-              End="28.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="28.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\ETL BeschwerdeDim 1.Paths[Ausgabe der Suchübereinstimmungen]"
           TopLeft="485.5,92.833333344095">
           <EdgeLayout.Curve>
@@ -6629,20 +6577,26 @@ SET Ende = CAST(GETDATE() As date);</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="41.5,35"
+              EndConnector="145,50"
               Start="0,0"
-              End="41.5,27.5">
+              End="137.5,50">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="37.5,0" />
+                    End="68.5,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="37.5,0"
-                    Point2="41.5,0"
-                    Point3="41.5,4" />
+                    Point1="68.5,0"
+                    Point2="72.5,0"
+                    Point3="72.5,4" />
                   <mssgle:LineSegment
-                    End="41.5,27.5" />
+                    End="72.5,46" />
+                  <mssgle:CubicBezierSegment
+                    Point1="72.5,46"
+                    Point2="72.5,50"
+                    Point3="76.5,50" />
+                  <mssgle:LineSegment
+                    End="137.5,50" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6660,7 +6614,32 @@ SET Ende = CAST(GETDATE() As date);</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\ETL LieferungFakten">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="155,42"
+          Id="Package\ETL LieferungFakten\LieferungFakten"
+          TopLeft="67,60" />
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL LieferungFakten\LieferungFakten">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
