@@ -12,8 +12,8 @@
   DTS:ObjectName="Package"
   DTS:PackageType="5"
   DTS:ProtectionLevel="2"
-  DTS:VersionBuild="92"
-  DTS:VersionGUID="{BAED8C90-A16F-4613-8F60-9BE454D0A91C}">
+  DTS:VersionBuild="93"
+  DTS:VersionGUID="{51121ED1-BCAC-4A5B-8247-D4F2E297C68F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -3869,150 +3869,6 @@ SET Ende = CAST(GETDATE() AS Date)
               </outputs>
             </component>
             <component
-              refId="Package\ETL LieferungFakten 1\HAM_Kunde"
-              componentClassID="Microsoft.OLEDBSource"
-              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
-              description="OLE DB Source"
-              name="HAM_Kunde"
-              usesDispositions="true"
-              version="7">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[Kunde]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the variable that contains the name of the database object used to open a rowset."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="The SQL command to be executed."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
-                <property
-                  dataType="System.String"
-                  description="The variable that contains the SQL command to be executed."
-                  name="SqlCommandVariable"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Forces the use of the DefaultCodePage property value when describing character data."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the mode used to access the database."
-                  name="AccessMode"
-                  typeConverter="AccessMode">0</property>
-                <property
-                  dataType="System.String"
-                  description="The mappings between the parameters in the SQL command and variables."
-                  name="ParameterMapping"></property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\ETL LieferungFakten 1\HAM_Kunde.Connections[OleDbConnection]"
-                  connectionManagerID="{7B23511D-19C0-497F-A82E-504765842600}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.Data_HAM.u573527]"
-                  description="The OLE DB runtime connection used to access the database."
-                  name="OleDbConnection" />
-              </connections>
-              <outputs>
-                <output
-                  refId="Package\ETL LieferungFakten 1\HAM_Kunde.Outputs[OLE DB Source Output]"
-                  name="OLE DB Source Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\ETL LieferungFakten 1\HAM_Kunde.Outputs[OLE DB Source Output].Columns[Kunden_Id]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL LieferungFakten 1\HAM_Kunde.Outputs[OLE DB Source Output].ExternalColumns[Kunden_Id]"
-                      lineageId="Package\ETL LieferungFakten 1\HAM_Kunde.Outputs[OLE DB Source Output].Columns[Kunden_Id]"
-                      name="Kunden_Id"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ETL LieferungFakten 1\HAM_Kunde.Outputs[OLE DB Source Output].Columns[Werk_Id]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL LieferungFakten 1\HAM_Kunde.Outputs[OLE DB Source Output].ExternalColumns[Werk_Id]"
-                      lineageId="Package\ETL LieferungFakten 1\HAM_Kunde.Outputs[OLE DB Source Output].Columns[Werk_Id]"
-                      name="Werk_Id"
-                      truncationRowDisposition="FailComponent" />
-                  </outputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\ETL LieferungFakten 1\HAM_Kunde.Outputs[OLE DB Source Output].ExternalColumns[Kunden_Id]"
-                      dataType="i4"
-                      name="Kunden_Id" />
-                    <externalMetadataColumn
-                      refId="Package\ETL LieferungFakten 1\HAM_Kunde.Outputs[OLE DB Source Output].ExternalColumns[Werk_Id]"
-                      dataType="i4"
-                      name="Werk_Id" />
-                    <externalMetadataColumn
-                      refId="Package\ETL LieferungFakten 1\HAM_Kunde.Outputs[OLE DB Source Output].ExternalColumns[Name]"
-                      dataType="wstr"
-                      length="50"
-                      name="Name" />
-                    <externalMetadataColumn
-                      refId="Package\ETL LieferungFakten 1\HAM_Kunde.Outputs[OLE DB Source Output].ExternalColumns[Anschrift]"
-                      codePage="1252"
-                      dataType="text"
-                      name="Anschrift" />
-                    <externalMetadataColumn
-                      refId="Package\ETL LieferungFakten 1\HAM_Kunde.Outputs[OLE DB Source Output].ExternalColumns[Plz]"
-                      dataType="wstr"
-                      length="10"
-                      name="Plz" />
-                    <externalMetadataColumn
-                      refId="Package\ETL LieferungFakten 1\HAM_Kunde.Outputs[OLE DB Source Output].ExternalColumns[Ort]"
-                      dataType="wstr"
-                      length="50"
-                      name="Ort" />
-                  </externalMetadataColumns>
-                </output>
-                <output
-                  refId="Package\ETL LieferungFakten 1\HAM_Kunde.Outputs[OLE DB Source Error Output]"
-                  isErrorOut="true"
-                  name="OLE DB Source Error Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\ETL LieferungFakten 1\HAM_Kunde.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\ETL LieferungFakten 1\HAM_Kunde.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\ETL LieferungFakten 1\HAM_Kunde.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\ETL LieferungFakten 1\HAM_Kunde.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                    <outputColumn
-                      refId="Package\ETL LieferungFakten 1\HAM_Kunde.Outputs[OLE DB Source Error Output].Columns[Kunden_Id]"
-                      dataType="i4"
-                      lineageId="Package\ETL LieferungFakten 1\HAM_Kunde.Outputs[OLE DB Source Error Output].Columns[Kunden_Id]"
-                      name="Kunden_Id" />
-                    <outputColumn
-                      refId="Package\ETL LieferungFakten 1\HAM_Kunde.Outputs[OLE DB Source Error Output].Columns[Werk_Id]"
-                      dataType="i4"
-                      lineageId="Package\ETL LieferungFakten 1\HAM_Kunde.Outputs[OLE DB Source Error Output].Columns[Werk_Id]"
-                      name="Werk_Id" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
               refId="Package\ETL LieferungFakten 1\HAM_Werk"
               componentClassID="Microsoft.OLEDBSource"
               contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
@@ -4092,16 +3948,6 @@ SET Ende = CAST(GETDATE() AS Date)
                       lineageId="Package\ETL LieferungFakten 1\HAM_Werk.Outputs[OLE DB Source Output].Columns[Werk_Id]"
                       name="Werk_Id"
                       truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ETL LieferungFakten 1\HAM_Werk.Outputs[OLE DB Source Output].Columns[Ort]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL LieferungFakten 1\HAM_Werk.Outputs[OLE DB Source Output].ExternalColumns[Ort]"
-                      length="50"
-                      lineageId="Package\ETL LieferungFakten 1\HAM_Werk.Outputs[OLE DB Source Output].Columns[Ort]"
-                      name="Ort"
-                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -4154,12 +4000,6 @@ SET Ende = CAST(GETDATE() AS Date)
                       dataType="i4"
                       lineageId="Package\ETL LieferungFakten 1\HAM_Werk.Outputs[OLE DB Source Error Output].Columns[Werk_Id]"
                       name="Werk_Id" />
-                    <outputColumn
-                      refId="Package\ETL LieferungFakten 1\HAM_Werk.Outputs[OLE DB Source Error Output].Columns[Ort]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\ETL LieferungFakten 1\HAM_Werk.Outputs[OLE DB Source Error Output].Columns[Ort]"
-                      name="Ort" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -4274,15 +4114,6 @@ SET Ende = CAST(GETDATE() AS Date)
                       name="LieferDatum"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\ETL LieferungFakten 1\Lieferauftrag.Outputs[OLE DB Source Output].Columns[KundenId]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL LieferungFakten 1\Lieferauftrag.Outputs[OLE DB Source Output].ExternalColumns[KundenId]"
-                      lineageId="Package\ETL LieferungFakten 1\Lieferauftrag.Outputs[OLE DB Source Output].Columns[KundenId]"
-                      name="KundenId"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
                       refId="Package\ETL LieferungFakten 1\Lieferauftrag.Outputs[OLE DB Source Output].Columns[Tm_Id]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
@@ -4383,11 +4214,6 @@ SET Ende = CAST(GETDATE() AS Date)
                       dataType="dbTimeStamp"
                       lineageId="Package\ETL LieferungFakten 1\Lieferauftrag.Outputs[OLE DB Source Error Output].Columns[Lieferdatum]"
                       name="Lieferdatum" />
-                    <outputColumn
-                      refId="Package\ETL LieferungFakten 1\Lieferauftrag.Outputs[OLE DB Source Error Output].Columns[KundenId]"
-                      dataType="i4"
-                      lineageId="Package\ETL LieferungFakten 1\Lieferauftrag.Outputs[OLE DB Source Error Output].Columns[KundenId]"
-                      name="KundenId" />
                     <outputColumn
                       refId="Package\ETL LieferungFakten 1\Lieferauftrag.Outputs[OLE DB Source Error Output].Columns[Tm_Id]"
                       dataType="i4"
@@ -4933,7 +4759,7 @@ SET Ende = CAST(GETDATE() AS Date)
                   dataType="System.Int32"
                   description="Specifies the type of join to perform."
                   name="JoinType"
-                  typeConverter="JoinType">0</property>
+                  typeConverter="JoinType">1</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the number of columns in the ordering key."
@@ -5151,235 +4977,6 @@ SET Ende = CAST(GETDATE() AS Date)
               </outputs>
             </component>
             <component
-              refId="Package\ETL LieferungFakten 1\Merge Join 1"
-              componentClassID="Microsoft.MergeJoin"
-              contactInfo="Merge Join;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-              description="Combine two sorted data flows into one using the FULL, LEFT, or INNER join. We recommend this transformation when data flows can be sorted at their sources."
-              name="Merge Join 1"
-              version="1">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the type of join to perform."
-                  name="JoinType"
-                  typeConverter="JoinType">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the number of columns in the ordering key."
-                  name="NumKeyColumns">1</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the null values are treated as equal values."
-                  name="TreatNullsAsEqual">true</property>
-                <property
-                  dataType="System.Int32"
-                  description="Indicates the requested maximum buffers per input before blocking."
-                  name="MaxBuffersPerInput">5</property>
-              </properties>
-              <inputs>
-                <input
-                  refId="Package\ETL LieferungFakten 1\Merge Join 1.Inputs[Merge Join Left Input]"
-                  hasSideEffects="true"
-                  name="Merge Join Left Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\ETL LieferungFakten 1\Merge Join 1.Inputs[Merge Join Left Input].Columns[KundenId]"
-                      cachedDataType="i4"
-                      cachedName="KundenId"
-                      cachedSortKeyPosition="1"
-                      lineageId="Package\ETL LieferungFakten 1\Sort 2.Outputs[Sort Output].Columns[KundenId]" />
-                    <inputColumn
-                      refId="Package\ETL LieferungFakten 1\Merge Join 1.Inputs[Merge Join Left Input].Columns[ZielAdresseLon]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="ZielAdresseLon"
-                      lineageId="Package\ETL LieferungFakten 1\Sort 2.Outputs[Sort Output].Columns[ZielAdresseLon]" />
-                    <inputColumn
-                      refId="Package\ETL LieferungFakten 1\Merge Join 1.Inputs[Merge Join Left Input].Columns[ZielAdresseLat]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="ZielAdresseLat"
-                      lineageId="Package\ETL LieferungFakten 1\Sort 2.Outputs[Sort Output].Columns[ZielAdresseLat]" />
-                    <inputColumn
-                      refId="Package\ETL LieferungFakten 1\Merge Join 1.Inputs[Merge Join Left Input].Columns[BestellDatum]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="BestellDatum"
-                      lineageId="Package\ETL LieferungFakten 1\Sort 2.Outputs[Sort Output].Columns[BestellDatum]" />
-                    <inputColumn
-                      refId="Package\ETL LieferungFakten 1\Merge Join 1.Inputs[Merge Join Left Input].Columns[Lieferkosten]"
-                      cachedDataType="cy"
-                      cachedName="Lieferkosten"
-                      lineageId="Package\ETL LieferungFakten 1\Sort 2.Outputs[Sort Output].Columns[Lieferkosten]" />
-                    <inputColumn
-                      refId="Package\ETL LieferungFakten 1\Merge Join 1.Inputs[Merge Join Left Input].Columns[LieferDatum]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="LieferDatum"
-                      lineageId="Package\ETL LieferungFakten 1\Sort 2.Outputs[Sort Output].Columns[LieferDatum]" />
-                    <inputColumn
-                      refId="Package\ETL LieferungFakten 1\Merge Join 1.Inputs[Merge Join Left Input].Columns[Tm_Id]"
-                      cachedDataType="i4"
-                      cachedName="Tm_Id"
-                      lineageId="Package\ETL LieferungFakten 1\Sort 2.Outputs[Sort Output].Columns[Tm_Id]" />
-                    <inputColumn
-                      refId="Package\ETL LieferungFakten 1\Merge Join 1.Inputs[Merge Join Left Input].Columns[Lieferauftrag_Id]"
-                      cachedDataType="i4"
-                      cachedName="Lieferauftrag_Id"
-                      lineageId="Package\ETL LieferungFakten 1\Sort 2.Outputs[Sort Output].Columns[Lieferauftrag_Id]" />
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-                <input
-                  refId="Package\ETL LieferungFakten 1\Merge Join 1.Inputs[Merge Join Right Input]"
-                  hasSideEffects="true"
-                  name="Merge Join Right Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\ETL LieferungFakten 1\Merge Join 1.Inputs[Merge Join Right Input].Columns[Kunden_Id]"
-                      cachedDataType="i4"
-                      cachedName="Kunden_Id"
-                      cachedSortKeyPosition="1"
-                      lineageId="Package\ETL LieferungFakten 1\Sort 3.Outputs[Sort Output].Columns[Kunden_Id]" />
-                    <inputColumn
-                      refId="Package\ETL LieferungFakten 1\Merge Join 1.Inputs[Merge Join Right Input].Columns[Werk_Id]"
-                      cachedDataType="i4"
-                      cachedName="Werk_Id"
-                      lineageId="Package\ETL LieferungFakten 1\Sort 3.Outputs[Sort Output].Columns[Werk_Id]" />
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output]"
-                  isSorted="true"
-                  name="Merge Join Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[ZielAdresseLon]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[ZielAdresseLon]"
-                      name="ZielAdresseLon">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\ETL LieferungFakten 1\Merge Join 1.Inputs[Merge Join Left Input].Columns[ZielAdresseLon]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[ZielAdresseLat]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[ZielAdresseLat]"
-                      name="ZielAdresseLat">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\ETL LieferungFakten 1\Merge Join 1.Inputs[Merge Join Left Input].Columns[ZielAdresseLat]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[BestellDatum]"
-                      dataType="dbTimeStamp"
-                      lineageId="Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[BestellDatum]"
-                      name="BestellDatum">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\ETL LieferungFakten 1\Merge Join 1.Inputs[Merge Join Left Input].Columns[BestellDatum]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[Lieferkosten]"
-                      dataType="cy"
-                      lineageId="Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[Lieferkosten]"
-                      name="Lieferkosten">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\ETL LieferungFakten 1\Merge Join 1.Inputs[Merge Join Left Input].Columns[Lieferkosten]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[LieferDatum]"
-                      dataType="dbTimeStamp"
-                      lineageId="Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[LieferDatum]"
-                      name="LieferDatum">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\ETL LieferungFakten 1\Merge Join 1.Inputs[Merge Join Left Input].Columns[LieferDatum]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[KundenId]"
-                      dataType="i4"
-                      lineageId="Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[KundenId]"
-                      name="KundenId"
-                      sortKeyPosition="1">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\ETL LieferungFakten 1\Merge Join 1.Inputs[Merge Join Left Input].Columns[KundenId]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[Tm_Id]"
-                      dataType="i4"
-                      lineageId="Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[Tm_Id]"
-                      name="Tm_Id">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\ETL LieferungFakten 1\Merge Join 1.Inputs[Merge Join Left Input].Columns[Tm_Id]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[Lieferauftrag_Id]"
-                      dataType="i4"
-                      lineageId="Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[Lieferauftrag_Id]"
-                      name="Lieferauftrag_Id">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\ETL LieferungFakten 1\Merge Join 1.Inputs[Merge Join Left Input].Columns[Lieferauftrag_Id]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[Werk_Id]"
-                      dataType="i4"
-                      lineageId="Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[Werk_Id]"
-                      name="Werk_Id">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\ETL LieferungFakten 1\Merge Join 1.Inputs[Merge Join Right Input].Columns[Werk_Id]}</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
               refId="Package\ETL LieferungFakten 1\Merge Join 2"
               componentClassID="Microsoft.MergeJoin"
               contactInfo="Merge Join;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
@@ -5391,7 +4988,7 @@ SET Ende = CAST(GETDATE() AS Date)
                   dataType="System.Int32"
                   description="Specifies the type of join to perform."
                   name="JoinType"
-                  typeConverter="JoinType">0</property>
+                  typeConverter="JoinType">1</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the number of columns in the ordering key."
@@ -5479,12 +5076,6 @@ SET Ende = CAST(GETDATE() AS Date)
                       cachedLength="50"
                       cachedName="Plz"
                       lineageId="Package\ETL LieferungFakten 1\Sort 5.Outputs[Sort Output].Columns[Plz]" />
-                    <inputColumn
-                      refId="Package\ETL LieferungFakten 1\Merge Join 2.Inputs[Merge Join Right Input].Columns[Ort]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Ort"
-                      lineageId="Package\ETL LieferungFakten 1\Sort 5.Outputs[Sort Output].Columns[Ort]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -5629,20 +5220,6 @@ SET Ende = CAST(GETDATE() AS Date)
                           name="InputColumnID">#{Package\ETL LieferungFakten 1\Merge Join 2.Inputs[Merge Join Right Input].Columns[Plz]}</property>
                       </properties>
                     </outputColumn>
-                    <outputColumn
-                      refId="Package\ETL LieferungFakten 1\Merge Join 2.Outputs[Merge Join Output].Columns[Ort]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\ETL LieferungFakten 1\Merge Join 2.Outputs[Merge Join Output].Columns[Ort]"
-                      name="Ort">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\ETL LieferungFakten 1\Merge Join 2.Inputs[Merge Join Right Input].Columns[Ort]}</property>
-                      </properties>
-                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -5664,7 +5241,7 @@ SET Ende = CAST(GETDATE() AS Date)
                 <property
                   dataType="System.Int32"
                   description="Specifies the number of columns in the ordering key."
-                  name="NumKeyColumns">2</property>
+                  name="NumKeyColumns">1</property>
                 <property
                   dataType="System.Boolean"
                   description="Indicates whether the null values are treated as equal values."
@@ -5735,12 +5312,6 @@ SET Ende = CAST(GETDATE() AS Date)
                       cachedLength="50"
                       cachedName="Plz"
                       lineageId="Package\ETL LieferungFakten 1\Sort 7.Outputs[Sort Output].Columns[Plz]" />
-                    <inputColumn
-                      refId="Package\ETL LieferungFakten 1\Merge Join 3.Inputs[Merge Join Left Input].Columns[Ort]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Ort"
-                      lineageId="Package\ETL LieferungFakten 1\Sort 7.Outputs[Sort Output].Columns[Ort]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -5761,12 +5332,6 @@ SET Ende = CAST(GETDATE() AS Date)
                       cachedLength="50"
                       cachedName="Name"
                       lineageId="Package\ETL LieferungFakten 1\Sort 6.Outputs[Sort Output].Columns[Name]" />
-                    <inputColumn
-                      refId="Package\ETL LieferungFakten 1\Merge Join 3.Inputs[Merge Join Right Input].Columns[Werk_Id]"
-                      cachedDataType="i4"
-                      cachedName="Werk_Id"
-                      cachedSortKeyPosition="2"
-                      lineageId="Package\ETL LieferungFakten 1\Sort 6.Outputs[Sort Output].Columns[Werk_Id]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -5888,8 +5453,7 @@ SET Ende = CAST(GETDATE() AS Date)
                       refId="Package\ETL LieferungFakten 1\Merge Join 3.Outputs[Merge Join Output].Columns[Werk_Id]"
                       dataType="i4"
                       lineageId="Package\ETL LieferungFakten 1\Merge Join 3.Outputs[Merge Join Output].Columns[Werk_Id]"
-                      name="Werk_Id"
-                      sortKeyPosition="2">
+                      name="Werk_Id">
                       <properties>
                         <property
                           containsID="true"
@@ -5913,20 +5477,6 @@ SET Ende = CAST(GETDATE() AS Date)
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\ETL LieferungFakten 1\Merge Join 3.Outputs[Merge Join Output].Columns[Ort]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\ETL LieferungFakten 1\Merge Join 3.Outputs[Merge Join Output].Columns[Ort]"
-                      name="Ort">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\ETL LieferungFakten 1\Merge Join 3.Inputs[Merge Join Left Input].Columns[Ort]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
                       refId="Package\ETL LieferungFakten 1\Merge Join 3.Outputs[Merge Join Output].Columns[Name]"
                       dataType="wstr"
                       length="50"
@@ -5940,17 +5490,347 @@ SET Ende = CAST(GETDATE() AS Date)
                           name="InputColumnID">#{Package\ETL LieferungFakten 1\Merge Join 3.Inputs[Merge Join Right Input].Columns[Name]}</property>
                       </properties>
                     </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL LieferungFakten 1\Merge Join 4"
+              componentClassID="Microsoft.MergeJoin"
+              contactInfo="Merge Join;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combine two sorted data flows into one using the FULL, LEFT, or INNER join. We recommend this transformation when data flows can be sorted at their sources."
+              name="Merge Join 4"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of join to perform."
+                  name="JoinType"
+                  typeConverter="JoinType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of columns in the ordering key."
+                  name="NumKeyColumns">1</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the null values are treated as equal values."
+                  name="TreatNullsAsEqual">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Indicates the requested maximum buffers per input before blocking."
+                  name="MaxBuffersPerInput">5</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Left Input]"
+                  hasSideEffects="true"
+                  name="Merge Join Left Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Left Input].Columns[Werk_Id]"
+                      cachedDataType="i4"
+                      cachedName="Werk_Id"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\ETL LieferungFakten 1\Merge Join.Outputs[Merge Join Output].Columns[Werk_Id]" />
+                    <inputColumn
+                      refId="Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Left Input].Columns[BestellDatum]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="BestellDatum"
+                      lineageId="Package\ETL LieferungFakten 1\Merge Join.Outputs[Merge Join Output].Columns[BestellDatum]" />
+                    <inputColumn
+                      refId="Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Left Input].Columns[Gewicht]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="Gewicht"
+                      lineageId="Package\ETL LieferungFakten 1\Merge Join.Outputs[Merge Join Output].Columns[Gewicht]" />
+                    <inputColumn
+                      refId="Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Left Input].Columns[Lieferdauer]"
+                      cachedDataType="i4"
+                      cachedName="Lieferdauer"
+                      lineageId="Package\ETL LieferungFakten 1\Merge Join.Outputs[Merge Join Output].Columns[Lieferdauer]" />
+                    <inputColumn
+                      refId="Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Left Input].Columns[Lieferkosten]"
+                      cachedDataType="r4"
+                      cachedName="Lieferkosten"
+                      lineageId="Package\ETL LieferungFakten 1\Merge Join.Outputs[Merge Join Output].Columns[Lieferkosten]" />
+                    <inputColumn
+                      refId="Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Left Input].Columns[Volumen]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="Volumen"
+                      lineageId="Package\ETL LieferungFakten 1\Merge Join.Outputs[Merge Join Output].Columns[Volumen]" />
+                    <inputColumn
+                      refId="Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Left Input].Columns[Rabatt]"
+                      cachedDataType="r4"
+                      cachedName="Rabatt"
+                      lineageId="Package\ETL LieferungFakten 1\Merge Join.Outputs[Merge Join Output].Columns[Rabatt]" />
+                    <inputColumn
+                      refId="Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Left Input].Columns[Tm_Id]"
+                      cachedDataType="i4"
+                      cachedName="Tm_Id"
+                      lineageId="Package\ETL LieferungFakten 1\Merge Join.Outputs[Merge Join Output].Columns[Tm_Id]" />
+                    <inputColumn
+                      refId="Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Left Input].Columns[Plz]"
+                      cachedDataType="i4"
+                      cachedName="Plz"
+                      lineageId="Package\ETL LieferungFakten 1\Merge Join.Outputs[Merge Join Output].Columns[Plz]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Right Input]"
+                  hasSideEffects="true"
+                  name="Merge Join Right Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Right Input].Columns[Werk_Id]"
+                      cachedDataType="i4"
+                      cachedName="Werk_Id"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\ETL LieferungFakten 1\Sort 9.Outputs[Sort Output].Columns[Werk_Id]" />
+                    <inputColumn
+                      refId="Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Right Input].Columns[ZielAdresseLon]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ZielAdresseLon"
+                      lineageId="Package\ETL LieferungFakten 1\Sort 9.Outputs[Sort Output].Columns[ZielAdresseLon]" />
+                    <inputColumn
+                      refId="Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Right Input].Columns[ZielAdresseLat]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ZielAdresseLat"
+                      lineageId="Package\ETL LieferungFakten 1\Sort 9.Outputs[Sort Output].Columns[ZielAdresseLat]" />
+                    <inputColumn
+                      refId="Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Right Input].Columns[LieferDatum]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="LieferDatum"
+                      lineageId="Package\ETL LieferungFakten 1\Sort 9.Outputs[Sort Output].Columns[LieferDatum]" />
+                    <inputColumn
+                      refId="Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Right Input].Columns[KundenId]"
+                      cachedDataType="i4"
+                      cachedName="KundenId"
+                      lineageId="Package\ETL LieferungFakten 1\Sort 9.Outputs[Sort Output].Columns[KundenId]" />
+                    <inputColumn
+                      refId="Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Right Input].Columns[Name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Name"
+                      lineageId="Package\ETL LieferungFakten 1\Sort 9.Outputs[Sort Output].Columns[Name]" />
+                    <inputColumn
+                      refId="Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Right Input].Columns[LieferauftragId]"
+                      cachedDataType="i4"
+                      cachedName="LieferauftragId"
+                      lineageId="Package\ETL LieferungFakten 1\Sort 9.Outputs[Sort Output].Columns[LieferauftragId]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output]"
+                  isSorted="true"
+                  name="Merge Join Output">
+                  <outputColumns>
                     <outputColumn
-                      refId="Package\ETL LieferungFakten 1\Merge Join 3.Outputs[Merge Join Output].Columns[Lieferauftrag_Id]"
-                      dataType="i4"
-                      lineageId="Package\ETL LieferungFakten 1\Merge Join 3.Outputs[Merge Join Output].Columns[Lieferauftrag_Id]"
-                      name="Lieferauftrag_Id">
+                      refId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output].Columns[BestellDatum]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output].Columns[BestellDatum]"
+                      name="BestellDatum">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.Int32"
                           description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\ETL LieferungFakten 1\Merge Join 3.Inputs[Merge Join Right Input].Columns[Lieferauftrag_Id]}</property>
+                          name="InputColumnID">#{Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Left Input].Columns[BestellDatum]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output].Columns[Gewicht]"
+                      dataType="wstr"
+                      length="20"
+                      lineageId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output].Columns[Gewicht]"
+                      name="Gewicht">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Left Input].Columns[Gewicht]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output].Columns[Lieferdauer]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output].Columns[Lieferdauer]"
+                      name="Lieferdauer">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Left Input].Columns[Lieferdauer]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output].Columns[Lieferkosten]"
+                      dataType="r4"
+                      lineageId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output].Columns[Lieferkosten]"
+                      name="Lieferkosten">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Left Input].Columns[Lieferkosten]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output].Columns[Werk_Id]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output].Columns[Werk_Id]"
+                      name="Werk_Id"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Left Input].Columns[Werk_Id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output].Columns[Volumen]"
+                      dataType="wstr"
+                      length="20"
+                      lineageId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output].Columns[Volumen]"
+                      name="Volumen">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Left Input].Columns[Volumen]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output].Columns[Rabatt]"
+                      dataType="r4"
+                      lineageId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output].Columns[Rabatt]"
+                      name="Rabatt">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Left Input].Columns[Rabatt]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output].Columns[Tm_Id]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output].Columns[Tm_Id]"
+                      name="Tm_Id">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Left Input].Columns[Tm_Id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output].Columns[Plz]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output].Columns[Plz]"
+                      name="Plz">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Left Input].Columns[Plz]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output].Columns[ZielAdresseLon]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output].Columns[ZielAdresseLon]"
+                      name="ZielAdresseLon">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Right Input].Columns[ZielAdresseLon]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output].Columns[ZielAdresseLat]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output].Columns[ZielAdresseLat]"
+                      name="ZielAdresseLat">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Right Input].Columns[ZielAdresseLat]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output].Columns[LieferDatum]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output].Columns[LieferDatum]"
+                      name="LieferDatum">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Right Input].Columns[LieferDatum]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output].Columns[KundenId]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output].Columns[KundenId]"
+                      name="KundenId">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Right Input].Columns[KundenId]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output].Columns[Name]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output].Columns[Name]"
+                      name="Name">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Right Input].Columns[Name]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output].Columns[LieferauftragId]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output].Columns[LieferauftragId]"
+                      name="LieferauftragId">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Right Input].Columns[LieferauftragId]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -6610,22 +6490,6 @@ SET Ende = CAST(GETDATE() AS Date)
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\ETL LieferungFakten 1\Sort 2.Inputs[Sort Input].Columns[KundenId]"
-                      cachedDataType="i4"
-                      cachedName="KundenId"
-                      lineageId="Package\ETL LieferungFakten 1\Lieferauftrag.Outputs[OLE DB Source Output].Columns[KundenId]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">1</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
                       refId="Package\ETL LieferungFakten 1\Sort 2.Inputs[Sort Input].Columns[Tm_Id]"
                       cachedDataType="i4"
                       cachedName="Tm_Id"
@@ -6654,7 +6518,7 @@ SET Ende = CAST(GETDATE() AS Date)
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">0</property>
+                          name="NewSortKeyPosition">1</property>
                       </properties>
                     </inputColumn>
                   </inputColumns>
@@ -6735,20 +6599,6 @@ SET Ende = CAST(GETDATE() AS Date)
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\ETL LieferungFakten 1\Sort 2.Outputs[Sort Output].Columns[KundenId]"
-                      dataType="i4"
-                      lineageId="Package\ETL LieferungFakten 1\Sort 2.Outputs[Sort Output].Columns[KundenId]"
-                      name="KundenId"
-                      sortKeyPosition="1">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\ETL LieferungFakten 1\Lieferauftrag.Outputs[OLE DB Source Output].Columns[KundenId]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
                       refId="Package\ETL LieferungFakten 1\Sort 2.Outputs[Sort Output].Columns[Tm_Id]"
                       dataType="i4"
                       lineageId="Package\ETL LieferungFakten 1\Sort 2.Outputs[Sort Output].Columns[Tm_Id]"
@@ -6765,110 +6615,14 @@ SET Ende = CAST(GETDATE() AS Date)
                       refId="Package\ETL LieferungFakten 1\Sort 2.Outputs[Sort Output].Columns[Lieferauftrag_Id]"
                       dataType="i4"
                       lineageId="Package\ETL LieferungFakten 1\Sort 2.Outputs[Sort Output].Columns[Lieferauftrag_Id]"
-                      name="Lieferauftrag_Id">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\ETL LieferungFakten 1\Lieferauftrag.Outputs[OLE DB Source Output].Columns[Lieferauftrag_Id]}</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\ETL LieferungFakten 1\Sort 3"
-              componentClassID="Microsoft.Sort"
-              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
-              name="Sort 3"
-              version="1">
-              <properties>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
-                  name="EliminateDuplicates">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the maximum number of threads to use for sorting."
-                  expressionType="Notify"
-                  name="MaximumThreads">-1</property>
-              </properties>
-              <inputs>
-                <input
-                  refId="Package\ETL LieferungFakten 1\Sort 3.Inputs[Sort Input]"
-                  name="Sort Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\ETL LieferungFakten 1\Sort 3.Inputs[Sort Input].Columns[Kunden_Id]"
-                      cachedDataType="i4"
-                      cachedName="Kunden_Id"
-                      lineageId="Package\ETL LieferungFakten 1\HAM_Kunde.Outputs[OLE DB Source Output].Columns[Kunden_Id]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">1</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\ETL LieferungFakten 1\Sort 3.Inputs[Sort Input].Columns[Werk_Id]"
-                      cachedDataType="i4"
-                      cachedName="Werk_Id"
-                      lineageId="Package\ETL LieferungFakten 1\HAM_Kunde.Outputs[OLE DB Source Output].Columns[Werk_Id]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">0</property>
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\ETL LieferungFakten 1\Sort 3.Outputs[Sort Output]"
-                  isSorted="true"
-                  name="Sort Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\ETL LieferungFakten 1\Sort 3.Outputs[Sort Output].Columns[Kunden_Id]"
-                      dataType="i4"
-                      lineageId="Package\ETL LieferungFakten 1\Sort 3.Outputs[Sort Output].Columns[Kunden_Id]"
-                      name="Kunden_Id"
+                      name="Lieferauftrag_Id"
                       sortKeyPosition="1">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\ETL LieferungFakten 1\HAM_Kunde.Outputs[OLE DB Source Output].Columns[Kunden_Id]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\ETL LieferungFakten 1\Sort 3.Outputs[Sort Output].Columns[Werk_Id]"
-                      dataType="i4"
-                      lineageId="Package\ETL LieferungFakten 1\Sort 3.Outputs[Sort Output].Columns[Werk_Id]"
-                      name="Werk_Id">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\ETL LieferungFakten 1\HAM_Kunde.Outputs[OLE DB Source Output].Columns[Werk_Id]}</property>
+                          name="SortColumnId">#{Package\ETL LieferungFakten 1\Lieferauftrag.Outputs[OLE DB Source Output].Columns[Lieferauftrag_Id]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -6904,7 +6658,7 @@ SET Ende = CAST(GETDATE() AS Date)
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="ZielAdresseLon"
-                      lineageId="Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[ZielAdresseLon]">
+                      lineageId="Package\ETL LieferungFakten 1\819:invalid">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -6921,7 +6675,7 @@ SET Ende = CAST(GETDATE() AS Date)
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="ZielAdresseLat"
-                      lineageId="Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[ZielAdresseLat]">
+                      lineageId="Package\ETL LieferungFakten 1\822:invalid">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -6937,7 +6691,7 @@ SET Ende = CAST(GETDATE() AS Date)
                       refId="Package\ETL LieferungFakten 1\Sort 4.Inputs[Sort Input].Columns[BestellDatum]"
                       cachedDataType="dbTimeStamp"
                       cachedName="BestellDatum"
-                      lineageId="Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[BestellDatum]">
+                      lineageId="Package\ETL LieferungFakten 1\825:invalid">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -6953,7 +6707,7 @@ SET Ende = CAST(GETDATE() AS Date)
                       refId="Package\ETL LieferungFakten 1\Sort 4.Inputs[Sort Input].Columns[Lieferkosten]"
                       cachedDataType="cy"
                       cachedName="Lieferkosten"
-                      lineageId="Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[Lieferkosten]">
+                      lineageId="Package\ETL LieferungFakten 1\828:invalid">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -6969,7 +6723,7 @@ SET Ende = CAST(GETDATE() AS Date)
                       refId="Package\ETL LieferungFakten 1\Sort 4.Inputs[Sort Input].Columns[LieferDatum]"
                       cachedDataType="dbTimeStamp"
                       cachedName="LieferDatum"
-                      lineageId="Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[LieferDatum]">
+                      lineageId="Package\ETL LieferungFakten 1\831:invalid">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -6986,7 +6740,7 @@ SET Ende = CAST(GETDATE() AS Date)
                       cachedDataType="i4"
                       cachedName="KundenId"
                       cachedSortKeyPosition="1"
-                      lineageId="Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[KundenId]">
+                      lineageId="Package\ETL LieferungFakten 1\833:invalid">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -7002,7 +6756,7 @@ SET Ende = CAST(GETDATE() AS Date)
                       refId="Package\ETL LieferungFakten 1\Sort 4.Inputs[Sort Input].Columns[Tm_Id]"
                       cachedDataType="i4"
                       cachedName="Tm_Id"
-                      lineageId="Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[Tm_Id]">
+                      lineageId="Package\ETL LieferungFakten 1\836:invalid">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -7018,7 +6772,7 @@ SET Ende = CAST(GETDATE() AS Date)
                       refId="Package\ETL LieferungFakten 1\Sort 4.Inputs[Sort Input].Columns[Lieferauftrag_Id]"
                       cachedDataType="i4"
                       cachedName="Lieferauftrag_Id"
-                      lineageId="Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[Lieferauftrag_Id]">
+                      lineageId="Package\ETL LieferungFakten 1\839:invalid">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -7034,7 +6788,7 @@ SET Ende = CAST(GETDATE() AS Date)
                       refId="Package\ETL LieferungFakten 1\Sort 4.Inputs[Sort Input].Columns[Werk_Id]"
                       cachedDataType="i4"
                       cachedName="Werk_Id"
-                      lineageId="Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[Werk_Id]">
+                      lineageId="Package\ETL LieferungFakten 1\1806:invalid">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -7067,7 +6821,7 @@ SET Ende = CAST(GETDATE() AS Date)
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[ZielAdresseLon]}</property>
+                          name="SortColumnId">#{Package\ETL LieferungFakten 1\819:invalid}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -7081,7 +6835,7 @@ SET Ende = CAST(GETDATE() AS Date)
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[ZielAdresseLat]}</property>
+                          name="SortColumnId">#{Package\ETL LieferungFakten 1\822:invalid}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -7094,7 +6848,7 @@ SET Ende = CAST(GETDATE() AS Date)
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[BestellDatum]}</property>
+                          name="SortColumnId">#{Package\ETL LieferungFakten 1\825:invalid}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -7107,7 +6861,7 @@ SET Ende = CAST(GETDATE() AS Date)
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[Lieferkosten]}</property>
+                          name="SortColumnId">#{Package\ETL LieferungFakten 1\828:invalid}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -7120,7 +6874,7 @@ SET Ende = CAST(GETDATE() AS Date)
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[LieferDatum]}</property>
+                          name="SortColumnId">#{Package\ETL LieferungFakten 1\831:invalid}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -7133,7 +6887,7 @@ SET Ende = CAST(GETDATE() AS Date)
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[KundenId]}</property>
+                          name="SortColumnId">#{Package\ETL LieferungFakten 1\833:invalid}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -7146,7 +6900,7 @@ SET Ende = CAST(GETDATE() AS Date)
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[Tm_Id]}</property>
+                          name="SortColumnId">#{Package\ETL LieferungFakten 1\836:invalid}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -7159,7 +6913,7 @@ SET Ende = CAST(GETDATE() AS Date)
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[Lieferauftrag_Id]}</property>
+                          name="SortColumnId">#{Package\ETL LieferungFakten 1\839:invalid}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -7173,7 +6927,7 @@ SET Ende = CAST(GETDATE() AS Date)
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output].Columns[Werk_Id]}</property>
+                          name="SortColumnId">#{Package\ETL LieferungFakten 1\1806:invalid}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -7237,23 +6991,6 @@ SET Ende = CAST(GETDATE() AS Date)
                           name="NewSortKeyPosition">1</property>
                       </properties>
                     </inputColumn>
-                    <inputColumn
-                      refId="Package\ETL LieferungFakten 1\Sort 5.Inputs[Sort Input].Columns[Ort]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Ort"
-                      lineageId="Package\ETL LieferungFakten 1\HAM_Werk.Outputs[OLE DB Source Output].Columns[Ort]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">0</property>
-                      </properties>
-                    </inputColumn>
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -7290,20 +7027,6 @@ SET Ende = CAST(GETDATE() AS Date)
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
                           name="SortColumnId">#{Package\ETL LieferungFakten 1\HAM_Werk.Outputs[OLE DB Source Output].Columns[Werk_Id]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\ETL LieferungFakten 1\Sort 5.Outputs[Sort Output].Columns[Ort]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\ETL LieferungFakten 1\Sort 5.Outputs[Sort Output].Columns[Ort]"
-                      name="Ort">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\ETL LieferungFakten 1\HAM_Werk.Outputs[OLE DB Source Output].Columns[Ort]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -7364,7 +7087,7 @@ SET Ende = CAST(GETDATE() AS Date)
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">2</property>
+                          name="NewSortKeyPosition">0</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -7411,8 +7134,7 @@ SET Ende = CAST(GETDATE() AS Date)
                       refId="Package\ETL LieferungFakten 1\Sort 6.Outputs[Sort Output].Columns[Werk_Id]"
                       dataType="i4"
                       lineageId="Package\ETL LieferungFakten 1\Sort 6.Outputs[Sort Output].Columns[Werk_Id]"
-                      name="Werk_Id"
-                      sortKeyPosition="2">
+                      name="Werk_Id">
                       <properties>
                         <property
                           containsID="true"
@@ -7627,23 +7349,6 @@ SET Ende = CAST(GETDATE() AS Date)
                           name="NewSortKeyPosition">0</property>
                       </properties>
                     </inputColumn>
-                    <inputColumn
-                      refId="Package\ETL LieferungFakten 1\Sort 7.Inputs[Sort Input].Columns[Ort]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Ort"
-                      lineageId="Package\ETL LieferungFakten 1\Merge Join 2.Outputs[Merge Join Output].Columns[Ort]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">0</property>
-                      </properties>
-                    </inputColumn>
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -7787,20 +7492,6 @@ SET Ende = CAST(GETDATE() AS Date)
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
                           name="SortColumnId">#{Package\ETL LieferungFakten 1\Merge Join 2.Outputs[Merge Join Output].Columns[Plz]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\ETL LieferungFakten 1\Sort 7.Outputs[Sort Output].Columns[Ort]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\ETL LieferungFakten 1\Sort 7.Outputs[Sort Output].Columns[Ort]"
-                      name="Ort">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\ETL LieferungFakten 1\Merge Join 2.Outputs[Merge Join Output].Columns[Ort]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -8070,7 +7761,7 @@ SET Ende = CAST(GETDATE() AS Date)
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">2</property>
+                          name="NewSortKeyPosition">0</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -8094,7 +7785,6 @@ SET Ende = CAST(GETDATE() AS Date)
                       refId="Package\ETL LieferungFakten 1\Sort 9.Inputs[Sort Input].Columns[Werk_Id]"
                       cachedDataType="i4"
                       cachedName="Werk_Id"
-                      cachedSortKeyPosition="2"
                       lineageId="Package\ETL LieferungFakten 1\Merge Join 3.Outputs[Merge Join Output].Columns[Werk_Id]">
                       <properties>
                         <property
@@ -8125,44 +7815,11 @@ SET Ende = CAST(GETDATE() AS Date)
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\ETL LieferungFakten 1\Sort 9.Inputs[Sort Input].Columns[Ort]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Ort"
-                      lineageId="Package\ETL LieferungFakten 1\Merge Join 3.Outputs[Merge Join Output].Columns[Ort]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">0</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
                       refId="Package\ETL LieferungFakten 1\Sort 9.Inputs[Sort Input].Columns[Name]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Name"
                       lineageId="Package\ETL LieferungFakten 1\Merge Join 3.Outputs[Merge Join Output].Columns[Name]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">0</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\ETL LieferungFakten 1\Sort 9.Inputs[Sort Input].Columns[Lieferauftrag_Id]"
-                      cachedDataType="i4"
-                      cachedName="Lieferauftrag_Id"
-                      lineageId="Package\ETL LieferungFakten 1\Merge Join 3.Outputs[Merge Join Output].Columns[Lieferauftrag_Id]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -8268,8 +7925,7 @@ SET Ende = CAST(GETDATE() AS Date)
                       refId="Package\ETL LieferungFakten 1\Sort 9.Outputs[Sort Output].Columns[Tm_Id]"
                       dataType="i4"
                       lineageId="Package\ETL LieferungFakten 1\Sort 9.Outputs[Sort Output].Columns[Tm_Id]"
-                      name="Tm_Id"
-                      sortKeyPosition="2">
+                      name="Tm_Id">
                       <properties>
                         <property
                           containsID="true"
@@ -8320,20 +7976,6 @@ SET Ende = CAST(GETDATE() AS Date)
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\ETL LieferungFakten 1\Sort 9.Outputs[Sort Output].Columns[Ort]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\ETL LieferungFakten 1\Sort 9.Outputs[Sort Output].Columns[Ort]"
-                      name="Ort">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\ETL LieferungFakten 1\Merge Join 3.Outputs[Merge Join Output].Columns[Ort]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
                       refId="Package\ETL LieferungFakten 1\Sort 9.Outputs[Sort Output].Columns[Name]"
                       dataType="wstr"
                       length="50"
@@ -8345,19 +7987,6 @@ SET Ende = CAST(GETDATE() AS Date)
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
                           name="SortColumnId">#{Package\ETL LieferungFakten 1\Merge Join 3.Outputs[Merge Join Output].Columns[Name]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\ETL LieferungFakten 1\Sort 9.Outputs[Sort Output].Columns[Lieferauftrag_Id]"
-                      dataType="i4"
-                      lineageId="Package\ETL LieferungFakten 1\Sort 9.Outputs[Sort Output].Columns[Lieferauftrag_Id]"
-                      name="Lieferauftrag_Id">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\ETL LieferungFakten 1\Merge Join 3.Outputs[Merge Join Output].Columns[Lieferauftrag_Id]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -8373,20 +8002,30 @@ SET Ende = CAST(GETDATE() AS Date)
               name="Derived Column Output"
               startId="Package\ETL LieferungFakten 1\Masse bereinigen.Outputs[Derived Column Output]" />
             <path
-              refId="Package\ETL LieferungFakten 1.Paths[Merge Join Output1]"
+              refId="Package\ETL LieferungFakten 1.Paths[Merge Join Output]"
               endId="Package\ETL LieferungFakten 1\Sort 7.Inputs[Sort Input]"
               name="Merge Join Output"
               startId="Package\ETL LieferungFakten 1\Merge Join 2.Outputs[Merge Join Output]" />
             <path
-              refId="Package\ETL LieferungFakten 1.Paths[Merge Join Output]"
-              endId="Package\ETL LieferungFakten 1\Sort 4.Inputs[Sort Input]"
-              name="Merge Join Output"
-              startId="Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output]" />
-            <path
-              refId="Package\ETL LieferungFakten 1.Paths[Merge Join Output2]"
+              refId="Package\ETL LieferungFakten 1.Paths[Merge Join Output1]"
               endId="Package\ETL LieferungFakten 1\Sort 9.Inputs[Sort Input]"
               name="Merge Join Output"
               startId="Package\ETL LieferungFakten 1\Merge Join 3.Outputs[Merge Join Output]" />
+            <path
+              refId="Package\ETL LieferungFakten 1.Paths[Merge Join Output2]"
+              endId="Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Left Input]"
+              name="Merge Join Output"
+              startId="Package\ETL LieferungFakten 1\Merge Join.Outputs[Merge Join Output]" />
+            <path
+              refId="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output]"
+              endId="Package\ETL LieferungFakten 1\Sort.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\ETL LieferungFakten 1\Lieferung.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output1]"
+              endId="Package\ETL LieferungFakten 1\Sort 1.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\ETL LieferungFakten 1\FRA_Werk.Outputs[OLE DB Source Output]" />
             <path
               refId="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output2]"
               endId="Package\ETL LieferungFakten 1\Sort 2.Inputs[Sort Input]"
@@ -8394,34 +8033,24 @@ SET Ende = CAST(GETDATE() AS Date)
               startId="Package\ETL LieferungFakten 1\Lieferauftrag.Outputs[OLE DB Source Output]" />
             <path
               refId="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output3]"
-              endId="Package\ETL LieferungFakten 1\Sort 3.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\ETL LieferungFakten 1\HAM_Kunde.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output6]"
-              endId="Package\ETL LieferungFakten 1\Sort 8.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\ETL LieferungFakten 1\Beschwerde.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output4]"
-              endId="Package\ETL LieferungFakten 1\Sort 5.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\ETL LieferungFakten 1\HAM_Werk.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output5]"
               endId="Package\ETL LieferungFakten 1\Sort 6.Inputs[Sort Input]"
               name="OLE DB Source Output"
               startId="Package\ETL LieferungFakten 1\Produkt.Outputs[OLE DB Source Output]" />
             <path
-              refId="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output1]"
-              endId="Package\ETL LieferungFakten 1\Sort 1.Inputs[Sort Input]"
+              refId="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output4]"
+              endId="Package\ETL LieferungFakten 1\Sort 8.Inputs[Sort Input]"
               name="OLE DB Source Output"
-              startId="Package\ETL LieferungFakten 1\FRA_Werk.Outputs[OLE DB Source Output]" />
+              startId="Package\ETL LieferungFakten 1\Beschwerde.Outputs[OLE DB Source Output]" />
             <path
-              refId="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output]"
-              endId="Package\ETL LieferungFakten 1\Sort.Inputs[Sort Input]"
+              refId="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output5]"
+              endId="Package\ETL LieferungFakten 1\Sort 5.Inputs[Sort Input]"
               name="OLE DB Source Output"
-              startId="Package\ETL LieferungFakten 1\Lieferung.Outputs[OLE DB Source Output]" />
+              startId="Package\ETL LieferungFakten 1\HAM_Werk.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\ETL LieferungFakten 1.Paths[Sort Output]"
+              endId="Package\ETL LieferungFakten 1\Masse bereinigen.Inputs[Derived Column Input]"
+              name="Sort Output"
+              startId="Package\ETL LieferungFakten 1\Sort.Outputs[Sort Output]" />
             <path
               refId="Package\ETL LieferungFakten 1.Paths[Sort Output1]"
               endId="Package\ETL LieferungFakten 1\Merge Join.Inputs[Merge Join Right Input]"
@@ -8429,39 +8058,24 @@ SET Ende = CAST(GETDATE() AS Date)
               startId="Package\ETL LieferungFakten 1\Sort 1.Outputs[Sort Output]" />
             <path
               refId="Package\ETL LieferungFakten 1.Paths[Sort Output2]"
-              endId="Package\ETL LieferungFakten 1\Merge Join 1.Inputs[Merge Join Left Input]"
-              name="Sort Output"
-              startId="Package\ETL LieferungFakten 1\Sort 2.Outputs[Sort Output]" />
-            <path
-              refId="Package\ETL LieferungFakten 1.Paths[Sort Output3]"
-              endId="Package\ETL LieferungFakten 1\Merge Join 1.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\ETL LieferungFakten 1\Sort 3.Outputs[Sort Output]" />
-            <path
-              refId="Package\ETL LieferungFakten 1.Paths[Sort Output4]"
               endId="Package\ETL LieferungFakten 1\Merge Join 2.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\ETL LieferungFakten 1\Sort 4.Outputs[Sort Output]" />
             <path
-              refId="Package\ETL LieferungFakten 1.Paths[Sort Output5]"
+              refId="Package\ETL LieferungFakten 1.Paths[Sort Output3]"
               endId="Package\ETL LieferungFakten 1\Merge Join 2.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\ETL LieferungFakten 1\Sort 5.Outputs[Sort Output]" />
             <path
-              refId="Package\ETL LieferungFakten 1.Paths[Sort Output]"
-              endId="Package\ETL LieferungFakten 1\Masse bereinigen.Inputs[Derived Column Input]"
-              name="Sort Output"
-              startId="Package\ETL LieferungFakten 1\Sort.Outputs[Sort Output]" />
-            <path
-              refId="Package\ETL LieferungFakten 1.Paths[Sort Output6]"
+              refId="Package\ETL LieferungFakten 1.Paths[Sort Output4]"
               endId="Package\ETL LieferungFakten 1\Merge Join 3.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\ETL LieferungFakten 1\Sort 7.Outputs[Sort Output]" />
             <path
-              refId="Package\ETL LieferungFakten 1.Paths[Sort Output7]"
-              endId="Package\ETL LieferungFakten 1\Merge Join 3.Inputs[Merge Join Right Input]"
+              refId="Package\ETL LieferungFakten 1.Paths[Sort Output5]"
+              endId="Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Right Input]"
               name="Sort Output"
-              startId="Package\ETL LieferungFakten 1\Sort 6.Outputs[Sort Output]" />
+              startId="Package\ETL LieferungFakten 1\Sort 9.Outputs[Sort Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -11891,46 +11505,46 @@ SET Ende = CAST(GETDATE() As date);</property>
         <NodeLayout
           Size="123,42"
           Id="Package\ETL LieferungFakten 1\Lieferung"
-          TopLeft="22.8333333333333,30.5" />
+          TopLeft="22.8333333333333,45.5" />
         <NodeLayout
           Size="162,42"
           Id="Package\ETL LieferungFakten 1\Masse bereinigen"
-          TopLeft="29.6666666666667,216.5" />
+          TopLeft="29.6666666666667,231.5" />
         <NodeLayout
           Size="115,42"
           Id="Package\ETL LieferungFakten 1\Produkt"
-          TopLeft="881.79166666667,37.6666666666667" />
+          TopLeft="542.625000000003,51" />
         <NodeLayout
           Size="98.5,42"
           Id="Package\ETL LieferungFakten 1\Sort"
-          TopLeft="37,126" />
+          TopLeft="37,141" />
         <NodeLayout
           Size="138,42"
           Id="Package\ETL LieferungFakten 1\Lieferauftrag"
-          TopLeft="363.875,35.0833333333333" />
+          TopLeft="363.875,50.0833333333333" />
         <NodeLayout
           Size="130.5,44.5"
           Id="Package\ETL LieferungFakten 1\FRA_Werk"
-          TopLeft="185.5,35.8333333333333" />
+          TopLeft="185.5,51.6666666666666" />
         <NodeLayout
           Size="132.5,42"
           Id="Package\ETL LieferungFakten 1\HAM_Werk"
-          TopLeft="711.375,36.5833333333333" />
+          TopLeft="711.375,52.4166666666666" />
         <NodeLayout
           Size="135,42"
           Id="Package\ETL LieferungFakten 1\Geoposition"
-          TopLeft="1217.25,39.625" />
+          TopLeft="1217.25,54.625" />
         <NodeLayout
           Size="155,42"
           Id="Package\ETL LieferungFakten 1\LieferungFakten"
-          TopLeft="448.833333333333,770" />
+          TopLeft="448.833333333333,784.999999999999" />
         <NodeLayout
           Size="137,42"
           Id="Package\ETL LieferungFakten 1\Beschwerde"
-          TopLeft="1039.5,37.625" />
+          TopLeft="1039.5,52.625" />
         <EdgeLayout
           Id="Package\ETL LieferungFakten 1.Paths[Sort Output]"
-          TopLeft="86.25,168">
+          TopLeft="86.25,183">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -11964,7 +11578,7 @@ SET Ende = CAST(GETDATE() As date);</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output]"
-          TopLeft="85.2916666666667,72.5">
+          TopLeft="85.2916666666667,87.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -11987,21 +11601,21 @@ SET Ende = CAST(GETDATE() As date);</property>
         <NodeLayout
           Size="107,42"
           Id="Package\ETL LieferungFakten 1\Sort 1"
-          TopLeft="198.666666666667,124.5" />
+          TopLeft="198.666666666667,139.5" />
         <EdgeLayout
           Id="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output1]"
-          TopLeft="251.458333333333,80.3333333333333">
+          TopLeft="251.458333333333,96.1666666666666">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,44.1666666666662"
+              EndConnector="0,43.3333333333329"
               Start="0,0"
-              End="0,36.6666666666662">
+              End="0,35.8333333333329">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,36.6666666666662" />
+                    End="0,35.8333333333329" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -12013,33 +11627,33 @@ SET Ende = CAST(GETDATE() As date);</property>
         <NodeLayout
           Size="131,42"
           Id="Package\ETL LieferungFakten 1\Merge Join"
-          TopLeft="151.666666666667,301.666666666667" />
+          TopLeft="148.333333333333,320.833333333334" />
         <EdgeLayout
           Id="Package\ETL LieferungFakten 1.Paths[Derived Column Output]"
-          TopLeft="110.666666666667,258.5">
+          TopLeft="110.666666666667,273.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="86,43.166666666667"
+              EndConnector="82.6666666666667,47.3333333333338"
               Start="0,0"
-              End="86,35.666666666667">
+              End="82.6666666666667,39.8333333333338">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21.5874811463049" />
+                    End="0,24.0573152337861" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,21.5874811463049"
-                    Point2="0,25.5874811463049"
-                    Point3="4,25.5874811463049" />
+                    Point1="0,24.0573152337861"
+                    Point2="0,28.0573152337861"
+                    Point3="4,28.0573152337861" />
                   <mssgle:LineSegment
-                    End="82,25.5874811463049" />
+                    End="78.6666666666667,28.0573152337861" />
                   <mssgle:CubicBezierSegment
-                    Point1="82,25.5874811463049"
-                    Point2="86,25.5874811463049"
-                    Point3="86,29.5874811463049" />
+                    Point1="78.6666666666667,28.0573152337861"
+                    Point2="82.6666666666667,28.0573152337861"
+                    Point3="82.6666666666667,32.0573152337861" />
                   <mssgle:LineSegment
-                    End="86,35.666666666667" />
+                    End="82.6666666666667,39.8333333333338" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -12050,30 +11664,30 @@ SET Ende = CAST(GETDATE() As date);</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\ETL LieferungFakten 1.Paths[Sort Output1]"
-          TopLeft="252.166666666667,166.5">
+          TopLeft="252.166666666667,181.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-14.5,135.166666666667"
+              EndConnector="-17.8333333333333,139.333333333334"
               Start="0,0"
-              End="-14.5,127.666666666667">
+              End="-17.8333333333333,131.833333333334">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,76.1214177978887" />
+                    End="0,78.5912518853699" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,76.1214177978887"
-                    Point2="0,80.1214177978887"
-                    Point3="-4,80.1214177978887" />
+                    Point1="0,78.5912518853699"
+                    Point2="0,82.5912518853699"
+                    Point3="-4,82.5912518853699" />
                   <mssgle:LineSegment
-                    End="-10.5,80.1214177978887" />
+                    End="-13.8333333333333,82.5912518853699" />
                   <mssgle:CubicBezierSegment
-                    Point1="-10.5,80.1214177978887"
-                    Point2="-14.5,80.1214177978887"
-                    Point3="-14.5,84.1214177978887" />
+                    Point1="-13.8333333333333,82.5912518853699"
+                    Point2="-17.8333333333333,82.5912518853699"
+                    Point3="-17.8333333333333,86.5912518853699" />
                   <mssgle:LineSegment
-                    End="-14.5,127.666666666667" />
+                    End="-17.8333333333333,131.833333333334" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -12085,10 +11699,10 @@ SET Ende = CAST(GETDATE() As date);</property>
         <NodeLayout
           Size="107,42"
           Id="Package\ETL LieferungFakten 1\Sort 2"
-          TopLeft="377.5,121.666666666667" />
+          TopLeft="377.5,136.666666666667" />
         <EdgeLayout
           Id="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output2]"
-          TopLeft="431.9375,77.0833333333333">
+          TopLeft="431.9375,92.0833333333333">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -12109,166 +11723,20 @@ SET Ende = CAST(GETDATE() As date);</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="138.5,42"
-          Id="Package\ETL LieferungFakten 1\HAM_Kunde"
-          TopLeft="538.333333333333,37.5" />
-        <NodeLayout
-          Size="139.5,42"
-          Id="Package\ETL LieferungFakten 1\Merge Join 1"
-          TopLeft="452.5,216.666666666667" />
-        <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[Sort Output2]"
-          TopLeft="431,163.666666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="91.25,53"
-              Start="0,0"
-              End="91.25,45.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,22.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,22.5"
-                    Point2="0,26.5"
-                    Point3="4,26.5" />
-                  <mssgle:LineSegment
-                    End="87.25,26.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="87.25,26.5"
-                    Point2="91.25,26.5"
-                    Point3="91.25,30.5" />
-                  <mssgle:LineSegment
-                    End="91.25,45.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="107,42"
-          Id="Package\ETL LieferungFakten 1\Sort 3"
-          TopLeft="554.166666666667,122.5" />
-        <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[Sort Output3]"
-          TopLeft="607.666666666667,164.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-63.5,52.1666666666667"
-              Start="0,0"
-              End="-63.5,44.6666666666667">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.9450744153083" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,26.9450744153083"
-                    Point2="0,30.9450744153083"
-                    Point3="-4,30.9450744153083" />
-                  <mssgle:LineSegment
-                    End="-59.5,30.9450744153083" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-59.5,30.9450744153083"
-                    Point2="-63.5,30.9450744153083"
-                    Point3="-63.5,34.9450744153083" />
-                  <mssgle:LineSegment
-                    End="-63.5,44.6666666666667" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output3]"
-          TopLeft="607.625,79.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,43"
-              Start="0,0"
-              End="0,35.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
           Size="107,42"
           Id="Package\ETL LieferungFakten 1\Sort 4"
-          TopLeft="461.666666666667,295.833333333333" />
-        <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[Merge Join Output]"
-          TopLeft="518.708333333333,258.666666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,37.1666666666667"
-              Start="0,0"
-              End="0,29.6666666666667">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,29.6666666666667" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="461.666666666667,310.833333333334" />
         <NodeLayout
           Size="107,42"
           Id="Package\ETL LieferungFakten 1\Sort 5"
-          TopLeft="727.5,298.333333333333" />
-        <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output4]"
-          TopLeft="779.3125,78.5833333333333">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,219.75"
-              Start="0,0"
-              End="0,212.25">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,212.25" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="728.333333333333,314.166666666667" />
         <NodeLayout
           Size="139.5,42"
           Id="Package\ETL LieferungFakten 1\Merge Join 2"
-          TopLeft="590,376.666666666667" />
+          TopLeft="590,391.666666666667" />
         <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[Sort Output4]"
-          TopLeft="515.166666666667,337.833333333333">
+          Id="Package\ETL LieferungFakten 1.Paths[Sort Output2]"
+          TopLeft="515.166666666667,352.833333333334">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -12301,31 +11769,31 @@ SET Ende = CAST(GETDATE() As date);</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[Sort Output5]"
-          TopLeft="781,340.333333333333">
+          Id="Package\ETL LieferungFakten 1.Paths[Sort Output3]"
+          TopLeft="781.833333333333,356.166666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-99.3333333333334,36.3333333333334"
+              EndConnector="-100.166666666667,35.5000000000001"
               Start="0,0"
-              End="-99.3333333333334,28.8333333333334">
+              End="-100.166666666667,28.0000000000001">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,17.5527994330262" />
+                    End="0,17.0584691708009" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,17.5527994330262"
-                    Point2="0,21.5527994330262"
-                    Point3="-4,21.5527994330262" />
+                    Point1="0,17.0584691708009"
+                    Point2="0,21.0584691708009"
+                    Point3="-4,21.0584691708009" />
                   <mssgle:LineSegment
-                    End="-95.3333333333334,21.5527994330262" />
+                    End="-96.1666666666666,21.0584691708009" />
                   <mssgle:CubicBezierSegment
-                    Point1="-95.3333333333334,21.5527994330262"
-                    Point2="-99.3333333333334,21.5527994330262"
-                    Point3="-99.3333333333334,25.5527994330262" />
+                    Point1="-96.1666666666666,21.0584691708009"
+                    Point2="-100.166666666667,21.0584691708009"
+                    Point3="-100.166666666667,25.0584691708009" />
                   <mssgle:LineSegment
-                    End="-99.3333333333334,28.8333333333334" />
+                    End="-100.166666666667,28.0000000000001" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -12337,21 +11805,21 @@ SET Ende = CAST(GETDATE() As date);</property>
         <NodeLayout
           Size="107,42"
           Id="Package\ETL LieferungFakten 1\Sort 6"
-          TopLeft="886.666666666667,115" />
+          TopLeft="548.333333333333,135.833333333333" />
         <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output5]"
-          TopLeft="939.729166666668,79.6666666666667">
+          Id="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output3]"
+          TopLeft="600.979166666668,93">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,35.3333333333333"
+              EndConnector="0,42.8333333333333"
               Start="0,0"
-              End="0,27.8333333333333">
+              End="0,35.3333333333333">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,27.8333333333333" />
+                    End="0,35.3333333333333" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -12363,10 +11831,10 @@ SET Ende = CAST(GETDATE() As date);</property>
         <NodeLayout
           Size="107,42"
           Id="Package\ETL LieferungFakten 1\Sort 7"
-          TopLeft="609.166666666667,442.5" />
+          TopLeft="609.166666666667,457.5" />
         <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[Merge Join Output1]"
-          TopLeft="661.208333333333,418.666666666667">
+          Id="Package\ETL LieferungFakten 1.Paths[Merge Join Output]"
+          TopLeft="661.208333333333,433.666666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -12389,10 +11857,10 @@ SET Ende = CAST(GETDATE() As date);</property>
         <NodeLayout
           Size="139.5,42"
           Id="Package\ETL LieferungFakten 1\Merge Join 3"
-          TopLeft="777.5,530.833333333333" />
+          TopLeft="777.5,545.833333333333" />
         <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[Sort Output6]"
-          TopLeft="662.666666666667,484.5">
+          Id="Package\ETL LieferungFakten 1.Paths[Sort Output4]"
+          TopLeft="662.666666666667,499.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -12424,47 +11892,13 @@ SET Ende = CAST(GETDATE() As date);</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[Sort Output7]"
-          TopLeft="940.166666666667,157">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-70.9999999999999,373.833333333333"
-              Start="0,0"
-              End="-70.9999999999999,366.333333333333">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,217.756555634302" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,217.756555634302"
-                    Point2="0,221.756555634302"
-                    Point3="-4,221.756555634302" />
-                  <mssgle:LineSegment
-                    End="-66.9999999999999,221.756555634302" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-66.9999999999999,221.756555634302"
-                    Point2="-70.9999999999999,221.756555634302"
-                    Point3="-70.9999999999999,225.756555634302" />
-                  <mssgle:LineSegment
-                    End="-70.9999999999999,366.333333333333" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <NodeLayout
           Size="107,42"
           Id="Package\ETL LieferungFakten 1\Sort 8"
-          TopLeft="1050.83333333333,117.5" />
+          TopLeft="1050.83333333333,132.5" />
         <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output6]"
-          TopLeft="1106.16666666667,79.625">
+          Id="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output4]"
+          TopLeft="1106.16666666667,94.625">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -12487,21 +11921,91 @@ SET Ende = CAST(GETDATE() As date);</property>
         <NodeLayout
           Size="107,42"
           Id="Package\ETL LieferungFakten 1\Sort 9"
-          TopLeft="798.333333333333,610" />
+          TopLeft="790.833333333333,618.333333333333" />
         <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[Merge Join Output2]"
-          TopLeft="849.541666666667,572.833333333333">
+          Id="Package\ETL LieferungFakten 1.Paths[Merge Join Output1]"
+          TopLeft="845.791666666667,587.833333333333">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,37.1666666666666"
+              EndConnector="0,30.4999999999999"
               Start="0,0"
-              End="0,29.6666666666666">
+              End="0,22.9999999999999">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,29.6666666666666" />
+                    End="0,22.9999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="139.5,42"
+          Id="Package\ETL LieferungFakten 1\Merge Join 4"
+          TopLeft="145,615.833333333333" />
+        <EdgeLayout
+          Id="Package\ETL LieferungFakten 1.Paths[Merge Join Output2]"
+          TopLeft="214.291666666667,362.833333333334">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,253"
+              Start="0,0"
+              End="0,245.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,245.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL LieferungFakten 1.Paths[Sort Output5]"
+          TopLeft="790.833333333333,638.083333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-506.333333333333,0"
+              Start="0,0"
+              End="-498.833333333333,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-498.833333333333,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output5]"
+          TopLeft="779.729166666667,94.4166666666666">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,219.75"
+              Start="0,0"
+              End="0,212.25">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,212.25" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -12593,19 +12097,6 @@ SET Ende = CAST(GETDATE() As date);</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\ETL LieferungFakten 1\Beschwerde">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\ETL LieferungFakten 1\HAM_Kunde">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
