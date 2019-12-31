@@ -12,8 +12,8 @@
   DTS:ObjectName="Package"
   DTS:PackageType="5"
   DTS:ProtectionLevel="2"
-  DTS:VersionBuild="94"
-  DTS:VersionGUID="{B1DB9696-C2D9-4DE9-A9B4-82EEEEA3405F}">
+  DTS:VersionBuild="95"
+  DTS:VersionGUID="{AC5E52EA-1E3D-4E76-84CE-E7E9588C461B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -3684,6 +3684,202 @@ SET Ende = CAST(GETDATE() AS Date)
               </outputs>
             </component>
             <component
+              refId="Package\ETL LieferungFakten 1\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\ETL LieferungFakten 1\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL LieferungFakten 1\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\ETL LieferungFakten 1\Derived Column.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL LieferungFakten 1\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\ETL LieferungFakten 1\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten 1\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten 1\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL LieferungFakten 1\Derived Column 1"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\ETL LieferungFakten 1\Derived Column 1.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL LieferungFakten 1\Derived Column 1.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\ETL LieferungFakten 1\Derived Column 1.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL LieferungFakten 1\Derived Column 1.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\ETL LieferungFakten 1\Derived Column 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten 1\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten 1\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL LieferungFakten 1\Derived Column 2"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column 2"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\ETL LieferungFakten 1\Derived Column 2.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL LieferungFakten 1\Derived Column 2.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\ETL LieferungFakten 1\Derived Column 2.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL LieferungFakten 1\Derived Column 2.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\ETL LieferungFakten 1\Derived Column 2.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Derived Column 2.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten 1\Derived Column 2.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Derived Column 2.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten 1\Derived Column 2.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL LieferungFakten 1\Derived Column 3"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column 3"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\ETL LieferungFakten 1\Derived Column 3.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL LieferungFakten 1\Derived Column 3.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\ETL LieferungFakten 1\Derived Column 3.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL LieferungFakten 1\Derived Column 3.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\ETL LieferungFakten 1\Derived Column 3.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Derived Column 3.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten 1\Derived Column 3.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Derived Column 3.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten 1\Derived Column 3.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\ETL LieferungFakten 1\FRA_Werk"
               componentClassID="Microsoft.OLEDBSource"
               contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
@@ -4790,6 +4986,589 @@ SET Ende = CAST(GETDATE() AS Date)
                       refId="Package\ETL LieferungFakten 1\LieferungFakten.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\ETL LieferungFakten 1\LieferungFakten.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL LieferungFakten 1\Lookup Beschwerde"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup Beschwerde"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from [dbo].[BeschwerdeDim]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (select * from [dbo].[BeschwerdeDim]) [refTable]
+where [refTable].[Grund] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="BeschwerdeDimId" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Grund" dataType="DT_WSTR" length="255" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\ETL LieferungFakten 1\Merge Join 5.Outputs[Merge Join Output].Columns[Grund]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL LieferungFakten 1\Lookup Beschwerde.Connections[OleDbConnection]"
+                  connectionManagerID="{352D8B30-1379-41B4-B8FA-69A1DB9220FE}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527.u573527]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\ETL LieferungFakten 1\Lookup Beschwerde.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL LieferungFakten 1\Lookup Beschwerde.Inputs[Lookup Input].Columns[Grund]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Grund"
+                      lineageId="Package\ETL LieferungFakten 1\Merge Join 5.Outputs[Merge Join Output].Columns[Grund]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Grund</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL LieferungFakten 1\Lookup Beschwerde.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\ETL LieferungFakten 1\Lookup Beschwerde.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Lookup Beschwerde.Outputs[Lookup Match Output].Columns[BeschwerdeDimId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\ETL LieferungFakten 1\Lookup Beschwerde.Outputs[Lookup Match Output].Columns[BeschwerdeDimId]"
+                      name="BeschwerdeDimId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">BeschwerdeDimId</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Lookup Beschwerde.Outputs[Lookup Match Output].Columns[Grund]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Copy Column"
+                      length="255"
+                      lineageId="Package\ETL LieferungFakten 1\Lookup Beschwerde.Outputs[Lookup Match Output].Columns[Grund]"
+                      name="Grund"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">Grund</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL LieferungFakten 1\Lookup Beschwerde.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\ETL LieferungFakten 1\Lookup Beschwerde.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL LieferungFakten 1\Lookup Beschwerde.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\ETL LieferungFakten 1\Lookup Beschwerde.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Lookup Beschwerde.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten 1\Lookup Beschwerde.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Lookup Beschwerde.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten 1\Lookup Beschwerde.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL LieferungFakten 1\Lookup StartAdresse"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup StartAdresse"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from [dbo].[AdresseDim]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (select * from [dbo].[AdresseDim]) [refTable]
+where [refTable].[Lon] = ? and [refTable].[Lat] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="AdresseDimId" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Plz" dataType="DT_WSTR" length="255" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Ort" dataType="DT_WSTR" length="255" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Lat" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Lon" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Bundesland" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Start" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Ende" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\ETL LieferungFakten 1\Merge Join 5.Outputs[Merge Join Output].Columns[StartAdresseLon]};#{Package\ETL LieferungFakten 1\Merge Join 5.Outputs[Merge Join Output].Columns[StartAdresseLat]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL LieferungFakten 1\Lookup StartAdresse.Connections[OleDbConnection]"
+                  connectionManagerID="{352D8B30-1379-41B4-B8FA-69A1DB9220FE}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527.u573527]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\ETL LieferungFakten 1\Lookup StartAdresse.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL LieferungFakten 1\Lookup StartAdresse.Inputs[Lookup Input].Columns[StartAdresseLon]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="StartAdresseLon"
+                      lineageId="Package\ETL LieferungFakten 1\Merge Join 5.Outputs[Merge Join Output].Columns[StartAdresseLon]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Lon</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL LieferungFakten 1\Lookup StartAdresse.Inputs[Lookup Input].Columns[StartAdresseLat]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="StartAdresseLat"
+                      lineageId="Package\ETL LieferungFakten 1\Merge Join 5.Outputs[Merge Join Output].Columns[StartAdresseLat]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Lat</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL LieferungFakten 1\Lookup StartAdresse.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\ETL LieferungFakten 1\Lookup StartAdresse.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Lookup StartAdresse.Outputs[Lookup Match Output].Columns[AdresseDimId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\ETL LieferungFakten 1\Lookup StartAdresse.Outputs[Lookup Match Output].Columns[AdresseDimId]"
+                      name="AdresseDimId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">AdresseDimId</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Lookup StartAdresse.Outputs[Lookup Match Output].Columns[Lat]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Copy Column"
+                      length="50"
+                      lineageId="Package\ETL LieferungFakten 1\Lookup StartAdresse.Outputs[Lookup Match Output].Columns[Lat]"
+                      name="Lat"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">Lat</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Lookup StartAdresse.Outputs[Lookup Match Output].Columns[Lon]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Copy Column"
+                      length="50"
+                      lineageId="Package\ETL LieferungFakten 1\Lookup StartAdresse.Outputs[Lookup Match Output].Columns[Lon]"
+                      name="Lon"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">Lon</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL LieferungFakten 1\Lookup StartAdresse.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\ETL LieferungFakten 1\Lookup StartAdresse.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL LieferungFakten 1\Lookup StartAdresse.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\ETL LieferungFakten 1\Lookup StartAdresse.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Lookup StartAdresse.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten 1\Lookup StartAdresse.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Lookup StartAdresse.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten 1\Lookup StartAdresse.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL LieferungFakten 1\Lookup ZielAdresse"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup ZielAdresse"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from [dbo].[AdresseDim]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (select * from [dbo].[AdresseDim]) [refTable]
+where [refTable].[Lon] = ? and [refTable].[Lat] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="AdresseDimId" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Plz" dataType="DT_WSTR" length="255" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Ort" dataType="DT_WSTR" length="255" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Lat" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Lon" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Bundesland" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Start" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Ende" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\ETL LieferungFakten 1\Merge Join 5.Outputs[Merge Join Output].Columns[ZielAdresseLon]};#{Package\ETL LieferungFakten 1\Merge Join 5.Outputs[Merge Join Output].Columns[ZielAdresseLat]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL LieferungFakten 1\Lookup ZielAdresse.Connections[OleDbConnection]"
+                  connectionManagerID="{352D8B30-1379-41B4-B8FA-69A1DB9220FE}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[sqlserverdrei.f4.htw-berlin.de,1125.u573527.u573527]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\ETL LieferungFakten 1\Lookup ZielAdresse.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL LieferungFakten 1\Lookup ZielAdresse.Inputs[Lookup Input].Columns[ZielAdresseLon]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ZielAdresseLon"
+                      lineageId="Package\ETL LieferungFakten 1\Merge Join 5.Outputs[Merge Join Output].Columns[ZielAdresseLon]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Lon</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL LieferungFakten 1\Lookup ZielAdresse.Inputs[Lookup Input].Columns[ZielAdresseLat]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ZielAdresseLat"
+                      lineageId="Package\ETL LieferungFakten 1\Merge Join 5.Outputs[Merge Join Output].Columns[ZielAdresseLat]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Lat</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL LieferungFakten 1\Lookup ZielAdresse.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\ETL LieferungFakten 1\Lookup ZielAdresse.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Lookup ZielAdresse.Outputs[Lookup Match Output].Columns[AdresseDimId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\ETL LieferungFakten 1\Lookup ZielAdresse.Outputs[Lookup Match Output].Columns[AdresseDimId]"
+                      name="AdresseDimId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">AdresseDimId</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Lookup ZielAdresse.Outputs[Lookup Match Output].Columns[Lat]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Copy Column"
+                      length="50"
+                      lineageId="Package\ETL LieferungFakten 1\Lookup ZielAdresse.Outputs[Lookup Match Output].Columns[Lat]"
+                      name="Lat"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">Lat</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Lookup ZielAdresse.Outputs[Lookup Match Output].Columns[Lon]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Copy Column"
+                      length="50"
+                      lineageId="Package\ETL LieferungFakten 1\Lookup ZielAdresse.Outputs[Lookup Match Output].Columns[Lon]"
+                      name="Lon"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">Lon</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL LieferungFakten 1\Lookup ZielAdresse.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\ETL LieferungFakten 1\Lookup ZielAdresse.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL LieferungFakten 1\Lookup ZielAdresse.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\ETL LieferungFakten 1\Lookup ZielAdresse.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Lookup ZielAdresse.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten 1\Lookup ZielAdresse.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL LieferungFakten 1\Lookup ZielAdresse.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL LieferungFakten 1\Lookup ZielAdresse.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -6551,6 +7330,99 @@ SET Ende = CAST(GETDATE() AS Date)
                       </properties>
                     </outputColumn>
                   </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL LieferungFakten 1\Multicast"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+              name="Multicast">
+              <inputs>
+                <input
+                  refId="Package\ETL LieferungFakten 1\Multicast.Inputs[Multicast Input 1]"
+                  name="Multicast Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL LieferungFakten 1\Multicast.Outputs[Multicast Output 1]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
+                  synchronousInputId="Package\ETL LieferungFakten 1\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL LieferungFakten 1\Multicast.Outputs[Multicast Output 2]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 2"
+                  synchronousInputId="Package\ETL LieferungFakten 1\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL LieferungFakten 1\Multicast 1"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+              name="Multicast 1">
+              <inputs>
+                <input
+                  refId="Package\ETL LieferungFakten 1\Multicast 1.Inputs[Multicast Input 1]"
+                  name="Multicast Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL LieferungFakten 1\Multicast 1.Outputs[Multicast Output 1]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
+                  synchronousInputId="Package\ETL LieferungFakten 1\Multicast 1.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL LieferungFakten 1\Multicast 1.Outputs[Multicast Output 2]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 2"
+                  synchronousInputId="Package\ETL LieferungFakten 1\Multicast 1.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL LieferungFakten 1\Multicast 2"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+              name="Multicast 2">
+              <inputs>
+                <input
+                  refId="Package\ETL LieferungFakten 1\Multicast 2.Inputs[Multicast Input 1]"
+                  name="Multicast Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL LieferungFakten 1\Multicast 2.Outputs[Multicast Output 2]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 2"
+                  synchronousInputId="Package\ETL LieferungFakten 1\Multicast 2.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL LieferungFakten 1\Multicast 2.Outputs[Multicast Output 1]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
+                  synchronousInputId="Package\ETL LieferungFakten 1\Multicast 2.Inputs[Multicast Input 1]">
                   <externalMetadataColumns />
                 </output>
               </outputs>
@@ -8922,12 +9794,12 @@ SET Ende = CAST(GETDATE() AS Date)
           </components>
           <paths>
             <path
-              refId="Package\ETL LieferungFakten 1.Paths[Data Conversion Output1]"
+              refId="Package\ETL LieferungFakten 1.Paths[Data Conversion Output]"
               endId="Package\ETL LieferungFakten 1\Sort 7.Inputs[Sort Input]"
               name="Data Conversion Output"
               startId="Package\ETL LieferungFakten 1\Data Conversion 2.Outputs[Data Conversion Output]" />
             <path
-              refId="Package\ETL LieferungFakten 1.Paths[Data Conversion Output]"
+              refId="Package\ETL LieferungFakten 1.Paths[Data Conversion Output1]"
               endId="Package\ETL LieferungFakten 1\Sort 1.Inputs[Sort Input]"
               name="Data Conversion Output"
               startId="Package\ETL LieferungFakten 1\Data Conversion 1.Outputs[Data Conversion Output]" />
@@ -8937,30 +9809,85 @@ SET Ende = CAST(GETDATE() AS Date)
               name="Derived Column Output"
               startId="Package\ETL LieferungFakten 1\Masse bereinigen.Outputs[Derived Column Output]" />
             <path
-              refId="Package\ETL LieferungFakten 1.Paths[Merge Join Output4]"
-              endId="Package\ETL LieferungFakten 1\Sort 9.Inputs[Sort Input]"
-              name="Merge Join Output"
-              startId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output]" />
+              refId="Package\ETL LieferungFakten 1.Paths[Lookup Match Output]"
+              endId="Package\ETL LieferungFakten 1\Multicast 1.Inputs[Multicast Input 1]"
+              name="Lookup Match Output"
+              startId="Package\ETL LieferungFakten 1\Lookup ZielAdresse.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\ETL LieferungFakten 1.Paths[Lookup Match Output1]"
+              endId="Package\ETL LieferungFakten 1\Multicast 2.Inputs[Multicast Input 1]"
+              name="Lookup Match Output"
+              startId="Package\ETL LieferungFakten 1\Lookup Beschwerde.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\ETL LieferungFakten 1.Paths[Lookup Match Output2]"
+              endId="Package\ETL LieferungFakten 1\Multicast.Inputs[Multicast Input 1]"
+              name="Lookup Match Output"
+              startId="Package\ETL LieferungFakten 1\Lookup StartAdresse.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\ETL LieferungFakten 1.Paths[Lookup No Match Output2]"
+              endId="Package\ETL LieferungFakten 1\Derived Column.Inputs[Derived Column Input]"
+              name="Lookup No Match Output"
+              startId="Package\ETL LieferungFakten 1\Lookup StartAdresse.Outputs[Lookup No Match Output]" />
+            <path
+              refId="Package\ETL LieferungFakten 1.Paths[Lookup No Match Output1]"
+              endId="Package\ETL LieferungFakten 1\Derived Column 2.Inputs[Derived Column Input]"
+              name="Lookup No Match Output"
+              startId="Package\ETL LieferungFakten 1\Lookup Beschwerde.Outputs[Lookup No Match Output]" />
+            <path
+              refId="Package\ETL LieferungFakten 1.Paths[Lookup No Match Output]"
+              endId="Package\ETL LieferungFakten 1\Derived Column 1.Inputs[Derived Column Input]"
+              name="Lookup No Match Output"
+              startId="Package\ETL LieferungFakten 1\Lookup ZielAdresse.Outputs[Lookup No Match Output]" />
             <path
               refId="Package\ETL LieferungFakten 1.Paths[Merge Join Output3]"
+              endId="Package\ETL LieferungFakten 1\Sort 4.Inputs[Sort Input]"
+              name="Merge Join Output"
+              startId="Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output]" />
+            <path
+              refId="Package\ETL LieferungFakten 1.Paths[Merge Join Output4]"
+              endId="Package\ETL LieferungFakten 1\Merge Join 3.Inputs[Merge Join Left Input]"
+              name="Merge Join Output"
+              startId="Package\ETL LieferungFakten 1\Merge Join.Outputs[Merge Join Output]" />
+            <path
+              refId="Package\ETL LieferungFakten 1.Paths[Merge Join Output1]"
               endId="Package\ETL LieferungFakten 1\Sort 3.Inputs[Sort Input]"
               name="Merge Join Output"
               startId="Package\ETL LieferungFakten 1\Merge Join 3.Outputs[Merge Join Output]" />
+            <path
+              refId="Package\ETL LieferungFakten 1.Paths[Merge Join Output]"
+              endId="Package\ETL LieferungFakten 1\Sort 9.Inputs[Sort Input]"
+              name="Merge Join Output"
+              startId="Package\ETL LieferungFakten 1\Merge Join 4.Outputs[Merge Join Output]" />
             <path
               refId="Package\ETL LieferungFakten 1.Paths[Merge Join Output2]"
               endId="Package\ETL LieferungFakten 1\Merge Join 3.Inputs[Merge Join Right Input]"
               name="Merge Join Output"
               startId="Package\ETL LieferungFakten 1\Merge Join 2.Outputs[Merge Join Output]" />
             <path
-              refId="Package\ETL LieferungFakten 1.Paths[Merge Join Output]"
-              endId="Package\ETL LieferungFakten 1\Sort 4.Inputs[Sort Input]"
+              refId="Package\ETL LieferungFakten 1.Paths[Merge Join Output5]"
+              endId="Package\ETL LieferungFakten 1\Lookup StartAdresse.Inputs[Lookup Input]"
               name="Merge Join Output"
-              startId="Package\ETL LieferungFakten 1\Merge Join 1.Outputs[Merge Join Output]" />
+              startId="Package\ETL LieferungFakten 1\Merge Join 5.Outputs[Merge Join Output]" />
             <path
-              refId="Package\ETL LieferungFakten 1.Paths[Merge Join Output1]"
-              endId="Package\ETL LieferungFakten 1\Merge Join 3.Inputs[Merge Join Left Input]"
-              name="Merge Join Output"
-              startId="Package\ETL LieferungFakten 1\Merge Join.Outputs[Merge Join Output]" />
+              refId="Package\ETL LieferungFakten 1.Paths[Multicast Output 1]"
+              endId="Package\ETL LieferungFakten 1\Lookup ZielAdresse.Inputs[Lookup Input]"
+              name="Multicast Output 1"
+              startId="Package\ETL LieferungFakten 1\Multicast.Outputs[Multicast Output 1]" />
+            <path
+              refId="Package\ETL LieferungFakten 1.Paths[Multicast Output 11]"
+              endId="Package\ETL LieferungFakten 1\Lookup Beschwerde.Inputs[Lookup Input]"
+              name="Multicast Output 1"
+              startId="Package\ETL LieferungFakten 1\Multicast 1.Outputs[Multicast Output 1]" />
+            <path
+              refId="Package\ETL LieferungFakten 1.Paths[Multicast Output 2]"
+              endId="Package\ETL LieferungFakten 1\Derived Column 3.Inputs[Derived Column Input]"
+              name="Multicast Output 2"
+              startId="Package\ETL LieferungFakten 1\Multicast 2.Outputs[Multicast Output 2]" />
+            <path
+              refId="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output6]"
+              endId="Package\ETL LieferungFakten 1\Data Conversion 1.Inputs[Data Conversion Input]"
+              name="OLE DB Source Output"
+              startId="Package\ETL LieferungFakten 1\FRA_Werk.Outputs[OLE DB Source Output]" />
             <path
               refId="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output]"
               endId="Package\ETL LieferungFakten 1\Sort.Inputs[Sort Input]"
@@ -8972,80 +9899,75 @@ SET Ende = CAST(GETDATE() AS Date)
               name="OLE DB Source Output"
               startId="Package\ETL LieferungFakten 1\Lieferauftrag.Outputs[OLE DB Source Output]" />
             <path
-              refId="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output6]"
+              refId="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output2]"
               endId="Package\ETL LieferungFakten 1\Sort 5.Inputs[Sort Input]"
               name="OLE DB Source Output"
               startId="Package\ETL LieferungFakten 1\HAM_Werk.Outputs[OLE DB Source Output]" />
             <path
-              refId="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output5]"
+              refId="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output3]"
               endId="Package\ETL LieferungFakten 1\Data Conversion 2.Inputs[Data Conversion Input]"
               name="OLE DB Source Output"
               startId="Package\ETL LieferungFakten 1\Geoposition.Outputs[OLE DB Source Output]" />
             <path
-              refId="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output2]"
+              refId="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output4]"
               endId="Package\ETL LieferungFakten 1\Sort 6.Inputs[Sort Input]"
               name="OLE DB Source Output"
               startId="Package\ETL LieferungFakten 1\Produkt.Outputs[OLE DB Source Output]" />
             <path
-              refId="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output3]"
+              refId="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output5]"
               endId="Package\ETL LieferungFakten 1\Sort 8.Inputs[Sort Input]"
               name="OLE DB Source Output"
               startId="Package\ETL LieferungFakten 1\Beschwerde.Outputs[OLE DB Source Output]" />
             <path
-              refId="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output4]"
-              endId="Package\ETL LieferungFakten 1\Data Conversion 1.Inputs[Data Conversion Input]"
-              name="OLE DB Source Output"
-              startId="Package\ETL LieferungFakten 1\FRA_Werk.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\ETL LieferungFakten 1.Paths[Sort Output3]"
-              endId="Package\ETL LieferungFakten 1\Merge Join 2.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\ETL LieferungFakten 1\Sort 5.Outputs[Sort Output]" />
-            <path
-              refId="Package\ETL LieferungFakten 1.Paths[Sort Output7]"
+              refId="Package\ETL LieferungFakten 1.Paths[Sort Output1]"
               endId="Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\ETL LieferungFakten 1\Sort 8.Outputs[Sort Output]" />
             <path
-              refId="Package\ETL LieferungFakten 1.Paths[Sort Output6]"
-              endId="Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Left Input]"
-              name="Sort Output"
-              startId="Package\ETL LieferungFakten 1\Sort 3.Outputs[Sort Output]" />
-            <path
-              refId="Package\ETL LieferungFakten 1.Paths[Sort Output]"
+              refId="Package\ETL LieferungFakten 1.Paths[Sort Output3]"
               endId="Package\ETL LieferungFakten 1\Masse bereinigen.Inputs[Derived Column Input]"
               name="Sort Output"
               startId="Package\ETL LieferungFakten 1\Sort.Outputs[Sort Output]" />
-            <path
-              refId="Package\ETL LieferungFakten 1.Paths[Sort Output8]"
-              endId="Package\ETL LieferungFakten 1\Merge Join 5.Inputs[Merge Join Left Input]"
-              name="Sort Output"
-              startId="Package\ETL LieferungFakten 1\Sort 9.Outputs[Sort Output]" />
-            <path
-              refId="Package\ETL LieferungFakten 1.Paths[Sort Output1]"
-              endId="Package\ETL LieferungFakten 1\Merge Join.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\ETL LieferungFakten 1\Sort 1.Outputs[Sort Output]" />
-            <path
-              refId="Package\ETL LieferungFakten 1.Paths[Sort Output5]"
-              endId="Package\ETL LieferungFakten 1\Merge Join 1.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\ETL LieferungFakten 1\Sort 6.Outputs[Sort Output]" />
-            <path
-              refId="Package\ETL LieferungFakten 1.Paths[Sort Output4]"
-              endId="Package\ETL LieferungFakten 1\Merge Join 1.Inputs[Merge Join Left Input]"
-              name="Sort Output"
-              startId="Package\ETL LieferungFakten 1\Sort 2.Outputs[Sort Output]" />
-            <path
-              refId="Package\ETL LieferungFakten 1.Paths[Sort Output2]"
-              endId="Package\ETL LieferungFakten 1\Merge Join 2.Inputs[Merge Join Left Input]"
-              name="Sort Output"
-              startId="Package\ETL LieferungFakten 1\Sort 4.Outputs[Sort Output]" />
             <path
               refId="Package\ETL LieferungFakten 1.Paths[Sort Output9]"
               endId="Package\ETL LieferungFakten 1\Merge Join 5.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\ETL LieferungFakten 1\Sort 7.Outputs[Sort Output]" />
+            <path
+              refId="Package\ETL LieferungFakten 1.Paths[Sort Output8]"
+              endId="Package\ETL LieferungFakten 1\Merge Join 2.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\ETL LieferungFakten 1\Sort 4.Outputs[Sort Output]" />
+            <path
+              refId="Package\ETL LieferungFakten 1.Paths[Sort Output7]"
+              endId="Package\ETL LieferungFakten 1\Merge Join 1.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\ETL LieferungFakten 1\Sort 2.Outputs[Sort Output]" />
+            <path
+              refId="Package\ETL LieferungFakten 1.Paths[Sort Output6]"
+              endId="Package\ETL LieferungFakten 1\Merge Join 1.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\ETL LieferungFakten 1\Sort 6.Outputs[Sort Output]" />
+            <path
+              refId="Package\ETL LieferungFakten 1.Paths[Sort Output5]"
+              endId="Package\ETL LieferungFakten 1\Merge Join.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\ETL LieferungFakten 1\Sort 1.Outputs[Sort Output]" />
+            <path
+              refId="Package\ETL LieferungFakten 1.Paths[Sort Output4]"
+              endId="Package\ETL LieferungFakten 1\Merge Join 5.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\ETL LieferungFakten 1\Sort 9.Outputs[Sort Output]" />
+            <path
+              refId="Package\ETL LieferungFakten 1.Paths[Sort Output]"
+              endId="Package\ETL LieferungFakten 1\Merge Join 2.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\ETL LieferungFakten 1\Sort 5.Outputs[Sort Output]" />
+            <path
+              refId="Package\ETL LieferungFakten 1.Paths[Sort Output2]"
+              endId="Package\ETL LieferungFakten 1\Merge Join 4.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\ETL LieferungFakten 1\Sort 3.Outputs[Sort Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -11617,9 +12539,7 @@ SET Ende = CAST(GETDATE() As date);</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11665,9 +12585,7 @@ SET Ende = CAST(GETDATE() As date);</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11689,9 +12607,7 @@ SET Ende = CAST(GETDATE() As date);</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11737,9 +12653,7 @@ SET Ende = CAST(GETDATE() As date);</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11773,9 +12687,7 @@ SET Ende = CAST(GETDATE() As date);</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11821,9 +12733,7 @@ SET Ende = CAST(GETDATE() As date);</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11845,9 +12755,7 @@ SET Ende = CAST(GETDATE() As date);</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11869,9 +12777,7 @@ SET Ende = CAST(GETDATE() As date);</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11905,9 +12811,7 @@ SET Ende = CAST(GETDATE() As date);</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11929,9 +12833,7 @@ SET Ende = CAST(GETDATE() As date);</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -12147,99 +13049,141 @@ SET Ende = CAST(GETDATE() As date);</property>
     design-time-name="Package\ETL LieferungFakten 1">
     <LayoutInfo>
       <GraphLayout
-        Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="128" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="107,42"
-          Id="Package\ETL LieferungFakten 1\Sort 1"
-          TopLeft="219.5,230.680555102657" />
+          Size="123,42"
+          Id="Package\ETL LieferungFakten 1\Lieferung"
+          TopLeft="22.8333333333333,45.5" />
         <NodeLayout
-          Size="138,42"
-          Id="Package\ETL LieferungFakten 1\Lieferauftrag"
-          TopLeft="363.875,50.0833333333333" />
+          Size="131,42"
+          Id="Package\ETL LieferungFakten 1\Merge Join"
+          TopLeft="148.333333333333,320.833333333334" />
         <NodeLayout
-          Size="107,42"
-          Id="Package\ETL LieferungFakten 1\Sort 5"
-          TopLeft="728.333333333333,314.166666666667" />
-        <NodeLayout
-          Size="130.5,44.5"
-          Id="Package\ETL LieferungFakten 1\FRA_Werk"
-          TopLeft="185.5,51.6666666666666" />
-        <NodeLayout
-          Size="107,42"
-          Id="Package\ETL LieferungFakten 1\Sort 4"
-          TopLeft="461.666666666667,310.833333333334" />
+          Size="115,42"
+          Id="Package\ETL LieferungFakten 1\Produkt"
+          TopLeft="542.625000000003,51" />
         <NodeLayout
           Size="135,42"
           Id="Package\ETL LieferungFakten 1\Geoposition"
           TopLeft="1057.25,53.2708333400596" />
+        <NodeLayout
+          Size="107,42"
+          Id="Package\ETL LieferungFakten 1\Sort 2"
+          TopLeft="377.5,136.666666666667" />
         <NodeLayout
           Size="162,42"
           Id="Package\ETL LieferungFakten 1\Masse bereinigen"
           TopLeft="29.6666666666667,231.5" />
         <NodeLayout
           Size="107,42"
-          Id="Package\ETL LieferungFakten 1\Sort 2"
-          TopLeft="377.5,136.666666666667" />
-        <NodeLayout
-          Size="132.5,42"
-          Id="Package\ETL LieferungFakten 1\HAM_Werk"
-          TopLeft="711.375,52.4166666666666" />
-        <NodeLayout
-          Size="131,42"
-          Id="Package\ETL LieferungFakten 1\Merge Join"
-          TopLeft="148.333333333333,320.833333333334" />
+          Id="Package\ETL LieferungFakten 1\Sort 6"
+          TopLeft="548.333333333333,135.833333333333" />
         <NodeLayout
           Size="139.5,42"
           Id="Package\ETL LieferungFakten 1\Merge Join 2"
           TopLeft="590,364.583333467858" />
         <NodeLayout
           Size="107,42"
-          Id="Package\ETL LieferungFakten 1\Sort 8"
-          TopLeft="901.666666666663,136.111111093175" />
+          Id="Package\ETL LieferungFakten 1\Sort 1"
+          TopLeft="219.5,230.680555102657" />
+        <NodeLayout
+          Size="139.5,53"
+          Id="Package\ETL LieferungFakten 1\Merge Join 4"
+          TopLeft="661.666666666667,573.333332795235" />
+        <NodeLayout
+          Size="130.5,44.5"
+          Id="Package\ETL LieferungFakten 1\FRA_Werk"
+          TopLeft="185.5,51.6666666666666" />
         <NodeLayout
           Size="107,42"
-          Id="Package\ETL LieferungFakten 1\Sort 6"
-          TopLeft="548.333333333333,135.833333333333" />
+          Id="Package\ETL LieferungFakten 1\Sort 5"
+          TopLeft="728.333333333333,314.166666666667" />
+        <NodeLayout
+          Size="107,42"
+          Id="Package\ETL LieferungFakten 1\Sort 4"
+          TopLeft="461.666666666667,310.833333333334" />
+        <NodeLayout
+          Size="166,42"
+          Id="Package\ETL LieferungFakten 1\Data Conversion 2"
+          TopLeft="1049.16666666667,139.930554860513" />
+        <NodeLayout
+          Size="107,42"
+          Id="Package\ETL LieferungFakten 1\Sort 7"
+          TopLeft="1076.66666666667,213.958332270591" />
         <NodeLayout
           Size="155,42"
           Id="Package\ETL LieferungFakten 1\LieferungFakten"
-          TopLeft="448.833333333333,784.999999999999" />
+          TopLeft="386.333333333333,1181.77083136255" />
+        <NodeLayout
+          Size="166,42"
+          Id="Package\ETL LieferungFakten 1\Data Conversion 1"
+          TopLeft="173.333333333333,140.833332633807" />
+        <NodeLayout
+          Size="107,42"
+          Id="Package\ETL LieferungFakten 1\Sort 9"
+          TopLeft="679.166666666667,658.194443484837" />
+        <NodeLayout
+          Size="138,42"
+          Id="Package\ETL LieferungFakten 1\Lieferauftrag"
+          TopLeft="363.875,50.0833333333333" />
+        <NodeLayout
+          Size="139.5,42"
+          Id="Package\ETL LieferungFakten 1\Merge Join 1"
+          TopLeft="441.666666666667,222.638887857535" />
+        <NodeLayout
+          Size="132.5,42"
+          Id="Package\ETL LieferungFakten 1\HAM_Werk"
+          TopLeft="711.375,52.4166666666666" />
+        <NodeLayout
+          Size="107,42"
+          Id="Package\ETL LieferungFakten 1\Sort 3"
+          TopLeft="315,498.541665846068" />
+        <NodeLayout
+          Size="139.5,42"
+          Id="Package\ETL LieferungFakten 1\Merge Join 5"
+          TopLeft="837.916666666666,736.319443121622" />
         <NodeLayout
           Size="98.5,42"
           Id="Package\ETL LieferungFakten 1\Sort"
           TopLeft="37,141" />
         <NodeLayout
-          Size="123,42"
-          Id="Package\ETL LieferungFakten 1\Lieferung"
-          TopLeft="22.8333333333333,45.5" />
+          Size="107,42"
+          Id="Package\ETL LieferungFakten 1\Sort 8"
+          TopLeft="901.666666666663,136.111111093175" />
+        <NodeLayout
+          Size="139.5,42"
+          Id="Package\ETL LieferungFakten 1\Merge Join 3"
+          TopLeft="305,431.041666007497" />
         <NodeLayout
           Size="137,42"
           Id="Package\ETL LieferungFakten 1\Beschwerde"
           TopLeft="880.75,52.625" />
-        <NodeLayout
-          Size="115,42"
-          Id="Package\ETL LieferungFakten 1\Produkt"
-          TopLeft="542.625000000003,51" />
         <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[Sort Output3]"
-          TopLeft="728.333333333333,335.166666666667">
+          Id="Package\ETL LieferungFakten 1.Paths[Sort Output9]"
+          TopLeft="1130.16666666667,255.958332270591">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-46.6666666666664,29.416666801191"
+              EndConnector="-200.583333333337,480.361110851031"
               Start="0,0"
-              End="-46.6666666666664,21.916666801191">
+              End="-200.583333333337,472.861110851031">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-42.6666666666664,0" />
+                    End="0,280.948440667833" />
                   <mssgle:CubicBezierSegment
-                    Point1="-42.6666666666664,0"
-                    Point2="-46.6666666666664,0"
-                    Point3="-46.6666666666664,4" />
+                    Point1="0,280.948440667833"
+                    Point2="0,284.948440667833"
+                    Point3="-4,284.948440667833" />
                   <mssgle:LineSegment
-                    End="-46.6666666666664,21.916666801191" />
+                    End="-196.583333333337,284.948440667833" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-196.583333333337,284.948440667833"
+                    Point2="-200.583333333337,284.948440667833"
+                    Point3="-200.583333333337,288.948440667833" />
+                  <mssgle:LineSegment
+                    End="-200.583333333337,472.861110851031" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -12249,7 +13193,7 @@ SET Ende = CAST(GETDATE() As date);</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[Sort Output2]"
+          Id="Package\ETL LieferungFakten 1.Paths[Sort Output8]"
           TopLeft="568.666666666667,331.833333333334">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -12277,7 +13221,75 @@ SET Ende = CAST(GETDATE() As date);</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[Sort Output1]"
+          Id="Package\ETL LieferungFakten 1.Paths[Sort Output7]"
+          TopLeft="431,178.666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="58.4999999999999,43.9722211908684"
+              Start="0,0"
+              End="58.4999999999999,36.4722211908684">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.0841595582969" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.0841595582969"
+                    Point2="0,26.0841595582969"
+                    Point3="4,26.0841595582969" />
+                  <mssgle:LineSegment
+                    End="54.4999999999999,26.0841595582969" />
+                  <mssgle:CubicBezierSegment
+                    Point1="54.4999999999999,26.0841595582969"
+                    Point2="58.4999999999999,26.0841595582969"
+                    Point3="58.4999999999999,30.0841595582969" />
+                  <mssgle:LineSegment
+                    End="58.4999999999999,36.4722211908684" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL LieferungFakten 1.Paths[Sort Output6]"
+          TopLeft="601.833333333333,177.833333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-68.4999999999998,44.8055545242024"
+              Start="0,0"
+              End="-68.4999999999998,37.3055545242024">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.5784898205226" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.5784898205226"
+                    Point2="0,26.5784898205226"
+                    Point3="-4,26.5784898205226" />
+                  <mssgle:LineSegment
+                    End="-64.4999999999998,26.5784898205226" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-64.4999999999998,26.5784898205226"
+                    Point2="-68.4999999999998,26.5784898205226"
+                    Point3="-68.4999999999998,30.5784898205226" />
+                  <mssgle:LineSegment
+                    End="-68.4999999999998,37.3055545242024" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL LieferungFakten 1.Paths[Sort Output5]"
           TopLeft="273,272.680555102657">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -12311,7 +13323,41 @@ SET Ende = CAST(GETDATE() As date);</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[Sort Output]"
+          Id="Package\ETL LieferungFakten 1.Paths[Sort Output4]"
+          TopLeft="732.666666666667,700.194443484837">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="153.083333333333,36.1249996367845"
+              Start="0,0"
+              End="153.083333333333,28.6249996367845">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.4292166520118" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.4292166520118"
+                    Point2="0,21.4292166520118"
+                    Point3="4,21.4292166520118" />
+                  <mssgle:LineSegment
+                    End="149.083333333333,21.4292166520118" />
+                  <mssgle:CubicBezierSegment
+                    Point1="149.083333333333,21.4292166520118"
+                    Point2="153.083333333333,21.4292166520118"
+                    Point3="153.083333333333,25.4292166520118" />
+                  <mssgle:LineSegment
+                    End="153.083333333333,28.6249996367845" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL LieferungFakten 1.Paths[Sort Output3]"
           TopLeft="86.25,183">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -12345,7 +13391,125 @@ SET Ende = CAST(GETDATE() As date);</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output3]"
+          Id="Package\ETL LieferungFakten 1.Paths[Sort Output2]"
+          TopLeft="368.5,540.541665846068">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="341,32.7916669491672"
+              Start="0,0"
+              End="341,25.2916669491672">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.4518959861466" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.4518959861466"
+                    Point2="0,19.4518959861466"
+                    Point3="4,19.4518959861466" />
+                  <mssgle:LineSegment
+                    End="337,19.4518959861466" />
+                  <mssgle:CubicBezierSegment
+                    Point1="337,19.4518959861466"
+                    Point2="341,19.4518959861466"
+                    Point3="341,23.4518959861466" />
+                  <mssgle:LineSegment
+                    End="341,25.2916669491672" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL LieferungFakten 1.Paths[Sort Output1]"
+          TopLeft="955.166666666663,178.111111093175">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-201.83333333333,395.222221702061"
+              Start="0,0"
+              End="-201.83333333333,387.722221702061">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,230.444365389529" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,230.444365389529"
+                    Point2="0,234.444365389529"
+                    Point3="-4,234.444365389529" />
+                  <mssgle:LineSegment
+                    End="-197.83333333333,234.444365389529" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-197.83333333333,234.444365389529"
+                    Point2="-201.83333333333,234.444365389529"
+                    Point3="-201.83333333333,238.444365389529" />
+                  <mssgle:LineSegment
+                    End="-201.83333333333,387.722221702061" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL LieferungFakten 1.Paths[Sort Output]"
+          TopLeft="728.333333333333,335.166666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-46.6666666666664,29.416666801191"
+              Start="0,0"
+              End="-46.6666666666664,21.916666801191">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-42.6666666666664,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-42.6666666666664,0"
+                    Point2="-46.6666666666664,0"
+                    Point3="-46.6666666666664,4" />
+                  <mssgle:LineSegment
+                    End="-46.6666666666664,21.916666801191" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output6]"
+          TopLeft="253.541666666667,96.1666666666666">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,44.66666596714"
+              Start="0,0"
+              End="0,37.16666596714">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.16666596714" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output5]"
           TopLeft="952.208333333332,94.625">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -12367,7 +13531,7 @@ SET Ende = CAST(GETDATE() As date);</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output2]"
+          Id="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output4]"
           TopLeft="600.979166666668,93">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -12380,6 +13544,50 @@ SET Ende = CAST(GETDATE() As date);</property>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,35.3333333333333" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output3]"
+          TopLeft="1128.45833333333,95.2708333400596">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,44.6597215204535"
+              Start="0,0"
+              End="0,37.1597215204535">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.1597215204535" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output2]"
+          TopLeft="779.729166666667,94.4166666666666">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,219.75"
+              Start="0,0"
+              End="0,212.25">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,212.25" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -12433,139 +13641,7 @@ SET Ende = CAST(GETDATE() As date);</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[Derived Column Output]"
-          TopLeft="110.666666666667,273.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="82.6666666666667,47.3333333333338"
-              Start="0,0"
-              End="82.6666666666667,39.8333333333338">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,24.0573152337861" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,24.0573152337861"
-                    Point2="0,28.0573152337861"
-                    Point3="4,28.0573152337861" />
-                  <mssgle:LineSegment
-                    End="78.6666666666667,28.0573152337861" />
-                  <mssgle:CubicBezierSegment
-                    Point1="78.6666666666667,28.0573152337861"
-                    Point2="82.6666666666667,28.0573152337861"
-                    Point3="82.6666666666667,32.0573152337861" />
-                  <mssgle:LineSegment
-                    End="82.6666666666667,39.8333333333338" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="139.5,42"
-          Id="Package\ETL LieferungFakten 1\Merge Join 1"
-          TopLeft="441.666666666667,222.638887857535" />
-        <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[Sort Output4]"
-          TopLeft="431,178.666666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="58.4999999999999,43.9722211908684"
-              Start="0,0"
-              End="58.4999999999999,36.4722211908684">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,22.0841595582969" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,22.0841595582969"
-                    Point2="0,26.0841595582969"
-                    Point3="4,26.0841595582969" />
-                  <mssgle:LineSegment
-                    End="54.4999999999999,26.0841595582969" />
-                  <mssgle:CubicBezierSegment
-                    Point1="54.4999999999999,26.0841595582969"
-                    Point2="58.4999999999999,26.0841595582969"
-                    Point3="58.4999999999999,30.0841595582969" />
-                  <mssgle:LineSegment
-                    End="58.4999999999999,36.4722211908684" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[Sort Output5]"
-          TopLeft="601.833333333333,177.833333333333">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-68.4999999999998,44.8055545242024"
-              Start="0,0"
-              End="-68.4999999999998,37.3055545242024">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,22.5784898205226" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,22.5784898205226"
-                    Point2="0,26.5784898205226"
-                    Point3="-4,26.5784898205226" />
-                  <mssgle:LineSegment
-                    End="-64.4999999999998,26.5784898205226" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-64.4999999999998,26.5784898205226"
-                    Point2="-68.4999999999998,26.5784898205226"
-                    Point3="-68.4999999999998,30.5784898205226" />
-                  <mssgle:LineSegment
-                    End="-68.4999999999998,37.3055545242024" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[Merge Join Output]"
-          TopLeft="513.291666666667,264.638887857535">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,46.1944454757986"
-              Start="0,0"
-              End="0,38.6944454757986">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,38.6944454757986" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="139.5,42"
-          Id="Package\ETL LieferungFakten 1\Merge Join 3"
-          TopLeft="305,431.041666007497" />
-        <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[Merge Join Output1]"
+          Id="Package\ETL LieferungFakten 1.Paths[Merge Join Output4]"
           TopLeft="213.833333333333,362.833333333334">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -12590,6 +13666,28 @@ SET Ende = CAST(GETDATE() As date);</property>
                     Point3="139,44.4609315721296" />
                   <mssgle:LineSegment
                     End="139,60.7083326741634" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL LieferungFakten 1.Paths[Merge Join Output3]"
+          TopLeft="513.291666666667,264.638887857535">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,46.1944454757986"
+              Start="0,0"
+              End="0,38.6944454757986">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.6944454757986" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -12632,12 +13730,8 @@ SET Ende = CAST(GETDATE() As date);</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="107,42"
-          Id="Package\ETL LieferungFakten 1\Sort 3"
-          TopLeft="315,498.541665846068" />
         <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[Merge Join Output3]"
+          Id="Package\ETL LieferungFakten 1.Paths[Merge Join Output1]"
           TopLeft="371.625,473.041666007497">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -12658,36 +13752,20 @@ SET Ende = CAST(GETDATE() As date);</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="139.5,53"
-          Id="Package\ETL LieferungFakten 1\Merge Join 4"
-          TopLeft="661.666666666667,573.333332795235" />
         <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[Sort Output6]"
-          TopLeft="368.5,540.541665846068">
+          Id="Package\ETL LieferungFakten 1.Paths[Merge Join Output]"
+          TopLeft="732.041666666667,626.333332795235">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="341,32.7916669491672"
+              EndConnector="0,31.8611106896016"
               Start="0,0"
-              End="341,25.2916669491672">
+              End="0,24.3611106896016">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,15.4518959861466" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,15.4518959861466"
-                    Point2="0,19.4518959861466"
-                    Point3="4,19.4518959861466" />
-                  <mssgle:LineSegment
-                    End="337,19.4518959861466" />
-                  <mssgle:CubicBezierSegment
-                    Point1="337,19.4518959861466"
-                    Point2="341,19.4518959861466"
-                    Point3="341,23.4518959861466" />
-                  <mssgle:LineSegment
-                    End="341,25.2916669491672" />
+                    End="0,24.3611106896016" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -12697,57 +13775,31 @@ SET Ende = CAST(GETDATE() As date);</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[Sort Output7]"
-          TopLeft="955.166666666663,178.111111093175">
+          Id="Package\ETL LieferungFakten 1.Paths[Derived Column Output]"
+          TopLeft="110.666666666667,273.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-201.83333333333,395.222221702061"
+              EndConnector="82.6666666666667,47.3333333333338"
               Start="0,0"
-              End="-201.83333333333,387.722221702061">
+              End="82.6666666666667,39.8333333333338">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,230.444365389529" />
+                    End="0,24.0573152337861" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,230.444365389529"
-                    Point2="0,234.444365389529"
-                    Point3="-4,234.444365389529" />
+                    Point1="0,24.0573152337861"
+                    Point2="0,28.0573152337861"
+                    Point3="4,28.0573152337861" />
                   <mssgle:LineSegment
-                    End="-197.83333333333,234.444365389529" />
+                    End="78.6666666666667,28.0573152337861" />
                   <mssgle:CubicBezierSegment
-                    Point1="-197.83333333333,234.444365389529"
-                    Point2="-201.83333333333,234.444365389529"
-                    Point3="-201.83333333333,238.444365389529" />
+                    Point1="78.6666666666667,28.0573152337861"
+                    Point2="82.6666666666667,28.0573152337861"
+                    Point3="82.6666666666667,32.0573152337861" />
                   <mssgle:LineSegment
-                    End="-201.83333333333,387.722221702061" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="166,42"
-          Id="Package\ETL LieferungFakten 1\Data Conversion 1"
-          TopLeft="173.333333333333,140.833332633807" />
-        <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output4]"
-          TopLeft="253.541666666667,96.1666666666666">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,44.66666596714"
-              Start="0,0"
-              End="0,37.16666596714">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,37.16666596714" />
+                    End="82.6666666666667,39.8333333333338" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -12757,7 +13809,7 @@ SET Ende = CAST(GETDATE() As date);</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[Data Conversion Output]"
+          Id="Package\ETL LieferungFakten 1.Paths[Data Conversion Output1]"
           TopLeft="256.333333333333,182.833332633807">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -12790,60 +13842,8 @@ SET Ende = CAST(GETDATE() As date);</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="166,42"
-          Id="Package\ETL LieferungFakten 1\Data Conversion 2"
-          TopLeft="1049.16666666667,139.930554860513" />
         <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output5]"
-          TopLeft="1128.45833333333,95.2708333400596">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,44.6597215204535"
-              Start="0,0"
-              End="0,37.1597215204535">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,37.1597215204535" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[OLE DB Source Output6]"
-          TopLeft="779.729166666667,94.4166666666666">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,219.75"
-              Start="0,0"
-              End="0,212.25">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,212.25" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="107,42"
-          Id="Package\ETL LieferungFakten 1\Sort 7"
-          TopLeft="1076.66666666667,213.958332270591" />
-        <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[Data Conversion Output1]"
+          Id="Package\ETL LieferungFakten 1.Paths[Data Conversion Output]"
           TopLeft="1131.16666666667,181.930554860513">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -12865,23 +13865,31 @@ SET Ende = CAST(GETDATE() As date);</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="107,42"
-          Id="Package\ETL LieferungFakten 1\Sort 9"
-          TopLeft="679.166666666667,658.194443484837" />
+          Size="120.5,45.5"
+          Id="Package\ETL LieferungFakten 1\Multicast"
+          TopLeft="853.333333333334,890.902773576133" />
+        <NodeLayout
+          Size="154.5,42"
+          Id="Package\ETL LieferungFakten 1\Derived Column"
+          TopLeft="1123.33333333333,811.84027617918" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\ETL LieferungFakten 1\Lookup ZielAdresse"
+          TopLeft="820.416666666667,971.770831362551" />
         <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[Merge Join Output4]"
-          TopLeft="732.041666666667,626.333332795235">
+          Id="Package\ETL LieferungFakten 1.Paths[Multicast Output 1]"
+          TopLeft="910,936.402773576133">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,31.8611106896016"
+              EndConnector="0,35.3680577864181"
               Start="0,0"
-              End="0,24.3611106896016">
+              End="0,27.8680577864181">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,24.3611106896016" />
+                    End="0,27.8680577864181" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -12891,35 +13899,79 @@ SET Ende = CAST(GETDATE() As date);</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="139.5,42"
-          Id="Package\ETL LieferungFakten 1\Merge Join 5"
-          TopLeft="953.333333333333,845.069442556619" />
+          Size="129,42"
+          Id="Package\ETL LieferungFakten 1\Multicast 1"
+          TopLeft="846.666666666667,1047.29166495821" />
         <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[Sort Output8]"
-          TopLeft="732.666666666667,700.194443484837">
+          Id="Package\ETL LieferungFakten 1.Paths[Lookup Match Output]"
+          TopLeft="908.791666666667,1013.77083136255">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="268.5,144.874999071782"
+              EndConnector="0,33.5208335956561"
               Start="0,0"
-              End="268.5,137.374999071782">
+              End="0,26.0208335956561">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,81.9393155372655" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,81.9393155372655"
-                    Point2="0,85.9393155372655"
-                    Point3="4,85.9393155372655" />
+                    End="0,26.0208335956561" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,7.20572929782804,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="163,42"
+          Id="Package\ETL LieferungFakten 1\Derived Column 1"
+          TopLeft="1117.5,969.513887682654" />
+        <EdgeLayout
+          Id="Package\ETL LieferungFakten 1.Paths[Lookup No Match Output]"
+          TopLeft="992.416666666667,991.642359522603">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="125.083333333333,0"
+              Start="0,0"
+              End="117.583333333333,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="264.5,85.9393155372655" />
-                  <mssgle:CubicBezierSegment
-                    Point1="264.5,85.9393155372655"
-                    Point2="268.5,85.9393155372655"
-                    Point3="268.5,89.9393155372655" />
+                    End="117.583333333333,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="2.98527994791674,5,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="174,42"
+          Id="Package\ETL LieferungFakten 1\Lookup Beschwerde"
+          TopLeft="824.583333333333,1118.33333139618" />
+        <EdgeLayout
+          Id="Package\ETL LieferungFakten 1.Paths[Multicast Output 11]"
+          TopLeft="911.375,1089.29166495821">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,29.0416664379748"
+              Start="0,0"
+              End="0,21.5416664379748">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="268.5,137.374999071782" />
+                    End="0,21.5416664379748" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -12928,32 +13980,154 @@ SET Ende = CAST(GETDATE() As date);</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="129,42"
+          Id="Package\ETL LieferungFakten 1\Multicast 2"
+          TopLeft="847.5,1193.3333315038" />
         <EdgeLayout
-          Id="Package\ETL LieferungFakten 1.Paths[Sort Output9]"
-          TopLeft="1130.16666666667,255.958332270591">
+          Id="Package\ETL LieferungFakten 1.Paths[Lookup Match Output1]"
+          TopLeft="911.791666666667,1160.33333139618">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-85.1666666666665,589.111110286028"
+              EndConnector="0,33.0000001076201"
               Start="0,0"
-              End="-85.1666666666665,581.611110286028">
+              End="0,25.5000001076201">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,345.458539553087" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,345.458539553087"
-                    Point2="0,349.458539553087"
-                    Point3="-4,349.458539553087" />
+                    End="0,25.5000001076201" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,6.94531255381003,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="163,42"
+          Id="Package\ETL LieferungFakten 1\Derived Column 2"
+          TopLeft="1129.16666666667,1112.70833213607" />
+        <EdgeLayout
+          Id="Package\ETL LieferungFakten 1.Paths[Lookup No Match Output1]"
+          TopLeft="998.583333333333,1136.52083176612">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="130.583333333333,0"
+              Start="0,0"
+              End="123.083333333333,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="-81.1666666666665,349.458539553087" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-81.1666666666665,349.458539553087"
-                    Point2="-85.1666666666665,349.458539553087"
-                    Point3="-85.1666666666665,353.458539553087" />
+                    End="123.083333333333,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="5.73527994791657,5,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="177,42"
+          Id="Package\ETL LieferungFakten 1\Lookup StartAdresse"
+          TopLeft="817.5,808.506942738227" />
+        <EdgeLayout
+          Id="Package\ETL LieferungFakten 1.Paths[Lookup No Match Output2]"
+          TopLeft="994.5,831.173609458703">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="128.833333333333,0"
+              Start="0,0"
+              End="121.333333333333,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="-85.1666666666665,581.611110286028" />
+                    End="121.333333333333,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="4.86027994791663,5,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL LieferungFakten 1.Paths[Lookup Match Output2]"
+          TopLeft="909.791666666667,850.506942738227">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,40.395830837906"
+              Start="0,0"
+              End="0,32.895830837906">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.895830837906" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,10.643227918953,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL LieferungFakten 1.Paths[Merge Join Output5]"
+          TopLeft="906.833333333333,778.319443121622">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,30.1874996166055"
+              Start="0,0"
+              End="0,22.6874996166055">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.6874996166055" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="163,42"
+          Id="Package\ETL LieferungFakten 1\Derived Column 3"
+          TopLeft="830,1263.22916314885" />
+        <EdgeLayout
+          Id="Package\ETL LieferungFakten 1.Paths[Multicast Output 2]"
+          TopLeft="911.75,1235.3333315038">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,27.8958316450521"
+              Start="0,0"
+              End="0,20.3958316450521">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.3958316450521" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -12966,7 +14140,7 @@ SET Ende = CAST(GETDATE() As date);</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\ETL LieferungFakten 1\Lieferauftrag">
+    design-time-name="Package\ETL LieferungFakten 1\Lieferung">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -12979,7 +14153,7 @@ SET Ende = CAST(GETDATE() As date);</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\ETL LieferungFakten 1\FRA_Werk">
+    design-time-name="Package\ETL LieferungFakten 1\Produkt">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -13005,6 +14179,32 @@ SET Ende = CAST(GETDATE() As date);</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
+    design-time-name="Package\ETL LieferungFakten 1\FRA_Werk">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL LieferungFakten 1\Lieferauftrag">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\ETL LieferungFakten 1\HAM_Werk">
     <Properties>
       <Property>
@@ -13018,33 +14218,7 @@ SET Ende = CAST(GETDATE() As date);</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\ETL LieferungFakten 1\Lieferung">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\ETL LieferungFakten 1\Beschwerde">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\ETL LieferungFakten 1\Produkt">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -13380,5 +14554,61 @@ SET Ende = CAST(GETDATE() As date);</property>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL LieferungFakten 1\Lookup ZielAdresse">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[AdresseDim]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL LieferungFakten 1\Lookup Beschwerde">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[BeschwerdeDim]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL LieferungFakten 1\Lookup StartAdresse">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
