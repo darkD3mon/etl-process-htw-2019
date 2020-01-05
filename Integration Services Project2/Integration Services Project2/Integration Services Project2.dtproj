@@ -26,11 +26,12 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">LSPTOP</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1" SSIS:Salt="OyYsZfgOCSU=" SSIS:IV="UlrkpXY0lEDfkLVtI/qPvw==" SSIS:Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc">+A9FdUYcL//9UEby8KzCRElr9YmS3nJLNkf4hn/q++J8ll6PTxXaA2dO+5pDMLi2Fd0TZVzuNDkNkjvwGhBvk74+my8QDl3v0er6uO0iYqfY/epuURahd4//vCnwyzQTeNwuPDbRyro6rbZD9+dOEMt4CsuLIp67KR33fk+Q1h63LxmQStsvb6ygKDbBQeX2</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1" SSIS:Salt="ziHnS2HEtZM=" SSIS:IV="iD8odgSE3Slq78FX6NcNug==" SSIS:Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc">YfZM1KYSQAKwClv7jL4muqVhCKhVKcyPyF+uLjliOtw25Nfwv8ZpNsqztk6CIuFHp0RJWzq0gUtJI6Pz5Ix4xryGNH3Wrkk6dcj+xmfHLVerI8qtvBlUS69qXxwIc1ecAwRFXFi3cM5gdQwQRoFUwISV8HqFuuGil3MavR7yFUnQLEZcDFrNrlm8xjqlgc5r</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
           <SSIS:Package SSIS:Name="Final.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="Fehlerhaft.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="sqlserverdrei.f4.htw-berlin.de,1125.Data_BER.u573527.conmgr" />
@@ -826,10 +827,43 @@
                 <SSIS:Property SSIS:Name="Name">Final</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">156</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">158</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{B89EB2F1-B8E8-4C2F-9089-F86021DAF34E}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{3BC8366E-3C75-46A4-89CB-212D08763B72}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">2</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters>
+                <SSIS:Parameter SSIS:Name="CM.postleitzahlen2.csv.ConnectionString">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\Public\etl-process-htw-2019\postleitzahlen2.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+              </SSIS:Parameters>
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="Fehlerhaft.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{409A57A8-50FE-4F6B-8372-9208DC8B0F8F}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Fehlerhaft</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">158</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{E573D9EF-F408-4A32-81E7-0BBF9F025821}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
