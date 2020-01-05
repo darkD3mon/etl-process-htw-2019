@@ -5,15 +5,15 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="LSPTOP"
   DTS:CreatorName="LSPTOP\Jonas"
-  DTS:DTSID="{535B0583-C435-4B6B-B966-4FB5F1DFB6A0}"
+  DTS:DTSID="{7732B337-4E4C-4075-87B8-8FC27D34252B}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.1301.433"
   DTS:LocaleID="1031"
-  DTS:ObjectName="Package"
+  DTS:ObjectName="Final"
   DTS:PackageType="5"
   DTS:ProtectionLevel="2"
-  DTS:VersionBuild="155"
-  DTS:VersionGUID="{FCD543A9-31F8-4581-B8CB-B0441DD5C888}">
+  DTS:VersionBuild="156"
+  DTS:VersionGUID="{B89EB2F1-B8E8-4C2F-9089-F86021DAF34E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -12599,17 +12599,17 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\ETL LieferungFakten\Multicast 3.Outputs[Multicast Output 1]"
-                  deleteOutputOnPathDetached="true"
-                  name="Multicast Output 1"
-                  synchronousInputId="Package\ETL LieferungFakten\Multicast 3.Inputs[Multicast Input 1]">
-                  <externalMetadataColumns />
-                </output>
-                <output
                   refId="Package\ETL LieferungFakten\Multicast 3.Outputs[Multicast Output 2]"
                   dangling="true"
                   deleteOutputOnPathDetached="true"
                   name="Multicast Output 2"
+                  synchronousInputId="Package\ETL LieferungFakten\Multicast 3.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL LieferungFakten\Multicast 3.Outputs[Multicast Output 1]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
                   synchronousInputId="Package\ETL LieferungFakten\Multicast 3.Inputs[Multicast Input 1]">
                   <externalMetadataColumns />
                 </output>
@@ -23962,7 +23962,7 @@ SET Ende = CAST(GETDATE() As date);</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,9.96614579970219,96.3827734375,11.609375"
+              BoundingBox="-48.19138671875,9.9661457997022,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
