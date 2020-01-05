@@ -12,8 +12,8 @@
   DTS:ObjectName="Package"
   DTS:PackageType="5"
   DTS:ProtectionLevel="2"
-  DTS:VersionBuild="139"
-  DTS:VersionGUID="{A02821A2-058B-439E-9AB4-3E268F3F88F2}">
+  DTS:VersionBuild="147"
+  DTS:VersionGUID="{830D6395-036A-43BA-93D8-EDB7BBDF4BA9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -6039,7 +6039,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      length="50"
+                      length="255"
                       lineageId="Package\ETL LieferungFakten\INT in STRING.Outputs[Data Conversion Output].Columns[Plz]"
                       name="Plz"
                       truncationRowDisposition="FailComponent">
@@ -9781,7 +9781,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                     <inputColumn
                       refId="Package\ETL LieferungFakten\Merge Join.Inputs[Merge Join Right Input].Columns[Plz]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="255"
                       cachedName="Plz"
                       lineageId="Package\ETL LieferungFakten\Sort 1.Outputs[Sort Output].Columns[Plz]" />
                   </inputColumns>
@@ -9863,7 +9863,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                     <outputColumn
                       refId="Package\ETL LieferungFakten\Merge Join.Outputs[Merge Join Output].Columns[Plz]"
                       dataType="wstr"
-                      length="50"
+                      length="255"
                       lineageId="Package\ETL LieferungFakten\Merge Join.Outputs[Merge Join Output].Columns[Plz]"
                       name="Plz">
                       <properties>
@@ -10694,7 +10694,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                     <inputColumn
                       refId="Package\ETL LieferungFakten\Merge Join 3.Inputs[Merge Join Left Input].Columns[Plz]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="255"
                       cachedName="Plz"
                       lineageId="Package\ETL LieferungFakten\Sort 3.Outputs[Sort Output].Columns[Plz]" />
                     <inputColumn
@@ -10851,7 +10851,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                     <outputColumn
                       refId="Package\ETL LieferungFakten\Merge Join 3.Outputs[Merge Join Output].Columns[Plz]"
                       dataType="wstr"
-                      length="50"
+                      length="255"
                       lineageId="Package\ETL LieferungFakten\Merge Join 3.Outputs[Merge Join Output].Columns[Plz]"
                       name="Plz">
                       <properties>
@@ -11051,7 +11051,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                   dataType="System.Int32"
                   description="Specifies the type of join to perform."
                   name="JoinType"
-                  typeConverter="JoinType">1</property>
+                  typeConverter="JoinType">2</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the number of columns in the ordering key."
@@ -11105,7 +11105,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                     <inputColumn
                       refId="Package\ETL LieferungFakten\Merge Join 4.Inputs[Merge Join Left Input].Columns[Plz]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="255"
                       cachedName="Plz"
                       lineageId="Package\ETL LieferungFakten\Merge Join 3.Outputs[Merge Join Output].Columns[Plz]" />
                     <inputColumn
@@ -11282,7 +11282,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                     <outputColumn
                       refId="Package\ETL LieferungFakten\Merge Join 4.Outputs[Merge Join Output].Columns[Plz]"
                       dataType="wstr"
-                      length="50"
+                      length="255"
                       lineageId="Package\ETL LieferungFakten\Merge Join 4.Outputs[Merge Join Output].Columns[Plz]"
                       name="Plz">
                       <properties>
@@ -11482,7 +11482,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                   dataType="System.Int32"
                   description="Specifies the type of join to perform."
                   name="JoinType"
-                  typeConverter="JoinType">2</property>
+                  typeConverter="JoinType">1</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the number of columns in the ordering key."
@@ -11505,7 +11505,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                     <inputColumn
                       refId="Package\ETL LieferungFakten\Merge Join 5.Inputs[Merge Join Left Input].Columns[Plz]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="255"
                       cachedName="Plz"
                       cachedSortKeyPosition="1"
                       lineageId="Package\ETL LieferungFakten\Sort 9.Outputs[Sort Output].Columns[Plz]" />
@@ -11725,7 +11725,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                     <outputColumn
                       refId="Package\ETL LieferungFakten\Merge Join 5.Outputs[Merge Join Output].Columns[Plz]"
                       dataType="wstr"
-                      length="50"
+                      length="255"
                       lineageId="Package\ETL LieferungFakten\Merge Join 5.Outputs[Merge Join Output].Columns[Plz]"
                       name="Plz"
                       sortKeyPosition="1">
@@ -12008,7 +12008,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                     <inputColumn
                       refId="Package\ETL LieferungFakten\Merge Join 6.Inputs[Merge Join Left Input].Columns[Plz]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="255"
                       cachedName="Plz"
                       lineageId="Package\ETL LieferungFakten\Sort 10.Outputs[Sort Output].Columns[Plz]" />
                     <inputColumn
@@ -12211,7 +12211,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                     <outputColumn
                       refId="Package\ETL LieferungFakten\Merge Join 6.Outputs[Merge Join Output].Columns[Plz]"
                       dataType="wstr"
-                      length="50"
+                      length="255"
                       lineageId="Package\ETL LieferungFakten\Merge Join 6.Outputs[Merge Join Output].Columns[Plz]"
                       name="Plz">
                       <properties>
@@ -13522,7 +13522,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                     <inputColumn
                       refId="Package\ETL LieferungFakten\Sort 1.Inputs[Sort Input].Columns[Plz]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="255"
                       cachedName="Plz"
                       lineageId="Package\ETL LieferungFakten\INT in STRING.Outputs[Data Conversion Output].Columns[Plz]">
                       <properties>
@@ -13563,7 +13563,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                     <outputColumn
                       refId="Package\ETL LieferungFakten\Sort 1.Outputs[Sort Output].Columns[Plz]"
                       dataType="wstr"
-                      length="50"
+                      length="255"
                       lineageId="Package\ETL LieferungFakten\Sort 1.Outputs[Sort Output].Columns[Plz]"
                       name="Plz">
                       <properties>
@@ -13701,7 +13701,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                     <inputColumn
                       refId="Package\ETL LieferungFakten\Sort 10.Inputs[Sort Input].Columns[Plz]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="255"
                       cachedName="Plz"
                       cachedSortKeyPosition="1"
                       lineageId="Package\ETL LieferungFakten\Merge Join 5.Outputs[Merge Join Output].Columns[Plz]">
@@ -14053,7 +14053,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                     <outputColumn
                       refId="Package\ETL LieferungFakten\Sort 10.Outputs[Sort Output].Columns[Plz]"
                       dataType="wstr"
-                      length="50"
+                      length="255"
                       lineageId="Package\ETL LieferungFakten\Sort 10.Outputs[Sort Output].Columns[Plz]"
                       name="Plz">
                       <properties>
@@ -15277,7 +15277,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                     <inputColumn
                       refId="Package\ETL LieferungFakten\Sort 3.Inputs[Sort Input].Columns[Plz]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="255"
                       cachedName="Plz"
                       lineageId="Package\ETL LieferungFakten\Merge Join.Outputs[Merge Join Output].Columns[Plz]">
                       <properties>
@@ -15481,7 +15481,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                     <outputColumn
                       refId="Package\ETL LieferungFakten\Sort 3.Outputs[Sort Output].Columns[Plz]"
                       dataType="wstr"
-                      length="50"
+                      length="255"
                       lineageId="Package\ETL LieferungFakten\Sort 3.Outputs[Sort Output].Columns[Plz]"
                       name="Plz">
                       <properties>
@@ -16617,7 +16617,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                     <inputColumn
                       refId="Package\ETL LieferungFakten\Sort 9.Inputs[Sort Input].Columns[Plz]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="255"
                       cachedName="Plz"
                       lineageId="Package\ETL LieferungFakten\Merge Join 4.Outputs[Merge Join Output].Columns[Plz]">
                       <properties>
@@ -16934,7 +16934,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                     <outputColumn
                       refId="Package\ETL LieferungFakten\Sort 9.Outputs[Sort Output].Columns[Plz]"
                       dataType="wstr"
-                      length="50"
+                      length="255"
                       lineageId="Package\ETL LieferungFakten\Sort 9.Outputs[Sort Output].Columns[Plz]"
                       name="Plz"
                       sortKeyPosition="1">
@@ -17629,7 +17629,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                     <inputColumn
                       refId="Package\ETL LieferungFakten\Union All.Inputs[Union All Input 1].Columns[Plz]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="255"
                       cachedName="Plz"
                       lineageId="Package\ETL LieferungFakten\Merge Join 6.Outputs[Merge Join Output].Columns[Plz]">
                       <properties>
@@ -17972,7 +17972,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                     <inputColumn
                       refId="Package\ETL LieferungFakten\Union All.Inputs[Union All Input 2].Columns[Plz]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="255"
                       cachedName="Plz"
                       lineageId="Package\ETL LieferungFakten\Merge Join 6.Outputs[Merge Join Output].Columns[Plz]">
                       <properties>
@@ -18214,9 +18214,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                     <inputColumn
                       refId="Package\ETL LieferungFakten\Union All.Inputs[Union All Input 2].Columns[Meldung]"
                       cachedDataType="wstr"
-                      cachedLength="26"
+                      cachedLength="25"
                       cachedName="Meldung"
-                      lineageId="Package\ETL LieferungFakten\Zieladresse.Outputs[Derived Column Output].Columns[Meldung]">
+                      lineageId="Package\ETL LieferungFakten\Beschwerde 2.Outputs[Derived Column Output].Columns[Meldung]">
                       <properties>
                         <property
                           containsID="true"
@@ -18315,7 +18315,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                     <inputColumn
                       refId="Package\ETL LieferungFakten\Union All.Inputs[Union All Input 3].Columns[Plz]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="255"
                       cachedName="Plz"
                       lineageId="Package\ETL LieferungFakten\Merge Join 6.Outputs[Merge Join Output].Columns[Plz]">
                       <properties>
@@ -18557,9 +18557,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                     <inputColumn
                       refId="Package\ETL LieferungFakten\Union All.Inputs[Union All Input 3].Columns[Meldung]"
                       cachedDataType="wstr"
-                      cachedLength="25"
+                      cachedLength="26"
                       cachedName="Meldung"
-                      lineageId="Package\ETL LieferungFakten\Beschwerde 2.Outputs[Derived Column Output].Columns[Meldung]">
+                      lineageId="Package\ETL LieferungFakten\Zieladresse.Outputs[Derived Column Output].Columns[Meldung]">
                       <properties>
                         <property
                           containsID="true"
@@ -18658,7 +18658,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                     <inputColumn
                       refId="Package\ETL LieferungFakten\Union All.Inputs[Union All Input 4].Columns[Plz]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="255"
                       cachedName="Plz"
                       lineageId="Package\ETL LieferungFakten\Merge Join 6.Outputs[Merge Join Output].Columns[Plz]">
                       <properties>
@@ -19001,7 +19001,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                     <inputColumn
                       refId="Package\ETL LieferungFakten\Union All.Inputs[Union All Input 5].Columns[Plz]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="255"
                       cachedName="Plz"
                       lineageId="Package\ETL LieferungFakten\Merge Join 6.Outputs[Merge Join Output].Columns[Plz]">
                       <properties>
@@ -19344,7 +19344,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                     <inputColumn
                       refId="Package\ETL LieferungFakten\Union All.Inputs[Union All Input 6].Columns[Plz]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="255"
                       cachedName="Plz"
                       lineageId="Package\ETL LieferungFakten\Merge Join 6.Outputs[Merge Join Output].Columns[Plz]">
                       <properties>
@@ -19632,7 +19632,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                     <outputColumn
                       refId="Package\ETL LieferungFakten\Union All.Outputs[Union All Output 1].Columns[Plz]"
                       dataType="wstr"
-                      length="50"
+                      length="255"
                       lineageId="Package\ETL LieferungFakten\Union All.Outputs[Union All Output 1].Columns[Plz]"
                       name="Plz" />
                     <outputColumn
@@ -19873,12 +19873,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
               refId="Package\ETL LieferungFakten.Paths[Derived Column Output6]"
               endId="Package\ETL LieferungFakten\Union All.Inputs[Union All Input 3]"
               name="Derived Column Output"
-              startId="Package\ETL LieferungFakten\Beschwerde 2.Outputs[Derived Column Output]" />
+              startId="Package\ETL LieferungFakten\Zieladresse.Outputs[Derived Column Output]" />
             <path
               refId="Package\ETL LieferungFakten.Paths[Derived Column Output5]"
               endId="Package\ETL LieferungFakten\Union All.Inputs[Union All Input 2]"
               name="Derived Column Output"
-              startId="Package\ETL LieferungFakten\Zieladresse.Outputs[Derived Column Output]" />
+              startId="Package\ETL LieferungFakten\Beschwerde 2.Outputs[Derived Column Output]" />
             <path
               refId="Package\ETL LieferungFakten.Paths[Derived Column Output4]"
               endId="Package\ETL LieferungFakten\Union All.Inputs[Union All Input 1]"
@@ -23653,14 +23653,14 @@ SET Ende = CAST(GETDATE() As date);</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,23.5416661420217"
+              EndConnector="0,23.5416661420216"
               Start="0,0"
-              End="0,16.0416661420217">
+              End="0,16.0416661420216">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,16.0416661420217" />
+                    End="0,16.0416661420216" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -23787,14 +23787,14 @@ SET Ende = CAST(GETDATE() As date);</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,23.9027778809138"
+              EndConnector="0,23.9027778809102"
               Start="0,0"
-              End="0,16.4027778809138">
+              End="0,16.4027778809102">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,16.4027778809138" />
+                    End="0,16.4027778809102" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -24147,21 +24147,21 @@ SET Ende = CAST(GETDATE() As date);</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="134.666666666667,0"
+              EndConnector="134.666666666663,0"
               Start="0,0"
-              End="127.166666666667,0">
+              End="127.166666666663,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="127.166666666667,0" />
+                    End="127.166666666663,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="7.7769466145835,5,111.6127734375,11.609375"
+              BoundingBox="7.77694661458155,5,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -24411,21 +24411,21 @@ SET Ende = CAST(GETDATE() As date);</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,31.6111114160346"
+              EndConnector="0,31.6111114160399"
               Start="0,0"
-              End="0,24.1111114160346">
+              End="0,24.1111114160399">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,24.1111114160346" />
+                    End="0,24.1111114160399" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,6.2508682080173,96.3827734375,11.609375"
+              BoundingBox="-48.19138671875,6.25086820801994,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -24475,18 +24475,18 @@ SET Ende = CAST(GETDATE() As date);</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\ETL LieferungFakten.Paths[Derived Column Output1]"
-          TopLeft="673.833333333333,119.708332997023">
+          TopLeft="673.833333333333,119.708332997022">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,28.3472218231334"
+              EndConnector="0,28.3472218231336"
               Start="0,0"
-              End="0,20.8472218231334">
+              End="0,20.8472218231336">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.8472218231334" />
+                    End="0,20.8472218231336" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -25292,33 +25292,33 @@ SET Ende = CAST(GETDATE() As date);</property>
         <NodeLayout
           Size="121,42"
           Id="Package\ETL LieferungFakten\Union All"
-          TopLeft="1338.33333333333,1386.52777746389" />
+          TopLeft="1340,1383.22916476315" />
         <EdgeLayout
           Id="Package\ETL LieferungFakten.Paths[Derived Column Output4]"
           TopLeft="1214.25,1114.74305276866">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="184.583333333333,271.784724695228"
+              EndConnector="186.25,268.486111994486"
               Start="0,0"
-              End="184.583333333333,264.284724695228">
+              End="186.25,260.986111994486">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,131.892362347614" />
+                    End="0,130.243055997243" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,131.892362347614"
-                    Point2="0,135.892362347614"
-                    Point3="4,135.892362347614" />
+                    Point1="0,130.243055997243"
+                    Point2="0,134.243055997243"
+                    Point3="4,134.243055997243" />
                   <mssgle:LineSegment
-                    End="180.583333333333,135.892362347614" />
+                    End="182.25,134.243055997243" />
                   <mssgle:CubicBezierSegment
-                    Point1="180.583333333333,135.892362347614"
-                    Point2="184.583333333333,135.892362347614"
-                    Point3="184.583333333333,139.892362347614" />
+                    Point1="182.25,134.243055997243"
+                    Point2="186.25,134.243055997243"
+                    Point3="186.25,138.243055997243" />
                   <mssgle:LineSegment
-                    End="184.583333333333,264.284724695228" />
+                    End="186.25,260.986111994486" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -25329,30 +25329,18 @@ SET Ende = CAST(GETDATE() As date);</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\ETL LieferungFakten.Paths[Derived Column Output5]"
-          TopLeft="1205.91666666667,1272.41666427213">
+          TopLeft="1299.66666666667,1403.03124783752">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="174.08333333333,114.111113191758"
+              EndConnector="40.3333333333301,0"
               Start="0,0"
-              End="174.08333333333,106.611113191758">
+              End="32.8333333333301,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,63.5731388068648" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,63.5731388068648"
-                    Point2="0,67.5731388068648"
-                    Point3="4,67.5731388068648" />
-                  <mssgle:LineSegment
-                    End="170.08333333333,67.5731388068648" />
-                  <mssgle:CubicBezierSegment
-                    Point1="170.08333333333,67.5731388068648"
-                    Point2="174.08333333333,67.5731388068648"
-                    Point3="174.08333333333,71.5731388068648" />
-                  <mssgle:LineSegment
-                    End="174.08333333333,106.611113191758" />
+                    End="32.8333333333301,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -25363,18 +25351,30 @@ SET Ende = CAST(GETDATE() As date);</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\ETL LieferungFakten.Paths[Derived Column Output6]"
-          TopLeft="1299.66666666667,1404.68055418789">
+          TopLeft="1205.91666666667,1272.41666427213">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="38.6666666666633,0"
+              EndConnector="175.749999999997,110.812500491016"
               Start="0,0"
-              End="31.1666666666633,0">
+              End="175.749999999997,103.312500491016">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="31.1666666666633,0" />
+                    End="0,61.6198004538971" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,61.6198004538971"
+                    Point2="0,65.6198004538971"
+                    Point3="4,65.6198004538971" />
+                  <mssgle:LineSegment
+                    End="171.749999999997,65.6198004538971" />
+                  <mssgle:CubicBezierSegment
+                    Point1="171.749999999997,65.6198004538971"
+                    Point2="175.749999999997,65.6198004538971"
+                    Point3="175.749999999997,69.6198004538971" />
+                  <mssgle:LineSegment
+                    End="175.749999999997,103.312500491016" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -25389,26 +25389,26 @@ SET Ende = CAST(GETDATE() As date);</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="168.000000000003,-87.9999974171319"
+              EndConnector="169.66666666667,-91.2986101178735"
               Start="0,0"
-              End="168.000000000003,-80.4999974171319">
+              End="169.66666666667,-83.7986101178735">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-39.999998708566" />
+                    End="0,-41.6493050589368" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,-39.999998708566"
-                    Point2="0,-43.999998708566"
-                    Point3="4,-43.999998708566" />
+                    Point1="0,-41.6493050589368"
+                    Point2="0,-45.6493050589368"
+                    Point3="4,-45.6493050589368" />
                   <mssgle:LineSegment
-                    End="164.000000000003,-43.999998708566" />
+                    End="165.66666666667,-45.6493050589368" />
                   <mssgle:CubicBezierSegment
-                    Point1="164.000000000003,-43.999998708566"
-                    Point2="168.000000000003,-43.999998708566"
-                    Point3="168.000000000003,-47.999998708566" />
+                    Point1="165.66666666667,-45.6493050589368"
+                    Point2="169.66666666667,-45.6493050589368"
+                    Point3="169.66666666667,-49.6493050589368" />
                   <mssgle:LineSegment
-                    End="168.000000000003,-80.4999974171319" />
+                    End="169.66666666667,-83.7986101178735" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -25423,26 +25423,26 @@ SET Ende = CAST(GETDATE() As date);</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="154.41666666667,-229.388886323952"
+              EndConnector="156.083333333337,-232.687499024694"
               Start="0,0"
-              End="154.41666666667,-221.888886323952">
+              End="156.083333333337,-225.187499024694">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-131.837138230986" />
+                    End="0,-133.790476583954" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,-131.837138230986"
-                    Point2="0,-135.837138230986"
-                    Point3="4,-135.837138230986" />
+                    Point1="0,-133.790476583954"
+                    Point2="0,-137.790476583954"
+                    Point3="4,-137.790476583954" />
                   <mssgle:LineSegment
-                    End="150.41666666667,-135.837138230986" />
+                    End="152.083333333337,-137.790476583954" />
                   <mssgle:CubicBezierSegment
-                    Point1="150.41666666667,-135.837138230986"
-                    Point2="154.41666666667,-135.837138230986"
-                    Point3="154.41666666667,-139.837138230986" />
+                    Point1="152.083333333337,-137.790476583954"
+                    Point2="156.083333333337,-137.790476583954"
+                    Point3="156.083333333337,-141.790476583954" />
                   <mssgle:LineSegment
-                    End="154.41666666667,-221.888886323952" />
+                    End="156.083333333337,-225.187499024694" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -25457,26 +25457,26 @@ SET Ende = CAST(GETDATE() As date);</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="188.833333333333,-371.472220760392"
+              EndConnector="190.5,-374.770833461134"
               Start="0,0"
-              End="188.833333333333,-363.972220760392">
+              End="190.5,-367.270833461134">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-238.308025401657" />
+                    End="0,-240.459681125591" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,-238.308025401657"
-                    Point2="0,-242.308025401657"
-                    Point3="4,-242.308025401657" />
+                    Point1="0,-240.459681125591"
+                    Point2="0,-244.459681125591"
+                    Point3="4,-244.459681125591" />
                   <mssgle:LineSegment
-                    End="184.833333333333,-242.308025401657" />
+                    End="186.5,-244.459681125591" />
                   <mssgle:CubicBezierSegment
-                    Point1="184.833333333333,-242.308025401657"
-                    Point2="188.833333333333,-242.308025401657"
-                    Point3="188.833333333333,-246.308025401657" />
+                    Point1="186.5,-244.459681125591"
+                    Point2="190.5,-244.459681125591"
+                    Point3="190.5,-248.459681125591" />
                   <mssgle:LineSegment
-                    End="188.833333333333,-363.972220760392" />
+                    End="190.5,-367.270833461134" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -25487,18 +25487,18 @@ SET Ende = CAST(GETDATE() As date);</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\ETL LieferungFakten.Paths[Union All Output 1]"
-          TopLeft="1459.33333333333,1405.99999908523">
+          TopLeft="1461,1404.35069273486">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="37.3333333333367,0"
+              EndConnector="35.6666666666699,0"
               Start="0,0"
-              End="29.8333333333367,0">
+              End="28.1666666666699,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="29.8333333333367,0" />
+                    End="28.1666666666699,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -25529,7 +25529,7 @@ SET Ende = CAST(GETDATE() As date);</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -25539,7 +25539,7 @@ SET Ende = CAST(GETDATE() As date);</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
